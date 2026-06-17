@@ -439,6 +439,7 @@ if not st.session_state.messages:
     clicked = _welcome_screen()
     if clicked:
         st.session_state.messages.append({"role": "user", "content": clicked})
+        st.session_state["_pending"] = clicked
         st.rerun()
 
 # Render history
@@ -453,16 +454,24 @@ for msg in st.session_state.messages:
                     f"⚠ Quality Team Review Recommended\n\n{msg['conf'].get('reason', '')}",
                 )
 
-# Chat input
-if user_input := st.chat_input("Ask a question about your SOPs…"):
-    st.session_state.messages.append({"role": "user", "content": user_input})
-    with st.chat_message("user"):
-        st.markdown(user_input)
+# ── Answer generation ─────────────────────────────────────────────────────────
+# Triggered either by a chat input or by clicking a welcome-screen example button.
 
+question = st.session_state.pop("_pending", None)
+
+if not question:
+    typed = st.chat_input("Ask a question about your SOPs…")
+    if typed:
+        question = typed
+        st.session_state.messages.append({"role": "user", "content": question})
+        with st.chat_message("user"):
+            st.markdown(question)
+
+if question:
     with st.chat_message("assistant"):
         with st.spinner("Searching SOPs…"):
             agent = _load_agent()
-            resp = agent.answer(user_input, domain_filter=domain_filter)
+            resp = agent.answer(question, domain_filter=domain_filter)
 
         st.markdown(resp.answer)
 
