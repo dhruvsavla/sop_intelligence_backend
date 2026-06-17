@@ -421,13 +421,11 @@ with st.sidebar:
         st.session_state.pop("last_conf", None)
         st.rerun()
 
-    # Footer
     st.markdown(
-        "<div style='position:absolute;bottom:1.2rem;left:1.2rem;right:1.2rem;"
-        "font-size:0.68rem;color:#334155;line-height:1.5'>"
+        "<p style='font-size:0.68rem;color:#334155;line-height:1.6;margin-top:1.5rem'>"
         "Answers grounded in SOP citations only.<br>"
         "Always verify with the current approved document."
-        "</div>",
+        "</p>",
         unsafe_allow_html=True,
     )
 
