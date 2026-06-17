@@ -1,0 +1,200 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-010
+  Title:            Laboratory Records Archiving and Retention
+  Version:          2.1
+  Effective Date:   2023-11-15
+  Supersedes:       2.0
+  Department:       GLP (Good Laboratory Practice)
+  Approved By:      Kevin Marsh, Quality Control Manager
+  Review Cycle:     2 years (Next Review Due: 2025-11-15)
+  Pages:            10
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Records Classification and Archiving Procedures | 5 |
+| 5.0 | Retention Schedules and Storage Requirements | 6 |
+| 6.0 | Electronic Records Management and 21 CFR Part 11 Compliance | 7 |
+| 7.0 | Records Retrieval Procedures | 8 |
+| 8.0 | Records Destruction Procedures | 9 |
+| 7.0 | Deviation and Exception Handling | 9 |
+| 8.0 | References and Related Documents | 10 |
+| 9.0 | Revision History | 10 |
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls governing the archiving, retention, retrieval, and destruction of laboratory records generated within Good Laboratory Practice (GLP)-compliant studies conducted at this facility. The primary purpose of this document is to ensure that all raw data, study records, final reports, and associated documentation are maintained in a manner that guarantees their integrity, authenticity, confidentiality, and retrievability throughout the entire mandated retention period, as required by applicable regulatory frameworks.
+
+Effective laboratory records management is a cornerstone of GLP compliance. Records represent the primary evidence that a study was conducted as described in the study plan and in accordance with all applicable GLP regulations. This SOP is designed to protect those records from unauthorized access, inadvertent destruction, deterioration, or falsification, thereby preserving the scientific and legal value of all GLP study data generated at this facility.
+
+### 1.2 Scope
+
+This SOP applies to all laboratory records generated, received, or maintained in connection with GLP-regulated non-clinical laboratory studies conducted at this facility. This includes, but is not limited to, raw data notebooks, study plans and amendments, Standard Operating Procedures, instrument calibration and maintenance records, personnel training records, final study reports, audit trail reports, electronic data files, chromatographic records, specimen inventories, chain of custody documentation, and correspondence with study sponsors and regulatory authorities. The scope encompasses both paper-based (hard copy) and electronic records as defined in Section 2.0.
+
+This SOP applies to all personnel who generate, handle, manage, review, approve, archive, retrieve, or authorize the destruction of records covered herein. This includes employees of the GLP laboratory, contracted archiving service providers operating under a formal Quality Agreement, and any sponsor representatives exercising legitimate access rights. Personnel must be trained on this SOP prior to performing any covered activity, with training documented in the facility Training Management System.
+
+### 1.3 Regulatory Basis
+
+This SOP is written to comply with and harmonize the requirements of the United States Food and Drug Administration (FDA) Good Laboratory Practice Regulations as codified at 21 CFR Part 58 (specifically Subpart J – Records and Reports, §58.185 through §58.195), the Organisation for Economic Co-operation and Development (OECD) Principles of Good Laboratory Practice (ENV/MC/CHEM(98)17), and, where applicable to electronic records and electronic signatures, FDA 21 CFR Part 11. References to specific regulatory citations are provided throughout this SOP where contextually relevant.
+
+### 1.4 Exclusions
+
+This SOP does not apply to records generated in the course of Good Manufacturing Practice (GMP) or Good Clinical Practice (GCP) activities, which are governed by separate SOPs (see Section 9.0, References and Related Documents). Quality Management System records not directly associated with a GLP study (e.g., facility maintenance logs unrelated to a specific study) are governed by SOP-QMS-002, Quality Records Management.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this SOP and are consistent with the terminology established in 21 CFR Part 58, the OECD GLP Principles, and 21 CFR Part 11.
+
+**Archiving:** The transfer of study records from active laboratory or working file status to a controlled, secure archive facility or archive storage medium, accompanied by formal indexing, documentation, and restricted access controls. Archiving is a deliberate, managed process distinct from informal filing.
+
+**Audit Trail:** A secure, computer-generated, time-stamped electronic record that documents, in chronological order, the creation, modification, or deletion of electronic records. Audit trails must capture who made the change, what was changed, and when it occurred, preserving both original and updated values. Required under 21 CFR Part 11.10(e).
+
+**Chain of Custody:** A documented, unbroken sequence of accountability demonstrating the possession, transfer, handling, and disposition of records or specimens from point of origin through final disposition, used to establish the integrity of the records.
+
+**Destruction:** The permanent, irreversible elimination of records in a manner that renders their content irrecoverable. Destruction must be authorized, documented, and performed only upon expiration of the applicable retention period and with formal approval per Section 8.0.
+
+**Electronic Records:** Any combination of text, graphics, data, audio, pictorial, or other information representation in digital form that is created, modified, maintained, archived, retrieved, or distributed by a computer system, as defined under 21 CFR Part 11.3(b)(6).
+
+**Electronic Signature:** A computer data compilation of any symbol or series of symbols executed, adopted, or authorized by an individual to be the legally binding equivalent of the individual's handwritten signature, as defined under 21 CFR Part 11.3(b)(7).
+
+**Raw Data:** All original laboratory worksheets, records, memoranda, notes, and exact copies thereof that are the result of original observations and activities in a study, as defined in 21 CFR Part 58.3(k). This includes photographs, microfilm or microfiche copies, computer printouts, magnetic media, including dictated observations, and recorded data from automated instruments.
+
+**Records Management:** The systematic control of records from their creation through their final disposition, encompassing classification, indexing, storage, protection, retrieval, and scheduled destruction or permanent retention.
+
+**Retention Period:** The minimum length of time that records must be maintained before they are eligible for authorized destruction, as specified by regulatory requirement, sponsor agreement, or facility policy, whichever is longest.
+
+**Retrieval:** The authorized process of locating, accessing, and returning archived records for review, audit, regulatory inspection, or scientific reference, with full documentation of the access event.
+
+**Study Archivist:** The designated individual responsible for managing the facility archive, maintaining the archive index, controlling access, and overseeing physical and electronic storage conditions.
+
+**Study Plan (Protocol):** The document that defines the objectives and experimental design of a GLP study, including any amendments thereto, as required by 21 CFR Part 58.120.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| CFR | Code of Federal Regulations |
+| DMS | Document Management System |
+| ECIA | Electronic Common Technical Document Archiving |
+| ERES | Electronic Records and Electronic Signatures |
+| FDA | Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| GxP | Good (any) Practice (collective term) |
+| ICH | International Council for Harmonisation |
+| LIMS | Laboratory Information Management System |
+| OECD | Organisation for Economic Co-operation and Development |
+| QA | Quality Assurance |
+| QAU | Quality Assurance Unit |
+| RH | Relative Humidity |
+| SOP | Standard Operating Procedure |
+| SRA | Study Records Archive (physical archive area) |
+| TMS | Training Management System |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance Unit (QAU) / Quality Assurance Specialist
+
+The Quality Assurance Unit bears primary oversight responsibility for ensuring this SOP is implemented consistently and in compliance with applicable GLP regulations, consistent with the independent oversight role mandated by 21 CFR Part 58 Subpart A. The QA Specialist assigned to GLP Records Management shall conduct periodic inspections of the archive facility (at minimum semi-annually) and document findings using the Archive Inspection Checklist (Form QA-ARC-001). The QA Specialist is responsible for issuing and tracking Deviation Reports (DRs) associated with any archiving, retrieval, or destruction non-conformances identified during inspections or reported by personnel. QA shall review and approve all Records Destruction Requests (Form QA-ARC-003) prior to any authorized destruction activity. QA is responsible for verifying that electronic records systems comply with 21 CFR Part 11 and that audit trail functionality is operational and being reviewed on a scheduled basis.
+
+### 3.2 Study Director
+
+The Study Director has overall responsibility for the conduct of each individual GLP study, as prescribed by 21 CFR Part 58.33. With respect to records management, the Study Director is responsible for ensuring that all raw data generated during the study are accurately recorded, legible, and properly attributed at the time of generation. The Study Director must formally notify the Study Archivist in writing (or via the DMS electronic notification workflow) when a study is complete and ready for archiving, utilizing the Study Completion and Archive Notification Form (Form SD-ARC-001). The Study Director is responsible for verifying the completeness of the study archive package prior to handover, ensuring that all study plan amendments, final report, raw data, and QA inspection reports are included.
+
+### 3.3 Study Archivist
+
+The Study Archivist is a designated, trained individual responsible for the day-to-day management and physical security of the Study Records Archive (SRA). Responsibilities include receiving and indexing all archived study materials, maintaining the Master Archive Index (electronic database, restricted write access), controlling all access to archived materials, monitoring and documenting environmental conditions within the SRA, processing approved retrieval requests, and maintaining custody records for all materials removed from and returned to the archive. The Study Archivist reports directly to the Quality Control Manager and must be trained on this SOP, SOP-QMS-002, and SOP-IT-007 (Electronic Records System Administration). The Archivist must not be the same individual as the Study Director for any active study, ensuring independence of the archiving function.
+
+### 3.4 Laboratory Analyst / Principal Investigator
+
+Laboratory Analysts and Principal Investigators are responsible for generating accurate, complete, and contemporaneous records of all GLP study activities in their respective areas of work. They are responsible for ensuring that raw data notebooks, worksheets, instrument printouts, and other original records are properly labeled with the study number, their name, and date at the time of generation. Analysts must transfer all study-related records to their Principal Investigator or directly to the Study Director upon study completion within the timeframes specified in Section 4.0. Analysts must not alter records after the fact without following the formal correction procedure defined in SOP-GLP-004 (Data Integrity and Raw Data Recording).
+
+### 3.5 Information Technology (IT) Systems Administrator
+
+The IT Systems Administrator is responsible for maintaining the technical infrastructure supporting electronic records management, including the LIMS, DMS, and any other electronic systems generating or storing GLP records. Responsibilities specific to this SOP include ensuring that system audit trail functionality remains active and unaltered, performing and verifying scheduled data backups, administering role-based access controls, and supporting validation activities for electronic records systems as required by 21 CFR Part 11. The IT Systems Administrator must report any system failures, unauthorized access attempts, or audit trail anomalies to the QAU within 24 hours of detection.
+
+### 3.6 Quality Control Manager
+
+The Quality Control Manager (currently Kevin Marsh) is responsible for the overall approval, oversight, and maintenance of this SOP. The Quality Control Manager must review and approve this SOP at each scheduled review cycle and authorize any interim revisions. The Quality Control Manager must authorize all records destruction activities by countersigning the Records Destruction Request form and must be notified of any significant deviations from this SOP within 48 hours of occurrence.
+
+### 3.7 Responsibility Summary Table
+
+| Activity | Lab Analyst | Study Director | Study Archivist | QA Specialist | IT Admin | QC Manager |
+|---|---|---|---|---|---|---|
+| Generate and label raw data | Primary | Oversight | — | Audit | — | — |
+| Notify archive upon study completion | — | Primary | Receive | Verify | — | — |
+| Index and receive archive materials | — | — | Primary | Audit | — | — |
+| Monitor SRA environmental conditions | — | — | Primary | Audit | — | — |
+| Process retrieval requests | — | — | Primary | Oversight | — | — |
+| Approve destruction requests | — | — | Initiate | Approve | — | Authorize |
+| Maintain electronic system integrity | — | — | — | Audit | Primary | Oversight |
+| Review and approve SOP | — | — | — | Review | — | Approve |
+
+---
+
+## 4.0 RECORDS CLASSIFICATION AND ARCHIVING PROCEDURES
+
+### 4.1 Records Classification Framework
+
+All records generated under GLP at this facility must be assigned to one of three classification tiers prior to archiving. Classification determines retention period, access controls, environmental storage requirements, and destruction eligibility. Classification must be assigned by the Study Director at the time of study initiation and documented in the Study Plan.
+
+**Tier 1 – Critical Study Records:** Raw data, study plans and amendments, final study reports, QAU inspection reports, and all records whose loss or alteration would directly compromise the reconstructability of the GLP study. These records require the highest level of environmental protection and access restriction.
+
+**Tier 2 – Supporting Study Records:** Instrument calibration and maintenance records directly referenced in the study, reagent and standard preparation records, chain of custody documentation, and personnel training records for study staff. Loss of Tier 2 records would impair but not necessarily prevent study reconstruction.
+
+**Tier 3 – Facility and Administrative Records:** SOPs in effect during the study period, facility environmental monitoring records, vendor qualification records, and general correspondence not constituting raw data. These records support the regulatory and quality framework within which the study was conducted.
+
+### 4.2 Pre-Archiving Record Preparation Requirements
+
+Prior to transferring any records to the Study Records Archive (SRA), the Study Director must complete a systematic pre-archiving review to ensure completeness and integrity of the study package. This review must be documented using the Pre-Archive Checklist (Form SD-ARC-001).
+
+**Pre-archiving completeness checks shall include verification of the following:**
+
+1. All raw data notebooks bear study number, analyst name, date of each entry, and ink corrections per SOP-GLP-004.
+2. All study plan amendments are signed and dated by the Study Director and, where required, acknowledged by the Sponsor.
+3. The Final Study Report is complete, signed, and accompanied by the signed QAU compliance statement.
+4. All instrument printouts, chromatograms, and electronic data exports are labeled and associated with the correct study number and sample identifiers.
+5. Specimen inventory records are complete and cross-referenced with raw data entries.
+6. A complete study archive index (Form SD-ARC-002) has been prepared, listing every document and item in the archive package by title, document number, volume/notebook number, date range covered, and media type.
+
+### 4.3 Archive Transfer Procedure
+
+The formal transfer of study records to the SRA constitutes a critical quality event and must be executed as a controlled, documented handover between the Study Director and the Study Archivist.
+
+**Archive Transfer Procedure Steps:**
+
+1. Study Director completes Pre-Archive Checklist (Form SD-ARC-001) and signs the Archive Notification Form (Form SD-ARC-001, Part B) indicating the study is complete and the archive package is ready.
+2. Study Director schedules archive transfer appointment with the Study Archivist with a minimum of 5 business days' advance notice.
+3. Study Archivist retrieves the applicable Study Archive Index template from the DMS and confirms it has been completed by the Study Director for all items in the transfer package.
+4. On the transfer date, the Study Archivist and Study Director jointly verify each item listed on the Study Archive Index against the physical materials presented, checking for legibility, completeness of labeling, and physical condition. Any discrepancies are documented as Pre-Archive Discrepancies

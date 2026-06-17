@@ -1,0 +1,199 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:        SOP-GMP-001
+  Title:             Equipment Cleaning and Sanitization Procedure
+  Version:           2.3
+  Effective Date:    2023-04-01
+  Supersedes:        Version 2.2 (dated 2021-03-15)
+  Department:        GMP / Manufacturing Operations
+  Approved By:       Dr. Margaret Chen, VP Quality Assurance
+  Review Cycle:      2 years (next review due: 2025-04-01)
+  Pages:             14
+  Classification:    GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+> **CONTROLLED DOCUMENT NOTICE:** This document is a controlled GxP record. Printed copies are uncontrolled. Always verify the current version in the Electronic Document Management System (EDMS) prior to use. Unauthorized reproduction or modification of this document is prohibited.
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Equipment Cleaning — Core Procedure | 5 |
+| 5.0 | Sanitization Procedures | 7 |
+| 6.0 | Clean-in-Place (CIP) Operations | 8 |
+| 7.0 | Visual Inspection and Acceptance Criteria | 9 |
+| 8.0 | Rinse Sampling and Analytical Testing | 10 |
+| 9.0 | Cleaning Validation Requirements | 11 |
+| 10.0 | Equipment Status Labeling and Holding Times | 12 |
+| 11.0 | Deviation and Exception Handling | 13 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+---
+
+# BODY — STANDARD OPERATING PROCEDURE
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural steps governing the cleaning and sanitization of process equipment used in the manufacture of pharmaceutical drug products and active pharmaceutical ingredients (APIs) at this facility. The procedures described herein are designed to prevent cross-contamination between product campaigns, to eliminate microbial contamination that could compromise product quality, and to ensure that all equipment surfaces are restored to a condition suitable for continued manufacturing use in compliance with applicable regulatory requirements.
+
+Adherence to this SOP is mandatory for all personnel involved in manufacturing, quality assurance, and equipment maintenance activities. Consistent execution of these procedures provides documented evidence that equipment cleaning is performed in a controlled, reproducible manner, which is a foundational element of Good Manufacturing Practice (GMP) compliance under 21 CFR Part 211 and EU GMP Annex 15.
+
+### 1.2 Scope
+
+This procedure applies to all process equipment, including but not limited to: stainless steel product-contact vessels (tanks, reactors, and blenders), transfer lines and hoses, filtration assemblies, filling equipment, and any ancillary tools that contact intermediate or finished drug product. It applies to both dedicated and multi-product equipment. This SOP covers manual cleaning, semi-automated cleaning, and fully automated Clean-in-Place (CIP) operations.
+
+This procedure does not apply to: laboratory glassware (refer to SOP-LAB-012), HVAC systems (refer to SOP-FAC-007), or the cleaning of non-product-contact surfaces such as floors, walls, and ceilings (refer to SOP-FAC-003). Sterilization-in-Place (SIP) activities are covered separately under SOP-GMP-004; however, sanitization steps that are integrated into CIP cycles are addressed within Section 6.0 of this document.
+
+### 1.3 Regulatory Basis
+
+This SOP is written in conformance with the following regulatory frameworks: FDA 21 CFR Part 211.67 (Equipment Cleaning and Maintenance), FDA 21 CFR Part 211.68 (Automatic, Mechanical, and Electronic Equipment), ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients), EU GMP Guide Part II Chapter 5, and FDA Guidance for Industry: Equipment Cleaning Validation (2021 draft). All numerical parameters cited herein are consistent with validated cleaning processes and documented in the site's Cleaning Validation Master Plan (CVMP-001).
+
+| Regulatory Reference | Applicability | Key Requirement |
+|----------------------|---------------|-----------------|
+| 21 CFR 211.67(a) | All product-contact equipment | Written procedures for cleaning; cleaning at appropriate intervals |
+| 21 CFR 211.67(b) | All equipment | Cleaning records maintained; identify cleaning agent and date |
+| 21 CFR 211.67(c) | Dedicated equipment | Major equipment identified by a distinctive ID |
+| ICH Q7, Section 5.2 | API manufacturing | Equipment cleaned after each campaign; validated methods |
+| EU GMP Annex 15, §10 | Cleaning validation | Sampling methods qualified; acceptance criteria based on toxicological assessment |
+| EU GMP Part II, Ch. 5.21 | Shared equipment | Dedicated equipment for products of special concern |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Cleaning Agent:** A chemical compound or formulation used to remove product residues, excipient residues, and gross contamination from equipment surfaces. Examples include alkaline detergents (e.g., 1–2% Meco Clean® AP-70), acidic agents (e.g., 0.5% phosphoric acid solution), and purified water used as a final rinse vehicle.
+
+**Cleaning Validation:** The documented evidence, established through scientific study, that an approved cleaning procedure will consistently remove a defined product residue to a level at or below the established acceptance criterion. Cleaning validation activities are governed by the site Cleaning Validation Master Plan (CVMP-001) and individual Cleaning Validation Protocols (CVPs).
+
+**Contamination:** The undesired introduction of impurities of a chemical or microbial nature, or of foreign matter, into or onto a starting material, intermediate, or API. In the context of this SOP, contamination includes product carry-over from a previous campaign, cleaning agent residue, microbial bioburden, and particulate matter.
+
+**CIP (Clean-in-Place):** An automated or semi-automated method of cleaning equipment without disassembly, using circulating cleaning solutions through spray balls, nozzles, or dedicated CIP circuits under controlled temperature, flow rate, and time parameters.
+
+**MACO (Maximum Allowable Carryover):** The calculated maximum amount of a previous product residue that may remain on equipment and be carried into the next product batch without causing a safety or quality concern. MACO values are calculated using toxicological data (PDE/ADE) or the 10-ppm criterion, whichever is more stringent.
+
+**PDE (Permitted Daily Exposure):** A substance-specific dose, established by a toxicological assessment, below which exposure is unlikely to cause an adverse effect in a human patient, regardless of route of administration. PDEs are used as the primary basis for calculating MACO values per ICH Q3C and EMA guidance on setting health-based exposure limits (2014).
+
+**Rinse Sample:** A sample of the final purified water rinse collected from a defined equipment surface or port used to assess cleaning effectiveness by quantifying residual analyte concentration.
+
+**Sanitization:** The process of reducing the number of viable microorganisms on a cleaned equipment surface to a level consistent with aseptic or controlled manufacturing requirements. Sanitization agents used at this facility include 70% Isopropyl Alcohol (IPA) and 0.1% Benzalkonium Chloride solution.
+
+**Swab Sample:** A sampling method in which a defined area of equipment surface (typically 25 cm²) is swabbed with a moistened swab to recover residual contamination for quantitative analytical testing.
+
+**Visual Inspection:** A direct examination of cleaned equipment surfaces, conducted under adequate illumination (minimum 540 lux), to verify the absence of visible residues, stains, discoloration, or deposits prior to proceeding with further sampling or re-use.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| ADE | Acceptable Daily Exposure |
+| APQR | Annual Product Quality Review |
+| CVMP | Cleaning Validation Master Plan |
+| CVP | Cleaning Validation Protocol |
+| EDMS | Electronic Document Management System |
+| GMP | Good Manufacturing Practice |
+| HPLC | High-Performance Liquid Chromatography |
+| IPA | Isopropyl Alcohol |
+| MACO | Maximum Allowable Carryover |
+| NMT | Not More Than |
+| NLT | Not Less Than |
+| PDE | Permitted Daily Exposure |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SIP | Sterilize-in-Place |
+| SOP | Standard Operating Procedure |
+| TOC | Total Organic Carbon |
+| USP | United States Pharmacopeia |
+| WFI | Water for Injection |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Manufacturing Operator (GMP Technician)
+
+The Manufacturing Operator is the primary person responsible for executing all cleaning and sanitization activities described in this SOP. The Operator must be trained and qualified on this procedure prior to performing any cleaning activity independently, as documented in the site Training Management System. Responsibilities include: preparing and verifying the concentration of cleaning solutions, performing all manual and semi-automated cleaning steps in accordance with the defined procedure, completing the Cleaning Log (Form GMP-F-001) contemporaneously and in ink, performing the post-cleaning visual inspection as the first tier of inspection, applying appropriate equipment status labels, and notifying the Production Supervisor immediately upon observing any deviation from the defined procedure.
+
+### 3.2 Production Supervisor
+
+The Production Supervisor is responsible for ensuring that Manufacturing Operators are appropriately trained and scheduled to perform cleaning activities, that the necessary cleaning materials and supplies are available and within their approved use-by date, and that the cleaning log is reviewed for completeness and accuracy before the cleaned equipment is released for subsequent use. The Production Supervisor must countersign the Cleaning Log to confirm first-level review. In the event of a cleaning deviation, the Production Supervisor is responsible for initiating the Deviation Report (Form GMP-F-005) within two (2) business hours of identification.
+
+### 3.3 QA Specialist (Cleaning and Validation)
+
+The QA Specialist assigned to manufacturing operations is responsible for the second-tier review and approval of completed Cleaning Logs prior to equipment release for the next campaign, conducting or coordinating the post-cleaning audit inspection when required by the cleaning validation protocol or triggered by a deviation, reviewing swab and rinse analytical results and comparing them against approved acceptance criteria, authorizing final equipment status release, and maintaining the Cleaning Validation lifecycle in accordance with CVMP-001. The QA Specialist is also responsible for trending cleaning data in the APQR and recommending re-validation activities when process or product changes occur.
+
+### 3.4 QC / Laboratory Analyst
+
+The Laboratory Analyst in the QC department is responsible for receiving, logging, and analyzing rinse and swab samples submitted following equipment cleaning. The Analyst performs TOC analysis, HPLC analysis for product-specific residues, and bioburden testing as specified in the applicable Cleaning Validation Protocol or routine cleaning sampling plan. The Analyst is responsible for reporting out-of-specification (OOS) results in accordance with SOP-QC-003 within four (4) hours of result generation and retaining all raw data per the site document retention policy.
+
+### 3.5 Validation Engineer
+
+The Validation Engineer is responsible for authoring, executing, and closing Cleaning Validation Protocols, performing MACO calculations and documenting the toxicological risk assessment basis, maintaining the cleaning validation lifecycle matrix, and evaluating the impact of process or equipment changes on the validated cleaning status through the change control process (SOP-QA-009).
+
+### 3.6 Roles and Responsibility Summary
+
+| Responsibility | Mfg. Operator | Prod. Supervisor | QA Specialist | Lab Analyst | Validation Engr. |
+|---|---|---|---|---|---|
+| Execute cleaning procedure | P | — | — | — | — |
+| Verify cleaning solution concentration | P | R | — | — | — |
+| Complete Cleaning Log (real-time) | P | — | — | — | — |
+| First-tier visual inspection | P | — | — | — | — |
+| Review and countersign Cleaning Log | — | P | R | — | — |
+| Approve equipment for release | — | — | P | — | — |
+| Analyze rinse/swab samples | — | — | — | P | — |
+| Initiate Deviation Report | P (initiate) | P (file) | P (approve) | — | — |
+| Maintain Cleaning Validation lifecycle | — | — | R | — | P |
+
+*P = Primary responsible; R = Review/Approval role*
+
+---
+
+## 4.0 EQUIPMENT CLEANING — CORE PROCEDURE
+
+### 4.1 Pre-Cleaning Requirements and Preparations
+
+Before initiating any cleaning activity, the Manufacturing Operator must verify that all prerequisites are met and documented. Premature or improperly initiated cleaning can result in inadequate residue removal or personnel safety hazards. The following pre-cleaning checks are mandatory for every cleaning event without exception.
+
+The Operator must confirm that the equipment has been properly tagged as "Dirty / Requires Cleaning" using the yellow Equipment Status Label (Form GMP-L-001), that a current version of this SOP is accessible at the cleaning workstation (either in print from the controlled copy station or via the EDMS tablet), and that the applicable Batch Record or Campaign Record has been closed and confirmed complete by the Production Supervisor. The Operator must also confirm Personal Protective Equipment (PPE) requirements: chemical-resistant gloves (nitrile, minimum 6 mil thickness), safety glasses or face shield, chemical-resistant apron, and closed-toe footwear are mandatory for all cleaning activities.
+
+Cleaning agents must be verified to be within their approved use-by date and sourced from an approved vendor listed in the Approved Supplier List (QA-ASL-001). Purified water used for rinsing must meet USP <1231> requirements (conductivity ≤ 1.3 µS/cm at 25°C; TOC ≤ 500 ppb). The Operator must verify the purified water system has passed its daily quality check prior to use and document the system loop ID and compliance status in the Cleaning Log.
+
+### 4.2 Equipment Disassembly
+
+Many pieces of process equipment require partial or full disassembly to ensure that all product-contact surfaces are accessible for manual cleaning. The level of disassembly required for each major piece of equipment is defined in the Equipment-Specific Cleaning Instructions (ESCIs), which are maintained as appendices to this SOP and are numbered sequentially (ESCI-001 through ESCI-024).
+
+Disassembly must be performed in a manner that protects disassembled parts from contamination. Parts must be placed on clean, lint-free, polyethylene-sheeted surfaces or in labeled, clean stainless steel trays — not directly on the floor. The Operator must document all disassembly steps and confirm all gaskets, O-rings, filters, and other consumable components are inspected for wear or damage at each disassembly event. Damaged components must be replaced before reassembly and documented on the Equipment Maintenance Log (Form GMP-F-009). All gaskets and O-rings are considered single-campaign consumables unless otherwise specified in the applicable ESCI.
+
+### 4.3 Gross Cleaning and Pre-Rinse
+
+The first physical step in the cleaning sequence is gross cleaning: the removal of bulk product residue, solid material, and visible contamination prior to the application of cleaning agents. Failure to adequately perform gross cleaning can overwhelm the capacity of the cleaning agent and lead to cleaning failure.
+
+Bulk solid residues shall be scraped manually using non-shedding, non-metallic scraper tools (polypropylene or HDPE) into an appropriate waste container. Liquid residues shall be drained completely to the facility waste system. Following gross removal, a pre-rinse with ambient-temperature Purified Water (15–25°C) shall be applied to all product-contact surfaces, maintaining contact for a minimum of 2 minutes with active water flow. The pre-rinse is performed to solubilize and flush readily water-soluble residues before the primary cleaning solution is introduced, improving overall cleaning efficiency.
+
+Pre-rinse water shall not be collected for TOC analysis; it is not considered the final rinse. The Operator must confirm complete drainage after the pre-

@@ -1,0 +1,199 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-005
+  Title:            Reference Standard Management and Certification
+  Version:          2.2
+  Effective Date:   2023-05-15
+  Supersedes:       2.1
+  Department:       GLP (Good Laboratory Practice)
+  Approved By:      Dr. Patricia Yuen, Laboratory Director
+  Review Cycle:     2 years (next review due: 2025-05-15)
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Reference Standard Procurement and Receipt | 5 |
+| 5.0 | Reference Standard Certification and Characterization | 6 |
+| 6.0 | Reference Standard Storage and Inventory Management | 7 |
+| 7.0 | Preparation of Working Standards | 8 |
+| 8.0 | Requalification and Expiry Management | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 10 |
+| 11.0 | Revision History | 11 |
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls governing the procurement, receipt, certification, storage, use, requalification, and disposal of reference standards used within the GLP-compliant analytical laboratory. The purpose of this document is to ensure that all reference standards employed in analytical testing are of appropriate identity, purity, and potency, and that their use is traceable, documented, and scientifically defensible in support of regulatory submissions and laboratory operations.
+
+Reference standards are foundational to the integrity of any quantitative or qualitative analytical method. An improperly characterized, stored, or managed reference standard can introduce systematic error into analytical results, potentially leading to incorrect release decisions, failed regulatory inspections, or patient safety risks. This procedure is therefore classified as GxP Critical and shall be adhered to without deviation unless formally approved through the site's deviation management system.
+
+### 1.2 Scope
+
+This SOP applies to all primary reference standards, secondary (working) reference standards, system suitability standards, and certified reference materials (CRMs) used within the analytical GLP laboratory, including chromatographic reference standards, spectroscopic standards, microbiological reference cultures, and physicochemical standard solutions. This procedure covers activities from initial purchase order generation through final disposal of exhausted or expired standard materials.
+
+This document applies to all personnel within the GLP laboratory who handle, prepare, certify, use, or store reference standards, including Laboratory Analysts, Senior Analysts, the Quality Assurance (QA) Specialist, the Reference Standard Custodian, and the Laboratory Director. Contract laboratories operating under the authority of this facility are also required to comply with equivalent procedures and must provide documentation confirming compliance prior to conducting GLP studies on behalf of this organization.
+
+### 1.3 Regulatory Basis
+
+This SOP is designed to comply with applicable regulatory requirements including, but not limited to, U.S. FDA 21 CFR Part 58 (Good Laboratory Practice for Nonclinical Laboratory Studies), FDA 21 CFR Part 211.194 (Laboratory Records), OECD Principles of Good Laboratory Practice (ENV/MC/CHEM(98)17), ICH Q2(R1) (Validation of Analytical Procedures), ICH Q7 (Active Pharmaceutical Ingredient GMP), and USP General Chapter <1> and <11> governing reference standards. International requirements under EU Directive 2004/10/EC and EMA Guideline on the Use of Near Infrared Spectroscopy by the Pharmaceutical Industry are also considered where applicable.
+
+| Regulatory Reference | Applicability |
+|----------------------|---------------|
+| FDA 21 CFR Part 58 | GLP nonclinical study requirements |
+| FDA 21 CFR Part 211.194 | Laboratory records and reference standard documentation |
+| OECD GLP Principles (1998) | International GLP compliance framework |
+| ICH Q2(R1) | Analytical method validation, standard traceability |
+| ICH Q7 | API reference standard certification requirements |
+| USP <1> / <11> | Injections and reference standard specifications |
+| EU Directive 2004/10/EC | European GLP implementation |
+
+**Numbered Steps — Scope Confirmation Process:**
+1. The Laboratory Director shall confirm the applicability of this SOP to any new analytical platform or product type introduced to the laboratory.
+2. Any extension of scope must be documented via a formal SOP amendment or an approved addendum.
+3. Personnel shall confirm scope applicability prior to initiating any reference standard procurement activity.
+4. Contract laboratory agreements shall reference this SOP by number and version in the Quality Agreement.
+5. Regulatory intelligence updates that affect scope shall be reviewed by QA and communicated to laboratory management within 30 calendar days of publication.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Reference Standard:** A substance or material whose properties are sufficiently well-established for use in calibrating an apparatus, assessing an analytical method, or assigning values to another substance or material. For the purposes of this SOP, this term encompasses primary reference standards, secondary reference standards, working standards, and certified reference materials.
+
+**Primary Reference Standard (PRS):** A substance of the highest metrological quality that has been fully characterized for identity, purity, and potency, typically obtained from an official compendial body (e.g., USP Reference Standards, EP Reference Standards, WHO International Standards) or from a recognized primary source. Primary reference standards are used to certify or calibrate secondary standards. They are not typically used directly in routine analytical testing.
+
+**Working Standard (Secondary Reference Standard):** A reference material that has been certified against a primary reference standard and whose assigned potency is traceable to that primary standard. Working standards are employed in routine analytical testing and are prepared and certified internally within the GLP laboratory. Also referred to as an in-house reference standard or secondary standard.
+
+**Certified Reference Material (CRM):** A reference material accompanied by documentation issued by an authoritative body that provides one or more specified property values with associated uncertainties and traceabilities, using valid procedures. CRMs from bodies such as NIST, LGC Standards, or Sigma-Aldrich CERILLIANT are considered acceptable primary reference materials when compendial standards are unavailable.
+
+**Potency:** The assigned activity or concentration of a reference standard, typically expressed as a percentage purity, weight-based assignment (mg/mg), or defined units of activity (e.g., IU/mg for biologics). Potency assignment accounts for residual moisture, counterion content, related substances, and any impurities identified during characterization.
+
+**Certification:** The formal process by which a working standard is analytically tested against a primary reference standard, the potency is calculated and assigned, and the material is approved for use in analytical testing by authorized personnel.
+
+**Requalification:** The periodic re-evaluation of a working standard that has been in continuous use or storage to confirm that its assigned potency, physical appearance, and storage conditions remain acceptable. Requalification intervals are defined in Section 8.0 of this SOP.
+
+**Traceability:** The property of a measurement result whereby the result can be related to a reference through a documented, unbroken chain of calibrations, each contributing to the measurement uncertainty.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|--------------|-----------|
+| CRM | Certified Reference Material |
+| EP | European Pharmacopoeia |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IU | International Unit |
+| LOD | Loss on Drying |
+| OECD | Organisation for Economic Co-operation and Development |
+| PRS | Primary Reference Standard |
+| QA | Quality Assurance |
+| RSD | Relative Standard Deviation |
+| USP | United States Pharmacopeia |
+| WS | Working Standard |
+| CoA | Certificate of Analysis |
+| SOP | Standard Operating Procedure |
+| LIMS | Laboratory Information Management System |
+| RSS | Reference Standard Specification |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Laboratory Director
+
+The Laboratory Director (Dr. Patricia Yuen or designated alternate) bears ultimate responsibility for ensuring that all reference standards used within the GLP laboratory meet the requirements of this SOP and applicable regulatory guidelines. The Laboratory Director is responsible for approving the Reference Standard Specification (RSS) document for each primary reference standard maintained in the laboratory and for authorizing the disposition (approval or rejection) of primary reference standards upon receipt. The Laboratory Director also reviews and approves all requalification reports for primary reference standards and any certification studies that produce results outside previously established historical ranges.
+
+The Laboratory Director must ensure that sufficient budget and resources are allocated for timely procurement of primary reference standards from compendial bodies, that appropriate storage infrastructure is maintained and qualified, and that all laboratory personnel handling reference standards have received documented training on this SOP prior to performing any of the procedures described herein.
+
+### 3.2 Reference Standard Custodian
+
+The Reference Standard Custodian is a designated Senior Analyst or above who is responsible for the day-to-day physical management of all reference standards held within the laboratory. Responsibilities include maintaining the Reference Standard Inventory Log, coordinating procurement requests with the purchasing department, managing the issuance and return of standard aliquots to analysts, tracking expiry dates and initiating requalification activities, and ensuring that storage areas are maintained within specified conditions and monitored continuously. The Custodian also coordinates the disposal of expired or rejected standards in compliance with applicable waste disposal regulations.
+
+The Reference Standard Custodian role shall not be assumed by a Laboratory Analyst who is simultaneously performing certification testing or routine analytical testing using the standards under their custodianship, in order to avoid conflicts of interest and to maintain an adequate segregation of duties.
+
+### 3.3 Laboratory Analyst
+
+Laboratory Analysts are responsible for the correct and documented use of reference standards in their assigned analytical work. Analysts must verify the identity, lot number, potency assignment, and expiry date of any reference standard prior to use. They are responsible for accurate weighing and preparation of standard solutions, for recording all relevant information in the laboratory notebook or LIMS, and for immediately reporting any abnormality observed in a reference standard (e.g., color change, moisture uptake, crystallization, or unusual odor) to the Reference Standard Custodian and QA Specialist.
+
+Analysts must not use any reference standard that has passed its expiry date, has been stored outside specified conditions, or for which no valid certification record exists, without explicit written authorization from the QA Specialist and Laboratory Director via the deviation management process.
+
+### 3.4 QA Specialist
+
+The QA Specialist is responsible for the audit and oversight of the reference standard management program. This includes reviewing and approving certification records, requalification reports, and deviation reports associated with reference standards; conducting periodic GLP audits of the reference standard storage area and inventory records; maintaining version-controlled copies of the Reference Standard Specification (RSS) documents; and ensuring that all reference standard activities are performed and documented in compliance with this SOP and applicable regulatory requirements.
+
+| Role | Key Responsibilities | Approval Authority |
+|------|---------------------|-------------------|
+| Laboratory Director | Strategy, PRS disposition, requalification approval | Yes — all tiers |
+| Reference Standard Custodian | Inventory, storage, issuance, procurement | Inventory records only |
+| Laboratory Analyst | Standard preparation, use, documentation | None |
+| QA Specialist | Audit, record review, deviation approval | Deviation and exception approval |
+| Purchasing Specialist | Vendor management, PO issuance | Purchase orders only |
+
+**Numbered Steps — Training and Qualification for Reference Standard Handling:**
+1. All personnel must complete site GLP training (GLP-TRN-001) and this SOP (SOP-GLP-005) training prior to handling any reference standard.
+2. Training records shall be maintained in the site's training management system and are subject to QA audit.
+3. Analysts newly assigned to the role of Reference Standard Custodian must complete a three-month supervised period under the outgoing Custodian before assuming independent responsibilities.
+4. Refresher training on this SOP is required at each revision and at the biennial review cycle, regardless of whether substantive changes have been made.
+5. Competency assessments (practical demonstration of weighing and preparation procedures) shall be conducted annually for all Analysts performing reference standard preparation.
+6. Records of competency assessments shall be maintained for a minimum of 5 years or the duration of the associated study, whichever is longer.
+
+---
+
+## 4.0 REFERENCE STANDARD PROCUREMENT AND RECEIPT
+
+### 4.1 Procurement Requirements
+
+All primary reference standards shall be procured from officially recognized compendial or reference material bodies as the primary source. Acceptable suppliers for primary reference standards include the United States Pharmacopeia (USP), the European Pharmacopoeia (EP/EDQM), the WHO International Reference Preparations Program, and NIST (National Institute of Standards and Technology) for physicochemical standards. Where compendial or NIST standards are not available for a specific analyte (e.g., proprietary new chemical entities or novel bioanalytes), Certified Reference Materials from vendors such as LGC Standards, Cerilliant (Sigma-Aldrich), or Toronto Research Chemicals may be used, subject to additional qualification requirements as defined in Section 5.2.
+
+Procurement of any primary reference standard requires the generation of a formal purchase request that references the specific catalog or standard number, current version or lot, required quantity, and intended analytical application. The Reference Standard Custodian shall initiate the procurement request and obtain approval from the Laboratory Director prior to submission to the Purchasing Specialist. Emergency procurement (required within 72 hours to prevent a critical analytical hold) may be initiated by the Laboratory Director with simultaneous notification to QA.
+
+A Reference Standard Specification (RSS) document shall exist or be created at the time of first procurement for each unique standard. The RSS shall define the intended use, required potency range, storage conditions, certification requirements, requalification interval, and disposal procedure. All subsequent lots procured for the same standard shall be reviewed against the established RSS prior to use.
+
+### 4.2 Receipt Verification
+
+Upon receipt of a primary reference standard shipment, the Reference Standard Custodian shall perform a systematic receiving inspection within one business day of delivery. The receiving inspection shall be documented on Form GLP-F-011 (Reference Standard Receipt Record) and shall include all elements enumerated in the procedure below.
+
+Any primary reference standard received with a damaged, open, or improperly sealed container, or with a compromised cold chain (as evidenced by activated temperature monitors, melted ice packs, or a shipment duration exceeding 72 hours for ambient-sensitive materials), shall be quarantined immediately, and the supplier shall be notified within 24 hours. A deviation shall be raised in accordance with Section 9.0 and the material shall not be used until the QA Specialist and Laboratory Director have reviewed and approved a disposition decision.
+
+Each received standard shall be assigned a unique internal lot number using the format RS-[YYYY]-[XXX], where YYYY is the calendar year of receipt and XXX is a sequential three-digit number (e.g., RS-2023-047). This internal lot number shall be used on all documentation, labels, and LIMS entries related to that material and shall never be reused, even after the material has been disposed of.
+
+### 4.3 Documentation of Receipt
+
+All primary reference standard documentation received with the shipment shall be scanned, filed, and indexed in the laboratory document management system within 3 business days of receipt. Required documentation includes the supplier Certificate of Analysis (CoA), characterization data package (if applicable), safety data sheet (SDS), applicable NIST or compendial traceability documentation, and chain of custody records for controlled substances. Original paper documents shall be retained in the Reference Standard Master File for the duration of the associated studies plus a minimum of 10 years.
+
+| Receipt Inspection Parameter | Requirement | Action if Non-Conforming |
+|-----------------------------|-------------|--------------------------|
+| Container integrity | Seal intact, no visible damage, no moisture ingress | Quarantine; raise deviation; notify supplier |
+| Label verification | Lot number, expiry date, CAS number match CoA | Quarantine; contact supplier for clarification |
+| CoA completeness | Identity, purity/potency, moisture, storage conditions | Do not receive; request corrected CoA |
+| Quantity/weight | Within ±5% of ordered quantity | Document discrepancy; notify supplier |
+| Cold chain (if required) | Temperature monitor confirms ≤ 5°C throughout transit | Quarantine; raise deviation; stability assessment required |
+| Appearance (visual) | Consistent with described physical form (powder, solution) | Quarantine; raise deviation |
+
+**Numbered Steps — Reference Standard Receipt Procedure:**
+1. Upon delivery, the Reference Standard Custodian inspects

@@ -1,0 +1,211 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                                 ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:      SOP-DI-004                                                   ║
+║  Title:           Backup, Recovery, and Business Continuity for GxP Systems    ║
+║  Version:         2.1                                                           ║
+║  Effective Date:  2023-05-01                                                   ║
+║  Supersedes:      2.0                                                           ║
+║  Department:      DI (Data Integrity)                                           ║
+║  Approved By:     Steven Park, IT Compliance Manager                           ║
+║  Review Cycle:    2 years                                                       ║
+║  Pages:           11                                                            ║
+║  Classification:  GxP Critical                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+**APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| IT Compliance Manager | Steven Park | *(Signed in QMS)* | 2023-04-18 |
+| QA Director | Margaret L. Thornton | *(Signed in QMS)* | 2023-04-20 |
+| IT Infrastructure Lead | Daniel R. Okonkwo | *(Signed in QMS)* | 2023-04-17 |
+| Validation Manager | Christine A. Bellamy | *(Signed in QMS)* | 2023-04-19 |
+
+*All signatures captured electronically in the Document Management System (DMS) in compliance with 21 CFR Part 11.*
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Backup Classification and Scheduling Requirements | 5 |
+| 5.0 | Backup Execution and Verification Procedures | 6 |
+| 6.0 | Data Recovery Procedures | 7 |
+| 7.0 | Disaster Recovery Planning and Execution | 8 |
+| 8.0 | Business Continuity Management | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References, Related Documents, and Revision History | 11 |
+
+---
+
+---
+
+# 1.0 PURPOSE AND SCOPE
+
+## 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the minimum requirements, procedural controls, and accountability framework for the backup, recovery, and business continuity of all GxP-critical computerized systems operated within the organization's pharmaceutical manufacturing, quality control laboratory, and clinical data environments. The purpose is to ensure that GxP data — including but not limited to electronic batch records, laboratory information management system (LIMS) data, chromatographic raw data, and electronic regulatory submissions — remains available, retrievable, and unaltered throughout its required retention period, in full compliance with applicable regulatory requirements.
+
+This document is intended to protect data integrity by defining structured, repeatable processes for the creation of verified backup copies, the controlled restoration of data to validated states, and the maintenance of operational continuity in the event of system failure, catastrophic loss, or declared disaster. It aligns with the ALCOA+ principles (Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, and Available) as required by the regulatory frameworks governing pharmaceutical data.
+
+## 1.2 Scope
+
+This SOP applies to all GxP computerized systems classified as Category I (GxP Critical) or Category II (GxP Supporting) within the organization's System Inventory Register, including validated software applications, databases, laboratory instruments with embedded software generating raw data, manufacturing execution systems (MES), enterprise resource planning (ERP) modules used for GxP batch disposition, and the underlying server and storage infrastructure on which these systems operate. It applies to on-premises infrastructure, hosted private cloud environments, and third-party Software-as-a-Service (SaaS) platforms where the organization retains data ownership obligations.
+
+This SOP applies to all personnel involved in the administration, operation, quality assurance oversight, and use of GxP computerized systems, including full-time employees, contractors, and third-party managed service providers operating under a Quality Technical Agreement (QTA). It does not govern backup procedures for non-GxP administrative systems (e.g., general HR or finance platforms), which are addressed under the IT department's general Business Continuity Plan (BCP-IT-001).
+
+## 1.3 Regulatory Basis
+
+This SOP is issued in response to and in compliance with regulatory requirements including FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), FDA 21 CFR Part 211 Subpart J (Records and Reports), FDA 21 CFR Part 212, EMA/10576/03 (Guideline on Computerised Systems), the MHRA GxP Data Integrity Guidance (March 2018), ICH Q10 (Pharmaceutical Quality System), and the PIC/S PI 041-1 Good Practices for Data Management and Integrity in Regulated GMP/GDP Environments. These frameworks collectively mandate that organizations implement technical and procedural controls to ensure data is protected against accidental loss, unauthorized alteration, and irrecoverable destruction.
+
+## 1.4 Limitations
+
+This SOP does not replace system-specific Disaster Recovery Plans (DRPs), which must be developed and maintained for each individual GxP system at Tier 1 classification. System-specific DRPs must be consistent with and subordinate to the requirements established in this SOP. In cases of conflict, the more stringent requirement shall govern, subject to documented risk assessment and QA approval.
+
+---
+
+# 2.0 DEFINITIONS AND ABBREVIATIONS
+
+## 2.1 Definitions
+
+The following terms are defined as used within this document. Where a term has an established regulatory definition, that definition is referenced and adopted.
+
+**Backup:** A copy of data, software, or system configuration information, stored separately from the primary production environment, and created on a defined schedule for the purpose of enabling data recovery in the event of data loss, corruption, or system failure. Backups must be verified to confirm completeness and recoverability.
+
+**Recovery:** The process of restoring data, application functionality, or system configuration from a backup or alternative source to a known, validated state. Recovery includes both routine restoration of accidentally deleted files and full system restoration following catastrophic failure.
+
+**Disaster Recovery (DR):** The set of policies, tools, and procedures that enable the restoration of IT infrastructure and systems following a natural or human-induced disaster. DR is a subset of Business Continuity Planning.
+
+**Recovery Time Objective (RTO):** The maximum tolerable duration of time within which a business process and its supporting IT systems must be restored following a disruption, in order to avoid unacceptable consequences. RTO is expressed in hours.
+
+**Recovery Point Objective (RPO):** The maximum tolerable period of data loss measured in time. RPO defines how far back in time a system can be recovered, and therefore determines the minimum required frequency of backup execution. RPO is expressed in hours.
+
+**Restoration:** The act of returning data or a system from a backup copy to its operational environment. Restoration is distinct from recovery in that restoration is the technical process; recovery is the broader procedural context within which restoration occurs.
+
+**Verification:** The process of confirming, through documented testing, that a backup is complete, uncorrupted, and can be successfully restored to a functional and validated state. Verification is distinct from merely confirming that a backup job completed without error.
+
+**GxP Critical System (Category I):** A computerized system whose failure or data loss would directly impact product quality, patient safety, regulatory compliance, or GxP record-keeping obligations. Examples include LIMS, MES, Empower Chromatography Data System (CDS), and Electronic Batch Record (EBR) systems.
+
+**GxP Supporting System (Category II):** A computerized system that indirectly supports GxP activities but whose failure would not immediately compromise product quality or patient safety. Examples include document management systems and training management platforms.
+
+**Business Continuity Plan (BCP):** A documented plan that describes how an organization will continue operating during and after a disruptive event, encompassing people, processes, and technology.
+
+## 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| ALCOA+ | Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, Available |
+| BCP | Business Continuity Plan |
+| BDR | Backup and Disaster Recovery |
+| CDS | Chromatography Data System |
+| CFR | Code of Federal Regulations |
+| COTS | Commercial Off-the-Shelf |
+| DMS | Document Management System |
+| DR | Disaster Recovery |
+| DRP | Disaster Recovery Plan |
+| EBR | Electronic Batch Record |
+| EMA | European Medicines Agency |
+| ERP | Enterprise Resource Planning |
+| GxP | Good Practice (encompassing GMP, GLP, GCP, GDP) |
+| ICH | International Council for Harmonisation |
+| IT | Information Technology |
+| LIMS | Laboratory Information Management System |
+| MES | Manufacturing Execution System |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| QA | Quality Assurance |
+| QMS | Quality Management System |
+| QTA | Quality Technical Agreement |
+| RPO | Recovery Point Objective |
+| RTO | Recovery Time Objective |
+| SaaS | Software as a Service |
+| SOP | Standard Operating Procedure |
+| UPS | Uninterruptible Power Supply |
+
+---
+
+# 3.0 ROLES AND RESPONSIBILITIES
+
+## 3.1 IT Compliance Manager
+
+The IT Compliance Manager (currently Steven Park) holds overall accountability for this SOP, including its development, periodic review, and revision. The IT Compliance Manager is responsible for ensuring that all backup and recovery practices described herein are implemented and continuously maintained in a state of compliance with applicable regulatory requirements. This individual chairs the annual Business Continuity Review meeting, approves all deviations from this SOP, and serves as the primary point of contact during regulatory inspections involving backup and recovery controls. The IT Compliance Manager reviews and approves all Disaster Recovery Test Reports prior to QA sign-off.
+
+## 3.2 IT Infrastructure Lead / Systems Administrator
+
+The IT Infrastructure Lead (currently Daniel R. Okonkwo) and delegated Systems Administrators are responsible for the day-to-day operational execution of backup schedules, monitoring of backup job completion, execution of recovery and restoration activities, and maintenance of backup hardware and software infrastructure. Systems Administrators are responsible for generating the Monthly Backup Compliance Report, responding to backup failures within the timeframes defined in Section 5.3, initiating and documenting recovery activities using the GxP Recovery Log (Form DI-004-F01), and coordinating the technical aspects of Disaster Recovery tests.
+
+## 3.3 QA Specialist (Data Integrity)
+
+The QA Specialist assigned to Data Integrity oversight is responsible for reviewing and approving the Monthly Backup Compliance Report, witnessing and approving scheduled Disaster Recovery test exercises, reviewing all documented deviations from backup and recovery requirements, and ensuring that backup verification records are retained in the QMS in accordance with the retention schedule defined in Section 4.4. The QA Specialist participates in post-incident reviews following any unplanned recovery event and verifies that GxP data restored from backup retains its integrity and audit trail continuity.
+
+## 3.4 Validation Manager
+
+The Validation Manager (currently Christine A. Bellamy) is responsible for ensuring that restored GxP system environments are evaluated for validation impact prior to return to GxP use. Following any recovery that modifies system configuration, software version, or database schema, the Validation Manager determines whether a re-validation, re-qualification, or change control assessment is required before the system is returned to production GxP status. The Validation Manager approves the System Return to GxP Use Authorization (Form DI-004-F03).
+
+## 3.5 System Owners
+
+Each GxP system has a designated System Owner who is typically a business-side manager or department head (e.g., QC Laboratory Manager, Manufacturing Manager). System Owners are responsible for defining and formally documenting the RTO and RPO requirements for their respective systems, classifying their systems in the System Inventory Register, participating in annual Business Continuity Risk Assessments, and approving the return of their system to operational use following an unplanned recovery event.
+
+## 3.6 Summary RACI Matrix
+
+| Activity | IT Infrastructure Lead | IT Compliance Manager | QA Specialist | Validation Manager | System Owner |
+|---|---|---|---|---|---|
+| Define RTO/RPO requirements | C | A | C | I | R |
+| Execute daily backup jobs | R | I | I | I | I |
+| Monitor backup completion | R | I | I | I | I |
+| Verify backup integrity (monthly) | R | A | R | I | I |
+| Approve Monthly Backup Report | I | A | R | I | I |
+| Execute recovery/restoration | R | I | I | I | I |
+| Assess validation impact post-recovery | I | I | C | R | C |
+| Conduct DR test exercise | R | A | R | C | C |
+| Manage deviation/exception | C | A | R | C | I |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+# 4.0 BACKUP CLASSIFICATION AND SCHEDULING REQUIREMENTS
+
+## 4.1 GxP System Classification for Backup Purposes
+
+All GxP computerized systems subject to this SOP must be formally classified in the organization's GxP System Inventory Register (Document QA-REG-011) prior to the establishment of backup schedules. Classification determines the applicable RTO, RPO, backup frequency, backup type requirements, and off-site storage obligations. The classification framework recognizes two primary tiers under this SOP: Category I (GxP Critical) and Category II (GxP Supporting), as defined in Section 2.1. Classification must be reviewed and reconfirmed at minimum annually, or following any significant change to the system's function, data volume, or regulatory applicability.
+
+System classification is assigned by the System Owner in consultation with the IT Compliance Manager and QA Specialist, and must be formally documented in the GxP System Inventory Register with a rationale statement. Reclassification from Category II to Category I requires a formal change control under the organization's Change Management SOP (SOP-CM-001) and triggers a reassessment of the backup schedule and off-site storage arrangements.
+
+## 4.2 Backup Types
+
+Three backup types are employed under this SOP, each with a defined scope and role within the overall backup strategy. **Full backups** capture a complete copy of all data and configuration within the scope defined for a given system, including database contents, application binaries, configuration files, and audit trail databases. Full backups are the baseline for any restoration activity. **Incremental backups** capture only the data changed since the most recent backup event of any type (full or incremental), minimizing backup window duration and storage consumption. **Differential backups** capture all data changed since the most recent full backup, providing a balance between restoration speed and storage efficiency. The backup strategy for each system tier is defined in Table 4.1.
+
+## 4.3 Minimum Backup Schedule Requirements by Category
+
+The following minimum schedule requirements apply to all systems in each category. Site-specific or system-specific backup schedules documented in the individual system's DRP may be more stringent but must not be less stringent than the minimums defined here.
+
+**Table 4.1 — Minimum Backup Schedule and RTO/RPO Requirements by System Category**
+
+| Parameter | Category I (GxP Critical) | Category II (GxP Supporting) |
+|---|---|---|
+| Full Backup Frequency | Weekly (minimum), Sunday 00:00–04:00 local time | Monthly (minimum) |
+| Incremental Backup Frequency | Daily (every 24 hours), 00:00–02:00 local time | Weekly |
+| Differential Backup Frequency | Not mandatory if incremental daily is implemented | Not mandatory |
+| Maximum RPO | 24 hours | 72 hours |
+| Maximum RTO | 4 hours | 24 hours |
+| On-site Retention (minimum) | 30 days (rolling) | 30 days (rolling) |
+| Off-site Retention (minimum) | 12 months (rolling) | 6 months (rolling) |
+| Archive Retention (end-of-life) | Per data retention schedule (minimum 5 years post-last use) | Per data retention schedule |
+| Backup Encryption Required | Yes (AES-256 minimum) | Yes (AES-256 minimum) |
+| Verification Frequency | Monthly restoration test | Quarterly restoration test |
+| Off-site Storage Medium | Encrypted tape or replicated cloud vault | Encrypted tape or replicated

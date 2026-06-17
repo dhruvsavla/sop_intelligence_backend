@@ -1,0 +1,214 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-001
+  Title:            Instrument Calibration and Qualification
+  Version:          2.3
+  Effective Date:   2023-06-01
+  Supersedes:       2.2
+  Department:       GLP (Good Laboratory Practice)
+  Approved By:      Dr. Patricia Yuen, Laboratory Director
+  Review Cycle:     2 years (next review due: 2025-06-01)
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+  SIGNATURE BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  Prepared By:      __________________________   Date: ____________
+                    Senior Laboratory Analyst
+
+  Reviewed By:      __________________________   Date: ____________
+                    QA Specialist
+
+  Approved By:      __________________________   Date: ____________
+                    Dr. Patricia Yuen, Laboratory Director
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 2 |
+| 3.0 | Roles and Responsibilities | 3 |
+| 4.0 | Instrument Qualification Program | 4 |
+| 5.0 | Calibration Procedures | 5 |
+| 6.0 | Calibration Frequency and Scheduling | 7 |
+| 7.0 | Traceability and Reference Standards | 8 |
+| 8.0 | Calibration Records and Documentation | 9 |
+| 9.0 | Out-of-Tolerance and Out-of-Calibration Events | 10 |
+| 10.0 | Deviation and Exception Handling | 10 |
+| 11.0 | References and Related Documents | 11 |
+| 12.0 | Revision History | 12 |
+
+> **Note:** This document contains 12 numbered sections. Sections 11.0 and 12.0 serve as the mandatory closing sections (N-1 and N) per document structure requirements. Section numbering reflects the full scope of this SOP.
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural framework for the calibration and qualification of laboratory instruments used within the Good Laboratory Practice (GLP) environment at this facility. The purpose of this document is to ensure that all instruments generating data used in support of regulatory submissions, safety assessments, and quality decisions are performing within defined specifications, are traceable to national or international measurement standards, and are documented in accordance with applicable regulatory requirements.
+
+Calibration and qualification activities are essential to the integrity of laboratory data. An instrument that is not properly qualified or maintained in a calibrated state introduces systematic or random measurement error that can compromise study results, invalidate analytical methods, or lead to incorrect conclusions regarding product safety and quality. This SOP ensures that calibration and qualification are conducted in a consistent, reproducible, and scientifically sound manner.
+
+### 1.2 Scope
+
+This SOP applies to all GxP-critical laboratory instruments and equipment within the GLP department, including but not limited to analytical balances, pH meters, spectrophotometers, high-performance liquid chromatography (HPLC) systems, temperature-controlled storage units, pipettes, and environmental monitoring devices. This SOP governs instruments used for data generation in regulated studies conducted under OECD Principles of Good Laboratory Practice and FDA 21 CFR Part 58.
+
+This SOP does not apply to process equipment governed by manufacturing SOPs, nor does it apply to informally used reference tools (e.g., non-GxP thermometers used for general facility monitoring that do not impact study data). Instruments that are designated as "for information only" (FIO) and are clearly labeled as such are excluded from the calibration program described herein but must be periodically assessed to confirm that their FIO status remains appropriate.
+
+### 1.3 Regulatory Basis
+
+This SOP is written in conformance with the OECD Principles of Good Laboratory Practice (2018 revision), FDA 21 CFR Part 58 (Good Laboratory Practice for Nonclinical Laboratory Studies), FDA 21 CFR Part 211.68 (Automatic, Mechanical, and Electronic Equipment), ICH Q2(R2) (Validation of Analytical Procedures), and the WHO Technical Report Series No. 1019 (2019) guidance on good practices for pharmaceutical quality control laboratories. Where applicable, EMA/CHMP guideline on bioanalytical method validation (EMA/CHMP/EWP/192217/2009) is also considered for studies supporting clinical submissions.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Calibration:** The set of operations that establish, under specified conditions, the relationship between values of quantities indicated by a measuring instrument or measuring system, or values represented by a material measure or a reference material, and the corresponding values realized by standards. Calibration determines the accuracy of an instrument relative to a traceable reference standard and documents any corrections required.
+
+**Qualification:** The documented process of demonstrating that an instrument or system is suitable for its intended use. Qualification encompasses installation qualification (IQ), operational qualification (OQ), and performance qualification (PQ), and may also include design qualification (DQ) for newly procured or custom-built equipment.
+
+**Installation Qualification (IQ):** Documented verification that equipment has been delivered and installed in accordance with manufacturer specifications, applicable engineering drawings, and site requirements. IQ confirms that all components are present, utilities meet specifications, and documentation (manuals, certificates) has been received.
+
+**Operational Qualification (OQ):** Documented verification that equipment operates consistently within defined limits across its specified operating range. OQ is performed after IQ and confirms that the instrument functions as designed under controlled conditions without processing actual study samples.
+
+**Performance Qualification (PQ):** Documented verification that equipment consistently produces results within defined acceptance criteria when used as intended in the actual operational environment. PQ is performed under real-use conditions using appropriate reference standards, test samples, or representative matrices.
+
+**Tolerance:** The permissible deviation from a specified value or nominal value. For calibration purposes, tolerance defines the acceptable range within which an instrument reading must fall relative to the true (reference) value.
+
+**Traceability:** The property of a measurement result relating it to a stated reference (national or international measurement standard) through an unbroken chain of calibrations, each contributing to the measurement uncertainty.
+
+**Out-of-Tolerance (OOT):** A condition in which an instrument reading falls outside the predefined acceptance criteria (tolerance) during a calibration check or scheduled calibration event.
+
+**Out-of-Calibration:** A condition discovered when an instrument has been used for data generation while its calibration has lapsed (expired) or while it was in an out-of-tolerance state that had not been identified.
+
+**Reference Standard:** A standard of the highest metrological quality available at a given location, from which measurements made at that location are derived.
+
+**NIST:** National Institute of Standards and Technology (United States).
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| CFR | Code of Federal Regulations |
+| DQ | Design Qualification |
+| EMA | European Medicines Agency |
+| FDA | U.S. Food and Drug Administration |
+| FIO | For Information Only |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| HPLC | High-Performance Liquid Chromatography |
+| ICH | International Council for Harmonisation |
+| IQ | Installation Qualification |
+| LIMS | Laboratory Information Management System |
+| NIST | National Institute of Standards and Technology |
+| OECD | Organisation for Economic Co-operation and Development |
+| OOT | Out-of-Tolerance |
+| OQ | Operational Qualification |
+| PQ | Performance Qualification |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SOP | Standard Operating Procedure |
+| URS | User Requirement Specification |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Laboratory Director
+
+The Laboratory Director (or designee) is responsible for overall oversight of the instrument calibration and qualification program. This includes ensuring adequate resources (personnel, reference standards, service providers) are available to maintain compliance with this SOP. The Laboratory Director approves the Master Calibration Schedule on an annual basis, authorizes qualification protocols and reports, and makes final disposition decisions for instruments that are out-of-tolerance or have experienced qualification failures. The Laboratory Director is responsible for ensuring that all GLP studies are supported by instruments that are demonstrably fit for purpose.
+
+### 3.2 Quality Assurance (QA) Specialist
+
+The QA Specialist is responsible for review and approval of all calibration records, qualification protocols, and qualification reports generated under this SOP. The QA Specialist performs periodic audits of the calibration program to verify compliance with this SOP, applicable regulatory requirements, and the facility Quality Management System. The QA Specialist investigates out-of-tolerance events and determines whether a retrospective impact assessment is required for previously generated study data. The QA Specialist maintains the calibration status database (or oversees LIMS-based tracking) and ensures that no instrument with a lapsed or failed calibration is used in GLP study activities.
+
+### 3.3 Senior Laboratory Analyst
+
+The Senior Laboratory Analyst is responsible for executing calibration and qualification activities in accordance with this SOP and associated calibration protocols. This includes performing routine in-house calibration checks, coordinating with external calibration service providers, reviewing calibration certificates from external vendors for completeness and compliance, and entering calibration data into the LIMS or calibration logbooks. The Senior Laboratory Analyst also prepares IQ, OQ, and PQ protocols in collaboration with instrument vendors and the QA Specialist.
+
+### 3.4 Laboratory Analyst
+
+Laboratory Analysts are responsible for verifying the calibration status of instruments prior to use in any GLP study activity. Before operating any instrument, the analyst must confirm that the current calibration label is affixed, the calibration due date has not passed, and the instrument has not been flagged for maintenance or repair. Laboratory Analysts must report any anomalous instrument behavior, damaged calibration labels, or suspected out-of-tolerance conditions to the Senior Laboratory Analyst and QA immediately.
+
+### 3.5 Facilities and Equipment Engineer
+
+The Facilities and Equipment Engineer is responsible for coordinating preventive maintenance activities, managing relationships with external calibration service providers (including qualification and review of vendor accreditation), and ensuring that utility requirements supporting calibrated instruments (power quality, temperature control, vibration isolation) are maintained within specification. The Engineer reviews and approves installation documentation during IQ activities and ensures that any modifications to instrument hardware or firmware are documented and trigger a requalification assessment.
+
+### 3.6 Responsibility Summary Table
+
+| Activity | Lab Analyst | Sr. Lab Analyst | QA Specialist | Lab Director | Facilities Eng. |
+|---|---|---|---|---|---|
+| Verify calibration status before use | R | R | — | — | — |
+| Perform in-house calibration checks | — | R | — | — | — |
+| Coordinate external calibration | — | R | — | — | R |
+| Review calibration certificates | — | R | R | — | — |
+| Approve calibration records | — | — | R | — | — |
+| Perform OOT investigation | — | R | R | A | — |
+| Approve qualification protocols/reports | — | — | R | A | — |
+| Maintain Master Calibration Schedule | — | R | R | A | — |
+
+*R = Responsible; A = Approves*
+
+---
+
+## 4.0 INSTRUMENT QUALIFICATION PROGRAM
+
+### 4.1 Overview of the Qualification Lifecycle
+
+Instrument qualification is the structured, documented process by which the facility demonstrates that a laboratory instrument is suitable for its intended GLP use. The qualification lifecycle begins at the time of instrument procurement and continues through the operational life of the instrument. All GxP-critical instruments must complete IQ, OQ, and PQ before they are placed into service for study activities. A Design Qualification (DQ) is recommended for custom-built instruments, complex multi-module systems (e.g., HPLC with autosampler, column oven, and detector), and instruments with unique user requirements that may not be fully addressed by manufacturer specifications alone.
+
+The qualification lifecycle is governed by the "V-model" concept consistent with ISPE Good Practice Guides and the GAMP 5 framework, wherein each qualification phase directly verifies requirements established during the corresponding planning or design phase. Qualification activities must be documented in a formal protocol approved prior to execution and summarized in a qualification report approved after execution. Electronic systems used to support qualification testing are subject to the requirements of FDA 21 CFR Part 11 if used to create, modify, or archive electronic records.
+
+### 4.2 Design Qualification (DQ)
+
+DQ is performed prior to instrument procurement and establishes a documented basis for selecting an instrument that will meet the scientific and regulatory requirements of the intended GLP application. The DQ process begins with a User Requirement Specification (URS) that defines what the instrument must do, under what conditions, and to what level of performance. The URS is compared against vendor-provided Functional Specification (FS) documents to confirm that all user requirements can be met.
+
+DQ is mandatory for: (1) HPLC systems and related hyphenated techniques (LC-MS/MS, GC-MS); (2) automated liquid handling workstations; (3) any instrument with a computer control system that generates, processes, or stores GLP data electronically; and (4) custom-configured systems assembled from multiple vendor components. DQ documentation must be retained in the instrument qualification file and referenced in the IQ protocol.
+
+### 4.3 Installation Qualification (IQ)
+
+IQ is performed after the instrument has been delivered to the laboratory and installed at its designated location. The IQ protocol must be prepared and approved by the QA Specialist and Senior Laboratory Analyst before the instrument arrives. IQ verifies the following minimum elements:
+
+**Procedure — IQ Execution Steps:**
+
+1. Confirm that the instrument model number, serial number, and configuration match the purchase order and DQ/URS documentation.
+2. Verify that all components listed in the manufacturer's packing list have been received and are undamaged.
+3. Confirm installation location meets manufacturer environmental specifications (temperature, humidity, vibration, power supply voltage/frequency, and electrical grounding).
+4. Verify that all required utility connections (power, gas, water, compressed air) are present and meet specification.
+5. Confirm that instrument firmware/software version matches the version approved in the DQ/URS and that the software is installed on a validated or qualified computer system.
+6. Verify that manufacturer manuals (operator, service, and parts), warranties, and factory calibration certificates have been received and filed.
+7. Confirm that the instrument has been assigned a unique asset identification number and that this number is permanently affixed to the instrument (engraved tag or tamper-evident label).
+8. Document all IQ findings in the IQ protocol template; note any discrepancies as IQ deviations requiring resolution before OQ may proceed.
+9. Obtain signatures of the executing analyst and QA reviewer on all IQ documentation before archiving.
+
+### 4.4 Operational Qualification (OQ)
+
+OQ demonstrates that the instrument operates consistently within defined limits across its operating range. OQ testing must cover all operating parameters and functions that will be used during routine GLP study activities. OQ challenges are performed using certified reference standards, standard solutions, or test objects traceable to NIST or equivalent national measurement institutes. No study samples are processed during OQ.
+
+**Table 4.4-1: Example OQ Acceptance Criteria by Instrument Type**
+
+| Instrument | OQ Parameter | Test Method | Acceptance Criterion |
+|---|---|---|---|
+| Analytical Balance (Class I) | Linearity | ASTM E617 Class 1 weights (1 mg – 200 g) | ≤ 0.1% of reading or ± 0.1 mg, whichever is greater |
+| Analytical Balance (Class I) | Repeatability (n=10, 100 g) | Repeated weighing of 100 g standard | SD ≤ 0.10 mg |
+| pH Meter | Accuracy at 3 buffer points | pH 4.00, 7.00, 10.01 certified buffers (25°C) | ± 0.02 pH units of certified value |
+| pH Meter | Temperature compensation | ATC probe verification at 10°C, 25°C, 40°C | Reading within ± 0.05 pH units at each temperature |
+| UV-Vis Spectrophotometer | Wavelength accuracy | NIST SRM 2065 (holmium oxide solution) | ± 1.0 nm at 241.5, 287.5, 333.4, 360.8,

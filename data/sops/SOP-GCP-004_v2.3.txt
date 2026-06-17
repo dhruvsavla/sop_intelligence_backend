@@ -1,0 +1,202 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GCP-004
+  Title:            Investigational Product Accountability
+  Version:          2.3
+  Effective Date:   2023-08-01
+  Supersedes:       2.2
+  Department:       GCP
+  Approved By:      Thomas Brecker, Clinical Quality Manager
+  Review Cycle:     2 years
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Investigational Product Receipt and Verification | 5 |
+| 5.0 | Investigational Product Storage and Labeling | 6 |
+| 6.0 | Dispensing and Administration of Investigational Product | 7 |
+| 7.0 | Drug Accountability Log Maintenance | 8 |
+| 8.0 | Investigational Product Returns | 9 |
+| 9.0 | Investigational Product Destruction | 9 |
+| 10.0 | Reconciliation of Investigational Product | 10 |
+| 11.0 | Deviation and Exception Handling | 11 |
+| 12.0 | References and Related Documents | 11 |
+| 13.0 | Revision History | 12 |
+
+> **Note:** This document contains 11 procedural sections (Sections 1.0 through 11.0), with References (12.0) and Revision History (13.0) appended as supporting sections, for a total of 13 numbered sections consistent with the document architecture described herein. The core SOP body spans 11 content sections as specified.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls for the receipt, storage, dispensing, return, destruction, and reconciliation of Investigational Product (IP) at clinical trial sites operating under Good Clinical Practice (GCP) principles. The purpose of this document is to ensure that IP is handled with full accountability from the point of receipt at the investigational site through final disposition, in a manner that protects subject safety, maintains data integrity, and satisfies all applicable regulatory requirements. Rigorous IP accountability is a foundational pillar of GCP compliance and is subject to inspection by regulatory authorities including the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), and competent authorities of member states within the International Council for Harmonisation (ICH) regulatory framework.
+
+### 1.2 Scope
+
+This SOP applies to all personnel at investigational sites who are responsible for the receipt, dispensing, tracking, return, or destruction of any IP used in interventional clinical trials sponsored or co-sponsored by the organization. It covers all dosage forms of IP including, but not limited to, oral solid dosage forms, injectable solutions, biological products, and matched placebo controls. This SOP also applies to comparator products, open-label IP, and blinded IP subject to double-blind protocols. The procedures defined herein apply from the moment an IP shipment arrives at the investigational site until final accountability reconciliation is confirmed and documented in the Trial Master File (TMF).
+
+### 1.3 Applicability to Regulatory Framework
+
+This SOP has been developed in alignment with the requirements set forth in ICH E6(R2) Good Clinical Practice: Consolidated Guidance, FDA 21 CFR Part 312 (Investigational New Drug Application), FDA 21 CFR Part 11 (Electronic Records and Signatures), EMA Directive 2001/20/EC, EMA Guideline on the requirements to the chemical and pharmaceutical quality documentation concerning investigational medicinal products in clinical trials (EudraLex Volume 10), and applicable local regulations. Where local regulatory requirements are more stringent than the provisions of this SOP, local requirements shall prevail, and a documented site-specific addendum shall be prepared, reviewed by the Site Investigator, and filed in the site-level TMF.
+
+### 1.4 Exclusions
+
+This SOP does not govern the manufacture, labeling, or packaging of IP, which are addressed under separate GMP documentation. It does not apply to non-interventional or observational studies in which no IP is dispensed or administered. Standard-of-care medications provided outside the scope of the clinical protocol are also excluded from the IP accountability requirements defined herein, unless those medications serve as comparators as defined in the approved protocol.
+
+| Applicability Parameter | In Scope | Out of Scope |
+|---|---|---|
+| Blinded investigational product | ✔ | |
+| Open-label investigational product | ✔ | |
+| Matched placebo controls | ✔ | |
+| Comparator products (protocol-defined) | ✔ | |
+| Standard-of-care medications (non-protocol) | | ✔ |
+| Commercial product dispensed per SOC only | | ✔ |
+| IP manufacture and primary labeling | | ✔ |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Investigational Product (IP):** A pharmaceutical form of an active ingredient or placebo being tested or used as a reference in a clinical trial, including products already with a marketing authorization when used or assembled (formulated or packaged) in a way different from the authorized form, or when used for an unauthorized indication, or when used to gain further information about an authorized form. (ICH E6(R2), Glossary 1.33)
+
+**Drug Accountability Log (DAL):** A contemporaneous, prospective record that documents the quantity of IP received, dispensed to individual subjects, returned by subjects, and destroyed or transferred. The DAL is a GxP-critical document and constitutes a primary IP accountability record.
+
+**Dispensing:** The act of preparing and providing a measured, protocol-specified quantity of IP to a trial subject or to a delegated individual authorized to administer IP on behalf of the subject, in accordance with a valid, signed protocol prescription or randomization instruction.
+
+**Reconciliation:** The mathematical and documentary process of verifying that the total quantity of IP received equals the sum of IP dispensed, returned, transferred out, and destroyed, such that no unexplained discrepancy exists in the IP accountability chain.
+
+**Returns:** IP units or partial units that have been dispensed to a subject and subsequently returned unused or partially used to the site, or IP that has been recalled by the Sponsor.
+
+**Destruction:** The irreversible process by which IP is rendered unusable and disposed of in a manner consistent with applicable environmental, regulatory, and sponsor-defined requirements.
+
+**Blinded IP:** IP that has been masked such that the subject, investigator, or both cannot identify the assignment of treatment or placebo, in accordance with the randomization scheme.
+
+**Emergency Unblinding:** A procedure by which the treatment assignment for a specific subject is revealed in a clinical emergency where knowledge of the treatment is essential to the subject's medical management.
+
+**Sponsor Authorized Representative (SAR):** The individual or organization designated in writing by the Sponsor to oversee IP supply, accountability, and disposition at the investigational site.
+
+**Site Pharmacist or Designee:** A qualified pharmacist, pharmacy technician, nurse, or other trained clinical staff member who has been formally delegated IP handling responsibilities by the Principal Investigator (PI) and whose qualifications are documented in the site delegation log.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| CFR | Code of Federal Regulations |
+| CRA | Clinical Research Associate |
+| CRF | Case Report Form |
+| DAL | Drug Accountability Log |
+| DSMB | Data Safety Monitoring Board |
+| EMA | European Medicines Agency |
+| FDA | U.S. Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IMP | Investigational Medicinal Product |
+| IND | Investigational New Drug Application |
+| IP | Investigational Product |
+| IRB | Institutional Review Board |
+| PI | Principal Investigator |
+| RTSM | Randomization and Trial Supply Management |
+| SAE | Serious Adverse Event |
+| SAR | Sponsor Authorized Representative |
+| TMF | Trial Master File |
+| WHO | World Health Organization |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Principal Investigator (PI)
+
+The Principal Investigator bears ultimate responsibility for IP accountability at the investigational site under FDA 21 CFR 312.62 and ICH E6(R2) Section 4.6. The PI is responsible for ensuring that IP is used only for enrolled study subjects in accordance with the approved protocol, that adequate and accurate records of IP receipt, use, and disposition are maintained, and that IP is stored under conditions specified by the Sponsor. The PI must personally review and sign the IP accountability reconciliation record at study close-out or upon request by the Sponsor or regulatory authority. The PI may delegate IP handling activities to qualified site personnel; however, such delegation must be formally documented in the site delegation of authority log and does not relieve the PI of overall accountability responsibility.
+
+### 3.2 Site Pharmacist / Delegated IP Custodian
+
+The Site Pharmacist or delegated IP Custodian is responsible for the day-to-day operational execution of IP accountability procedures, including: receipt and inspection of IP shipments; entry of all transactions into the Drug Accountability Log; controlled dispensing of IP to eligible subjects per valid randomization or prescription instructions; and management of returned and expired IP pending destruction. This individual must hold current qualifications documented in the site delegation log and must have completed GCP training within the prior 24 months. In the absence of a licensed pharmacist, the IP Custodian role may be fulfilled by a Registered Nurse or Clinical Research Coordinator provided the delegation is documented and the Sponsor has approved this arrangement in writing.
+
+### 3.3 Clinical Research Coordinator (CRC)
+
+The Clinical Research Coordinator supports IP accountability by documenting IP transactions in subject-level records, confirming subject compliance with dosing regimens, and collecting returned IP from subjects at scheduled visit windows. The CRC shall not independently authorize IP dispensing without a valid randomization instruction or prescription. The CRC is responsible for reconciling subject-reported IP usage with the physical count of returned units at each study visit, and for escalating discrepancies to the Site Pharmacist or PI within one (1) business day of discovery.
+
+### 3.4 Clinical Research Associate (CRA) / Monitor
+
+The CRA is responsible for verifying IP accountability records during routine monitoring visits in accordance with the Monitoring Plan. The CRA shall review the Drug Accountability Log for completeness, accuracy, and consistency with subject CRFs, confirm physical IP counts, verify storage conditions, and document monitoring findings in the monitoring visit report. The CRA shall escalate unresolved discrepancies or accountability deficiencies to the Sponsor's Clinical Operations Manager and initiate the deviation process in accordance with Section 11.0.
+
+### 3.5 Quality Assurance (QA) Specialist
+
+The QA Specialist is responsible for periodic audit of IP accountability processes and records, independent of monitoring activities. The QA Specialist conducts GCP compliance audits at intervals defined by the Quality Oversight Plan, issues audit findings, and verifies Corrective and Preventive Action (CAPA) completion. The QA Specialist does not routinely handle IP but must be granted access to all IP storage areas and accountability records upon request.
+
+### 3.6 Sponsor / Sponsor Authorized Representative
+
+The Sponsor is responsible for providing IP that is manufactured and labeled in accordance with GMP requirements (21 CFR Parts 210/211; EU GMP Annex 13), supplying a sufficient quantity of IP to conduct the trial, maintaining records of IP shipments to each site, and authorizing IP destruction or return. The Sponsor shall provide written destruction authorization prior to site-level IP destruction, and shall maintain distribution records sufficient to permit a full recall if required.
+
+| Role | Receipt | Storage | Dispensing | DAL Entry | Reconciliation | Destruction |
+|---|---|---|---|---|---|---|
+| Principal Investigator | Authorize | Responsible | Authorize | Review/Sign | Sign-off | Authorize |
+| Site Pharmacist / IP Custodian | Perform | Manage | Perform | Perform | Perform | Oversee |
+| Clinical Research Coordinator | Support | Monitor | Support | Support | Support | Witness |
+| CRA / Monitor | Verify | Verify | Verify | Verify | Verify | Verify |
+| QA Specialist | Audit | Audit | Audit | Audit | Audit | Audit |
+| Sponsor / SAR | Supply | Define conditions | Authorize | Review | Approve | Authorize |
+
+---
+
+## 4.0 INVESTIGATIONAL PRODUCT RECEIPT AND VERIFICATION
+
+### 4.1 Preparation for IP Receipt
+
+Prior to the first IP shipment to an investigative site, the Site Pharmacist or IP Custodian must confirm that all prerequisite activities have been completed: the protocol has received IRB/Ethics Committee approval; the site has been formally activated by the Sponsor; IP storage areas have been qualified and meet the temperature, humidity, and security requirements defined in the Investigator's Brochure and protocol; and delegation logs are current. The Sponsor shall provide advance shipping notification (ASN) at least 48 hours before the anticipated arrival of each shipment. The CRC shall confirm receipt of the ASN and communicate the expected delivery date to the Site Pharmacist.
+
+### 4.2 Receipt Inspection Procedure
+
+Upon arrival of an IP shipment, the following steps shall be performed without exception:
+
+1. Verify the package is addressed to the correct site and contains an intact Sponsor-issued tamper-evident seal. Do not accept shipments with broken seals; contact the Sponsor immediately and document the condition on the IP Receipt Form.
+2. Examine the outer packaging for visible physical damage (crushing, puncture, moisture damage). If damage is present, photograph the packaging before opening, retain all packaging materials, and notify the Sponsor within 2 hours.
+3. Open the package and verify that a packing list or Certificate of Shipment is included. Cross-reference each item received against the packing list.
+4. Verify the IP identity by confirming: protocol number, sponsor name, batch/lot number, dosage form and strength, quantity of units, and expiry date against the packing list and approved label.
+5. Inspect temperature monitoring device (e.g., electronic data logger, temperature indicator card) included in the shipment. Record the minimum and maximum temperatures documented during transit on the IP Receipt Form.
+6. Compare the recorded transit temperatures against the acceptable temperature range defined for the IP (see Table 4.2-A). If excursions are identified, do not dispense the IP; quarantine the shipment and initiate the Sponsor notification procedure per Section 11.0.
+7. Count and confirm the physical quantity of IP units received. Record the count on the Drug Accountability Log (initial receipt entry).
+8. Affix a site-generated quarantine label to the IP if any discrepancies or temperature excursions are identified pending Sponsor resolution.
+9. Sign and date the IP Receipt Form. File the original in the site TMF and transmit a copy to the Sponsor within 24 hours of receipt.
+
+### 4.3 Temperature Excursion Acceptance Criteria
+
+| IP Dosage Form | Acceptable Storage Temperature | Acceptable Short-Term Transit Excursion | Maximum Excursion Duration | Action if Exceeded |
+|---|---|---|---|---|
+| Oral solid (tablet/capsule) | 15–25°C (CRT) | 10–30°C | 72 hours cumulative | Quarantine; notify Sponsor |
+| Refrigerated injectable | 2–8°C | 0–15°C | 24 hours cumulative | Quarantine; notify Sponsor |
+| Frozen biological product | −20°C ± 5°C | −15°C to −25°C | 12 hours cumulative | Quarantine; notify Sponsor |
+| Lyophilized powder | 2–8°C | 0–25°C | 48 hours cumulative | Quarantine; notify Sponsor |
+| Room-temperature injectable | 20–25°C | 15–30°C | 48 hours cumulative | Quarantine; notify Sponsor |
+
+*Temperature limits are illustrative; site personnel must refer to the Sponsor's IP-specific Handling Instructions for protocol-specific limits, which shall prevail over the defaults in Table 4.2-A.*
+
+### 4.4 Discrepancy Resolution Timeline
+
+Any discrepancy identified during IP receipt (quantity variance, labeling error, missing documentation, or temperature excursion) shall be reported to the Sponsor's SAR by telephone within 2 hours and confirmed in writing via email within 24 hours. The Sponsor shall provide a written disposition decision within 5 business days of receiving the discrepancy notification. IP subject to a

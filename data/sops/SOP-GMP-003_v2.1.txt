@@ -1,0 +1,182 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GMP-003
+  Title:            Environmental Monitoring Program
+  Version:          2.1
+  Effective Date:   2023-07-01
+  Supersedes:       2.0
+  Department:       GMP / Quality Assurance
+  Approved By:      Dr. Sarah Nguyen, Quality Systems Manager
+  Review Cycle:     2 years (next review due: 2025-07-01)
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title                                              | Page |
+|---------|----------------------------------------------------|------|
+| 1.0     | Purpose and Scope                                  | 2    |
+| 2.0     | Definitions and Abbreviations                      | 2    |
+| 3.0     | Roles and Responsibilities                         | 3    |
+| 4.0     | Environmental Monitoring Program Design            | 4    |
+| 5.0     | Viable Particle Monitoring Procedures              | 5    |
+| 6.0     | Non-Viable Particle Monitoring Procedures          | 6    |
+| 7.0     | Alert and Action Limits Management                 | 7    |
+| 8.0     | Data Review, Trending, and Reporting               | 8    |
+| 9.0     | Deviation and Exception Handling                   | 9    |
+| 10.0    | References and Related Documents                   | 10   |
+| 11.0    | Revision History                                   | 11   |
+
+> **Note:** This document contains 11 sections. Sections 10.0 and 11.0 serve as the penultimate and final sections respectively, consistent with the mandatory document structure requirement for References and Revision History to close the document.
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, procedures, and acceptance criteria for the Environmental Monitoring (EM) Program at this facility. The program is designed to provide a systematic, scientifically sound approach to monitoring the microbiological and particulate quality of cleanroom and controlled environments used in the manufacture, testing, and packaging of pharmaceutical drug products and drug substances. This document ensures that the environmental monitoring program is conducted in a manner that protects product quality, patient safety, and regulatory compliance.
+
+The EM Program described herein applies to both viable (microbial) and non-viable (particulate) monitoring activities and is structured to detect adverse environmental trends before they can impact product quality. The program is aligned with current Good Manufacturing Practice (cGMP) regulations and international guidance documents, including FDA 21 CFR Parts 210 and 211, ICH Q10 Pharmaceutical Quality System, EU GMP Annex 1 (2022 revision), and ISO 14644 series standards.
+
+### 1.2 Scope
+
+This SOP applies to all classified cleanroom environments, Grade A through Grade D (EU classification) or ISO Class 5 through ISO Class 8 (ISO 14644-1 classification), used during manufacturing, aseptic processing, component preparation, and finished product testing operations. It covers monitoring of air quality (viable and non-viable particles), surfaces (active and passive methods), and personnel gowning qualification in all GMP-controlled areas.
+
+This SOP applies to all personnel performing environmental monitoring activities, including QA Specialists, Microbiology Laboratory Analysts, Manufacturing Operators, and Validation Engineers. Contract laboratories performing environmental analysis on behalf of this facility are also subject to the procedural requirements of this SOP as specified in their Quality Agreements. This SOP does not govern cleaning validation activities, which are addressed separately under SOP-GMP-007.
+
+### 1.3 Regulatory Basis
+
+The EM Program is established and maintained in compliance with the following primary regulatory frameworks: FDA 21 CFR Part 211.42 (design and construction features), 211.44 (lighting), 211.46 (ventilation, air filtration, air heating and cooling), 211.56 (sanitation), and 211.68 (automatic, mechanical, and electronic equipment); EU GMP Annex 1 (2022), Manufacture of Sterile Medicinal Products; and ICH Q9 Quality Risk Management, which provides the risk-based rationale for monitoring frequency and location selection.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Action Limit:** A predetermined microbiological or particulate level that, when reached or exceeded, requires immediate investigation, corrective action, and potential product impact assessment. An action limit exceedance is classified as a deviation and must be addressed according to Section 9.0 of this SOP.
+
+**Alert Limit:** A predetermined microbiological or particulate level that, when reached or exceeded, serves as an early warning signal of potential drift from normal operating conditions. An alert limit exceedance requires documented investigation but does not automatically constitute a deviation. Alert limits are typically set at 50–70% of action limits unless statistical process data supports alternative values.
+
+**Cleanroom:** A room in which the concentration of airborne particles is controlled and classified, built and used in a manner to minimize the introduction, generation, and retention of particles inside the room, as defined by ISO 14644-1.
+
+**Colony Forming Unit (CFU):** A unit of measurement for viable microorganisms in which a single visible colony visible on an agar plate after incubation is counted as one CFU, representing one or more microorganisms capable of forming a colony.
+
+**Environmental Monitoring (EM):** The systematic collection and analysis of data from controlled manufacturing environments to assess microbial and particulate contamination levels relative to established limits.
+
+**Grade A / ISO Class 5:** The highest classification of cleanroom environment, required for high-risk operations such as filling zones, stopper bowls, open ampoules, and vials. Equivalent to ISO Class 5 under ISO 14644-1.
+
+**Non-Viable Particles:** Airborne particulate matter that does not support microbial life and is measured by electronic particle counters. Measured in particles per cubic meter (particles/m³) at defined size thresholds (≥0.5 µm and ≥5.0 µm).
+
+**Settle Plate (Passive Air Sampling):** A 90 mm diameter agar plate exposed to the environment for a defined period (typically 4 hours) to passively collect airborne microorganisms that settle by gravity.
+
+**Viable Particles:** Airborne particles that contain or support living microorganisms and are measured using active air sampling methods (e.g., RCS, slit-to-agar, or impaction samplers) or passive settle plate methods.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition                                      |
+|--------------|-------------------------------------------------|
+| CFU          | Colony Forming Unit                             |
+| cGMP         | Current Good Manufacturing Practice            |
+| CAPA         | Corrective and Preventive Action               |
+| EM           | Environmental Monitoring                        |
+| EU GMP       | European Union Good Manufacturing Practice      |
+| HEPA         | High Efficiency Particulate Air (filter)        |
+| ICH          | International Council for Harmonisation         |
+| ISO          | International Organization for Standardization  |
+| OOS          | Out of Specification                            |
+| QA           | Quality Assurance                               |
+| QC           | Quality Control                                 |
+| RCS          | Reuter Centrifugal Sampler                      |
+| SMA          | Settle Plate / Membrane Agar                    |
+| SOP          | Standard Operating Procedure                    |
+| TSA          | Tryptic Soy Agar                                |
+| SCDA         | Sabouraud Chloramphenicol Dextrose Agar         |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance (QA) Specialist
+
+The QA Specialist holds primary responsibility for the oversight and administration of the Environmental Monitoring Program. Responsibilities include the review and approval of all EM schedules, monitoring location maps, and sampling plans; review of all EM data generated by the Microbiology Laboratory; approval of all EM-related deviations and CAPA records; and final determination of product impact when EM exceedances are identified. The QA Specialist must also conduct or oversee the annual trend review of EM data and approve any proposed changes to alert or action limits. A minimum qualification of a bachelor's degree in a life sciences discipline and two years of GMP experience is required for this role.
+
+### 3.2 Microbiology Laboratory Analyst
+
+The Microbiology Laboratory Analyst is responsible for the technical execution of all viable and non-viable monitoring activities, including the preparation and qualification of sampling media, operation of active air samplers, incubation and reading of agar plates, identification of microorganisms to genus level when required by an alert or action limit exceedance, and entry of all results into the Laboratory Information Management System (LIMS) within 24 hours of result availability. The Analyst is also responsible for maintaining equipment calibration logs for all EM instrumentation under their custody.
+
+### 3.3 Manufacturing Operator (Cleanroom)
+
+Manufacturing Operators performing work in classified environments are responsible for cooperating with scheduled and unscheduled EM activities, reporting unusual environmental observations to QA and the Microbiology team in a timely manner, ensuring that gowning and hygiene procedures are followed in compliance with SOP-GMP-015 (Personnel Gowning), and participating in personnel monitoring (fingertip and gown contact plate sampling) as scheduled. Operators must not interfere with, relocate, or disturb environmental monitoring equipment or settled plates during monitoring periods.
+
+### 3.4 Validation Engineer
+
+The Validation Engineer is responsible for the initial design and periodic requalification of the EM sampling plan, including selection of monitoring locations using airflow visualization data and risk assessment outputs (per ICH Q9). The Validation Engineer coordinates HVAC requalification activities that may impact EM program parameters and provides technical guidance on monitoring equipment qualification and installation qualification (IQ/OQ/PQ) activities for new or replacement monitoring instruments.
+
+### 3.5 Quality Systems Manager
+
+The Quality Systems Manager (currently Dr. Sarah Nguyen) has ultimate responsibility for approving this SOP and all revisions thereto, for escalation of systemic EM failures to senior management and regulatory authorities where required, and for ensuring adequate resources are allocated to maintain the EM Program in a state of compliance. The Quality Systems Manager chairs the quarterly EM Program Review meeting.
+
+### 3.6 Responsibility Summary Table
+
+| Activity                              | Primary Responsibility     | Secondary/Support         |
+|---------------------------------------|----------------------------|---------------------------|
+| EM Schedule Development               | QA Specialist              | Validation Engineer       |
+| Active Air Sampling (Viable)          | Microbiology Lab Analyst   | Manufacturing Operator    |
+| Settle Plate Deployment/Collection    | Microbiology Lab Analyst   | Manufacturing Operator    |
+| Non-Viable Particle Counting          | Microbiology Lab Analyst   | Validation Engineer       |
+| Personnel Monitoring                  | Microbiology Lab Analyst   | QA Specialist             |
+| Data Entry and LIMS Recording         | Microbiology Lab Analyst   | QA Specialist             |
+| Data Review and Trending              | QA Specialist              | Quality Systems Manager   |
+| Deviation Initiation and CAPA         | QA Specialist              | Microbiology Lab Analyst  |
+| SOP Approval                          | Quality Systems Manager    | QA Specialist             |
+
+---
+
+## 4.0 ENVIRONMENTAL MONITORING PROGRAM DESIGN
+
+### 4.1 Risk-Based Location Selection
+
+The selection of environmental monitoring locations must be based on a documented risk assessment conducted in accordance with ICH Q9 (Quality Risk Management). The risk assessment shall consider proximity to open product containers or exposed product surfaces, airflow patterns within the cleanroom (visualized by smoke studies or computational fluid dynamics modeling), personnel traffic patterns, historical contamination data, and the classification grade of the area. Monitoring locations must be mapped on a site-specific floor plan and maintained as a controlled document (see EM Sampling Location Map, QA-MAP-003-01). Monitoring locations shall include worst-case positions as identified by risk assessment, and shall not be limited solely to convenient or easily accessible sampling points.
+
+At a minimum, EM sampling locations must include the critical zone directly adjacent to open product (Grade A / ISO 5), the surrounding background environment (Grade B / ISO 5–7 during aseptic operations), general manufacturing areas (Grade C / ISO 7), and support areas such as gowning rooms and airlocks (Grade D / ISO 8). The total number of monitoring locations and the sampling frequency shall be proportional to the risk level of the area, with Grade A locations monitored during every manufacturing campaign and lower-grade areas monitored on a frequency commensurate with their risk profile as defined in the EM schedule (Form EM-SCHED-001).
+
+### 4.2 Cleanroom Classification and Corresponding Monitoring Requirements
+
+The facility environmental classification system follows EU GMP Annex 1 (2022) Grade A–D classification for sterile product manufacturing, with corresponding ISO 14644-1 classification equivalents. All classified areas must be requalified at a minimum of every 12 months under ISO 14644-2 requirements, and following any significant HVAC modification, facility renovation, or repeated EM exceedance events.
+
+**Table 4.2-1: Cleanroom Classification and Baseline Monitoring Requirements**
+
+| EU Grade | ISO Class (At Rest) | ISO Class (In Operation) | Primary Operations                      | EM Monitoring Frequency       |
+|----------|--------------------|--------------------------|-----------------------------------------|-------------------------------|
+| Grade A  | ISO 5              | ISO 5                    | Aseptic filling, open vials/ampoules   | Continuous (NV); Per batch (V)|
+| Grade B  | ISO 5              | ISO 7                    | Background to Grade A aseptic areas    | Per batch                     |
+| Grade C  | ISO 7              | ISO 8                    | Preparation of solutions to be filtered| Weekly minimum                |
+| Grade D  | ISO 8              | Not classified           | Gowning rooms, airlocks, support areas | Monthly minimum               |
+
+*(V = viable; NV = non-viable)*
+
+### 4.3 Monitoring Methods Overview
+
+The EM Program employs four primary sampling methods: (1) active air sampling for viable airborne microorganisms using calibrated impaction samplers (RCS or equivalent, 1,000 L minimum sample volume in Grade A/B; 500 L minimum in Grade C/D); (2) passive air sampling using 90 mm settle plates containing TSA and SCDA media, exposed for up to 4 hours during active manufacturing operations; (3) surface contact sampling using RODAC (Replicate Organism Detection and Counting) contact plates of 25 cm² area for horizontal surfaces and swabs for irregular surfaces or areas too small for contact plates; and (4) personnel monitoring using contact plates applied to fingertips and gown surfaces. Non-viable particle monitoring is conducted using calibrated optical particle counters meeting the requirements of ISO 21501-4.
+
+### 4.4 Media Qualification Requirements
+
+All agar media used for environmental monitoring must be qualified prior to use in accordance with the current edition of the United States Pharmacopeia (USP) Chapter <1116> and European Pharmacopoeia (EP) Chapter 5.1.6. Media qualification testing must include growth promotion testing using a minimum of five challenge organisms: *Staphylococcus aureus* ATCC 6538, *Bacillus subtilis* ATCC 6633, *Candida albicans* ATCC 10231, *Aspergillus brasiliensis* ATCC 16404, and *Clostridium sporogenes* ATCC 11437 (for anaerobic conditions where applicable). Acceptance criteria for growth promotion: distinct colonies must be visible within 5 days of incubation, with colony count ratio (test/reference) of ≥0.5 and ≤2.0. Media must be used within its validated shelf-life period and stored at 2–8°C when not in use. Each lot of commercially prepared media must be accompanied by a Certificate of Analysis reviewed and approved by the Microbiology Laboratory Analyst prior to use.
+
+### 4.5 Incubation Conditions and Hold Times
+
+All viable environmental samples must be incubated under validated conditions. TSA plates are incubated at 30–35°C for a minimum of 3 days (72 hours), followed by 20–25°C for an additional 2 days (48 hours) to recover slow-growing organisms, for a total incubation period of 5 days minimum. SCDA plates for recovery of yeasts and molds are incubated at 20–25°C for a minimum of 5 days. Plates must be transported to the microbiology laboratory within 4 hours of collection and shall not be frozen at any point. Maximum allowable hold time between collection and initiation

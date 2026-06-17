@@ -1,0 +1,210 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GCP-003
+  Title:            Protocol Deviation Management
+  Version:          2.2
+  Effective Date:   2023-06-01
+  Supersedes:       2.1
+  Department:       GCP (Good Clinical Practice) / Clinical Operations
+  Approved By:      Dr. Linda Okonkwo, Head of Clinical Operations
+  Review Cycle:     2 years (next review due: 2025-06-01)
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**DOCUMENT APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Senior Clinical Operations Manager | *On file in DMS* | 2023-04-18 |
+| Reviewer (QA) | Director, Quality Assurance | *On file in DMS* | 2023-05-05 |
+| Reviewer (Regulatory) | Regulatory Affairs Lead | *On file in DMS* | 2023-05-10 |
+| Approver | Dr. Linda Okonkwo, Head of Clinical Operations | *On file in DMS* | 2023-05-22 |
+
+> *Original signed copy retained in the Document Management System (DMS) under controlled document record SOP-GCP-003 v2.2. Electronic signatures comply with 21 CFR Part 11.*
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 5 |
+| 4.0 | Protocol Deviation Identification and Classification | 6 |
+| 5.0 | Deviation Documentation and Recording | 7 |
+| 6.0 | Reporting Requirements and Timelines | 8 |
+| 7.0 | Corrective and Preventive Action (CAPA) for Protocol Deviations | 9 |
+| 8.0 | Waiver Management | 10 |
+| 9.0 | Deviation and Exception Handling | 11 |
+| 10.0 | References and Related Documents | 11 |
+| 11.0 | Revision History | 12 |
+
+> *Note: This SOP contains 11 numbered sections, as Sections 10.0 and 11.0 fulfill the mandatory terminal sections (References and Revision History) following the 10 core operational sections.*
+
+---
+
+---
+
+# BODY — SOP SECTIONS
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes a systematic, compliant, and consistent approach for identifying, classifying, documenting, reporting, and resolving protocol deviations that occur during the conduct of clinical trials sponsored or managed by the organization. The procedures defined herein ensure that all deviations from an approved clinical trial protocol are managed in a manner that protects participant safety, preserves the integrity and reliability of clinical data, and fulfills all applicable regulatory obligations.
+
+Protocol deviations represent departures from the approved protocol, informed consent form, Good Clinical Practice (GCP) guidelines, and applicable regulatory requirements. Whether deviations result from system failures, human error, participant non-compliance, or unforeseen circumstances, each must be identified promptly, assessed rigorously, and addressed with appropriate corrective action. This SOP provides the framework for that process, ensuring that sponsor obligations under ICH E6(R2) and applicable regional regulations are consistently met across all clinical sites and functions.
+
+The goals of this SOP are fourfold: (1) to establish clear definitions and classification criteria so that personnel can accurately distinguish among deviation types; (2) to define the procedural steps and timelines for documentation and reporting; (3) to assign accountability to specific organizational roles; and (4) to integrate deviation management with the broader CAPA and Quality Management System (QMS) to drive continuous improvement.
+
+### 1.2 Scope
+
+This SOP applies to all clinical trials conducted under the sponsorship or co-sponsorship of the organization, including Phase I through Phase IV interventional studies and any investigator-initiated trials for which the organization assumes sponsor responsibilities. It covers all personnel involved in clinical trial conduct, including but not limited to Clinical Research Associates (CRAs), Clinical Trial Managers (CTMs), Investigators, Site Coordinators, Regulatory Affairs personnel, and Quality Assurance (QA) professionals.
+
+This SOP applies globally to all clinical sites, whether domestic or international, and encompasses deviations identified at the site level, sponsor level, or contract research organization (CRO) level. It applies from the date of first participant enrollment through the database lock and final clinical study report, including the archival period. Activities conducted under an Investigational New Drug (IND) application (21 CFR Part 312), a Clinical Trial Authorization (CTA), or equivalent national authorization are subject to the requirements herein.
+
+### 1.3 Exclusions
+
+This SOP does not govern protocol amendments, which are formal changes to the study protocol requiring regulatory and/or ethics committee approval prior to implementation. It does not address adverse event (AE) or serious adverse event (SAE) reporting procedures, which are governed by SOP-GCP-007 (Adverse Event Reporting and Management). Deviations arising solely from laboratory processes at central laboratories are managed under the applicable laboratory SOP, although any deviation impacting participant safety or data integrity shall also be processed per this document.
+
+**Table 1.1 — SOP Applicability Matrix**
+
+| Trial Phase | Sponsor Role | CRO Involvement | Applicability |
+|---|---|---|---|
+| Phase I (FIH) | Full Sponsor | None | Full application |
+| Phase I (FIH) | Full Sponsor | Partial (monitoring) | Full application; CRO bound by contract |
+| Phase II | Full Sponsor | Full operational | Full application; oversight by sponsor QA |
+| Phase III (Pivotal) | Full Sponsor | Full operational | Full application; mandatory sponsor QA audit |
+| Phase IV (PMCS) | Full Sponsor | None or partial | Full application |
+| Investigator-Initiated | Sponsor-Investigator | N/A | Full application where sponsor obligations assumed |
+| Observational / Non-interventional | N/A | N/A | Not applicable |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Protocol Deviation:** Any departure from the approved clinical trial protocol, the Investigator's Brochure (IB), the informed consent procedure, GCP guidelines, or applicable regulatory requirements that was not prospectively authorized through a protocol amendment or waiver. A protocol deviation encompasses all departures regardless of whether they are considered to have a direct effect on participant safety or data integrity at the time of identification, pending further assessment.
+
+**Protocol Violation:** A subset of protocol deviations that are sufficiently serious to potentially compromise participant rights, safety, or well-being, or that may affect the scientific soundness or integrity of the study data. The term "violation" is used interchangeably with "major deviation" in some regulatory and organizational contexts; for the purposes of this SOP, "major deviation" is the preferred operational term, while "protocol violation" is reserved for communications to regulatory authorities and ethics committees where that terminology is specifically required.
+
+**Major Deviation:** A protocol deviation that (a) poses a risk to participant safety or well-being; (b) affects the integrity, reliability, accuracy, or completeness of the clinical data; (c) represents non-compliance with ICH E6(R2) or applicable regulatory requirements; or (d) involves failure to obtain informed consent prior to study-related procedures. Major deviations require expedited reporting and mandatory CAPA initiation.
+
+**Minor Deviation:** A protocol deviation that does not pose a risk to participant safety, does not materially affect the integrity of the trial data, and does not represent a significant non-compliance with GCP. Minor deviations may be managed through periodic aggregate reporting and standard corrective action but do not require individual expedited reporting unless a pattern of recurrence is identified.
+
+**Waiver (Protocol Exception):** A prospectively granted, written authorization from the sponsor and, where required, the IRB/IEC, allowing a specific, planned departure from the approved protocol for an individual participant. Waivers must be obtained prior to the deviation occurring and are not retrospective in nature. See Section 8.0 for detailed waiver management procedures.
+
+**IRB/IEC Notification:** The formal written communication submitted to the Institutional Review Board (IRB) or Independent Ethics Committee (IEC) informing them of a protocol deviation. Notification requirements vary by jurisdiction and deviation severity, as specified in Section 6.0.
+
+**Root Cause Analysis (RCA):** A structured investigation methodology used to identify the fundamental, underlying cause(s) of a deviation, as opposed to identifying only the immediate or symptomatic cause. Common RCA tools include the Ishikawa (fishbone) diagram, the 5-Whys technique, and failure mode and effects analysis (FMEA).
+
+**CAPA:** Corrective and Preventive Action. A quality system mechanism to identify the root cause of an identified problem (corrective action) and to prevent its recurrence (preventive action).
+
+**Repeated/Recurring Deviation:** Three (3) or more occurrences of the same or substantially similar deviation type at a single site within any rolling 12-month period, or five (5) or more occurrences across all sites within any rolling 12-month period. Recurring deviations trigger escalated review regardless of individual deviation severity classification.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| CAPA | Corrective and Preventive Action |
+| CFR | Code of Federal Regulations |
+| CRA | Clinical Research Associate |
+| CRF | Case Report Form |
+| CRO | Contract Research Organization |
+| CTM | Clinical Trial Manager |
+| DMS | Document Management System |
+| eCRF | Electronic Case Report Form |
+| EMA | European Medicines Agency |
+| FDA | U.S. Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| ICH | International Council for Harmonisation |
+| IEC | Independent Ethics Committee |
+| IMP | Investigational Medicinal Product |
+| IND | Investigational New Drug Application |
+| IRB | Institutional Review Board |
+| ISF | Investigator Site File |
+| PI | Principal Investigator |
+| QA | Quality Assurance |
+| QMS | Quality Management System |
+| RCA | Root Cause Analysis |
+| SAE | Serious Adverse Event |
+| TMF | Trial Master File |
+| SOP | Standard Operating Procedure |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Principal Investigator (PI)
+
+The Principal Investigator bears ultimate responsibility for the conduct of the clinical trial at their site in accordance with the approved protocol, ICH E6(R2), and applicable regulatory requirements. The PI is responsible for ensuring that all site personnel involved in study conduct are trained on this SOP and on protocol-specific deviation identification criteria. The PI must be notified of any major deviation within 24 hours of its identification by site staff. The PI is responsible for co-signing all deviation reports submitted from their site and for ensuring that CAPA commitments made on behalf of the site are implemented within the agreed timelines.
+
+In the event of a deviation involving unreported or unauthorized IMP administration, a missed safety assessment, or failure to obtain informed consent, the PI must personally review the event and provide a written assessment of any potential impact on the affected participant's safety. The PI may not delegate their signature authority for major deviation reports to sub-investigators without the written approval of the sponsor's Clinical Operations department.
+
+### 3.2 Clinical Research Associate (CRA) / Monitor
+
+The CRA is the primary sponsor representative responsible for the ongoing monitoring of clinical sites and serves as the first line of detection for protocol deviations during site visits and remote monitoring activities. The CRA is responsible for identifying deviations during source data verification (SDV), review of the Investigator Site File (ISF), and review of eCRF data against source documents.
+
+Upon identifying a deviation, the CRA must initiate the formal deviation documentation process within the timelines specified in Section 6.0, working collaboratively with site staff. The CRA is responsible for communicating deviations to the Clinical Trial Manager and, for major deviations, to the Sponsor QA team. The CRA must verify that CAPA measures have been implemented and are effective during subsequent monitoring visits and must document the outcome of CAPA verification in the monitoring visit report.
+
+### 3.3 Clinical Trial Manager (CTM)
+
+The CTM has overall operational accountability for the management of protocol deviations across all assigned clinical sites. The CTM reviews all deviation reports submitted by CRAs and site teams, assesses classification accuracy in consultation with the QA Specialist where needed, and ensures that all reports are filed in the Trial Master File (TMF) within required timelines. The CTM is responsible for escalating major deviations to the Head of Clinical Operations and, where required, initiating the IRB/IEC notification process in coordination with Regulatory Affairs.
+
+The CTM is also responsible for generating periodic aggregate deviation reports (minimum: quarterly) for review by Clinical Operations and QA leadership, identifying deviation trends across sites, and flagging recurring deviations for enhanced CAPA review.
+
+### 3.4 QA Specialist (Clinical)
+
+The QA Specialist provides independent oversight of the deviation management process and serves as the subject matter expert for classification, CAPA adequacy, and regulatory compliance. The QA Specialist reviews all major deviation reports and CAPA plans before final closure, conducts trend analyses on aggregate deviation data, and participates in escalated Root Cause Analyses. The QA Specialist has authority to re-classify deviations if the initial classification is inconsistent with the criteria defined in Section 4.0.
+
+### 3.5 Regulatory Affairs Lead
+
+The Regulatory Affairs Lead is responsible for assessing the reporting obligations of major deviations to regulatory authorities (e.g., FDA, EMA, Health Canada) and for preparing and submitting required notifications in accordance with the timelines outlined in Section 6.0. The Regulatory Affairs Lead maintains awareness of jurisdiction-specific reporting requirements and advises the CTM and Clinical Operations leadership on emerging regulatory guidance relevant to deviation reporting.
+
+### 3.6 Head of Clinical Operations
+
+The Head of Clinical Operations provides executive oversight of the deviation management program and approves escalation actions, including decisions to place a site on clinical hold pending completion of CAPA, decisions to remove participants from the study due to deviation-related safety concerns, and decisions to notify regulatory authorities. The Head of Clinical Operations reviews the quarterly aggregate deviation trend report and is responsible for approving program-level CAPA actions.
+
+**Table 3.1 — Roles, Responsibilities, and Escalation Matrix**
+
+| Role | Identify Deviation | Document Deviation | Classify Deviation | CAPA Initiation | IRB/IEC Notification | Regulatory Authority Notification | QA Final Approval |
+|---|---|---|---|---|---|---|---|
+| Site Staff / Sub-Investigator | Primary | Support | Input | Support | No | No | No |
+| Principal Investigator | Primary | Review/Sign | Review/Sign | Accountable | Input | No | No |
+| CRA / Monitor | Primary (monitoring) | Primary | Primary (initial) | Initiates | No | No | No |
+| Clinical Trial Manager | Review | Review/File | Review/Confirm | Oversight | Prepares | Input | No |
+| QA Specialist | Audit/Review | Review | Final authority | Reviews/Approves | Reviews | Reviews | Yes |
+| Regulatory Affairs Lead | No | No | No | No | Reviews | Accountable | No |
+| Head of Clinical Operations | No | No | Escalation decisions | Approves program | No | Approves | No |
+
+---
+
+## 4.0 PROTOCOL DEVIATION IDENTIFICATION AND CLASSIFICATION
+
+### 4.1 Sources of Deviation Identification
+
+Protocol deviations may be identified through multiple mechanisms during the lifecycle of a clinical trial. The primary sources of identification include: routine monitoring visits (on-site and remote); review of eCRF data entry and query management; receipt of SAE reports where protocol non-compliance is evident; internal audit activities conducted by QA; external regulatory inspections; spontaneous self-reporting by site staff; and review of IMP accountability records. All personnel associated with study conduct are obligated to report potential deviations immediately upon identification, regardless of the source. No deviation suspected to involve participant safety may be withheld from the CRA or CTM pending internal site investigation.
+
+Self-identification and voluntary disclosure by site personnel is viewed favorably by the organization and by regulatory authorities and should be actively encouraged. A culture of transparency and non-punitive reporting is a core expectation of this organization's clinical quality program, consistent with the principles outlined in ICH E6(R2) Section 5.0 (Sponsor Responsibilities).
+
+### 4.2 Classification Criteria — Major Deviations
+
+A deviation shall be classified as Major if it meets one or more of the following criteria. Classification as Major is a preliminary designation pending full review; the QA Specialist may modify the classification upon review of the complete deviation

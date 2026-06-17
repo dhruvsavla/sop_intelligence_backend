@@ -1,0 +1,209 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Field | Details |
+|---|---|
+| **SOP Number** | SOP-GCP-001 |
+| **Title** | Informed Consent Process and Documentation |
+| **Version** | 2.3 |
+| **Effective Date** | 2023-05-01 |
+| **Supersedes** | Version 2.2 (effective 2021-03-15) |
+| **Department** | GCP / Clinical Operations |
+| **Approved By** | Dr. Linda Okonkwo, Head of Clinical Operations |
+| **Review Cycle** | 2 years (next review due: 2025-05-01) |
+| **Pages** | 14 |
+| **Classification** | GxP Critical |
+
+```
+═══════════════════════════════════════════════════════════════════════
+```
+
+**Document Approval Signatures**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Head of Clinical Operations | Dr. Linda Okonkwo | *[Wet/Electronic Signature on File]* | 2023-04-18 |
+| Head of Quality Assurance | Dr. Marcus Ellison | *[Wet/Electronic Signature on File]* | 2023-04-20 |
+| Regulatory Affairs Lead | Ms. Priya Nair | *[Wet/Electronic Signature on File]* | 2023-04-21 |
+| IRB/IEC Liaison | Mr. Thomas Reinhardt | *[Wet/Electronic Signature on File]* | 2023-04-24 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Informed Consent Process — Pre-Consent Preparation | 5 |
+| 5.0 | Conducting the Informed Consent Discussion | 6 |
+| 6.0 | Assessing Subject Capacity and Voluntariness | 7 |
+| 7.0 | Informed Consent Form Execution and Documentation | 8 |
+| 8.0 | Special Populations and Non-Standard Consent Scenarios | 9 |
+| 9.0 | Re-Consent Requirements and Procedures | 10 |
+| 10.0 | Ongoing Communication and Subject Rights | 11 |
+| 11.0 | Deviation and Exception Handling | 12 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                              DOCUMENT BODY
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural steps for obtaining, documenting, and maintaining informed consent from clinical trial participants (subjects) at all investigational sites operating under the sponsorship or oversight of this organization. The informed consent process is a foundational ethical and regulatory requirement ensuring that prospective subjects voluntarily agree to participate in clinical research with full understanding of its nature, purpose, risks, benefits, and alternatives. This SOP has been developed in alignment with the ethical principles first articulated in the Declaration of Helsinki (2013 revision) and operationalized through the International Council for Harmonisation (ICH) Guideline for Good Clinical Practice E6(R2), as well as applicable national regulations including FDA 21 CFR Parts 50 and 56 (United States), EU Clinical Trials Regulation 536/2014 (European Union), and relevant national competent authority requirements.
+
+Compliance with this SOP is mandatory for all personnel involved in the design, conduct, or oversight of clinical trials at this organization. The requirements herein apply from the moment a prospective subject is first approached about trial participation through the entire duration of their involvement and any post-study follow-up period.
+
+### 1.2 Scope
+
+This SOP applies to all interventional clinical trials conducted under an Investigational New Drug (IND) application, Investigational Device Exemption (IDE), or equivalent regulatory authorization, including Phase I through Phase IV studies and investigator-initiated trials (IITs) that carry institutional sponsorship. It applies to all investigational sites, whether internal research units or external sites participating under a Clinical Trial Agreement (CTA). The SOP covers adult subjects, legally authorized representatives (LARs), pediatric subjects providing assent, and subjects with diminished or fluctuating decision-making capacity.
+
+This SOP does not apply to non-interventional observational studies, secondary use of anonymized data, or post-market surveillance activities conducted without subject contact. Specific procedures for Phase I First-In-Human (FIH) studies with additional vulnerability considerations are supplemented by SOP-GCP-007.
+
+### 1.3 Regulatory Basis
+
+The regulatory framework underpinning this SOP includes, but is not limited to: ICH E6(R2) Section 4.8 (Informed Consent of Trial Subjects); FDA 21 CFR Part 50 (Protection of Human Subjects); FDA 21 CFR Part 56 (Institutional Review Boards); FDA 21 CFR Part 312.62 (Investigator Recordkeeping and Record Retention); EU Regulation 536/2014 Articles 28–35; and EMA Guideline on Good Clinical Practice (CPMP/ICH/135/95). Additional guidance from the Office for Human Research Protections (OHRP) 45 CFR Part 46 is incorporated where applicable for federally funded research.
+
+**Table 1.1 — Primary Regulatory References for Informed Consent**
+
+| Regulation / Guideline | Jurisdiction | Key Informed Consent Requirement |
+|---|---|---|
+| ICH E6(R2), Section 4.8 | International | Written informed consent prior to any trial procedure |
+| FDA 21 CFR Part 50, Subpart B | USA | Basic and additional required elements of consent |
+| FDA 21 CFR Part 56 | USA | IRB review and approval of ICF prior to use |
+| EU Regulation 536/2014, Arts. 28–35 | EU/EEA | Free, informed, and explicit consent; right to withdraw |
+| 45 CFR Part 46 (Common Rule) | USA (Federal) | Broad consent provisions; waiver conditions |
+| Declaration of Helsinki (2013) | International | Ethical basis; right to withdraw without prejudice |
+| EMA/CPMP/ICH/135/95 | EU/EEA | GCP operational requirements for consent documentation |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Informed Consent (IC):** A process by which a subject voluntarily confirms their willingness to participate in a particular trial after having been informed of all aspects of the trial that are relevant to the subject's decision to participate. Informed consent is documented by means of a written, signed, and dated Informed Consent Form (ICF). The process encompasses not only the signing of the form but all prior discussions, question-and-answer sessions, and review time afforded to the subject.
+
+**Informed Consent Form (ICF):** The written document through which the informed consent process is formalized and documented. The ICF must contain all elements required by applicable regulations and must be written in language understandable to the subject, typically at no higher than a 6th-to-8th grade reading level as assessed by validated readability indices (e.g., Flesch-Kincaid Grade Level ≤ 8.0). The ICF must be reviewed and approved by the responsible IRB/IEC prior to use.
+
+**Subject:** An individual who participates or who is being considered for participation in a clinical trial, either as a recipient of an investigational product or as a control. Throughout this SOP, "subject" and "participant" are used interchangeably.
+
+**Legally Authorized Representative (LAR):** An individual or judicial or other body authorized under applicable law to consent on behalf of a prospective subject to the subject's participation in the procedure(s) involved in the research. LAR authority must be verified and documented prior to obtaining consent.
+
+**Capacity:** A subject's ability to understand the information presented, appreciate its relevance to their situation, reason through the decision, and communicate a consistent and voluntary choice. Capacity is decision-specific and may fluctuate; it is distinct from legal competence, which is a judicial determination.
+
+**Voluntarily:** Without coercion, undue influence, or inducement beyond what is reasonable and appropriate. A subject's decision to participate must be free from explicit or implied pressure from investigators, treating physicians, family members, or the institution.
+
+**Re-consent:** The process by which previously enrolled subjects are required to provide a fresh, documented consent following a material change to the trial protocol, investigational product, known risks or benefits, or the ICF itself. Re-consent must be completed before the subject undergoes any procedures affected by the change.
+
+**Assent:** An affirmative agreement, distinct from mere failure to object, provided by a minor or a subject with diminished capacity who is not able to provide legally effective informed consent but whose assent is nonetheless sought as an ethical obligation.
+
+**Impartial Witness:** A person independent of the trial who is not unfairly influenced by people involved in the trial and who attends the entire informed consent discussion when a subject or their LAR cannot read. The witness reads the ICF and any other written information supplied to the subject, and witnesses the subject's or LAR's signature.
+
+**IRB/IEC:** Institutional Review Board (US) or Independent Ethics Committee (international) — an independent body constituted to protect the rights, safety, and well-being of human subjects involved in clinical trials.
+
+### 2.2 Abbreviations
+
+**Table 2.1 — Abbreviations Used in This SOP**
+
+| Abbreviation | Full Term |
+|---|---|
+| CFR | Code of Federal Regulations |
+| CRA | Clinical Research Associate |
+| CRC | Clinical Research Coordinator |
+| CTA | Clinical Trial Agreement |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| FIH | First-In-Human |
+| GCP | Good Clinical Practice |
+| ICF | Informed Consent Form |
+| ICH | International Council for Harmonisation |
+| IDE | Investigational Device Exemption |
+| IEC | Independent Ethics Committee |
+| IIT | Investigator-Initiated Trial |
+| IND | Investigational New Drug |
+| IRB | Institutional Review Board |
+| LAR | Legally Authorized Representative |
+| PI | Principal Investigator |
+| QA | Quality Assurance |
+| SAE | Serious Adverse Event |
+| SOP | Standard Operating Procedure |
+| TMF | Trial Master File |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Principal Investigator (PI)
+
+The Principal Investigator holds ultimate responsibility for ensuring that the informed consent process at the investigational site is conducted in full compliance with this SOP, applicable regulations, and the IRB/IEC-approved protocol. The PI must personally oversee all aspects of the consent process and may delegate specific consent-related tasks only to qualified and trained sub-investigators or clinical research coordinators whose delegation is documented on a current, signed Delegation of Authority Log (SOP-GCP-002, Appendix A). The PI remains accountable regardless of delegation.
+
+The PI must ensure that only the most current, IRB/IEC-approved version of the ICF is in use at all times. The PI must promptly notify the IRB/IEC and sponsor of any new information that may be relevant to subjects' willingness to continue participation, and must initiate re-consent procedures as directed by this SOP (Section 9.0).
+
+### 3.2 Sub-Investigators and Qualified Investigators
+
+Sub-investigators who have been formally delegated consent-obtaining authority by the PI may conduct the informed consent discussion and obtain the subject's signature. All sub-investigators must hold current Good Clinical Practice training certification (ICH E6(R2) or equivalent, valid within the preceding 3 years) and must have completed site-specific consent training documented in their site training file. Sub-investigators must immediately escalate to the PI any situation where a subject's capacity to consent is uncertain, where coercion is suspected, or where the subject raises questions beyond the sub-investigator's knowledge base.
+
+### 3.3 Clinical Research Coordinator (CRC)
+
+The CRC may support the consent process under the PI's supervision and may be delegated authority to conduct the full consent discussion and witness signature if appropriately trained and documented on the Delegation of Authority Log. The CRC is primarily responsible for: scheduling the consent discussion with adequate allocated time (minimum 30 minutes for initial consent); preparing the correct version of the ICF and supporting materials; ensuring the subject's copy is provided immediately upon signing; and filing all executed consent documents in the subject's regulatory binder and source records within 24 hours of execution.
+
+### 3.4 Quality Assurance (QA) Specialist
+
+The QA Specialist is responsible for auditing the informed consent process and documentation as part of scheduled and for-cause GCP audits. The QA Specialist will review a minimum of 20% of executed ICFs per study per year (or 100% in studies with fewer than 10 subjects) against this SOP's requirements and the IRB/IEC-approved ICF template. Identified deviations will be documented on a Deviation Report (SOP-GCP-015) and communicated to the PI within 3 business days of discovery. The QA Specialist has authority to place a subject on-hold from trial procedures pending resolution of consent documentation deficiencies that may affect the validity of consent.
+
+### 3.5 IRB/IEC Liaison
+
+The IRB/IEC Liaison is responsible for managing all submissions to and communications from the responsible IRB/IEC regarding the ICF and consent process. This includes submission of all versions of the ICF for initial and continuing review, submission of protocol amendments that affect the ICF, and maintenance of a current IRB/IEC approval log. The Liaison must maintain ICF version control records and ensure superseded ICF versions are retrieved from site use within 5 business days of receipt of the new approved version.
+
+### 3.6 Sponsor Medical Monitor
+
+The Sponsor Medical Monitor reviews incoming safety data and determines whether new safety information necessitates an ICF amendment and re-consent. The Medical Monitor communicates this determination to the PI and IRB/IEC Liaison in writing within 5 calendar days of the determination and specifies the timeline for re-consent of enrolled subjects.
+
+**Table 3.1 — Summary of Roles and Responsibilities Matrix**
+
+| Activity | PI | Sub-Inv. | CRC | QA | IRB Liaison |
+|---|---|---|---|---|---|
+| ICF version control and retrieval | Primary | Support | Support | Audit | Primary |
+| Conducting consent discussion | Primary | Delegated | Delegated | — | — |
+| Documenting capacity assessment | Primary | Delegated | — | Audit | — |
+| Executing and filing ICF | Primary | Delegated | Support | Audit | — |
+| Submitting ICF amendments to IRB/IEC | Inform | — | — | — | Primary |
+| Auditing consent documentation | — | — | — | Primary | — |
+| Determining re-consent triggers | Sponsor/PI | — | — | Audit | Notify |
+
+---
+
+## 4.0 INFORMED CONSENT PROCESS — PRE-CONSENT PREPARATION
+
+### 4.1 ICF Version Verification and Site Readiness
+
+Before any prospective subject is approached for consent, the investigational site must confirm that the current IRB/IEC-approved ICF is available, correctly versioned, and stocked in sufficient quantity. The IRB/IEC approval letter must be on file and must show an approval date that is current (i.e., within the 12-month continuing review cycle or as specified by the approving IRB/IEC). Under no circumstances may an ICF be used that has not received explicit written approval from the responsible IRB/IEC for the study site in question.
+
+The CRC must check the TMF binder at the start of each calendar month to confirm that the correct ICF version is in use. This check must be documented on the Site Readiness Checklist (Form GCP-F-001), signed, and dated. If a discrepancy is discovered — including use of a superseded ICF — this must be immediately documented as a deviation per Section 11.0 of this SOP.
+
+### 4.2 Preparation of Consent Materials
+
+The person conducting the consent discussion (PI, sub-investigator, or delegated CRC) must prepare all materials in advance of the scheduled consent meeting. Materials include: the current IRB/IEC

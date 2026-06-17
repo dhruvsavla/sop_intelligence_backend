@@ -1,0 +1,241 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:        SOP-GCP-007
+  Title:             Randomization and Blinding Procedures
+  Version:           2.2
+  Effective Date:    2023-07-01
+  Supersedes:        2.1
+  Department:        GCP (Good Clinical Practice)
+  Approved By:       Dr. Linda Okonkwo, Head of Clinical Operations
+  Review Cycle:      2 years
+  Pages:             11
+  Classification:    GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+DOCUMENT APPROVAL SIGNATURES
+─────────────────────────────────────────────────────────────────────────────
+Role                          Name                    Signature       Date
+─────────────────────────────────────────────────────────────────────────────
+Head of Clinical Operations   Dr. Linda Okonkwo       [Signed]        2023-06-15
+VP Clinical Development       Dr. Samuel Reyes        [Signed]        2023-06-16
+Head of Biostatistics         Dr. Amara Patel         [Signed]        2023-06-17
+Quality Assurance Director    Ms. Rachel Huang        [Signed]        2023-06-19
+Regulatory Affairs Lead       Mr. Thomas Brennan      [Signed]        2023-06-20
+─────────────────────────────────────────────────────────────────────────────
+```
+
+---
+
+## TABLE OF CONTENTS
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+
+  Section                                                              Page
+  ─────────────────────────────────────────────────────────────────────────
+  1.0   PURPOSE AND SCOPE                                                3
+        1.1   Purpose                                                    3
+        1.2   Scope                                                      3
+        1.3   Applicability                                              3
+
+  2.0   DEFINITIONS AND ABBREVIATIONS                                    3
+        2.1   Definitions                                                3
+        2.2   Abbreviations                                              4
+
+  3.0   ROLES AND RESPONSIBILITIES                                       4
+        3.1   Head of Clinical Operations                                4
+        3.2   Biostatistician / Statistical Programming Lead             4
+        3.3   Clinical Trial Manager (CTM)                               4
+        3.4   Investigator / Sub-Investigator                            5
+        3.5   IWRS Administrator                                         5
+        3.6   Quality Assurance (QA) Specialist                         5
+
+  4.0   RANDOMIZATION PROCEDURES                                         5
+        4.1   Randomization Schedule Generation                          5
+        4.2   Stratification Factors and Block Design                    5
+        4.3   IWRS Configuration and Validation                          6
+        4.4   Subject Randomization at Site Level                        6
+        4.5   Allocation Verification and Documentation                  6
+
+  5.0   BLINDING PROCEDURES                                              6
+        5.1   Blinding Levels and Scope                                  6
+        5.2   Blinded Investigational Medicinal Product Handling         7
+        5.3   Blinding Integrity Maintenance                             7
+        5.4   Periodic Blinding Audit                                    7
+
+  6.0   INTERACTIVE WEB RESPONSE SYSTEM (IWRS) OPERATIONS               7
+        6.1   System Access and User Management                          7
+        6.2   IWRS-Driven Randomization Workflow                         7
+        6.3   IWRS Data Backup, Audit Trail, and Reconciliation          8
+        6.4   IWRS Contingency Procedures                                8
+
+  7.0   EMERGENCY UNBLINDING PROCEDURES                                  8
+        7.1   Criteria for Emergency Unblinding                          8
+        7.2   Emergency Unblinding Workflow                              8
+        7.3   Post-Emergency Unblinding Actions                          9
+        7.4   Notification and Escalation Requirements                   9
+
+  8.0   PLANNED (PROTOCOL-SPECIFIED) UNBLINDING PROCEDURES              9
+        8.1   End-of-Study Unblinding                                    9
+        8.2   Interim Analysis Unblinding                                9
+        8.3   Independent Data Monitoring Committee (IDMC) Access       10
+        8.4   Database Lock and Unblinding Authorization                10
+
+  9.0   DEVIATION AND EXCEPTION HANDLING                                10
+        9.1   Classification of Randomization and Blinding Deviations   10
+        9.2   Deviation Investigation and Root Cause Analysis            10
+        9.3   Corrective and Preventive Action (CAPA)                   11
+        9.4   Regulatory Reporting Obligations                           11
+
+  10.0  REFERENCES AND RELATED DOCUMENTS                                11
+        10.1  Regulatory References                                      11
+        10.2  Internal Related Documents                                 11
+        10.3  Revision History                                           11
+
+  ─────────────────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the processes, controls, and responsibilities governing randomization and blinding procedures in interventional clinical trials conducted under Good Clinical Practice (GCP) standards. The purpose is to ensure that subject allocation to treatment arms is performed in a scientifically valid, reproducible, and auditable manner that eliminates selection bias and maintains the integrity of the blind throughout the conduct of the study. This SOP also establishes the framework for emergency and planned unblinding, ensuring that patient safety considerations are never subordinated to data integrity requirements.
+
+Randomization is fundamental to the validity of comparative clinical trial results. When implemented correctly, randomization balances both known and unknown prognostic factors across treatment arms, providing the statistical foundation upon which regulatory submissions are built. Blinding (masking) further eliminates ascertainment bias and ensures that assessments of efficacy and safety endpoints are made without knowledge of treatment assignment. Together, these procedures constitute a cornerstone of the evidentiary standard required by the FDA, EMA, and other health authorities for marketing authorization applications.
+
+This SOP supersedes Version 2.1 (effective 2022-01-01) and incorporates updates to reflect the validation requirements for the current Interactive Web Response System (IWRS) platform, revised emergency unblinding notification timelines aligned with ICH E6(R2) Addendum requirements, and expanded guidance on stratified randomization in multi-regional studies.
+
+### 1.2 Scope
+
+This SOP applies to all Phase I through Phase IV interventional clinical trials sponsored or co-sponsored by the organization where randomization and/or blinding are components of the study design, as defined in the approved protocol. It encompasses all global study sites, Clinical Research Organizations (CROs) acting under delegation, and internal functional teams including Biostatistics, Clinical Operations, Data Management, Pharmacovigilance, and Quality Assurance.
+
+The scope includes, but is not limited to: generation and custodianship of the randomization schedule; IWRS configuration, validation, and operation; handling of blinded Investigational Medicinal Product (IMP); emergency and planned unblinding; deviation management; and audit readiness activities related to randomization and blinding records.
+
+### 1.3 Applicability
+
+| Study Phase | Design Type               | Applicability of This SOP |
+|-------------|---------------------------|---------------------------|
+| Phase I     | Single-arm dose escalation | Partial (randomization only if cross-over) |
+| Phase I/II  | Randomized cross-over     | Full                      |
+| Phase II    | Randomized, double-blind  | Full                      |
+| Phase III   | Randomized, double-blind, multi-regional | Full          |
+| Phase IV    | Randomized, open-label    | Partial (randomization only) |
+| Phase IV    | Non-interventional (NIS)  | Not applicable            |
+
+For trials where a CRO is delegated primary responsibility for randomization system management, the CRO's corresponding SOP must be reviewed and approved by the Sponsor's QA Specialist prior to study initiation and must be at minimum equivalent in rigor to this document.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Allocation:** The assignment of a randomized subject to a specific treatment arm as determined by the randomization schedule. Allocation is executed at the moment of randomization and is irrevocable except under the controlled conditions described in Section 7.0 and Section 8.0.
+
+**Blinding (Masking):** A procedure whereby one or more parties involved in a clinical trial are kept unaware of the treatment assignments. A single-blind trial conceals treatment assignment from the subject; a double-blind trial conceals assignment from both the subject and the investigator/site staff. A triple-blind trial additionally conceals assignment from the individuals performing statistical analyses or IDMC secretariat functions.
+
+**Block Randomization:** A method of randomization in which subjects are allocated in fixed-size groups (blocks) such that within each block, the number of subjects assigned to each treatment is predetermined. Block sizes may be fixed or randomly permuted to resist prediction of future assignments.
+
+**Emergency Unblinding:** The urgent disclosure of an individual subject's treatment assignment outside of the protocol-specified unblinding schedule, initiated solely to protect the subject's health and safety. Emergency unblinding does not constitute a protocol deviation if performed per the procedures in Section 7.0.
+
+**IWRS (Interactive Web Response System):** A validated, electronic system accessed via web browser that manages subject randomization, treatment kit allocation, IMP supply management, and maintains a secure, time-stamped audit trail of all transactions. Synonymous with IXRS (Interactive X Response System) and IRT (Interactive Response Technology).
+
+**Randomization:** A method of assigning participants to treatment groups in a clinical trial using a chance procedure that eliminates systematic bias in treatment assignment. The process must be pre-specified in the protocol or a separate Randomization Plan.
+
+**Randomization Schedule:** A pre-generated, statistically validated list that defines the specific treatment assignment (or kit number) for each randomization number or slot. The randomization schedule is generated by the Biostatistician prior to site activation and is held under controlled access conditions.
+
+**Stratification:** The division of study participants into subgroups (strata) defined by one or more baseline characteristics (e.g., disease severity, geographic region, age group) prior to randomization, such that randomization is performed independently within each stratum to ensure balance across treatment arms.
+
+**Unblinding:** The disclosure of the treatment assignment for one or more subjects to one or more parties who were previously blinded. Unblinding may be emergency (unscheduled) or planned (per protocol or statistical analysis plan).
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| AE | Adverse Event |
+| CAPA | Corrective and Preventive Action |
+| CFR | Code of Federal Regulations |
+| CRF | Case Report Form |
+| CRO | Contract Research Organization |
+| CSR | Clinical Study Report |
+| CTM | Clinical Trial Manager |
+| DSMB/IDMC | Data Safety Monitoring Board / Independent Data Monitoring Committee |
+| eCRF | Electronic Case Report Form |
+| EDC | Electronic Data Capture |
+| GCP | Good Clinical Practice |
+| ICH | International Council for Harmonisation |
+| IMP | Investigational Medicinal Product |
+| IMPD | Investigational Medicinal Product Dossier |
+| IRT | Interactive Response Technology |
+| IWRS | Interactive Web Response System |
+| PK | Pharmacokinetics |
+| QA | Quality Assurance |
+| RN | Randomization Number |
+| SAE | Serious Adverse Event |
+| SAP | Statistical Analysis Plan |
+| SOP | Standard Operating Procedure |
+| TMF | Trial Master File |
+| UAT | User Acceptance Testing |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Clinical Operations
+
+The Head of Clinical Operations holds ultimate accountability for the implementation and oversight of this SOP across all active clinical programs. This includes ensuring that adequate resources are allocated for IWRS administration, that the Biostatistics function receives timely protocol information to generate randomization schedules, and that deviations from randomization and blinding procedures are escalated appropriately. The Head of Clinical Operations approves the Randomization Plan for each study prior to first patient enrollment and chairs the governance review in the event of a significant blinding breach.
+
+### 3.2 Biostatistician / Statistical Programming Lead
+
+The Biostatistician is responsible for generating the randomization schedule in accordance with the protocol-specified design, utilizing validated statistical software (e.g., SAS Version 9.4 or higher using PROC PLAN, or equivalent). The Biostatistician documents the randomization seed, algorithm, stratification factors, block sizes, and allocation ratio in the Randomization Plan, which is reviewed by a second independent statistician prior to finalization. The Statistical Programming Lead is responsible for configuring IWRS randomization parameters and for conducting pre-go-live validation testing. The Biostatistician retains sole custodianship of the randomization schedule in a password-protected, access-restricted repository until the point of planned unblinding.
+
+### 3.3 Clinical Trial Manager (CTM)
+
+The CTM serves as the primary operational point of contact for randomization and blinding activities at the study level. Responsibilities include: coordinating the IWRS implementation timeline; training site personnel on IWRS access and emergency unblinding procedures prior to site initiation; monitoring randomization data for irregularities (e.g., unusually high or low enrollment rates within strata); and ensuring that blinded IMP is dispensed in accordance with the IWRS-generated allocation. The CTM also coordinates with the Pharmacovigilance team when emergency unblinding events occur, to ensure timely safety reporting in accordance with Section 7.4.
+
+### 3.4 Investigator / Sub-Investigator
+
+The Principal Investigator (PI) bears regulatory responsibility for the conduct of the trial at the site level, including adherence to randomization procedures and maintenance of the blind. Sub-investigators and delegate site staff may perform IWRS-mediated randomization transactions after completing the site-level IWRS training and being granted appropriate access by the IWRS Administrator. The Investigator is the primary decision-maker for emergency unblinding at the site and must initiate the unblinding procedure personally or directly authorize a delegate, as documented in the Site Delegation Log.
+
+### 3.5 IWRS Administrator
+
+The IWRS Administrator (typically a CRO-employed or vendor-employed specialist) is responsible for the configuration, validation, day-to-day operation, user access management, and audit trail oversight of the IWRS platform. The IWRS Administrator ensures that all system changes are implemented via a validated change control process. A 24-hour, 7-day emergency helpdesk service must be maintained throughout the active enrollment and treatment period of the study.
+
+### 3.6 Quality Assurance (QA) Specialist
+
+The QA Specialist assigned to the clinical program reviews and approves the Randomization Plan prior to implementation, participates in IWRS User Acceptance Testing (UAT), and conducts periodic blinding audits as described in Section 5.4. The QA Specialist is responsible for recording all identified randomization and blinding deviations in the deviation tracking system, assigning severity classifications, and ensuring CAPA effectiveness verification. The QA Specialist maintains readiness of randomization and blinding records for regulatory inspection at all times.
+
+---
+
+## 4.0 RANDOMIZATION PROCEDURES
+
+### 4.1 Randomization Schedule Generation
+
+The randomization schedule is the foundational document from which all treatment assignments flow. It must be generated by the Biostatistician using validated statistical software before any subject is enrolled at any site globally. The generation process must be fully documented, including the software version, random seed value, allocation ratio, stratification factors, block sizes (or range of permuted block sizes), and the total number of randomization slots generated. A minimum of 15% buffer slots above the planned maximum enrollment must be included to accommodate screen failures, protocol amendments, and site additions.
+
+The randomization schedule must be reviewed and counter-signed by a second qualified Biostatistician to confirm accuracy before it is uploaded to the IWRS. The original schedule, the review checklist, and all supporting documentation must be filed in the Trial Master File (TMF) under the Biostatistics subsection within 5 business days of generation. Access to the unblinded randomization schedule is strictly restricted to personnel listed in the Randomization Plan access log; access by any other individual constitutes a blinding breach requiring deviation documentation.
+
+The following parameters must be defined and documented for every randomization schedule:
+
+| Parameter | Description | Example Value |
+|---|---|---|
+| Allocation Ratio | Ratio of active to control assignment | 2:1 (Active:Placebo)

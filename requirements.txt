@@ -1,0 +1,18 @@
+# Core (pure Python — works on Python 3.12 / 3.13 / 3.14)
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+anthropic>=0.28.0
+python-dotenv>=1.0.1
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+numpy>=2.0.0
+tqdm>=4.66.4
+httpx>=0.27.0
+aiofiles>=23.2.1
+pytest>=8.2.2
+rank_bm25>=0.2.2
+
+# Neural embedding + vector DB (Python 3.12 / 3.13 only — needs onnxruntime wheels)
+# Comment these two lines out on Python 3.14 and the system auto-falls-back to BM25.
+chromadb>=1.0.0
+fastembed>=0.7.0

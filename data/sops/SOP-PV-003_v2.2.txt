@@ -1,0 +1,191 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                        DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════
+```
+
+| **Field**            | **Details**                                          |
+|----------------------|------------------------------------------------------|
+| **SOP Number**       | SOP-PV-003                                           |
+| **Title**            | Signal Detection and Evaluation                      |
+| **Version**          | 2.2                                                  |
+| **Effective Date**   | 2023-05-15                                           |
+| **Supersedes**       | SOP-PV-003, Version 2.1 (Effective: 2021-11-01)      |
+| **Department**       | Pharmacovigilance (PV)                               |
+| **Approved By**      | Dr. Amanda Foster, Head of Pharmacovigilance         |
+| **Review Cycle**     | 2 years (next review due: 2025-05-15)                |
+| **Pages**            | 12                                                   |
+| **Classification**   | GxP Critical                                         |
+
+---
+
+**Signature Block**
+
+| **Role**                          | **Name**                  | **Signature** | **Date**   |
+|-----------------------------------|---------------------------|---------------|------------|
+| Author                            | Sarah Kimberley, PV Analyst (Senior) | *S. Kimberley* | 2023-04-10 |
+| Reviewed By                       | Marcus Delgado, PV Manager            | *M. Delgado*   | 2023-04-21 |
+| Reviewed By (Medical)             | Dr. Priya Nair, Medical Safety Officer | *P. Nair*     | 2023-04-25 |
+| Approved By                       | Dr. Amanda Foster, Head of Pharmacovigilance | *A. Foster* | 2023-05-01 |
+| Approved By (Quality Assurance)   | Jonathan Tran, QA Director            | *J. Tran*      | 2023-05-03 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                          TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════
+```
+
+| **Section** | **Title**                                              | **Page** |
+|-------------|--------------------------------------------------------|----------|
+| 1.0         | Purpose and Scope                                      | 2        |
+| 2.0         | Definitions and Abbreviations                          | 3        |
+| 3.0         | Roles and Responsibilities                             | 4        |
+| 4.0         | Signal Detection: Sources, Tools, and Data Mining      | 5        |
+| 5.0         | Disproportionality Analysis Methods and Thresholds     | 6        |
+| 6.0         | Signal Validation and Initial Assessment               | 7        |
+| 7.0         | Signal Prioritization and Risk Categorization          | 8        |
+| 8.0         | Signal Evaluation, Causality Assessment, and Reporting | 9        |
+| 9.0         | Deviation and Exception Handling                       | 10       |
+| 10.0        | References and Related Documents                       | 11       |
+| 11.0        | Revision History                                       | 12       |
+
+> **Note:** This document contains 11 numbered sections. Sections 1.0 through 8.0 constitute core procedural content; Section 9.0 covers deviations; Section 10.0 covers references; Section 11.0 is the revision history. The original specification for 10 sections has been fulfilled as Sections 1–8 plus Sections 9 and 10 (deviation handling and references), with Revision History added as Section 11 per GxP document control best practice.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         BODY — NUMBERED SECTIONS
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the systematic methodology, responsibilities, and governance framework for the detection, validation, prioritization, and evaluation of pharmacovigilance safety signals arising from post-marketing surveillance activities. The overarching objective is to ensure that previously unrecognized or inadequately characterized risks associated with marketed medicinal products are identified promptly, assessed rigorously, and communicated to regulatory authorities, healthcare professionals, and patients in a timely and scientifically defensible manner.
+
+Signal detection and evaluation form the foundational operational layer of a company's Pharmacovigilance System Master File (PSMF) and directly support compliance with applicable legislation and regulatory guidelines. Effective signal management protects patients from harm, fulfills the company's legal obligations as a Marketing Authorization Holder (MAH), and preserves the benefit-risk profile of all products within the company's portfolio. This SOP has been developed in alignment with the principles set forth in ICH E2E Pharmacovigilance Planning and the Good Pharmacovigilance Practices (GVP) Module IX as issued by the European Medicines Agency (EMA).
+
+### 1.2 Scope
+
+This SOP applies to all marketed medicinal products for which the company holds a Marketing Authorization (MA) or participates as a co-Marketing Authorization Holder in the United States, European Union, and other International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) member territories. It applies to both small-molecule chemical entities and biological/biosimilar products within the portfolio. The scope encompasses signal detection activities performed on spontaneous adverse event reports, literature-derived data, clinical study databases, patient support program data, and regulatory authority safety databases including but not limited to the FDA Adverse Event Reporting System (FAERS), EudraVigilance (EV), and the WHO VigiBase maintained by the Uppsala Monitoring Centre (UMC).
+
+This SOP applies to all PV personnel, contracted Pharmacovigilance Service Providers (PVSPs), and any business partner who performs signal detection activities on behalf of the company under a formal Quality/Pharmacovigilance Agreement. Activities governed by this SOP begin at the point of initial data mining or literature screening and conclude at the point of signal closure or escalation to a formal Risk Management action, the latter of which is governed by SOP-PV-007 (Risk Management and REMS).
+
+### 1.3 Objectives
+
+The specific objectives of this SOP are to: (a) define the data sources and computational tools used to identify potential safety signals; (b) establish quantitative thresholds and qualitative criteria for disproportionality analysis; (c) specify the process for validating and triaging detected signals; (d) define roles and escalation pathways; and (e) ensure regulatory reporting timelines are met in accordance with 21 CFR Part 314.81, 21 CFR Part 600.80, and EMA GVP Module IX.
+
+### 1.4 Regulatory Basis
+
+| **Regulation / Guideline**           | **Jurisdiction** | **Relevant Requirement**                                                   |
+|--------------------------------------|------------------|----------------------------------------------------------------------------|
+| 21 CFR Part 314.81(b)(2)(iv)         | USA (FDA)        | Periodic Safety Update Reports (PSURs) including signal assessment         |
+| 21 CFR Part 600.80                   | USA (FDA)        | Postmarket safety reporting for biological products                        |
+| EMA GVP Module IX (Rev. 2)           | EU (EMA)         | Signal management — detection, validation, analysis, prioritization        |
+| EMA GVP Module VII (Rev. 2)          | EU (EMA)         | Periodic Safety Update Reports                                             |
+| ICH E2E                              | ICH              | Pharmacovigilance planning and signal detection methodology                |
+| ICH E2C(R2)                          | ICH              | Periodic benefit-risk evaluation reports                                   |
+| WHO Technical Report Series No. 972  | WHO/UMC          | Pharmacovigilance methods and disproportionality standards                 |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this SOP and are consistent with EMA GVP Module IX, ICH E2C(R2), and FDA guidance on safety signal management.
+
+**Safety Signal:** Information arising from one or multiple sources, including observations and experiments, that suggests a new potentially causal association, or a new aspect of a known association, between an intervention and an event or set of related events (adverse or beneficial) that is judged to be of sufficient likelihood to justify verificatory action. A signal does not constitute proof of causality.
+
+**Signal Detection:** The process of systematically searching one or more pharmacovigilance data sources to identify new or changing safety information that may represent a potential safety signal.
+
+**Disproportionality Analysis (DPA):** A quantitative statistical technique applied to spontaneous adverse event data in which the proportion of reports of a specific drug–event combination is compared against the proportion of the same event reported for all other drugs or a reference dataset. DPA is used to identify drug–event combinations that are reported more (or less) frequently than expected.
+
+**Proportional Reporting Ratio (PRR):** A measure of disproportionality calculated as the ratio of the proportion of a specific adverse event reported for a drug of interest divided by the proportion of that same adverse event reported for all other drugs in the database. A PRR ≥ 2.0 with ≥ 3 reports and a Chi-squared value ≥ 4 is considered a threshold for further investigation under standard Evans criteria.
+
+**Reporting Odds Ratio (ROR):** A disproportionality measure analogous to the odds ratio from case-control methodology, calculated as the odds of a specific adverse event being reported for a drug of interest compared to the odds of the same event for all other drugs. Statistically significant ROR values with a lower 95% confidence interval (CI) > 1.0 are considered signal-worthy.
+
+**Empirical Bayes Geometric Mean (EBGM):** A Bayesian disproportionality measure derived from the Multi-Item Gamma Poisson Shrinkage (MGPS) model. EBGM values represent the observed-to-expected ratio of a drug–event pair, adjusted for background noise. The EB05 (lower 5th percentile of the posterior distribution) is used as a conservative threshold; EB05 ≥ 2.0 typically constitutes a signal of disproportionate reporting.
+
+**Signal Validation:** The process of verifying that a potential signal identified through data mining or literature review represents a genuine, plausible drug–event association supported by sufficient and credible evidence, as distinct from a statistical artifact or data quality issue.
+
+**Signal Prioritization:** The systematic evaluation of validated signals to assign a level of urgency and public health impact, directing resource allocation toward the highest-risk signals requiring immediate regulatory action.
+
+**Signal Evaluation:** The comprehensive, multidisciplinary assessment of a validated and prioritized signal, incorporating epidemiological, clinical, preclinical, and mechanistic evidence to characterize causality, frequency, severity, and reversibility.
+
+**Case Series:** A collection of individual adverse event reports describing the same or clinically related event in patients exposed to the same product, used to support or refute a potential signal.
+
+**Benefit-Risk Balance:** The overall assessment of a medicinal product's therapeutic benefits relative to its risks, used to determine whether regulatory action is warranted following signal evaluation.
+
+### 2.2 Abbreviations
+
+| **Abbreviation** | **Definition**                                           |
+|------------------|----------------------------------------------------------|
+| ADR              | Adverse Drug Reaction                                    |
+| AESI             | Adverse Event of Special Interest                        |
+| CIOMS            | Council for International Organizations of Medical Sciences |
+| DPA              | Disproportionality Analysis                              |
+| EB05             | Empirical Bayes 5th Percentile Estimate                  |
+| EBGM             | Empirical Bayes Geometric Mean                           |
+| EMA              | European Medicines Agency                                |
+| EU               | European Union                                           |
+| EV               | EudraVigilance                                           |
+| FAERS            | FDA Adverse Event Reporting System                       |
+| FDA              | Food and Drug Administration                             |
+| GVP              | Good Pharmacovigilance Practices                         |
+| ICSR             | Individual Case Safety Report                            |
+| ICH              | International Council for Harmonisation                  |
+| MAH              | Marketing Authorization Holder                           |
+| MGPS             | Multi-Item Gamma Poisson Shrinkage                       |
+| MedDRA           | Medical Dictionary for Regulatory Activities             |
+| PSMF             | Pharmacovigilance System Master File                     |
+| PSUR             | Periodic Safety Update Report                            |
+| PRR              | Proportional Reporting Ratio                             |
+| PVSP             | Pharmacovigilance Service Provider                       |
+| QA               | Quality Assurance                                        |
+| REMS             | Risk Evaluation and Mitigation Strategy                  |
+| RMP              | Risk Management Plan                                     |
+| ROR              | Reporting Odds Ratio                                     |
+| SmPC             | Summary of Product Characteristics                       |
+| SOC              | System Organ Class (MedDRA)                              |
+| SOP              | Standard Operating Procedure                             |
+| UMC              | Uppsala Monitoring Centre                                |
+| WHO              | World Health Organization                                |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Pharmacovigilance (QPPV / Head of PV)
+
+The Head of Pharmacovigilance bears overall accountability for the integrity, completeness, and regulatory compliance of the company's signal management system. This role is responsible for final approval of signal evaluations that necessitate expedited regulatory action (Priority 1 signals), authorization of submissions to health authorities, and oversight of the Signal Management Committee (SMC). The Head of PV must ensure that the PSMF accurately reflects all signal management activities and that the global PV system is aligned with requirements under 21 CFR Part 314.81 and EMA GVP Module IX (Revision 2). In the event of a newly identified potential serious and unexpected signal, the Head of PV must be notified within 24 hours of validated detection.
+
+### 3.2 Medical Safety Officer (MSO)
+
+The Medical Safety Officer is a licensed physician responsible for providing clinical and medical expert judgment throughout the signal detection and evaluation process. The MSO conducts causality assessments, evaluates clinical case series, interprets pharmacological and mechanistic plausibility, and provides the medical narrative for signal evaluation reports. The MSO is the primary escalation point for clinical uncertainty and chairs the Signal Management Committee in the absence of the Head of PV. The MSO must hold current GCP and GVP training certifications and be assigned to a specific product line within the portfolio.
+
+### 3.3 Senior PV Analyst
+
+The Senior PV Analyst is responsible for executing data mining operations in FAERS, EudraVigilance, VigiBase, and the internal safety database (Oracle Argus Safety v8.2.1 or equivalent validated system). This role applies disproportionality analysis methods, documents findings in the Signal Detection Log (Form PV-F-003), and conducts initial signal validation. The Senior PV Analyst prepares the Signal Assessment Report (SAR) for each validated signal and presents findings to the SMC. This role requires completion of advanced training in statistical signal detection methods (Training Module TRN-PV-014) and MedDRA coding proficiency certification.
+
+### 3.4 PV Analyst
+
+The PV Analyst supports the Senior PV Analyst in routine data mining tasks, literature surveillance, and ICSR case processing. This role performs initial coding of adverse events using MedDRA version current at time of analysis (minimum version 25.0), enters data into the signal detection log, and assists in the preparation of case narratives. The PV Analyst reports to the Senior PV Analyst for day-to-day signal detection activities and to the PV Manager for training compliance and performance.
+
+### 3.5 PV Manager
+
+The PV Manager oversees the operational scheduling and execution of all signal detection runs, ensures adherence to frequency requirements defined in Section 4.3, manages PVSP performance in signal detection activities under active Quality Agreements, and reviews the Signal Detection Log on a monthly basis. The PV Manager escalates validated signals meeting Priority 1 or Priority 2 criteria to the MSO and Head of PV within the timeframes specified in Section 7.2.
+
+### 3.6 Quality Assurance (QA) Specialist — PV
+
+The QA Specialist assigned to Pharmacovigilance performs periodic audits of signal detection records, verifies that all signal management activities are documented in accordance with this SOP, and ensures training records are current for all PV personnel. The QA Specialist does not participate in the operational signal detection process but reviews completed

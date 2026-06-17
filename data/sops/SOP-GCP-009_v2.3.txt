@@ -1,0 +1,219 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                          DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GCP-009
+  Title:            Trial Master File Maintenance and Archiving
+  Version:          2.3
+  Effective Date:   2023-11-01
+  Supersedes:       2.2
+  Department:       GCP / Clinical Operations
+  Approved By:      Dr. Linda Okonkwo, Head of Clinical Operations
+  Review Cycle:     2 years (next review due: 2025-11-01)
+  Pages:            13
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                        DOCUMENT APPROVAL BLOCK
+═══════════════════════════════════════════════════════════════════════════
+
+  Prepared By:      Marcus Chen, Senior Clinical Operations Manager
+                    Signature: ___________________  Date: 2023-10-02
+
+  Reviewed By:      Priya Ramanathan, GCP Quality Assurance Lead
+                    Signature: ___________________  Date: 2023-10-12
+
+  Reviewed By:      James Whitfield, Head of Regulatory Affairs
+                    Signature: ___________________  Date: 2023-10-18
+
+  Approved By:      Dr. Linda Okonkwo, Head of Clinical Operations
+                    Signature: ___________________  Date: 2023-10-25
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                         TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════
+
+  Section                                                          Page
+  ───────────────────────────────────────────────────────────────────────
+  1.0   Purpose and Scope ........................................   2
+  2.0   Definitions and Abbreviations ............................   3
+  3.0   Roles and Responsibilities ...............................   4
+  4.0   TMF Structure and Document Classification ................   5
+  5.0   TMF Maintenance and Document Filing Procedures ...........   6
+  6.0   eTMF System Management and Access Controls ...............   7
+  7.0   TMF Completeness Review and Quality Metrics ..............   8
+  8.0   Inspection Readiness and Self-Inspection Procedures ......   9
+  9.0   Archiving and Retention Requirements .....................  10
+  10.0  Deviation and Exception Handling .........................  11
+  11.0  References and Related Documents .........................  12
+        Revision History .........................................  13
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and operational procedures governing the creation, maintenance, completeness review, and archiving of the Trial Master File (TMF) for all clinical trials conducted or sponsored by Meridian Biosciences International Ltd. (hereinafter referred to as "the Company"). The TMF is the body of documents that, individually and collectively, permits the evaluation of the conduct of a clinical trial and the quality of data produced. This SOP ensures that all essential documents are filed in a timely, accurate, and retrievable manner to satisfy applicable regulatory requirements, including those set forth in ICH E6(R2) Good Clinical Practice and regional regulatory frameworks enforced by the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), and equivalent health authorities worldwide.
+
+The Company recognises that inspection readiness is a continuous operational state, not a reactive activity. Accordingly, this SOP embeds proactive quality oversight mechanisms throughout the lifecycle of every clinical trial, from study initiation through post-study archiving. All personnel involved in any aspect of TMF management are expected to apply the principles of data integrity, contemporaneous documentation, and right-first-time filing practices as described herein.
+
+### 1.2 Scope
+
+This SOP applies to all interventional clinical trials for which the Company serves as Sponsor or Sponsor-Investigator, regardless of phase (Phase I through Phase IV), geographic location of trial sites, or therapeutic area. It covers both paper-based and electronic TMF (eTMF) systems currently used by the Company. It applies to all employees, contractors, consultants, and third-party vendors (including Contract Research Organisations, or CROs) who have responsibilities associated with TMF document generation, filing, review, or archiving on behalf of the Company.
+
+This SOP does not govern the Investigator Site File (ISF), which is maintained at individual clinical trial sites, although it describes the Sponsor's oversight responsibilities relative to ISF contents that mirror the TMF. Non-interventional studies and post-marketing surveillance activities are excluded from the scope of this SOP and are governed by SOP-PV-017 and SOP-REG-004, respectively.
+
+### 1.3 Regulatory Basis
+
+| Regulatory Framework | Specific Citation | Requirement |
+|---|---|---|
+| ICH E6(R2) | Section 8 (Essential Documents) | Mandatory list of essential documents before, during, and after trial |
+| FDA Regulations | 21 CFR Part 312.62 | Sponsor recordkeeping obligations |
+| FDA Regulations | 21 CFR Part 11 | Electronic records and signatures |
+| EU Clinical Trials Regulation | EU CTR 536/2014, Article 58 | Master file maintenance by sponsors in EU |
+| EMA GCP Guideline | EMA/INS/GCP/454280/2010 | Inspection expectations for TMF |
+| ICH E6(R2) | Section 5.5 | Sponsor's quality management obligations |
+
+### 1.4 Limitations
+
+This SOP does not supersede applicable national law, local ethics committee requirements, or site-level regulations, which may impose more stringent document retention or filing standards in specific jurisdictions. Where local requirements conflict with this SOP, the more stringent requirement shall apply, and the discrepancy shall be documented and reported to the GCP Quality Assurance (QA) team within five (5) business days of identification.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Audit Trail:** A secure, computer-generated, time-stamped electronic record that allows reconstruction of the course of events relating to the creation, modification, or deletion of an electronic record (per 21 CFR Part 11.3(b)(6)).
+
+**Completeness Rate:** A quantitative metric, expressed as a percentage, calculated by dividing the number of expected documents actually present and filed in the TMF by the total number of expected documents at a given point in the trial lifecycle, multiplied by 100.
+
+**Essential Documents:** Documents that individually and collectively permit evaluation of the conduct of a trial and the quality of the data produced, as defined in ICH E6(R2), Section 8.
+
+**eTMF (Electronic Trial Master File):** A validated software system used to collect, store, manage, and retrieve TMF documents in electronic format, in compliance with 21 CFR Part 11 and applicable GCP regulations.
+
+**Inspection Readiness:** The state of continuous preparedness whereby the TMF and all associated quality oversight records can withstand regulatory agency inspection at any point during or after the conduct of a clinical trial.
+
+**ISF (Investigator Site File):** The collection of essential documents held at the clinical trial site, also referred to as the "Investigator's File" or "Site File," mirroring specific TMF sections applicable to site-level activities.
+
+**Metadata:** Data that describes the attributes of other data or documents, including document type, author, creation date, modification date, version, and classification, embedded within or associated with an electronic record.
+
+**TMF (Trial Master File):** The totality of essential documents related to a clinical trial, maintained by the Sponsor, that demonstrates compliance with GCP and applicable regulatory requirements and enables reconstruction of the trial's conduct, data integrity, and decision-making.
+
+**TMF Reference Model:** The industry-standard framework (developed by the TMF Reference Model Working Group, currently Version 3.x) used to define a structured hierarchy of zones, sections, and artefact types for TMF organisation.
+
+**Transfer of Obligations:** The formal, documented process by which the Sponsor assigns specific TMF-related responsibilities to a CRO or other third party, as required by ICH E6(R2), Section 5.2.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| CFR | Code of Federal Regulations |
+| CRO | Contract Research Organisation |
+| CSR | Clinical Study Report |
+| CTMS | Clinical Trial Management System |
+| DMP | Data Management Plan |
+| EMA | European Medicines Agency |
+| eTMF | Electronic Trial Master File |
+| FDA | Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GxP | Good Practice (collective term covering GCP, GLP, GMP) |
+| ICH | International Council for Harmonisation |
+| IMP | Investigational Medicinal Product |
+| IND | Investigational New Drug (Application) |
+| ISF | Investigator Site File |
+| PV | Pharmacovigilance |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QTM | Quality TMF Metric |
+| SOP | Standard Operating Procedure |
+| TMF | Trial Master File |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Clinical Operations
+
+The Head of Clinical Operations (currently Dr. Linda Okonkwo) holds overall accountability for ensuring that an inspection-ready TMF is maintained for all active and archived clinical trials under the Company's sponsorship. This role approves this SOP and any amendments thereto, reviews quarterly TMF quality metric summaries, and escalates systemic TMF deficiencies to the Executive Leadership Team when completeness rates fall below 80% for any trial zone for two consecutive review cycles.
+
+### 3.2 TMF Manager
+
+The TMF Manager is a dedicated role within the Clinical Operations department responsible for the day-to-day governance of TMF operations. The TMF Manager maintains the TMF index for all active trials, coordinates periodic completeness reviews (no less than quarterly), liaises with CROs regarding delegated TMF responsibilities, administers user access to the eTMF system, ensures timely document reconciliation at trial closeout, and serves as the primary point of contact during regulatory inspections involving TMF records. The TMF Manager shall have completed formal training in ICH E6(R2), the Company's eTMF system, and this SOP within 30 days of assuming the role.
+
+### 3.3 Clinical Trial Manager (CTM)
+
+The Clinical Trial Manager is operationally responsible for ensuring that trial-specific essential documents are generated on time and filed into the TMF in accordance with the timelines specified in Section 5.4 of this SOP. The CTM reviews site-level documents received from Clinical Research Associates (CRAs), coordinates the sponsor-side generation of essential documents (e.g., protocol amendments, IB updates, informed consent form approvals), and ensures that TMF completeness milestones are met at study initiation, mid-study, and closeout phases. The CTM is accountable for raising TMF deviations via the process described in Section 10.0.
+
+### 3.4 Clinical Research Associate (CRA) / Monitor
+
+Clinical Research Associates are responsible for collecting, reviewing, and uploading site-level essential documents to the TMF or transmitting them to the TMF Manager within the timelines specified in Table 3.1. CRAs perform source document verification activities that confirm data consistency between the ISF and the TMF. During monitoring visits, CRAs must complete the TMF document checklist (Form TMF-CHK-01) and record any discrepancies or missing documents, initiating follow-up actions within five (5) business days of the visit date.
+
+### 3.5 GCP Quality Assurance Lead
+
+The GCP QA Lead provides independent oversight of TMF quality and compliance. This role conducts periodic TMF audits (at minimum one audit per trial per year for Phase II/III trials), reviews completeness metrics, identifies systemic issues requiring corrective action, approves deviation handling per Section 10.0, and verifies the TMF is appropriately archived at study closeout. The GCP QA Lead also confirms that the eTMF system remains validated and compliant with 21 CFR Part 11 requirements on an annual basis.
+
+### 3.6 Third-Party CRO (where applicable)
+
+Where the Company has delegated TMF management responsibilities to a CRO via a signed Transfer of Obligations Agreement and Clinical Quality Agreement, the CRO assumes contractual responsibility for the specific TMF sections and artefact types identified in the delegation schedule. The CRO must provide the Company's TMF Manager with access to CRO-held TMF sections for review and must adhere to all timelines, filing standards, and quality metrics specified in this SOP. Delegation does not absolve the Company of ultimate regulatory accountability for TMF completeness and accuracy.
+
+### 3.7 Responsibility Summary Matrix
+
+| Activity | TMF Manager | CTM | CRA | GCP QA Lead | CRO (if delegated) |
+|---|---|---|---|---|---|
+| TMF index maintenance | Accountable | Responsible | Informed | Consulted | Responsible |
+| Document upload/filing | Consulted | Accountable | Responsible | Informed | Responsible |
+| Completeness review | Accountable | Responsible | Responsible | Consulted | Responsible |
+| QA audit of TMF | Informed | Informed | Informed | Accountable | Informed |
+| eTMF system administration | Accountable | Consulted | Informed | Consulted | N/A |
+| Archiving | Accountable | Responsible | Informed | Consulted | Consulted |
+| Deviation management | Consulted | Responsible | Responsible | Accountable | Consulted |
+
+---
+
+## 4.0 TMF STRUCTURE AND DOCUMENT CLASSIFICATION
+
+### 4.1 Adoption of the TMF Reference Model
+
+The Company has adopted the industry-standard TMF Reference Model (Version 3.2, published by the TMF Reference Model Working Group) as the structural framework for all trial master files. This model organises essential documents into a hierarchical system of Zones, Sections, and Artefact Types. The current implementation maps the Reference Model zones to the Company's eTMF system (Veeva Vault Clinical) through a validated configuration, documented in System Validation Report SVR-eTMF-001 (Version 2.0). Any deviation from the Reference Model taxonomy must be documented in the trial-specific TMF Plan and approved by the TMF Manager and GCP QA Lead prior to trial initiation.
+
+The TMF Reference Model zones in use by the Company are structured as follows: Zone 01 (Trial Management), Zone 02 (Central Trial Documents), Zone 03 (Regulatory), Zone 04 (IP and Trial Supplies), Zone 05 (Site Management), Zone 06 (Safety Reporting), Zone 07 (Statistical Analysis and Data Management), Zone 08 (Central and Local Laboratories), Zone 09 (Third Parties), and Zone 10 (Trial Master File Management). Each zone is populated with artefacts defined in the Reference Model, supplemented by Company-specific artefacts identified in the trial-specific TMF Plan.
+
+### 4.2 Trial Master File Plan
+
+A trial-specific TMF Plan must be created for each clinical trial prior to the submission of the first regulatory application or first site initiation, whichever occurs earlier. The TMF Plan is an active, living document that identifies all expected artefact types for the trial, assigns ownership of each artefact to a specific role, and specifies the expected filing timeline for each document type. The TMF Plan must be reviewed and updated at a minimum: (a) at trial initiation, (b) following any substantial protocol amendment, (c) at interim analysis (if applicable), and (d) at closeout. The TMF Manager is responsible for authoring and maintaining the TMF Plan using the standard template (TMPL-TMF-001).
+
+### 4.3 Document Classification and Metadata Requirements
+
+All documents filed in the TMF must be classified according to the metadata schema defined in the eTMF system configuration. Mandatory metadata fields for every document are listed in Table 4.1.
+
+**Table 4.1 — Mandatory TMF Document Metadata Fields**
+
+| Metadata Field | Description | Accepted Values / Format | Mandatory? |
+|---|---|---|---|
+| Protocol Number | Unique trial identifier | Alphanumeric (e.g., MBI-2023-ONC-007) | Yes |
+| Zone | TMF Reference Model zone number | 01–10 | Yes |
+| Section | TMF Reference Model section number | Per Reference Model v3.2 | Yes |
+| Artefact Type | Document type per Reference Model | Controlled vocabulary list | Yes |
+| Country | Country of origin/relevance | ISO 3166-1 

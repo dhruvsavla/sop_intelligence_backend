@@ -1,0 +1,216 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Field                | Details                                          |
+|----------------------|--------------------------------------------------|
+| **SOP Number**       | SOP-DI-007                                       |
+| **Title**            | Computerized System Validation (CSV)             |
+| **Version**          | 2.3                                              |
+| **Effective Date**   | 2023-07-01                                       |
+| **Supersedes**       | 2.2                                              |
+| **Department**       | DI (Data Integrity)                              |
+| **Approved By**      | Dr. Francesca Lim, Data Integrity Officer        |
+| **Review Cycle**     | 2 years                                          |
+| **Pages**            | 15                                               |
+| **Classification**   | GxP Critical                                     |
+
+---
+
+**DOCUMENT APPROVAL SIGNATURES**
+
+| Role                          | Name                    | Signature | Date       |
+|-------------------------------|-------------------------|-----------|------------|
+| Data Integrity Officer        | Dr. Francesca Lim       | *[signed]*| 2023-06-15 |
+| Quality Assurance Director    | Mr. Colin Abernethy     | *[signed]*| 2023-06-16 |
+| IT Systems Manager            | Ms. Priya Venkataraman  | *[signed]*| 2023-06-14 |
+| Regulatory Affairs Lead       | Dr. James Okafor        | *[signed]*| 2023-06-16 |
+| Head of Validation            | Ms. Ingrid Solberg      | *[signed]*| 2023-06-15 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title                                                         | Page |
+|---------|---------------------------------------------------------------|------|
+| 1.0     | Purpose and Scope                                             | 3    |
+| 2.0     | Definitions and Abbreviations                                 | 3    |
+| 3.0     | Roles and Responsibilities                                    | 5    |
+| 4.0     | Computerized System Validation Framework and Planning         | 6    |
+| 5.0     | User Requirements Specification (URS) Development            | 7    |
+| 6.0     | Risk Assessment and GAMP5 System Categorization              | 8    |
+| 7.0     | Installation Qualification (IQ)                               | 9    |
+| 8.0     | Operational Qualification (OQ)                                | 10   |
+| 9.0     | Performance Qualification (PQ)                                | 11   |
+| 10.0    | Data Integrity Controls and Audit Trail Verification          | 12   |
+| 11.0    | Validation Report, Approval, and System Release               | 13   |
+| 12.0    | Deviation and Exception Handling                              | 14   |
+| 13.0    | References and Related Documents                              | 14   |
+| 14.0    | Revision History                                              | 15   |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            BODY — 13 SECTIONS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, methodology, and responsibilities for the validation of computerized systems used in GxP-regulated activities at Meridian BioPharmaceuticals Ltd. (hereinafter "the Company"). Computerized System Validation (CSV) is mandated to provide documented evidence that a computerized system consistently performs according to its intended purpose within the defined operational parameters, thereby ensuring the integrity, accuracy, completeness, and reliability of all GxP data generated, stored, processed, or transmitted by that system.
+
+This SOP aligns with the risk-based approach described in ISPE GAMP5 (Second Edition, 2022), the principles outlined in FDA 21 CFR Part 11, EU Annex 11 to the GMP Guide, ICH Q9(R1) Quality Risk Management, and applicable FDA and EMA guidance on data integrity. By establishing a structured lifecycle approach to validation, the Company ensures that computerized systems support regulatory compliance throughout their operational lifespan and that data integrity is maintained as a foundational element of all GxP operations.
+
+### 1.2 Scope
+
+This SOP applies to all computerized systems that are used in, or directly support, GxP-regulated operations across the Company's sites, including but not limited to: Manufacturing Execution Systems (MES), Laboratory Information Management Systems (LIMS), Electronic Document Management Systems (EDMS), Enterprise Resource Planning (ERP) modules interfacing with GxP data, process control systems (DCS/SCADA), and any standalone computerized instruments used in quality control or manufacturing environments.
+
+This procedure applies to new system implementations, major upgrades (including vendor software version changes that alter functionality), significant configuration changes, infrastructure migrations (e.g., server relocations, cloud transitions), and periodic revalidation events. It applies to all personnel involved in the validation lifecycle, including IT, Quality Assurance, Validation Engineering, Regulatory Affairs, and end-user functional departments.
+
+### 1.3 Exclusions
+
+Systems classified as non-GxP based on a formal impact assessment (see Section 6.0) are excluded from the full validation lifecycle requirements of this SOP but remain subject to the Company's IT Change Control Policy (IT-POL-003) and Information Security Policy (IT-POL-001). Personal productivity tools (e.g., standard word processing software used for drafting non-GxP documents), internal communication platforms, and financial systems with no GxP data interface are explicitly excluded. Any ambiguous system classification must be escalated to the Data Integrity Officer for formal determination within 5 business days of identification.
+
+### 1.4 Regulatory Basis
+
+| Regulation / Guideline                        | Requirement Area                                 |
+|-----------------------------------------------|--------------------------------------------------|
+| FDA 21 CFR Part 11                            | Electronic records and electronic signatures     |
+| EU GMP Annex 11 (2011)                        | Computerized systems in GMP environments         |
+| ICH Q9(R1) (2023)                             | Quality risk management principles               |
+| FDA Guidance: Data Integrity and Compliance (2018) | Data integrity expectations for CDER/CBER    |
+| EMA Reflection Paper on Data Integrity (2021) | Data governance and audit trail requirements     |
+| ISPE GAMP5 2nd Edition (2022)                 | Risk-based approach to CSV                      |
+| USP <1058> Analytical Instrument Qualification | Qualification of analytical instruments          |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Computerized System Validation (CSV):** A documented process of establishing and verifying that a computerized system consistently performs to its intended purpose in a controlled, reproducible manner, providing evidence of compliance with predetermined specifications.
+
+**User Requirements Specification (URS):** A document that describes the functional and operational requirements of a computerized system as defined by the intended user community. The URS forms the primary reference document against which all qualification and validation activities are measured.
+
+**Functional Specification (FS):** A document that defines how a computerized system will meet the requirements stated in the URS, describing the system's functionality from the user perspective without specifying the technical implementation.
+
+**Design Specification (DS):** A technical document that describes how the system design will satisfy the requirements stated in the Functional Specification, including hardware architecture, software modules, interfaces, and data flows.
+
+**Installation Qualification (IQ):** Documented verification that a computerized system, or components thereof, have been installed in accordance with the approved design specifications and vendor requirements, and that all prerequisites for operational qualification have been met.
+
+**Operational Qualification (OQ):** Documented verification that a computerized system operates as intended throughout its anticipated operational ranges, performed using pre-approved test scripts that test system functions against the Functional Specification.
+
+**Performance Qualification (PQ):** Documented evidence, obtained under simulated or actual production conditions, that the computerized system consistently performs in accordance with defined criteria and is suitable for its intended use in the GxP environment.
+
+**Audit Trail:** A chronological, secure, and computer-generated record that allows the reconstruction of all events, including data creation, modification, deletion, and access, for any GxP record managed within a computerized system.
+
+**GAMP5 Category:** A risk-based classification system defined by ISPE GAMP5 that categorizes software into types (Category 1 through 5) based on the level of configuration, customization, and novelty of the software, thereby guiding the appropriate extent of validation effort.
+
+**Data Integrity:** The degree to which data are complete, consistent, accurate, trustworthy, and reliable, maintained throughout their lifecycle from creation, through processing and storage, to retrieval and archiving. Data integrity encompasses ALCOA+ principles: Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, and Available.
+
+**Validation Plan:** A document that describes the scope, approach, resources, schedule, and responsibilities for validating a specific computerized system. Also referred to as a Validation Master Plan (VMP) at the system level.
+
+**Validation Report:** A formal document summarizing the outcomes of all qualification and validation activities, confirming whether the system has been successfully validated and is suitable for GxP use.
+
+**Periodic Review:** A scheduled assessment, conducted at a defined frequency (typically annually or every 2 years), to confirm that a validated computerized system remains in a validated state and continues to meet current regulatory and business requirements.
+
+**Change Control:** A formal process by which proposed changes to a validated computerized system are evaluated, approved, implemented, documented, and reviewed for their impact on the validated state of the system.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term                                                    |
+|--------------|--------------------------------------------------------------|
+| ALCOA+       | Attributable, Legible, Contemporaneous, Original, Accurate + |
+| CFR          | Code of Federal Regulations                                  |
+| CSV          | Computerized System Validation                               |
+| DCS          | Distributed Control System                                   |
+| DI           | Data Integrity                                               |
+| DS           | Design Specification                                         |
+| EDMS         | Electronic Document Management System                        |
+| EMA          | European Medicines Agency                                    |
+| ERP          | Enterprise Resource Planning                                 |
+| FS           | Functional Specification                                     |
+| GAMP         | Good Automated Manufacturing Practice                        |
+| GMP          | Good Manufacturing Practice                                  |
+| GxP          | Good Practice (GMP, GLP, GCP collectively)                   |
+| ICH          | International Council for Harmonisation                      |
+| IQ           | Installation Qualification                                   |
+| ISPE         | International Society for Pharmaceutical Engineering         |
+| IT           | Information Technology                                       |
+| LIMS         | Laboratory Information Management System                     |
+| MES          | Manufacturing Execution System                               |
+| OQ           | Operational Qualification                                    |
+| PQ           | Performance Qualification                                    |
+| QA           | Quality Assurance                                            |
+| QRM          | Quality Risk Management                                      |
+| SCADA        | Supervisory Control and Data Acquisition                     |
+| SOP          | Standard Operating Procedure                                 |
+| URS          | User Requirements Specification                              |
+| VMP          | Validation Master Plan                                       |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Data Integrity Officer (DIO)
+
+The Data Integrity Officer is the ultimate owner and approver of this SOP and bears accountability for ensuring that all CSV activities conducted at the Company are executed in accordance with applicable regulatory requirements and internal data integrity policies. The DIO approves the Validation Master Plan, the system-level Validation Plan, and the final Validation Report for all GxP-critical computerized systems. The DIO also serves as the escalation point for unresolved deviations identified during validation activities and for ambiguous system classification decisions. The DIO shall conduct or delegate an annual review of all active computerized system validation dossiers to confirm continued compliance.
+
+### 3.2 Head of Validation
+
+The Head of Validation is responsible for the strategic oversight, resource allocation, and scheduling of all CSV activities. This role develops and maintains the Site Validation Master Plan, ensures that Validation Plans are technically sound and aligned with GAMP5 principles, and monitors the progress of ongoing validation projects. The Head of Validation reviews and approves qualification protocols (IQ, OQ, PQ) and coordinates with IT, QA, and functional department leads to ensure validation timelines are achievable. Any system-wide validation failures or critical deviations must be reported to the Head of Validation within 24 hours of identification.
+
+### 3.3 Validation Engineer / CSV Lead
+
+The Validation Engineer (or CSV Lead) is the primary technical author and executor of all CSV lifecycle documents for an assigned system. Responsibilities include authoring the Validation Plan, URS (in collaboration with functional users), IQ/OQ/PQ protocols, test scripts, and Validation Report. The CSV Lead coordinates test execution, documents all results contemporaneously, raises deviations for failed tests in accordance with Section 12.0 of this SOP, and compiles the complete validation dossier for QA review. The CSV Lead must have completed the Company's CSV training curriculum (TRN-CSV-001) within the 12 months preceding assignment to a validation project.
+
+### 3.4 Quality Assurance Specialist
+
+The QA Specialist assigned to each CSV project is responsible for independent review and approval of all validation lifecycle documents prior to test execution. The QA Specialist witnesses or reviews test execution records to confirm that testing was conducted as specified, that deviations were appropriately captured, and that acceptance criteria were objectively evaluated. The QA Specialist reviews all deviation reports raised during validation and confirms adequacy of resolutions before validation proceeds. The QA Specialist issues the formal QA approval on the Validation Report prior to submission to the Data Integrity Officer.
+
+### 3.5 IT Systems Manager
+
+The IT Systems Manager is responsible for all technical aspects of system deployment, infrastructure, and security configuration. Responsibilities in the CSV context include verifying system installation per design specifications (supporting IQ execution), maintaining system access control matrices, configuring and verifying audit trail functionality, ensuring backup and recovery systems are implemented per specifications, and providing technical support during OQ and PQ testing. The IT Systems Manager must approve all changes to validated system infrastructure through the Change Control process.
+
+### 3.6 Functional Department Representative (End User)
+
+Functional Department Representatives (e.g., Laboratory Analyst, Manufacturing Operator, Regulatory Affairs Specialist) are responsible for providing input into the URS to ensure that system requirements reflect actual GxP operational needs. These representatives participate in PQ test execution to confirm that the system performs acceptably under realistic production conditions. End users must complete system-specific training before executing any PQ test scripts. After system release, end users are responsible for operating the system in accordance with approved procedures and immediately reporting any anomalies or suspected data integrity events to their supervisor and QA.
+
+### 3.7 Summary of Responsibilities Matrix
+
+| Activity                          | DIO     | Head of Val. | CSV Lead | QA Spec. | IT Mgr. | Func. Rep. |
+|-----------------------------------|---------|--------------|----------|----------|---------|------------|
+| Approve Validation Plan           | A       | R            | I        | I        | C       | I          |
+| Author URS                        | I       | C            | R        | C        | C       | R          |
+| Author IQ/OQ/PQ Protocols         | I       | C            | R        | A         | C       | C          |
+| Execute IQ Testing                | I       | I            | R        | W        | R       | I          |
+| Execute OQ Testing                | I       | I            | R        | W        | C       | C          |
+| Execute PQ Testing                | I       | I            | R        | W        | I       | R          |
+| Raise Deviation Reports           | I       | I            | R        | A         | C       | C          |
+| Approve Validation Report         | A       | R            | I        | R        | C       | I          |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed; W = Witness*
+
+---
+
+## 4.0 COMPUTERIZED SYSTEM VALIDATION FRAMEWORK AND PLANNING
+
+### 4.1 Validation Lifecycle Overview
+
+The Company's CSV lifecycle follows the V-Model framework as described in ISPE GAMP5 (Second Edition, 2022), which maps specification activities on the left arm of the V against corresponding verification and qualification activities on the

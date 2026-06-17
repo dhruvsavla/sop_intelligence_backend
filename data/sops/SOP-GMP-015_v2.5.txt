@@ -1,0 +1,184 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:       SOP-GMP-015                                                  ║
+║  Title:            Finished Goods Release and Disposition                        ║
+║  Version:          2.5                                                           ║
+║  Effective Date:   2024-03-01                                                    ║
+║  Supersedes:       2.4 (dated 2022-02-15)                                       ║
+║  Department:       GMP / Quality Assurance                                       ║
+║  Approved By:      Dr. Sarah Nguyen, Quality Systems Manager                    ║
+║  Review Cycle:     2 years (next review due: 2026-03-01)                        ║
+║  Pages:            13                                                            ║
+║  Classification:   GxP Critical                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  SIGNATURE BLOCK                                                                 ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  Prepared By:      J. Alvarez, Senior QA Specialist          Date: 2024-01-18   ║
+║  Reviewed By:      M. Okafor, QA Manager                     Date: 2024-01-30   ║
+║  Reviewed By:      T. Bergstrom, Regulatory Affairs Lead     Date: 2024-02-05   ║
+║  Approved By:      Dr. S. Nguyen, Quality Systems Manager    Date: 2024-02-12   ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Batch Record Review and Pre-Release Assessment | 5 |
+| 5.0 | Laboratory Testing and Certificate of Analysis | 6 |
+| 6.0 | Quarantine Management and Material Status Control | 7 |
+| 7.0 | Qualified Person Review and Formal Batch Disposition | 8 |
+| 8.0 | Release Authorization and Distribution Control | 9 |
+| 9.0 | Rejection, Destruction, and Non-Conforming Material | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+> **Note:** This document contains 12 numbered sections; Sections 11.0 and 12.0 correspond to the mandatory closing sections (N-1) References and (N) Revision History. Section 10.0 serves as the Deviation and Exception Handling section per document structure requirements.
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the systematic requirements, responsibilities, and procedural steps governing the formal release and disposition of finished pharmaceutical goods manufactured or received at this facility. The primary objective is to ensure that no finished product lot is distributed, transferred, or made commercially available unless it has been reviewed, tested, and formally approved in compliance with applicable Good Manufacturing Practice (GMP) regulations, internal quality standards, and registered product specifications.
+
+The procedures contained herein implement the regulatory intent of FDA 21 CFR Part 211 Subpart K (Holding and Distribution), EU GMP Annex 16 (Certification by a Qualified Person and Batch Release), ICH Q10 (Pharmaceutical Quality System), and ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients) as applicable to finished dosage form operations. Adherence to this SOP is a condition of the facility's GMP operating license and is subject to inspection by regulatory authorities including the FDA, EMA, MHRA, and equivalent national competent authorities.
+
+### 1.2 Scope
+
+This SOP applies to all finished pharmaceutical goods produced at this facility, including but not limited to: solid oral dosage forms (tablets, capsules, granules), sterile injectable products (vials, prefilled syringes, lyophilized powders for reconstitution), topical preparations, and contract-manufactured products released on behalf of marketing authorization holders (MAHs). The procedure covers all stages of the release process from initial batch manufacture completion through to formal distribution authorization.
+
+This document also applies to finished goods received from contract manufacturing organizations (CMOs) and third-party manufacturers where this facility acts as the responsible releasing entity. It does not apply to in-process materials, bulk drug substance release (refer to SOP-GMP-008), or investigational medicinal product (IMP) release for clinical trials (refer to SOP-GCP-022).
+
+### 1.3 Regulatory Framework
+
+This SOP was developed and shall be maintained in accordance with the following primary regulatory obligations: FDA 21 CFR §§ 211.165, 211.167, 211.173, 211.192, and 211.204; EU GMP Guidelines Part I Chapter 4 (Documentation) and Chapter 8 (Complaints, Quality Defects and Product Recalls); EU Annex 16 (Certification by a Qualified Person and Batch Release); and ICH Q10 Section 3.2 (Pharmaceutical Quality System Elements). The Quality Systems Manager is responsible for ensuring this SOP remains current with all applicable regulatory requirements and for communicating regulatory changes to affected personnel.
+
+| Regulatory Citation | Applicable Requirement | Impact on This SOP |
+|---|---|---|
+| FDA 21 CFR § 211.165 | Testing and release for distribution | Sections 5.0, 7.0 |
+| FDA 21 CFR § 211.192 | Production record review | Section 4.0 |
+| EU GMP Annex 16 §3 | Qualified Person batch certification | Section 7.0 |
+| ICH Q10 §3.2.1 | Batch release system requirements | Sections 4.0–8.0 |
+| ICH Q7 §11.1 | Release of finished API/FDP | Sections 5.0, 7.0 |
+| EU GMP Part I Ch. 8 | Non-conformance and recall readiness | Sections 9.0, 10.0 |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Approved Status:** The formal designation assigned to a batch of finished goods that has successfully met all pre-defined release criteria, including batch record review, analytical testing, QP certification (where applicable), and regulatory compliance review. Approved material is eligible for distribution.
+
+**Batch (Lot):** A defined quantity of starting material, packaging material, or product processed in a single process or series of processes such that it is expected to be homogeneous. In the context of continuous manufacturing, a batch may be defined by a fixed time interval or quantity produced within validated operational parameters.
+
+**Certificate of Analysis (CoA):** A formal quality document issued by the Quality Control (QC) Laboratory or a contracted testing laboratory that summarizes the analytical test results for a specific batch of finished goods, confirms compliance against registered product specifications, and bears the authorizing signature of the responsible QC Manager or Laboratory Director.
+
+**Disposition:** The formal quality decision made by authorized Quality Assurance personnel regarding the ultimate fate of a finished goods batch. Valid disposition decisions are: Approved (Released), Rejected, Quarantine (Pending), or Returned/Destruction Pending.
+
+**Quarantine:** A temporary material status applied to finished goods pending the completion of all required tests, reviews, and approvals. Quarantined material must be physically segregated from approved and rejected material and must bear the appropriate status label (yellow quarantine label, Label Code QL-003).
+
+**Qualified Person (QP):** An individual meeting the educational and professional experience requirements defined in EU Directive 2001/83/EC Article 48, formally designated and named in the facility's manufacturing authorization (MIA), and solely responsible for certifying that each batch of medicinal product has been manufactured, tested, and reviewed in accordance with applicable regulations and the conditions of the marketing authorization before release for sale or distribution within the European Economic Area (EEA).
+
+**Rejected Status:** The formal disposition designation applied to a batch of finished goods that has failed one or more release criteria, has been deemed non-conforming following investigation, or has been invalidated for distribution for any regulatory, safety, or quality reason. Rejected material must be physically segregated under controlled conditions pending destruction or return.
+
+**Release:** The formal authorization, granted by a designated Quality Assurance representative and/or Qualified Person, permitting a finished goods batch to be transferred from quarantine inventory to the approved distribution network.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| CoA | Certificate of Analysis |
+| CMO | Contract Manufacturing Organization |
+| EBR | Electronic Batch Record |
+| EMA | European Medicines Agency |
+| FDA | U.S. Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| IPC | In-Process Control |
+| LIMS | Laboratory Information Management System |
+| MAH | Marketing Authorization Holder |
+| MBR | Master Batch Record |
+| MIA | Manufacturer's (Importation) Authorization |
+| NCR | Non-Conformance Report |
+| OOS | Out-of-Specification |
+| OOT | Out-of-Trend |
+| PBR | Packaging Batch Record |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QMS | Quality Management System |
+| QP | Qualified Person |
+| SOP | Standard Operating Procedure |
+| TBR | Technical Batch Report |
+| WMS | Warehouse Management System |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance Specialist (Release)
+
+The QA Specialist (Release) is the primary operational owner of the finished goods release process. This individual is responsible for initiating the batch review package upon receipt of the completed batch record from manufacturing, coordinating with the QC Laboratory for testing status updates, tracking batch disposition timelines, entering disposition decisions into the Quality Management System (TrackWise or equivalent), and generating and distributing the approved Certificate of Analysis. The QA Specialist (Release) must hold a minimum of a Bachelor's degree in a life sciences discipline, have completed GMP training (SOP-TRN-001) within the preceding 12 months, and be listed on the current Delegation of Authority matrix (QA-DOA-003). This role does not have independent authority to issue a final release decision but may recommend approval following completion of all checklist items on Form QA-RLS-001.
+
+### 3.2 QA Manager / Quality Systems Manager
+
+The QA Manager bears ultimate site-level accountability for the integrity of the batch release process. This individual is authorized to issue formal batch disposition decisions (Approved or Rejected) for products distributed within the United States under FDA jurisdiction. For products released into the EEA, the QA Manager coordinates with the designated Qualified Person but does not independently substitute for QP certification. The QA Manager reviews and countersigns all batch disposition decisions, reviews all deviations and non-conformances associated with a batch under review, and ensures that the Pharmaceutical Quality System elements governing release are maintained in a state of continuous improvement in accordance with ICH Q10.
+
+### 3.3 Qualified Person (QP)
+
+The Qualified Person is responsible and legally accountable for certifying that each medicinal product batch intended for the EEA has been manufactured in accordance with EU GMP requirements, the conditions of the applicable Marketing Authorization, and any additional requirements set forth by national competent authorities. The QP's certification is a mandatory precondition to batch release for EEA markets and must be documented in the QP Certification Record (Form QA-QP-007). The QP operates with full independence from commercial and manufacturing pressure and has unilateral authority to withhold batch certification pending satisfactory resolution of any identified quality concern. The QP must maintain a current EU GMP Annex 16 acknowledgment on file with the site's Regulatory Affairs function.
+
+### 3.4 QC Laboratory Analyst and Laboratory Manager
+
+QC Laboratory Analysts are responsible for performing all finished product analytical testing in accordance with validated test methods (per SOP-QC-004 and SOP-QC-007), accurately recording results in the LIMS, and flagging any OOS or OOT results to the Laboratory Manager within two (2) business hours of result generation. The Laboratory Manager reviews and approves all test results prior to inclusion in the Certificate of Analysis, initiates the OOS investigation process (SOP-QC-012) when applicable, and issues the signed CoA to the QA Specialist (Release) upon satisfactory completion of all testing.
+
+### 3.5 Warehouse / Materials Management
+
+Warehouse personnel are responsible for maintaining physical quarantine segregation of finished goods through accurate status labeling and WMS-enforced inventory holds. The Warehouse Supervisor is responsible for ensuring that quarantine areas are physically locked or access-restricted, that status labels are affixed at the time of production completion, and that approved material is transferred to the distribution staging area only upon receipt of a written or system-generated Release Authorization (Form QA-RLS-005). Warehouse personnel must never transfer, ship, or relocate quarantined or rejected material without written authorization from QA.
+
+### 3.6 Responsibility Matrix Summary
+
+| Activity | QA Specialist | QA Manager | QP | QC Lab | Warehouse |
+|---|---|---|---|---|---|
+| Initiate batch review package | Primary | Review | Informed | Informed | Informed |
+| Review batch records | Primary | Approve | Aware | N/A | N/A |
+| Issue/approve CoA | Coordinate | Review | Review | Primary | N/A |
+| Formal disposition decision (FDA) | Recommend | Authorize | N/A | N/A | N/A |
+| QP batch certification (EMA) | Support | Support | Primary | N/A | N/A |
+| Physical quarantine management | Monitor | Audit | N/A | N/A | Primary |
+| Release authorization to WMS | Execute | Approve | Certify | N/A | Execute |
+| Reject label affixing | Direct | Authorize | Inform | N/A | Execute |
+
+---
+
+## 4.0 BATCH RECORD REVIEW AND PRE-RELEASE ASSESSMENT
+
+### 4.1 Overview and Initiation
+
+Upon completion of finished goods manufacturing and packaging operations, the Manufacturing Supervisor shall formally close the batch by signing the Packaging Batch Record (PBR) and Electronic Batch Record (EBR) and submitting the completed batch documentation package to the QA Specialist (Release) within one (1) business day of last manufacturing operation completion. The batch documentation package must include, at minimum: the completed Master Batch Record (MBR), the Packaging Batch Record (PBR), all completed in-process control (IPC) forms, any deviation or non-conformance reports opened during the manufacturing campaign, line clearance records, reconciliation data for bulk and printed packaging materials, and equipment use and cleaning logs for all primary manufacturing equipment.
+
+The QA Specialist (Release) shall log receipt of the batch documentation package in the QMS (TrackWise) within four (4) business hours and assign a unique Release Tracking Number (RTN) using the format RTN-YYYY-NNNN. The RTN shall be referenced on all subsequent release-related documents and communications associated with that batch. The LIMS shall be queried to confirm that finished product samples have been accessioned and are in active testing status prior to proceeding with batch record review.
+
+### 4.2 Batch Record Review Checklist
+
+The QA Specialist (Release) shall conduct a systematic review of the complete batch documentation package using the Batch Record Review Checklist (Form QA-RLS-001). This checklist is designed to capture all critical data points required for a compliant batch release determination and must be completed in its entirety before a disposition recommendation is submitted to the QA Manager. The review must be completed within five (5) business days of batch documentation package receipt for standard commercial products, or within ten (10) business days for complex biologics or sterile injectables subject to extended stability or sterility testing timelines.
+
+The following minimum review elements must be addressed and documented on Form QA-RLS-001:
+
+1. Confirm the batch number, product name, product code, and manufactured quantity match the production order and are consistent across all batch documents.
+2. Verify that all batch record pages bear original signatures (or validated electronic signatures per 21 CFR Part 11 / EU Annex 11) from the manufacturing operator and a supervisor/reviewer, with no unauthenticated entries.
+3. Confirm that all critical process parameters (CPPs) recorded during manufacturing fall within the validated ranges defined in the MBR and current Process Validation Report (PVR).
+4. Verify that all IPC test results

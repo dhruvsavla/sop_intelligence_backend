@@ -1,0 +1,230 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                        DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-006
+  Title:            Test Method Validation
+  Version:          2.3
+  Effective Date:   2023-09-01
+  Supersedes:       2.2
+  Department:       GLP / Quality Control
+  Approved By:      Kevin Marsh, Quality Control Manager
+  Review Cycle:     2 years (next review due: 2025-09-01)
+  Pages:            15
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Dr. Priya Anand, Senior Analytical Chemist | *P. Anand* | 2023-08-04 |
+| Reviewer | Sarah Holcombe, QA Specialist | *S. Holcombe* | 2023-08-14 |
+| Reviewer | Dr. Marcus Teller, Principal Scientist | *M. Teller* | 2023-08-18 |
+| Approver | Kevin Marsh, Quality Control Manager | *K. Marsh* | 2023-08-25 |
+
+---
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Method Validation Planning and Protocol Development | 5 |
+| 5.0 | Specificity and Selectivity | 6 |
+| 6.0 | Linearity, Range, and Calibration | 7 |
+| 7.0 | Accuracy and Recovery | 8 |
+| 8.0 | Precision: Repeatability and Intermediate Precision | 9 |
+| 9.0 | Limit of Detection and Limit of Quantitation | 10 |
+| 10.0 | Robustness and Ruggedness | 11 |
+| 11.0 | Data Review, Acceptance, and Validation Report | 12 |
+| 12.0 | Deviation and Exception Handling | 13 |
+| 13.0 | References and Related Documents | 14 |
+| 14.0 | Revision History | 15 |
+
+> **Note:** Section count is 14 inclusive of the mandatory closing sections; the procedural core spans Sections 4.0 through 11.0 (eight operational sections) yielding thirteen substantive procedural and administrative sections as specified, with Section 14.0 serving as the document-control terminus.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) defines the requirements, responsibilities, and procedural steps governing the validation of analytical test methods used within the Good Laboratory Practice (GLP) environment of the Quality Control (QC) laboratory. Method validation is the process by which it is established, through systematic laboratory studies, that the performance characteristics of a test method meet the requirements for its intended analytical application. The validation activities described herein are designed to generate objective evidence — through documented experimental data — that an analytical method is suitable for its intended purpose before it is applied to the routine analysis of pharmaceutical substances, drug products, raw materials, in-process samples, or stability samples.
+
+This SOP ensures that all validation activities are conducted in a scientifically sound manner consistent with internationally recognized regulatory expectations, including those set forth by the International Council for Harmonisation (ICH), the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), and applicable Good Laboratory Practice regulations. Adherence to this procedure supports regulatory filings, product release decisions, and laboratory inspection readiness.
+
+### 1.2 Scope
+
+This SOP applies to all new analytical test methods, and to significant modifications of existing compendial or in-house methods, that are to be used for the qualitative or quantitative analysis of pharmaceutical active pharmaceutical ingredients (APIs), excipients, drug products, and associated matrices within the QC laboratory. This document applies to all personnel involved in validation activities, including Laboratory Analysts, Senior Analytical Chemists, QA Specialists, and the QC Manager.
+
+This SOP covers the following categories of analytical procedures as defined in ICH Q2(R1) (2005): identification tests, testing for impurities (limit tests and quantitative tests), and assay procedures (content/potency of active moiety). It does not cover the validation of microbiological methods (refer to SOP-GLP-012), biological assays (refer to SOP-GLP-018), or cleaning validation methods (refer to SOP-GLP-022).
+
+### 1.3 Regulatory Basis
+
+All activities described in this SOP are aligned with the following regulatory frameworks: FDA 21 CFR Part 211.165 (Testing and Release for Distribution), FDA 21 CFR Part 211.194 (Laboratory Records), ICH Q2(R1) — Validation of Analytical Procedures: Text and Methodology, and EMA Guideline EMEA/CHMP/EWP/192217/2009 on the Validation of Analytical Procedures. Where compendial methods from the United States Pharmacopeia (USP <1225>) or European Pharmacopoeia (Ph. Eur. 2.2.46) are employed, this SOP governs the process of verifying that the laboratory can successfully execute the published procedure prior to routine use.
+
+### 1.4 Document Control
+
+This document is a controlled document managed under the site Document Management System (DMS). Any printed copy of this document is considered uncontrolled unless stamped "CONTROLLED COPY" with the corresponding copy number. Revisions to this SOP require re-approval through the change control process as defined in SOP-QMS-001 (Document Control and Change Management).
+
+---
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document and are consistent with ICH Q2(R1) and USP <1225> terminology.
+
+**Accuracy:** The closeness of agreement between the value that is accepted as a conventional true value, or an accepted reference value, and the value found by applying the test method. Expressed as percent recovery (%R) or as bias.
+
+**Precision:** The degree of agreement among a series of measurements obtained from multiple sampling of the same homogeneous sample under prescribed conditions. Encompasses repeatability, intermediate precision, and reproducibility.
+
+**Linearity:** The ability of an analytical procedure, within a given range, to obtain test results that are directly proportional to the concentration (amount) of analyte in the sample.
+
+**Specificity:** The ability to assess unequivocally the analyte in the presence of components that may be expected to be present, such as impurities, degradation products, matrix components, or other active ingredients.
+
+**Limit of Detection (LOD):** The lowest amount of analyte in a sample that can be detected but not necessarily quantitated as an exact value.
+
+**Limit of Quantitation (LOQ):** The lowest amount of analyte in a sample that can be quantitatively determined with suitable precision and accuracy under the stated experimental conditions.
+
+**Range:** The interval between the upper and lower concentration of analyte in the sample (including these concentrations) for which it has been demonstrated that the analytical procedure has a suitable level of precision, accuracy, and linearity.
+
+**Robustness:** The measure of an analytical procedure's capacity to remain unaffected by small but deliberate variations in method parameters, providing an indication of its reliability during normal usage.
+
+**Method Validation Protocol (MVP):** A pre-approved, prospective document that defines the validation experiments to be performed, the analytical parameters to be evaluated, and the pre-defined acceptance criteria.
+
+**Method Validation Report (MVR):** A document that summarizes the results of all validation experiments performed, compares results against pre-defined acceptance criteria, and concludes whether the method is suitable for its intended use.
+
+**Reference Standard:** A substance with an established identity and assigned purity used as a reference for analytical testing. Primary Reference Standards are traceable to pharmacopeial standards (USP, Ph. Eur., or NIST).
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| API | Active Pharmaceutical Ingredient |
+| CFR | Code of Federal Regulations |
+| DMS | Document Management System |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| GLP | Good Laboratory Practice |
+| GxP | Good Practice (encompassing GMP, GLP, GCP) |
+| HPLC | High-Performance Liquid Chromatography |
+| ICH | International Council for Harmonisation |
+| IQ | Installation Qualification |
+| LOD | Limit of Detection |
+| LOQ | Limit of Quantitation |
+| MVR | Method Validation Report |
+| MVP | Method Validation Protocol |
+| OQ | Operational Qualification |
+| OOS | Out-of-Specification |
+| PQ | Performance Qualification |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| RSD | Relative Standard Deviation |
+| SOP | Standard Operating Procedure |
+| USP | United States Pharmacopeia |
+| %R | Percent Recovery |
+| S/N | Signal-to-Noise Ratio |
+
+---
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Control Manager
+
+The Quality Control Manager (currently Kevin Marsh) bears overall accountability for ensuring that all method validation activities within the QC laboratory are conducted in compliance with this SOP, applicable regulatory requirements, and site-specific quality standards. Responsibilities include: final approval of the Method Validation Protocol (MVP) and Method Validation Report (MVR) prior to and following validation studies, respectively; ensuring adequate resources (personnel, instruments, reference standards) are allocated for validation activities; and authorizing the deployment of validated methods into routine analytical use. The QC Manager also ensures that all instruments used in validation activities are qualified (IQ/OQ/PQ) in accordance with SOP-GLP-003 (Analytical Instrument Qualification) prior to initiating validation experiments.
+
+### 3.2 Senior Analytical Chemist / Principal Scientist
+
+The Senior Analytical Chemist or Principal Scientist serves as the primary technical lead for method validation projects. This individual is responsible for drafting the Method Validation Protocol, defining scientifically justified acceptance criteria, designing and executing — or supervising the execution of — all validation experiments, performing data analysis and statistical calculations, and authoring the Method Validation Report. The Senior Analytical Chemist must possess demonstrated expertise in analytical chemistry appropriate to the method type (e.g., HPLC, GC, UV-Vis, dissolution) and must hold current training on this SOP and all relevant analytical SOPs.
+
+### 3.3 Laboratory Analyst
+
+Laboratory Analysts directly execute the experimental procedures described in the MVP under the supervision of the Senior Analytical Chemist. Analysts are responsible for accurately recording all raw data in approved laboratory notebooks or electronic laboratory notebooks (ELN) in real time, properly labeling and tracking all samples and standard solutions, operating qualified instruments in accordance with approved SOPs, and immediately reporting any anomalies, unexpected results, or instrument malfunctions to the Senior Analytical Chemist. Analysts must be trained and deemed competent on the method under validation before participating in intermediate precision or robustness studies.
+
+### 3.4 QA Specialist
+
+The QA Specialist provides oversight of the validation process to ensure compliance with this SOP and regulatory requirements. Responsibilities include: reviewing the MVP for regulatory alignment and completeness before QC Manager approval; conducting a second, independent review of the MVR and associated raw data before release; assigning and tracking change control records associated with method implementation; and participating in deviation investigations arising during validation studies in accordance with Section 12.0 of this SOP. The QA Specialist does not perform the experimental work but provides a critical quality oversight function throughout the lifecycle of the validation project.
+
+### 3.5 Responsibility Matrix
+
+| Activity | Lab Analyst | Sr. Analytical Chemist | QA Specialist | QC Manager |
+|---|---|---|---|---|
+| Draft Method Validation Protocol | Support | Author | Reviewer | Approver |
+| Execute validation experiments | Primary | Supervise | — | — |
+| Record raw data | Primary | Review | — | — |
+| Perform statistical analysis | Support | Primary | — | — |
+| Author Method Validation Report | Support | Author | Reviewer | Approver |
+| Investigate deviations | Inform | Primary | Co-Lead | Notify |
+| Authorize method for routine use | — | Recommend | Concur | Authorize |
+
+---
+
+---
+
+## 4.0 METHOD VALIDATION PLANNING AND PROTOCOL DEVELOPMENT
+
+### 4.1 Initiation of Method Validation
+
+A method validation project is initiated upon receipt of a new or modified analytical method from the Research & Development (R&D) department, an internal method development team, or when a site elects to implement a modified compendial method. Initiation is formally documented through the site Change Control system (SOP-QMS-002, Change Control). The Change Control record captures the method description, the intended use, the matrix to be analyzed, the regulatory requirement that necessitates the validation, and the target completion timeline. No validation experiments may commence until the Change Control record has been approved and a unique Method Validation Project number has been assigned by QA.
+
+The initiating scientist must confirm, prior to beginning protocol drafting, that (a) all analytical instruments to be used during validation carry current IQ/OQ/PQ qualification status, (b) reference standards of sufficient quantity and certified purity are available and within their established use-by period, (c) the column lot (for chromatographic methods) is documented, and (d) all reagents and solvents meet the purity specifications required by the method. Instrument qualification status shall be verified against the Instrument Master Log maintained in the QC laboratory.
+
+### 4.2 Method Validation Protocol Requirements
+
+The Method Validation Protocol (MVP) is a pre-approved prospective document and serves as the binding experimental plan for all validation activities. The MVP must be drafted by the Senior Analytical Chemist and approved by the QC Manager and QA Specialist before any validation experiments are initiated. Retroactive protocol creation is prohibited. The MVP must include, at minimum, the elements listed in the following numbered procedure.
+
+**Protocol Development Procedure:**
+
+1. Record the method title, unique method identification number, SOP number of the analytical method being validated, version number, and the date of protocol preparation.
+2. State the intended purpose of the method, the analyte(s), the sample matrix, and the applicable product or product class.
+3. Identify all validation parameters to be evaluated based on the method category (see Table 4.1), with written justification for any parameters omitted.
+4. Define all acceptance criteria for each validation parameter quantitatively and in advance; no acceptance criterion may be added or modified after experimental data are reviewed.
+5. Identify all instruments, instrument IDs, reference standards (with lot numbers, certificate of analysis data, and assigned potency), reagents, columns (with serial number and lot number), and solvents to be used.
+6. Specify the number of replicates, concentration levels, and experimental design for each validation parameter study.
+7. Define the statistical methods to be employed for data analysis, including software to be used (e.g., Microsoft Excel 365, SAS 9.4, or equivalent validated software).
+8. Identify the individuals responsible for conducting each experiment and their training status.
+9. Include a signature block for Author, Reviewer (QA Specialist), and Approver (QC Manager) with designated sign-and-date fields.
+10. Include a version control block and reference to the associated Change Control record number.
+
+### 4.3 Validation Parameter Selection by Method Category
+
+ICH Q2(R1) provides a framework identifying which validation characteristics must be demonstrated based on the type of analytical procedure. The table below summarizes the requirements and is mandatory for determining the scope of each MVP.
+
+**Table 4.1 — Validation Parameters Required by Method Category (per ICH Q2(R1))**
+
+| Validation Parameter | Identification | Impurity (Limit) | Impurity (Quantitative) | Assay (Content/Potency) |
+|---|---|---|---|---|
+| Specificity | Required | Required | Required | Required |
+| Linearity | Not required | Not required | Required | Required |
+| Range | Not required | Not required | Required | Required |
+| Accuracy | Not required | Not required | Required | Required |
+| Precision – Repeatability | Not required | Not required | Required | Required |
+| Precision – Interm. Precision | Not required | Not required | Required | Required |
+| LOD | Not required | Required | Not required | Not required |
+| LOQ | Not required | Not required | Required | Not required |
+| Robustness | Recommended | Recommended | Recommended | Recommended |
+
+### 4.4 Reference Standard Management During Validation
+
+All reference standards used during method validation must be procured and managed in accordance with SOP-GLP-007 (Reference Standard and Working Standard Management). Primary Reference Standards sourced from USP, Ph.

@@ -1,0 +1,189 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-PV-007
+  Title:            MedDRA Coding and Terminology Management
+  Version:          2.1
+  Effective Date:   2023-06-01
+  Supersedes:       2.0
+  Department:       Pharmacovigilance (PV)
+  Approved By:      Dr. Amanda Foster, Head of Pharmacovigilance
+  Review Cycle:     2 years (next review due: 2025-06-01)
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title                                                          | Page |
+|---------|----------------------------------------------------------------|------|
+| 1.0     | Purpose and Scope                                              | 2    |
+| 2.0     | Definitions and Abbreviations                                  | 3    |
+| 3.0     | Roles and Responsibilities                                     | 4    |
+| 4.0     | MedDRA Coding Procedures — Core Operational Requirements       | 5    |
+| 5.0     | SMQ Selection and Application                                  | 6    |
+| 6.0     | Coding Quality Review and Verification                         | 7    |
+| 7.0     | MedDRA Version Management and Recoding                         | 8    |
+| 8.0     | Coding in Signal Detection and Aggregate Reporting             | 9    |
+| 9.0     | Deviation and Exception Handling                               | 10   |
+| 10.0    | References and Related Documents                               | 10   |
+| 11.0    | Revision History                                               | 11   |
+
+> **Note:** This document contains 11 numbered sections. Sections 10.0 and 11.0 serve as the penultimate and final sections respectively, per document structure convention. Section counting begins at 1.0 and the operational core is Section 4.0.
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and standardized methodology for the coding of adverse events (AEs), serious adverse events (SAEs), medical history terms, indications, and other medically relevant information using the Medical Dictionary for Regulatory Activities (MedDRA) within the Pharmacovigilance (PV) department. Consistent and accurate MedDRA coding is essential for regulatory submissions, signal detection, aggregate safety reporting, and compliance with global pharmacovigilance obligations under applicable regulatory frameworks.
+
+The procedures described herein ensure that all terminology encoding is performed at the correct MedDRA hierarchical level, using the current approved MedDRA version, and subject to appropriate quality review. This SOP also governs the management of MedDRA version upgrades, recoding activities, and the application of Standardised MedDRA Queries (SMQs) in signal detection and periodic reporting workflows.
+
+### 1.2 Scope
+
+This SOP applies to all personnel within the Pharmacovigilance department who perform, review, or oversee MedDRA coding activities, including but not limited to: individual case safety report (ICSR) processing, aggregate report preparation (PSURs/PBRERs, DSURs, ACOs, and RMPs), clinical trial safety reporting, and signal detection activities. The SOP also applies to contracted Clinical Research Organizations (CROs) and third-party safety data vendors performing MedDRA coding on behalf of the company, who are subject to the same standards through applicable quality agreements.
+
+This procedure applies to all investigational and marketed products for which the company holds pharmacovigilance responsibility, across all global markets. All MedDRA coding activities subject to ICH E2B(R3), ICH E2A, ICH E2C(R2), and applicable regional regulations (FDA 21 CFR Part 314, 21 CFR Part 312; EMA Good Pharmacovigilance Practices Modules VI and VII) fall within scope.
+
+### 1.3 Regulatory Basis
+
+MedDRA is the mandated international medical terminology standard for use in regulatory submissions to ICH member countries and their affiliates. Regulatory obligations governing MedDRA use include ICH M1, ICH E2B(R3) for ICSR data elements, EMA Good Pharmacovigilance Practices (GVP) Module VI, and FDA requirements under 21 CFR §312.32 and §314.81. Failure to comply with MedDRA coding standards may result in rejection of regulatory submissions, signal detection failures, or enforcement action.
+
+| Regulatory Reference          | Requirement                                                              | Applicability         |
+|-------------------------------|--------------------------------------------------------------------------|-----------------------|
+| ICH M1                        | MedDRA version currency and term usage standards                         | Global                |
+| ICH E2B(R3)                   | ICSR electronic transmission using MedDRA LLTs                           | Global                |
+| ICH E2C(R2)                   | PBRER preparation using MedDRA PT/SOC structure                          | Global                |
+| FDA 21 CFR §312.32            | IND safety reporting — AE terminology requirements                       | USA                   |
+| FDA 21 CFR §314.81            | NDA post-marketing safety reporting using MedDRA                         | USA                   |
+| EMA GVP Module VI             | Adverse reaction coding and reporting in EudraVigilance                  | EU/EEA                |
+| EMA GVP Module VII            | Periodic Safety Update Report — MedDRA coding of listed reactions        | EU/EEA                |
+| ICH E2A                       | Clinical safety data management: definitions and standards for reporting  | Global                |
+
+### 1.4 Document Ownership
+
+This SOP is owned by the Head of Pharmacovigilance. Day-to-day procedural stewardship is delegated to the PV Coding Lead. The document is subject to mandatory review every two years or upon release of a new major MedDRA version that introduces structural hierarchy changes, whichever occurs first.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key MedDRA Terminology Definitions
+
+The following definitions are provided to ensure consistent application of MedDRA terminology throughout this SOP and associated activities:
+
+**MedDRA (Medical Dictionary for Regulatory Activities):** An internationally recognized medical terminology dictionary, developed under ICH auspices, used to classify adverse events, medical history, diagnoses, therapeutic indications, and medical procedures in regulatory submissions and safety databases. MedDRA is maintained by the International Council for Harmonisation (ICH) and is distributed by the MedDRA Maintenance and Support Services Organization (MSSO).
+
+**Preferred Term (PT):** A distinct descriptor for a symptom, sign, disease diagnosis, therapeutic indication, investigation, surgical or medical procedure, or medical, social, or family history. PTs represent the primary level at which clinical events are coded and reported. Each PT belongs to one or more System Organ Classes and may have multiple associated Lower Level Terms.
+
+**Lower Level Term (LLT):** The lowest level of the MedDRA hierarchy, representing the verbatim or near-verbatim clinical terminology as reported by a patient or healthcare professional. Each LLT maps to exactly one PT. All ICSRs submitted via E2B(R3) must encode events at the LLT level.
+
+**System Organ Class (SOC):** The highest level of the MedDRA hierarchy, representing broad anatomical, physiological, or pathological groupings. There are 27 SOCs in the current MedDRA structure. Each PT may be linked to multiple SOCs, but one SOC is designated the Primary SOC for reporting purposes.
+
+**High-Level Term (HLT):** A grouping term above PT level that aggregates related PTs within an SOC. HLTs facilitate analysis and review of clusters of related events.
+
+**High-Level Group Term (HLGT):** A grouping term above HLT that aggregates multiple HLTs within an SOC. HLGTs provide an intermediate classification level used in aggregate analyses.
+
+**Standardised MedDRA Query (SMQ):** A grouping of MedDRA terms relating to a defined medical condition or area of interest used to support signal detection, aggregate reporting, and risk assessment. SMQs are validated groupings maintained by MSSO and CIOMS Working Group IV.
+
+**Coding:** The process of identifying and assigning the most clinically appropriate MedDRA term to a verbatim adverse event or medical term as reported in a source document.
+
+**Verbatim Term:** The adverse event or medical term exactly as reported by the reporter (patient, healthcare professional, or other source), prior to coding.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition                                                      |
+|--------------|-----------------------------------------------------------------|
+| AE           | Adverse Event                                                   |
+| CIOMS        | Council for International Organizations of Medical Sciences    |
+| CRO          | Contract Research Organization                                  |
+| DSUR         | Development Safety Update Report                                |
+| EDC          | Electronic Data Capture                                         |
+| GVP          | Good Pharmacovigilance Practices                                |
+| HLT          | High-Level Term                                                 |
+| HLGT         | High-Level Group Term                                           |
+| ICSR         | Individual Case Safety Report                                   |
+| LLT          | Lower Level Term                                                |
+| MedDRA       | Medical Dictionary for Regulatory Activities                    |
+| MSSO         | MedDRA Maintenance and Support Services Organization            |
+| PBRER        | Periodic Benefit-Risk Evaluation Report                         |
+| PT           | Preferred Term                                                  |
+| PSUR         | Periodic Safety Update Report                                   |
+| PV           | Pharmacovigilance                                               |
+| QA           | Quality Assurance                                               |
+| SAE          | Serious Adverse Event                                           |
+| SMQ          | Standardised MedDRA Query                                       |
+| SOC          | System Organ Class                                              |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Pharmacovigilance
+
+The Head of Pharmacovigilance (Dr. Amanda Foster or designated successor) holds ultimate accountability for ensuring that all MedDRA coding activities within the department comply with applicable regulatory requirements and internal quality standards. Responsibilities include approving this SOP and any associated deviations of significant impact, providing strategic oversight of MedDRA version upgrade projects, and ensuring adequate resourcing of the PV Coding function. The Head of PV also serves as the escalation point for coding disputes that cannot be resolved at the Coding Lead level and for decisions regarding systemic coding inconsistencies identified during quality audits.
+
+### 3.2 PV Coding Lead
+
+The PV Coding Lead is the primary operational owner of MedDRA coding standards within the organization. Key responsibilities include: maintaining coding dictionaries in the safety database at the correct MedDRA version; leading MedDRA version upgrade and recoding activities; issuing internal coding guidance documents; conducting or overseeing first- and second-level coding quality checks; resolving complex or disputed coding decisions; liaising with MSSO for term queries; and providing training to PV staff on coding procedures. The PV Coding Lead must hold a current MedDRA certification (MSSO-issued or equivalent) and maintain it on a biennial basis.
+
+### 3.3 PV Specialist / PV Analyst (Coder)
+
+PV Specialists and PV Analysts performing coding activities are responsible for: coding verbatim AE and medical history terms using the current approved MedDRA version; documenting coding decisions in the safety database with appropriate rationale; escalating ambiguous or novel terms to the PV Coding Lead within 24 hours of identification; completing all mandatory MedDRA training prior to performing independent coding; and participating in coding calibration exercises at a minimum frequency of twice per year. Individuals performing coding must have successfully completed the mandatory MedDRA Basic Concepts training (MSSO e-learning, minimum 8 contact hours) prior to independent coding activity.
+
+### 3.4 Medical Safety Officer / Physician
+
+The Medical Safety Officer (or designee physician) is responsible for providing clinical interpretation to support coding decisions when a verbatim term is ambiguous, requires medical judgment, or when a dispute exists between a coder's assignment and the clinically appropriate PT. The Medical Safety Officer reviews and approves coding in high-impact scenarios including: labeling updates based on coded AE frequency, serious unexpected AEs in ICSRs, and aggregate reports. Medical review of coding decisions is mandatory prior to submission of expedited ICSRs and PSURs/PBRERs.
+
+### 3.5 Quality Assurance (QA) Specialist
+
+The QA Specialist assigned to Pharmacovigilance is responsible for: conducting periodic audits of MedDRA coding compliance (minimum annually); reviewing deviations from this SOP; verifying that MedDRA version currency is maintained per defined timelines; and ensuring CRO/vendor coding compliance is assessed via quality oversight activities. The QA Specialist does not perform primary coding but serves as an independent reviewer of coding quality metrics.
+
+### 3.6 Responsibility Summary Matrix
+
+| Activity                                          | PV Coding Lead | PV Specialist | Medical Safety Officer | QA Specialist |
+|---------------------------------------------------|:--------------:|:-------------:|:----------------------:|:-------------:|
+| Primary coding of AE verbatim terms               | Backup         | Primary       | —                      | —             |
+| Coding quality review (first-level)               | Primary        | Self-check    | —                      | —             |
+| Coding quality review (second-level/QA audit)     | Support        | —             | —                      | Primary       |
+| Medical review of ambiguous coding                | Consult        | Escalate      | Primary                | —             |
+| MedDRA version upgrade management                 | Primary        | Support       | —                      | Review        |
+| Coding calibration exercise facilitation          | Primary        | Participate   | Participate            | Observe       |
+| Deviation initiation and CAPA ownership           | Primary        | Support       | —                      | Review/Close  |
+
+---
+
+## 4.0 MEDDRA CODING PROCEDURES — CORE OPERATIONAL REQUIREMENTS
+
+### 4.1 General Coding Principles
+
+All adverse event terms, medical history terms, therapeutic indications, and other medically relevant free-text verbatim terms entered into the safety database shall be coded using MedDRA. Coding must be performed at the LLT level as required by ICH E2B(R3) for ICSR electronic transmission and at the PT level as the minimum standard for internal analyses and aggregate reports. MedDRA coding must adhere to the principle of specificity: the most specific, clinically accurate MedDRA term that accurately reflects the verbatim report must be selected. Over-coding (selecting a term broader than the reported event) and under-coding (selecting a term less specific than available) are both quality failures subject to deviation documentation.
+
+When a verbatim term directly maps to an existing MedDRA LLT, that LLT and its parent PT shall be assigned without modification. When the verbatim term does not directly map, the coder shall apply the decision hierarchy described in Section 4.3 below. The assigned MedDRA version shall be the current company-approved version as maintained in the safety database (see Section 7.0 for version management procedures). No coding shall be performed using a MedDRA version that has been superseded within the company's safety database beyond the transition period defined in Section 7.2.
+
+### 4.2 Coding Hierarchy and Term Selection Criteria
+
+MedDRA coding shall follow the five-level hierarchy: SOC → HLGT → HLT → PT → LLT. The primary deliverable of each coding action is the selection of:
+
+1. One primary SOC (the anatomical/physiological SOC deemed most clinically appropriate as the primary classification)
+2. One PT (the defining descriptor of the clinical event)
+3. One LLT (the term closest to the verbatim report, as required for E2B(R3) submissions)
+
+When multiple PTs could plausibly represent a single verbatim report, preference shall be given to the term that: (a) most specifically reflects the reporter's verbatim language; (b) is listed on the company's Reference Safety Information (RSI) if applicable; and (c) would support the most meaningful signal detection analysis. Terms shall never be split — a single verbatim event description shall result in a maximum of one PT/LLT assignment unless the verbatim clearly describes two distinct, independently reportable clinical events.
+
+| Coding Priority Level | Criterion                                                              | Required Action                              |
+|-----------------------|------------------------------------------------------------------------|----------------------------------------------|
+| 1 (Highest)           | Verbatim term is an exact or near-exact LLT match                     | Assign LLT directly; no further search needed |
+| 2                     | Verbatim term maps conceptually to a PT but no exact L

@@ -1,0 +1,211 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-002
+  Title:            Reagent and Solution Preparation
+  Version:          2.1
+  Effective Date:   2023-04-01
+  Supersedes:       2.0
+  Department:       GLP
+  Approved By:      Kevin Marsh, Quality Control Manager
+  Review Cycle:     2 years
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## APPROVAL AND AUTHORIZATION
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Sarah Donovan, Senior Laboratory Analyst | *S. Donovan* | 2023-03-08 |
+| Technical Reviewer | Dr. Priya Nair, Principal Scientist | *P. Nair* | 2023-03-15 |
+| QA Reviewer | James Rourke, QA Specialist | *J. Rourke* | 2023-03-22 |
+| Approver | Kevin Marsh, Quality Control Manager | *K. Marsh* | 2023-03-29 |
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Reagent Receipt, Verification, and Storage | 5 |
+| 5.0 | Solution Preparation Procedure | 6 |
+| 6.0 | Labeling Requirements | 7 |
+| 7.0 | Stability, Expiry Assignment, and Re-evaluation | 8 |
+| 8.0 | Reference Material Handling and Traceability | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 10 |
+| 11.0 | Revision History | 11 |
+
+> **Note:** This document contains 10 numbered procedural sections (Sections 1.0 through 10.0), with the Revision History designated Section 11.0 per site document management convention. Section numbering is continuous and uninterrupted.
+
+---
+
+---
+
+# 1.0 PURPOSE AND SCOPE
+
+## 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the minimum requirements and uniform methodology for the preparation, labeling, verification, storage, and documentation of reagents and solutions used in Good Laboratory Practice (GLP) studies conducted within the Quality Control (QC) and analytical laboratories of this facility. The procedure ensures that all prepared reagents and solutions are fit for their intended purpose, are accurately characterized, and are prepared and maintained in a manner that prevents contamination, mislabeling, degradation, and analytical error. Compliance with this SOP is mandatory for all personnel who prepare, handle, or use reagents and solutions in support of regulated GLP activities.
+
+## 1.2 Scope
+
+This SOP applies to all laboratory analysts, study directors, and support staff involved in the preparation of reagents, volumetric solutions, buffer systems, working standards, and ancillary solutions used in GLP-compliant studies. It covers activities from initial receipt of raw chemical materials through solution preparation, labeling, in-use monitoring, expiry assignment, and final disposal. This SOP applies to all analytical disciplines within the GLP laboratory, including but not limited to: high-performance liquid chromatography (HPLC), titration, dissolution, spectrophotometry, microbiology support chemistry, and physicochemical testing.
+
+## 1.3 Regulatory Basis
+
+This document is developed in conformance with the United States Food and Drug Administration (FDA) regulations at 21 CFR Part 58 — Good Laboratory Practice for Nonclinical Laboratory Studies, specifically Subpart F (Test, Control, and Reference Substances) and Subpart G (Protocol for and Conduct of a Nonclinical Laboratory Study). Additional guidance is drawn from OECD Principles of GLP (ENV/MC/CHEM(98)17), the Organisation for Economic Co-operation and Development (OECD) Consensus Document No. 14 on the roles and responsibilities of the Study Director, and ICH Q2(R1) Validation of Analytical Procedures.
+
+## 1.4 Exclusions
+
+This SOP does not govern the preparation of final dosage forms, the formulation of test article preparations (which are covered under SOP-GLP-005), or the handling of radioisotope-containing solutions (refer to SOP-RAD-001). Microbiological growth media preparation is addressed separately in SOP-MIC-003.
+
+---
+
+# 2.0 DEFINITIONS AND ABBREVIATIONS
+
+## 2.1 Definitions
+
+**Reagent:** A substance or compound that is added to a system in order to bring about a chemical reaction or is used to detect, measure, or produce another substance. For the purposes of this SOP, "reagent" encompasses all chemicals, solvents, buffers, and chemical mixtures used in analytical testing.
+
+**Solution Preparation:** The documented process of combining one or more chemical substances, solvents, or materials in defined quantities and under specified conditions to produce a homogeneous mixture of known composition intended for use in analytical or preparative testing.
+
+**Expiry Date:** The date beyond which a prepared reagent or solution must not be used in analytical testing, as determined by established stability data, referenced pharmacopoeial monographs, validated analytical procedures, or professional scientific judgment documented in a risk-based rationale.
+
+**Labeling:** The complete set of information affixed to a reagent or solution container that uniquely identifies its contents, concentration, preparation date, expiry date, storage conditions, preparer identity, and hazard classification.
+
+**Stability:** The capacity of a reagent or solution to remain within specified limits of purity, concentration, and physical form throughout its assigned shelf life, under defined storage conditions.
+
+**Reference Material (RM):** A material, sufficiently homogeneous and stable with respect to one or more specified properties, which has been established to be fit for its intended use in measurement or in examination of nominal properties. Certified Reference Materials (CRMs) carry metrological traceability to SI units through an unbroken chain of comparisons.
+
+**Preparation Record:** A contemporaneous, written or electronic record that documents all details of a reagent or solution preparation event, including raw material lot numbers, quantities weighed or measured, equipment used, environmental conditions, calculations, and analyst identification.
+
+**Working Standard:** A secondary standard prepared from a primary reference material or Certified Reference Material, used routinely in analytical testing to minimize consumption of limited primary reference materials.
+
+**Certificate of Analysis (CoA):** A document issued by a supplier or internal quality function that confirms that a lot of material meets defined specification criteria, listing actual test results alongside acceptance criteria.
+
+**Tare Weight:** The weight of an empty container or vessel, recorded prior to the addition of material, used in net weight calculations during gravimetric preparation.
+
+## 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| CFR | Code of Federal Regulations |
+| CoA | Certificate of Analysis |
+| CRM | Certified Reference Material |
+| GLP | Good Laboratory Practice |
+| GxP | Good (any) Practice (GMP, GLP, GCP) |
+| HPLC | High-Performance Liquid Chromatography |
+| ICH | International Council for Harmonisation |
+| LIMS | Laboratory Information Management System |
+| LOD | Limit of Detection |
+| MSDS / SDS | Material Safety Data Sheet / Safety Data Sheet |
+| OECD | Organisation for Economic Co-operation and Development |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| RM | Reference Material |
+| RH | Relative Humidity |
+| SOP | Standard Operating Procedure |
+| USP | United States Pharmacopeia |
+| WHO | World Health Organization |
+
+---
+
+# 3.0 ROLES AND RESPONSIBILITIES
+
+## 3.1 Laboratory Analyst
+
+The Laboratory Analyst is the primary person responsible for the physical execution of reagent and solution preparation in accordance with this SOP. The analyst must complete all mandatory training documented in the training management system prior to performing any preparation covered by this procedure. The analyst is responsible for performing pre-use checks of all balances, volumetric glassware, and pH meters used during preparation; completing all entries in the preparation record contemporaneously and in black permanent ink (or approved electronic equivalent); verifying raw material identity and expiry before use; and affixing compliant labels to all prepared solutions prior to use or storage. The analyst must immediately report any discrepancy, anomaly, or preparation failure to the Study Director or designee.
+
+## 3.2 Study Director
+
+The Study Director, as defined under 21 CFR §58.33 and OECD GLP Principle 1.1, bears ultimate responsibility for the overall conduct of the study, including the integrity of all reagents and solutions used therein. The Study Director reviews and approves preparation records for critical solutions when required by the study protocol, ensures that the preparation procedures used are appropriate for the intended analytical purpose, and authorizes deviations from this SOP when scientifically justified. The Study Director must also confirm that the storage and use conditions of prepared solutions are compatible with validated analytical methods referenced in the study plan.
+
+## 3.3 QA Specialist
+
+The Quality Assurance Specialist provides independent oversight of reagent and solution preparation activities in accordance with 21 CFR §58.35. QA is responsible for conducting scheduled and unannounced inspections of solution preparation activities and associated records; verifying that labeling is complete, legible, and compliant; auditing preparation records for completeness, accuracy, and timely completion; and reviewing deviation reports related to reagent and solution preparation. QA does not direct or approve analytical decisions but escalates compliance concerns to the QA Manager and Study Director as appropriate.
+
+## 3.4 Quality Control Manager
+
+The Quality Control Manager is responsible for approving this SOP and any revisions thereto, for ensuring adequate resources (personnel, equipment, materials) are available to support compliant solution preparation activities, and for reviewing trending data on reagent-related deviations and Out-of-Specification (OOS) events. The QC Manager reviews escalated deviations and authorizes study impact assessments when critical reagent or solution failures occur.
+
+## 3.5 Summary of Responsibilities
+
+| Activity | Laboratory Analyst | Study Director | QA Specialist | QC Manager |
+|---|---|---|---|---|
+| Perform solution preparation | Primary | — | — | — |
+| Complete preparation record | Primary | Review (as required) | Audit | — |
+| Verify raw material CoA | Primary | — | Audit | — |
+| Apply compliant label | Primary | — | Audit | — |
+| Approve study-critical deviations | Initiate | Approve | Review | Informed |
+| Approve this SOP | — | — | Review | Approve |
+| Conduct GLP inspection of prep | — | — | Primary | Informed |
+
+---
+
+# 4.0 REAGENT RECEIPT, VERIFICATION, AND STORAGE
+
+## 4.1 Receipt and Initial Inspection
+
+All incoming reagents and chemical raw materials must be received through the designated receiving area and inspected prior to entry into any GLP laboratory. Upon receipt, the receiving analyst or designee must verify that the external container is intact, that there is no evidence of leakage, breakage, contamination, or temperature excursion, and that the labeling on the shipping container matches the purchase order description. Reagents received at incorrect temperatures (e.g., ambient-sensitive materials shipped without appropriate cold packs, or cold-chain materials delivered at elevated temperature) must be quarantined immediately and a deviation initiated in accordance with Section 9.0 of this SOP.
+
+## 4.2 Identity Verification and CoA Review
+
+Prior to assigning a reagent to active laboratory inventory, the receiving analyst must confirm the identity and quality of each lot received by reviewing the supplier-provided Certificate of Analysis (CoA). The CoA must confirm that the material meets the purity specification required for the intended application. For analytical grade reagents, a minimum assay purity of ≥99.0% is required unless a lower purity is specified in an approved analytical method. For HPLC-grade solvents, residue on evaporation and UV absorbance values at relevant wavelengths must be within specification. Identity confirmation may be performed via a simple chemical test (e.g., solubility, pH, or color reaction) or by spectroscopic means (e.g., infrared spectroscopy) for controlled or critical materials, in accordance with the applicable test method.
+
+## 4.3 Inventory Labeling and Logging
+
+Reagents that pass receipt inspection must be assigned a unique inventory lot number, logged into the laboratory inventory system (or manual inventory log if LIMS is unavailable), and labeled with the facility-assigned lot number, receipt date, and assigned storage condition before being placed in stock. The original manufacturer label must be retained and must remain legible throughout the material's in-use period. Reagents must not be transferred to unlabeled secondary containers at the point of receipt; any transfer to a secondary container requires full application of a compliant label as described in Section 6.0.
+
+## 4.4 Storage Conditions
+
+All reagents must be stored in accordance with the manufacturer's specifications as stated on the SDS and CoA. Table 4.1 below provides the standard storage classification scheme used at this facility. Refrigerated and frozen reagents must be stored in dedicated laboratory refrigerators or freezers with temperature monitoring; ambient reagents must be stored in appropriate cabinets with segregation of incompatible chemical classes (e.g., acids separate from bases, oxidizers separate from flammable solvents) in accordance with site chemical hygiene plan CHP-001.
+
+**Table 4.1 — Standard Reagent Storage Classification**
+
+| Storage Class | Temperature Range | Humidity Control | Typical Examples | Monitoring Frequency |
+|---|---|---|---|---|
+| Ambient (Controlled) | 15°C – 25°C | ≤60% RH | Most organic reagents, buffer salts | Daily (automated) |
+| Refrigerated | 2°C – 8°C | Not applicable | Enzymes, certain biological reagents, indicators | Continuous (chart recorder or logger) |
+| Frozen (Standard) | −15°C to −25°C | Not applicable | Labile standards, restricted biologicals | Continuous |
+| Deep Frozen | −60°C to −80°C | Not applicable | Certified Reference Materials, nucleic acid reagents | Continuous with alarm |
+| Light-Sensitive | Per above + dark storage | Per class | Photosensitive dyes, certain vitamins | Per above |
+| Flammable Storage | 15°C – 25°C | Per class | HPLC solvents (MeOH, ACN, EtOH) | Daily |
+
+## 4.5 Expiry of Received Reagents
+
+Reagents must not be used after their manufacturer-assigned expiry date. Where a manufacturer does not assign an expiry date, the laboratory must assign an in-house expiry based on the material's known stability characteristics, with a maximum default period of 24 months from receipt for solid-phase reagents and 12 months for liquid-phase reagents, unless scientific data support a longer period documented in the preparation record or a validated stability protocol. Reagents within 30 days of expiry must be flagged in the inventory system as "Approaching Expiry" and must not be used to initiate new preparations without Study Director approval.
+
+### Receipt Inspection Procedure
+
+1. Retrieve the incoming shipment manifest and cross-reference against the purchase order number.
+2. Inspect the external shipping container for damage, temperature indicator status (if applicable), and proper labeling.
+3. Compare the container label (lot number, material name, CAS number, grade) against the CoA.
+4. Verify that the supplier-assigned expiry date on the CoA and container label are present and future-dated.
+5. Review CoA purity and key specification results against the minimum requirements for the intended use.
+6. Log the material into the reagent inventory with receipt date, lot number, CoA reference number, and assigned storage location.
+7. Affix the facility inventory barcode or lot sticker to the primary container.
+8. Transfer the reagent to designated storage within 2 hours of receipt completion.
+9. File the original CoA in the designated physical or electronic reagent file.
+
+---
+
+# 5.0 SOLUTION PREPARATION PROCEDURE
+
+## 5.1 Pre-Preparation Requirements
+
+Before initiating any solution preparation, the analyst must confirm that all raw materials to be used are within their assigned expiry dates and are stored under appropriate conditions. The analyst must also confirm that all equipment to be used (balances, volumetric flasks, pipettes, pH meters, stirrers) is clean, calibrated, and within its current calibration interval. Equipment calibration status must be verified by checking the calibration label affixed to the instrument and, where applicable, by performing a pre-use balance check using a certified reference weight. All preparation must be performed in a designated, clean preparation area that has been wiped down with an appropriate solvent (e

@@ -1,0 +1,219 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:        SOP-PV-005
+  Title:             Aggregate Safety Reporting and DSUR Preparation
+  Version:           2.2
+  Effective Date:    2023-08-01
+  Supersedes:        Version 2.1 (Effective Date: 2021-06-15)
+  Department:        Pharmacovigilance (PV)
+  Approved By:       Dr. Amanda Foster, Head of Pharmacovigilance
+  Review Cycle:      2 years (next review due: 2025-08-01)
+  Pages:             13
+  Classification:    GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+**Approval Signatures:**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Head of Pharmacovigilance | Dr. Amanda Foster | *[Wet/Electronic Signature on File]* | 2023-07-14 |
+| Head of Regulatory Affairs | Dr. James Whitfield | *[Wet/Electronic Signature on File]* | 2023-07-17 |
+| Quality Assurance Representative | Ms. Priya Nair | *[Wet/Electronic Signature on File]* | 2023-07-19 |
+| Qualified Person for Pharmacovigilance (QPPV) | Dr. Renata Schultz | *[Wet/Electronic Signature on File]* | 2023-07-20 |
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | DSUR Planning and Data Lock Point Establishment | 5 |
+| 5.0 | Cumulative Safety Data Collection and Source Integration | 6 |
+| 6.0 | DSUR Content Preparation and Authoring | 7 |
+| 7.0 | Benefit-Risk Evaluation and Signal Assessment Within the DSUR | 8 |
+| 8.0 | Internal Review, Quality Control, and Approval Workflow | 9 |
+| 9.0 | Regulatory Submission and Health Authority Distribution | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+> **Note:** This document contains 11 procedural sections numbered 1.0 through 11.0, with Section 12.0 serving as the Revision History appendix. Total document body spans 13 pages inclusive of tables and procedural content.
+
+---
+
+---
+
+# BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the process by which the Pharmacovigilance (PV) Department prepares, reviews, approves, and submits the Development Safety Update Report (DSUR) for all investigational medicinal products (IMPs) under clinical development at the organization. The DSUR is the primary aggregate safety reporting tool for investigational compounds and is submitted annually to health authorities to provide a comprehensive evaluation of cumulative safety data, emerging risks, and the overall benefit-risk profile of the IMP during the reporting period. This SOP ensures that all DSUR activities are conducted in compliance with the International Council for Harmonisation (ICH) guideline E2F: Development Safety Update Report, applicable regional regulations, and internal quality standards.
+
+This document defines the end-to-end workflow for DSUR preparation, from planning and data lock point (DLP) establishment through regulatory submission. It ensures consistency, accuracy, timeliness, and regulatory compliance across all products in the clinical pipeline.
+
+### 1.2 Scope
+
+This SOP applies to all DSURs prepared by or on behalf of the organization for investigational products in Phase I, Phase II, Phase III, and Phase IIIb clinical trials, as well as compassionate use, expanded access, and named-patient programs where DSURs are contractually or regulatorily required. The procedure encompasses activities conducted by the Pharmacovigilance Department, Regulatory Affairs, Biostatistics, Clinical Operations, and contracted vendors or CROs performing delegated PV activities.
+
+This SOP does not govern Periodic Benefit-Risk Evaluation Reports (PBRERs) or Periodic Safety Update Reports (PSURs) applicable to authorized (marketed) medicinal products, which are addressed under SOP-PV-008. However, where an investigational compound has both investigational and authorized indications, coordination between DSUR and PBRER timelines is required per Section 4.3 of this document.
+
+### 1.3 Regulatory Basis
+
+This SOP is developed in conformance with the following primary regulatory frameworks:
+
+- **ICH E2F:** Development Safety Update Report (August 2011)
+- **ICH E2A:** Clinical Safety Data Management: Definitions and Standards for Expedited Reporting
+- **FDA 21 CFR Part 312.32:** IND Safety Reporting
+- **FDA 21 CFR Part 312.33:** Annual Reports for INDs
+- **EMA Guideline on Good Pharmacovigilance Practices (GVP) Module VII:** Periodic Safety Update Report (applicable by extension to DSUR format guidance in EU)
+- **EU Clinical Trial Regulation (CTR) No 536/2014, Article 43**
+
+| Regulatory Requirement | Applicable Jurisdiction | Submission Frequency | Key Deadline |
+|---|---|---|---|
+| ICH E2F DSUR | Global (where ICH adopted) | Annual | Within 60 calendar days of DLP |
+| FDA IND Annual Report (21 CFR 312.33) | United States | Annual | Within 60 days of IND anniversary |
+| EU CTR Annual Safety Report | European Union | Annual | Within 60 calendar days of DLP |
+| PMDA Annual Safety Report | Japan | Annual | Within 60 days of DLP |
+
+### 1.4 Exclusions
+
+This SOP does not apply to expedited Individual Case Safety Report (ICSR) submissions, which are governed by SOP-PV-001 (Expedited Reporting of Serious Adverse Events) and SOP-PV-002 (SUSAR Reporting and Blinding Procedures). Non-clinical safety aggregate reports (e.g., summaries in Investigator Brochures) are addressed under SOP-RA-012.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Aggregate Reporting:** A periodic, cumulative review and analysis of all available safety information for an investigational or authorized compound, intended to detect emerging signals, characterize risk, and evaluate the benefit-risk profile over a defined period.
+
+**Annual Safety Report (ASR):** The general term used in some jurisdictions for the yearly aggregate safety report submitted under a clinical trial authorization (CTA). For ICH-aligned submissions, the DSUR format satisfies ASR requirements.
+
+**Benefit-Risk Evaluation:** A structured qualitative and/or quantitative assessment comparing the therapeutic benefits of an IMP against its identified and potential risks, considering patient population, disease severity, and availability of alternatives.
+
+**Cumulative Data:** All safety information collected from the earliest clinical administration of the IMP through the Data Lock Point of the current reporting period, regardless of study phase or geographic region.
+
+**Data Lock Point (DLP):** The pre-specified date after which no new data are entered into a database or considered for inclusion in a defined aggregate report. The DLP for the DSUR is anchored to the Development International Birth Date (DIBD).
+
+**Development International Birth Date (DIBD):** The date on which the first clinical trial authorization or equivalent approval was granted anywhere in the world, enabling the first administration of the IMP to human subjects. The DIBD defines the annual DSUR reporting cycle.
+
+**Development Safety Update Report (DSUR):** An annual aggregate safety report for investigational medicinal products prepared in accordance with ICH E2F, providing a comprehensive, cumulative review of global safety data, emerging risks, and the benefit-risk balance during clinical development.
+
+**Investigational Medicinal Product (IMP):** Any pharmaceutical form of an active substance or placebo being tested or used as a reference in a clinical trial.
+
+**Reference Safety Information (RSI):** The safety information used as a comparator for determining expectedness of adverse events, typically contained in the Investigator Brochure (IB) or, for authorized products, the Summary of Product Characteristics (SmPC).
+
+**Serious Adverse Event (SAE):** Any untoward medical occurrence that results in death, is life-threatening, requires inpatient hospitalization or prolongation of existing hospitalization, results in persistent or significant disability/incapacity, is a congenital anomaly/birth defect, or is considered medically significant.
+
+**Signal:** Information arising from one or multiple sources, including observations and experiments, which suggests a new potentially causal association, or a new aspect of a known association between an intervention and an event or set of related events, either adverse or beneficial, that is judged to be of sufficient likelihood to justify verificatory action.
+
+**Suspected Unexpected Serious Adverse Reaction (SUSAR):** A serious adverse reaction whose nature, severity, specificity, or outcome is not consistent with the applicable reference safety information.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| CIOMS | Council for International Organizations of Medical Sciences |
+| CRO | Contract Research Organization |
+| CTA | Clinical Trial Authorization |
+| CTR | Clinical Trial Regulation |
+| DIBD | Development International Birth Date |
+| DLP | Data Lock Point |
+| DSUR | Development Safety Update Report |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GVP | Good Pharmacovigilance Practice |
+| HA | Health Authority |
+| IB | Investigator Brochure |
+| ICH | International Council for Harmonisation |
+| ICSR | Individual Case Safety Report |
+| IMP | Investigational Medicinal Product |
+| IND | Investigational New Drug |
+| PBRER | Periodic Benefit-Risk Evaluation Report |
+| PSUR | Periodic Safety Update Report |
+| PV | Pharmacovigilance |
+| QPPV | Qualified Person for Pharmacovigilance |
+| RSI | Reference Safety Information |
+| SAE | Serious Adverse Event |
+| SmPC | Summary of Product Characteristics |
+| SUSAR | Suspected Unexpected Serious Adverse Reaction |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Pharmacovigilance
+
+Dr. Amanda Foster, Head of Pharmacovigilance, holds overall accountability for the DSUR program and ensures that all DSURs are prepared, reviewed, approved, and submitted in compliance with applicable regulatory requirements and internal quality standards. The Head of PV approves the final DSUR document prior to submission, chairs the cross-functional DSUR Steering Committee, and escalates unresolved safety signals or benefit-risk concerns to the QPPV and Executive Management as appropriate. The Head of PV also ensures that adequate resources, including trained personnel and validated systems, are allocated to support DSUR activities.
+
+### 3.2 Qualified Person for Pharmacovigilance (QPPV)
+
+The QPPV (Dr. Renata Schultz) holds regulatory accountability for all PV activities in the European Union and is responsible for providing oversight of the EU-directed DSUR submissions. The QPPV reviews and endorses the benefit-risk assessment section of each DSUR, confirms the completeness of the EU-specific appendices, and signs regulatory cover letters for EMA and national competent authority (NCA) submissions where required. The QPPV is notified of any critical safety findings identified during DSUR preparation that may warrant expedited communication to health authorities.
+
+### 3.3 DSUR Coordinator (PV Specialist, Senior Level)
+
+The DSUR Coordinator is the primary operational owner of each DSUR. A DSUR Coordinator is assigned per product by the Head of PV at the initiation of each reporting cycle. Responsibilities include development and maintenance of the DSUR project plan, coordination of data requests from Biostatistics and Clinical Operations, authoring or coordinating authorship of all DSUR sections, management of the internal review and QC process, and tracking of submission deadlines. The DSUR Coordinator holds a minimum qualification of a BSc in a life sciences discipline with at least 3 years of pharmacovigilance experience and completion of accredited DSUR training (documented in training records).
+
+### 3.4 PV Data Analyst
+
+The PV Data Analyst is responsible for extracting, cleaning, and tabulating cumulative safety data from the safety database (e.g., Argus Safety, Oracle AERS) and clinical trial databases. The analyst prepares all line listings, frequency tables, and incidence calculations used in the DSUR and confirms database lock status prior to DLP. The PV Data Analyst works under the direction of the DSUR Coordinator and reports data quality issues via the safety database deviation log.
+
+### 3.5 Regulatory Affairs Lead
+
+The Regulatory Affairs Lead is responsible for confirming the list of active CTAs, INDs, and equivalent regulatory authorizations for the IMP in each reporting cycle, verifying submission deadlines per jurisdiction, preparing regulatory cover letters, and managing the electronic submission dossiers (e.g., eCTD technical packaging for FDA and EMA). The Regulatory Affairs Lead coordinates with the DSUR Coordinator to reconcile the DSUR content against the current IB and any recent regulatory correspondence.
+
+### 3.6 Biostatistics Representative
+
+The Biostatistics Representative provides statistical support for the DSUR, including validation of exposure calculations (total subject exposure, subject-time at risk), incidence rate computations, and confirmation of data integrity for blinded studies. Biostatistics confirms that the statistical appendices of the DSUR are consistent with outputs from validated statistical analysis systems.
+
+### 3.7 QA Specialist
+
+The QA Specialist performs an independent quality review of the final draft DSUR prior to approval. The QA review verifies compliance with this SOP, completeness of regulatory cross-references, accuracy of data tables, integrity of the document control header, and adequacy of the benefit-risk narrative. The QA Specialist documents review findings on Form PV-F-017 (DSUR QA Checklist) and assigns review status as: Approved, Approved with Minor Corrections, or Rejected (Requires Major Revision).
+
+### 3.8 Responsibility Matrix
+
+| Activity | Head of PV | QPPV | DSUR Coordinator | PV Data Analyst | Reg Affairs | Biostatistics | QA Specialist |
+|---|---|---|---|---|---|---|---|
+| DSUR project plan approval | A | I | R | I | C | I | I |
+| DLP confirmation | A | I | R | C | C | C | I |
+| Cumulative data extraction | I | I | C | R | I | C | I |
+| DSUR authoring | C | C | R | C | C | C | I |
+| Benefit-risk narrative | A | A | R | I | C | I | I |
+| QA review | I | I | C | I | I | I | R |
+| Final approval | A | A | I | I | I | I | C |
+| Regulatory submission | A | A | C | I | R | I | I |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+## 4.0 DSUR PLANNING AND DATA LOCK POINT ESTABLISHMENT
+
+### 4.1 DSUR Planning Initiation
+
+DSUR planning for each investigational product must be initiated no later than **120 calendar days prior to the anticipated Data Lock Point (DLP)**. The DSUR Coordinator, upon assignment by the Head of PV, develops a DSUR Project Plan using Form PV-F-014 (DSUR Planning Template). The Project Plan documents the product name, INN, IMP code, DIBD, DLP date, target submission date per jurisdiction, responsible personnel, and a milestone timeline with internal deadlines. The completed Project Plan is reviewed and approved by the Head of PV within 5 business days of receipt and filed in the DSUR Master File for the product.
+
+For products with a DIBD established prior to the implementation of this SOP version, the DSUR Coordinator confirms the DIBD with the Regulatory Affairs Lead and Historical Records team, referencing the original CTA or IND approval letter as the primary source document. Discrepancies in DIBD across jurisdictions must be escalated to the Head of PV for resolution before the Project Plan is finalized.
+
+### 4.2 Data Lock Point Determination
+
+The DLP is the date marking the end of the data collection period for the DSUR. Per

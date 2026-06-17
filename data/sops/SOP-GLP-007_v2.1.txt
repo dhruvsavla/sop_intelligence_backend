@@ -1,0 +1,206 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Field                | Details                                          |
+|----------------------|--------------------------------------------------|
+| **SOP Number**       | SOP-GLP-007                                      |
+| **Title**            | Laboratory Notebook Management                   |
+| **Version**          | 2.1                                              |
+| **Effective Date**   | 2023-03-01                                       |
+| **Supersedes**       | SOP-GLP-007 Version 2.0 (Effective: 2021-02-15)  |
+| **Department**       | Good Laboratory Practice (GLP)                   |
+| **Approved By**      | Dr. Patricia Yuen, Laboratory Director           |
+| **Reviewed By**      | Marcus T. Holloway, QA Manager                   |
+| **Authored By**      | Dr. Simone Reddick, Senior Research Scientist     |
+| **Review Cycle**     | 2 years (Next Review Due: 2025-03-01)            |
+| **Pages**            | 10                                               |
+| **Classification**   | GxP Critical                                     |
+| **Distribution**     | GLP Laboratory Staff, QA Department, Archives    |
+
+```
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+> **APPROVAL SIGNATURES**
+>
+> | Role                    | Name                        | Signature | Date       |
+> |-------------------------|-----------------------------|-----------|------------|
+> | Laboratory Director     | Dr. Patricia Yuen           | *on file* | 2023-02-20 |
+> | QA Manager              | Marcus T. Holloway          | *on file* | 2023-02-18 |
+> | Senior Research Sci.    | Dr. Simone Reddick          | *on file* | 2023-02-15 |
+> | Regulatory Affairs Lead | Constance M. Park           | *on file* | 2023-02-17 |
+
+---
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                       TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title                                              | Page |
+|---------|----------------------------------------------------|------|
+| 1.0     | Purpose and Scope                                  | 2    |
+| 2.0     | Definitions and Abbreviations                      | 3    |
+| 3.0     | Roles and Responsibilities                         | 4    |
+| 4.0     | Notebook Issuance and Initialization               | 5    |
+| 5.0     | Daily Recording Standards and Entry Requirements   | 6    |
+| 6.0     | Witnessing and Co-Signing Requirements             | 7    |
+| 7.0     | Electronic Laboratory Notebook (ELN) Management   | 8    |
+| 8.0     | Archiving, Retention, and Retrieval                | 9    |
+| 9.0     | Deviation and Exception Handling                   | 9    |
+| 10.0    | References and Related Documents                   | 10   |
+| 11.0    | Revision History                                   | 10   |
+
+---
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         BODY — SECTIONS 1–11
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure establishes the requirements, responsibilities, and controls governing the management of laboratory notebooks — both paper-based bound notebooks and Electronic Laboratory Notebooks (ELN) — used within Good Laboratory Practice (GLP)-regulated research and testing activities at this facility. Laboratory notebooks constitute primary raw data records and serve as the foundational evidentiary documents upon which study conclusions, regulatory submissions, and data integrity assessments are based.
+
+The purpose of this SOP is to ensure that all laboratory data are recorded contemporaneously, accurately, and in a manner that is attributable, legible, contemporaneous, original, and accurate (ALCOA), consistent with the requirements of the Organisation for Economic Co-operation and Development (OECD) Principles of Good Laboratory Practice, U.S. Food and Drug Administration (FDA) regulations under 21 CFR Part 58, and applicable international guidelines. Adherence to this SOP protects the scientific integrity of the facility's research output and ensures compliance with regulatory expectations during routine inspections, data audits, and study reconstructions.
+
+The principles outlined herein reflect the current regulatory landscape, including guidance from the FDA's 2016 draft guidance on Data Integrity and Compliance with CGMP, OECD Series on Principles of GLP and Compliance Monitoring (Number 1, ENV/MC/CHEM(98)17), and the European Medicines Agency (EMA) reflection paper on expectations for electronic source data and data transcription (EMA/INS/GCP/454280/2010).
+
+### 1.2 Scope
+
+This SOP applies to all personnel who generate, record, review, witness, archive, or otherwise interact with laboratory notebooks within GLP-regulated studies conducted at this facility. This includes, but is not limited to, Research Scientists, Laboratory Analysts, Principal Investigators (PIs), Study Directors, Quality Assurance Specialists, and Laboratory Support Staff. The SOP covers both paper-bound notebooks issued through the central laboratory supply system and entries made within the facility's validated ELN platform (LabArchives Enterprise, Version 9.4 or later validated equivalent).
+
+This SOP does not apply to scratch pads, personal notes, or informal working documents that are not intended to constitute raw data. It does not govern the management of instrument printouts or chromatographic traces beyond their cross-referencing within the notebook; those documents are addressed separately under SOP-GLP-012 (Instrument Data Management). External collaborators or contract research organizations (CROs) performing work under a formal Study Protocol with this facility are required to follow their own approved equivalent procedures, provided those procedures are reviewed and found acceptable by the facility's Quality Assurance Unit (QAU) prior to study initiation.
+
+### 1.3 Regulatory Basis
+
+| Regulation / Guideline                           | Relevant Requirement                                           | Applicability |
+|--------------------------------------------------|----------------------------------------------------------------|---------------|
+| FDA 21 CFR Part 58                               | GLP regulations for nonclinical laboratory studies            | All GLP studies |
+| OECD Principles of GLP (ENV/MC/CHEM(98)17)       | Raw data definition, archiving, and record integrity           | All GLP studies |
+| FDA 21 CFR Part 11                               | Electronic records and electronic signatures                  | ELN platform |
+| EMA/INS/GCP/454280/2010                          | Electronic source data and transcription expectations         | ELN platform |
+| ICH E6(R2) Good Clinical Practice               | Data integrity, audit trails, and contemporaneous recording    | Reference only |
+| FDA Data Integrity Guidance (2016 draft)         | ALCOA principles, audit trail review                          | All records |
+
+### 1.4 Exclusions
+
+This SOP does not apply to records generated exclusively for internal communications (e.g., whiteboard calculations subsequently discarded), provided such communications have no bearing on raw data supporting a regulated study. Any ambiguity regarding whether a given record constitutes raw data shall be resolved by the Study Director in consultation with the QAU prior to study initiation or, where this is not practicable, within 24 hours of the ambiguous record being generated.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**ALCOA:** A data integrity acronym standing for Attributable, Legible, Contemporaneous, Original, and Accurate. These five attributes define the minimum quality criteria for GLP raw data records. ALCOA has been extended to ALCOA+ (adding Complete, Consistent, Enduring, and Available) in more recent regulatory guidance, and both frameworks apply under this SOP.
+
+**Archiving:** The formal transfer of completed laboratory notebooks, whether paper or electronic, from active laboratory custody to the facility's controlled archive or secure electronic archive system, in accordance with defined retention schedules and access control requirements.
+
+**Audit Trail:** A secure, computer-generated record that captures who performed an action, what action was performed, when it was performed, and, where relevant, what the prior value was. In the context of paper notebooks, the audit trail is the visible record of corrections, amendments, and witness signatures. For ELN entries, audit trails are automatically generated and must be enabled at all times.
+
+**Contemporaneous Recording:** The practice of recording observations, measurements, and actions at the time they occur rather than relying on memory to reconstruct records at a later time. In GLP practice, a delay of more than four (4) hours between an observation and its recording constitutes a deviation from contemporaneous recording standards and must be documented as such.
+
+**Electronic Laboratory Notebook (ELN):** A validated software application used to create, manage, review, sign, and archive laboratory records in electronic format. The ELN at this facility is LabArchives Enterprise, validated under IQ/OQ/PQ protocols per SOP-IT-003.
+
+**Error Correction:** The process of correcting an erroneous entry in a laboratory notebook in a manner that preserves the original entry, identifies the correction, provides the reason for the correction, and is dated and initialed by the individual making the correction.
+
+**Issuance:** The formal, controlled process by which a new laboratory notebook (paper or ELN project) is assigned to a named individual, receives a unique tracking number, and is logged in the laboratory notebook registry.
+
+**Laboratory Notebook:** A bound, sequentially paginated, official scientific record used to document experimental observations, procedures, calculations, and results. Paper notebooks used under this SOP are pre-numbered, bound with indelible spine numbering, and contain sequentially printed page numbers that cannot be altered without physical damage to the document.
+
+**Pagination:** The assignment and physical printing of sequential page numbers in a paper laboratory notebook prior to issuance, ensuring that the removal or addition of pages is immediately detectable. For ELN records, pagination is replaced by a sequentially numbered entry log with timestamped creation records.
+
+**Principal Investigator (PI):** The scientist with primary responsibility for the conduct and supervision of a GLP study phase. The PI is accountable for the accuracy, completeness, and timely witnessing of laboratory notebook entries under their supervision.
+
+**Quality Assurance Unit (QAU):** The independent unit within the facility responsible for monitoring compliance with GLP regulations, conducting notebook audits, and approving deviations. The QAU operates independently from study conduct per FDA 21 CFR §58.35.
+
+**Raw Data:** As defined under OECD GLP Principles and FDA 21 CFR §58.3(k), raw data means any laboratory worksheets, records, memoranda, notes, or exact copies thereof that are the result of original observations and activities of a nonclinical laboratory study and are necessary for the reconstruction and evaluation of the report of that study.
+
+**Study Director:** The individual responsible for the overall conduct of a nonclinical laboratory study and the single point of study control as defined under OECD GLP Principles, Section II.1.2.
+
+**Witnessing:** The act by which a qualified, designated individual (the witness) reviews an experimental record or procedure contemporaneously or as close to contemporaneously as practicable, verifies the accuracy of the observation, and co-signs the relevant notebook entry with their signature, printed name, and date.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition                                                    |
+|--------------|---------------------------------------------------------------|
+| ALCOA        | Attributable, Legible, Contemporaneous, Original, Accurate   |
+| CFR          | Code of Federal Regulations                                   |
+| CRO          | Contract Research Organization                                |
+| ELN          | Electronic Laboratory Notebook                               |
+| EMA          | European Medicines Agency                                     |
+| FDA          | U.S. Food and Drug Administration                            |
+| GCP          | Good Clinical Practice                                        |
+| GLP          | Good Laboratory Practice                                      |
+| GxP          | Good [Any] Practice (collective term)                        |
+| ICH          | International Council for Harmonisation                      |
+| IQ/OQ/PQ     | Installation, Operational, Performance Qualification         |
+| LIMS         | Laboratory Information Management System                     |
+| OECD         | Organisation for Economic Co-operation and Development       |
+| PI           | Principal Investigator                                        |
+| QAU          | Quality Assurance Unit                                        |
+| SOP          | Standard Operating Procedure                                  |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Laboratory Director
+
+The Laboratory Director (Dr. Patricia Yuen, or designated successor per the Facility Management Plan) bears ultimate accountability for the implementation and enforcement of this SOP across all GLP laboratories within the facility. The Laboratory Director is responsible for approving this SOP and any major revisions, ensuring adequate resources are allocated for notebook issuance and archiving activities, and reviewing QAU audit findings related to laboratory notebook compliance on no less than a quarterly basis. The Laboratory Director shall co-sign the QAU annual GLP inspection report with respect to notebook management findings and corrective actions.
+
+### 3.2 Study Director
+
+The Study Director assumes responsibility for ensuring that all personnel contributing to their study have been trained on this SOP (training records maintained per SOP-QA-001) and are using issued notebooks correctly. The Study Director shall review and sign the completed notebook index page upon study close-out, confirm all data entries have been properly witnessed as required, and initiate the archiving transfer process within fifteen (15) calendar days of study completion. The Study Director is the primary point of contact for the QAU during notebook audits related to their study.
+
+### 3.3 Principal Investigator
+
+The Principal Investigator oversees the day-to-day recording activities within their assigned phase of a study. The PI is responsible for ensuring contemporaneous entries are made, that error corrections are performed in compliance with Section 5.0 of this SOP, and that witnessing requirements described in Section 6.0 are fulfilled within the required timeframe. The PI shall conduct informal notebook reviews of direct-report Laboratory Analysts at a minimum frequency of once per two (2) weeks during active study conduct.
+
+### 3.4 Laboratory Analyst / Research Scientist
+
+Laboratory Analysts and Research Scientists are responsible for the direct creation and maintenance of laboratory notebook entries. Each individual must ensure their entries are compliant with ALCOA principles, are made with permanent black or blue ink (for paper notebooks), include the date in YYYY-MM-DD ISO 8601 format, and are signed and witnessed as required. They are responsible for immediately reporting suspected errors, data integrity concerns, or lost/damaged notebooks to their PI and the QAU without delay.
+
+### 3.5 Quality Assurance Specialist / QAU
+
+The QAU performs scheduled and unscheduled audits of laboratory notebooks at a frequency not less than twice per calendar year for each active GLP study. The QA Specialist assigned to each study maintains the notebook registry for that study, issues notebooks, documents deviations, and conducts a final notebook compliance review prior to archive transfer. The QAU is empowered to place a study on hold pending resolution of notebook data integrity concerns without prior approval of the Study Director or Laboratory Director.
+
+### 3.6 Responsibilities Summary Table
+
+| Role                         | Issuance | Daily Recording | Witnessing | Audit/Review | Archiving |
+|------------------------------|----------|-----------------|------------|--------------|-----------|
+| Laboratory Director          | Approve  | —               | —          | Final review | Approve   |
+| Study Director               | Request  | Supervise       | Final sign | Quarterly    | Initiate  |
+| Principal Investigator       | Request  | Supervise       | Co-sign    | Bi-weekly    | Prepare   |
+| Laboratory Analyst/Scientist | Receive  | Primary author  | Co-sign    | Self-review  | Transfer  |
+| QA Specialist / QAU          | Issue    | —               | Audit      | Scheduled    | Execute   |
+
+---
+
+## 4.0 NOTEBOOK ISSUANCE AND INITIALIZATION
+
+### 4.1 Notebook Procurement and Pre-Issuance Controls
+
+All paper laboratory notebooks used for GLP-regulated work at this facility must be pre-numbered, hard-bound volumes with sequential, pre-printed page numbers. Notebooks must be procured exclusively from the facility-approved vendor list maintained by the Procurement Department (current approved suppliers: Nalgene Nunc Item #1180-0001 or equivalent, 192-page bound format with sequentially printed pages 1–192). Spiral-bound, loose-leaf, or otherwise alterable formats are strictly prohibited for GLP use. The QA Specialist shall inspect each new shipment of notebooks for completeness of pagination, binding integrity, and legibility of pre-printed page numbers prior to storage in the controlled notebook storage cabinet (Room 112B, access restricted to QA personnel and Laboratory Director).
+
+A minimum stock of thirty (30) blank notebooks shall be maintained at

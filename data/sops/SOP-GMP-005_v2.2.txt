@@ -1,0 +1,210 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:       SOP-GMP-005                                               ║
+║  Title:            Corrective and Preventive Action (CAPA) System            ║
+║  Version:          2.2                                                       ║
+║  Effective Date:   2023-06-15                                                ║
+║  Supersedes:       2.1                                                       ║
+║  Department:       GMP / Quality Assurance                                   ║
+║  Approved By:      Dr. Margaret Chen, VP Quality Assurance                   ║
+║  Review Cycle:     2 years (next review due: 2025-06-15)                     ║
+║  Pages:            14                                                        ║
+║  Classification:   GxP Critical                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## SIGNATURE AND APPROVAL BLOCK
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | James R. Holloway, Senior QA Specialist | *J.R. Holloway* | 2023-05-10 |
+| Reviewed By | Sandra M. Patel, QA Manager | *S.M. Patel* | 2023-05-22 |
+| Reviewed By | Thomas A. Nguyen, Regulatory Affairs Director | *T.A. Nguyen* | 2023-05-25 |
+| Approved By | Dr. Margaret Chen, VP Quality Assurance | *M. Chen* | 2023-06-01 |
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | CAPA Initiation and Classification | 5 |
+| 5.0 | Root Cause Analysis Methodology | 6 |
+| 6.0 | CAPA Action Plan Development | 7 |
+| 7.0 | CAPA Implementation and Verification | 8 |
+| 8.0 | Effectiveness Check and Closure | 9 |
+| 9.0 | Trending, Metrics, and Periodic Review | 10 |
+| 10.0 | Training Requirements | 11 |
+| 11.0 | Deviation and Exception Handling | 12 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+---
+
+# BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure establishes a systematic, risk-based framework for the identification, investigation, documentation, implementation, verification, and closure of Corrective Actions and Preventive Actions (CAPAs) within the Good Manufacturing Practice (GMP) environment at this facility. The CAPA system is a fundamental pillar of the pharmaceutical quality system, designed to eliminate the root causes of existing nonconformances and to proactively prevent the occurrence of potential quality failures before they manifest as product defects or regulatory violations.
+
+The requirements set forth herein are aligned with the expectations of the U.S. Food and Drug Administration (FDA) under 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals) and 21 CFR Part 820 (Quality System Regulation), the International Council for Harmonisation guideline ICH Q10 (Pharmaceutical Quality System), and the European Medicines Agency's (EMA) guidelines as codified in EU GMP Annex 15 and Volume 4, Part I, Chapter 8. Compliance with this SOP is mandatory for all personnel whose activities have a direct or indirect impact on product quality.
+
+The CAPA system described herein is integral to the site's Pharmaceutical Quality System (PQS). It interfaces directly with deviation management, change control, complaint handling, internal and external audit findings, and out-of-specification (OOS) investigation systems. Data generated through the CAPA process shall feed into the site's Annual Product Review (APR) and Management Review programs.
+
+### 1.2 Scope
+
+This SOP applies to all departments and functional areas at this facility, including but not limited to Manufacturing, Quality Control (QC) Laboratory, Quality Assurance (QA), Engineering, Validation, Supply Chain, Regulatory Affairs, and Facilities/Utilities. The CAPA system covers sources including: product nonconformances; process deviations; laboratory OOS and out-of-trend (OOT) results; equipment failures; audit observations (internal, external, and regulatory); customer and consumer complaints; field alerts; and data integrity observations.
+
+### 1.3 Exclusions
+
+This SOP does not govern the management of immediate containment actions taken at the time a deviation occurs; those are addressed in SOP-GMP-003 (Deviation and Nonconformance Reporting). However, CAPAs initiated as a result of deviation investigations shall be managed under this SOP from the point of CAPA initiation forward. Change Control actions arising from approved CAPAs are managed per SOP-GMP-010 (Change Control).
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Corrective Action (CA):** Action taken to eliminate the root cause of an identified nonconformity or other undesirable situation in order to prevent its recurrence. A corrective action addresses an existing problem and is always reactive in nature.
+
+**Preventive Action (PA):** Action taken to eliminate the root cause of a potential nonconformity or other undesirable potential situation in order to prevent its occurrence. A preventive action is prospective in nature, initiated on the basis of risk assessment, trend data, or process knowledge, in the absence of a documented failure event.
+
+**Root Cause Analysis (RCA):** A structured, systematic methodology applied to identify the fundamental, underlying reason(s) for a nonconformance. Identification of the root cause is prerequisite to formulating an effective corrective action. Addressing symptoms without identifying the root cause constitutes an inadequate CAPA response.
+
+**Effectiveness Check:** A scheduled, documented assessment conducted after CAPA implementation to objectively determine whether the implemented action(s) have successfully eliminated the root cause and prevented recurrence of the nonconformance. An effectiveness check is distinct from implementation verification and must be conducted after sufficient data accumulation.
+
+**Trending:** The systematic, periodic analysis of CAPA data and quality metrics to identify emerging patterns, recurring nonconformances, and systemic quality risks that may require preventive action or escalation.
+
+**CAPA Owner:** The individual, by name and title, assigned primary accountability for ensuring the timely and effective completion of all elements of a CAPA record, including action plan development, implementation, verification, and effectiveness check documentation.
+
+**Verification:** Confirmation through objective evidence that a specified requirement has been fulfilled. In the CAPA context, verification confirms that the planned actions have been completed as described in the CAPA action plan.
+
+**Validation:** Confirmation through objective evidence that the requirements for a specific intended use or application have been fulfilled. Where CAPA implementation requires re-validation of a process, method, or system, the requirements of the site Validation Master Plan (VMP) apply.
+
+**Pharmaceutical Quality System (PQS):** The comprehensive quality management framework applicable to the development and manufacture of pharmaceutical products, encompassing ICH Q10 principles.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| APR | Annual Product Review |
+| CA | Corrective Action |
+| CAPA | Corrective and Preventive Action |
+| CFR | Code of Federal Regulations |
+| EQMS | Electronic Quality Management System |
+| EMA | European Medicines Agency |
+| EU GMP | European Union Good Manufacturing Practice |
+| FDA | U.S. Food and Drug Administration |
+| FMEA | Failure Mode and Effects Analysis |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| NMPA | National Medical Products Administration (China) |
+| OOS | Out of Specification |
+| OOT | Out of Trend |
+| PA | Preventive Action |
+| PQS | Pharmaceutical Quality System |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QMS | Quality Management System |
+| RCA | Root Cause Analysis |
+| RPN | Risk Priority Number |
+| SME | Subject Matter Expert |
+| SOP | Standard Operating Procedure |
+| VMP | Validation Master Plan |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 VP Quality Assurance
+
+The VP Quality Assurance (VP QA) holds ultimate site accountability for the integrity, compliance, and effectiveness of the CAPA system. The VP QA shall review and approve changes to this SOP, chair or delegate the monthly CAPA Review Board, approve all CAPAs classified as Critical (Priority Level 1) prior to formal closure, review CAPA trending summaries presented at Management Review, and make final decisions on CAPA extensions where initial timelines cannot be met.
+
+The VP QA is also responsible for ensuring that adequate resources — including personnel, equipment, laboratory access, and budget — are allocated to support timely CAPA investigation and implementation. Where a CAPA may result in a regulatory submission, manufacturing hold, or product recall, the VP QA shall notify senior leadership and engage Regulatory Affairs as appropriate.
+
+### 3.2 QA Manager
+
+The QA Manager is responsible for day-to-day oversight of the CAPA system. Specific responsibilities include: assigning CAPA owners within two (2) business days of CAPA initiation; reviewing and approving all CAPA action plans prior to initiation of actions; tracking CAPA status against established timelines; escalating overdue or stalled CAPAs to the VP QA; reviewing completed effectiveness checks for adequacy; and generating monthly CAPA metrics reports.
+
+The QA Manager shall ensure that all CAPAs are entered accurately into the Electronic Quality Management System (EQMS) and that the associated documentation is complete, legible, attributable, contemporaneous, original, and accurate (ALCOA+ principles). The QA Manager shall also coordinate with department managers to ensure that CAPA owners and SMEs are available to support investigations.
+
+### 3.3 CAPA Owner (Assigned Departmental Representative)
+
+The CAPA Owner is the individual assigned primary responsibility for executing all elements of a given CAPA record. The CAPA Owner is typically the Manager or Supervisor of the department in which the nonconformance originated, or a designated Senior Specialist with appropriate technical knowledge. Responsibilities include: performing or coordinating the root cause analysis; developing the CAPA action plan with realistic, measurable milestones; ensuring implementation of each action item; documenting implementation evidence; and conducting or coordinating the effectiveness check at the scheduled date.
+
+The CAPA Owner must possess sufficient technical expertise to evaluate the nonconformance meaningfully. Where the investigation requires cross-functional input, the CAPA Owner is accountable for convening and facilitating the investigation team and consolidating findings into the CAPA record.
+
+### 3.4 Subject Matter Experts (SMEs)
+
+SMEs from relevant departments (e.g., Manufacturing, Engineering, QC Laboratory, Regulatory Affairs, Validation) shall support CAPA investigations upon request of the CAPA Owner. SME participation shall be documented within the CAPA record, including the date of their contribution and the nature of their input. SMEs are accountable for the accuracy and completeness of the technical information they provide.
+
+### 3.5 QA Specialist (CAPA Coordinator)
+
+The QA Specialist assigned as CAPA Coordinator is responsible for the administrative management of the CAPA system. Duties include: opening and numbering CAPA records in the EQMS; tracking due dates and sending automated and manual reminder notifications; maintaining CAPA trending data; generating agenda materials for the CAPA Review Board; and archiving closed CAPA records in accordance with the site's document retention policy.
+
+### 3.6 Department Managers
+
+Department Managers are accountable for ensuring that their personnel participate in CAPA activities as required, that corrective and preventive actions assigned to their departments are implemented on time, and that their staff receive any training required as part of a CAPA action plan. Department Managers shall communicate CAPA-related changes and training requirements to affected personnel in a timely manner.
+
+### 3.7 Summary of Responsibilities
+
+| Activity | VP QA | QA Manager | CAPA Owner | SME | QA Specialist |
+|---|---|---|---|---|---|
+| Approve SOP revisions | A | R | — | C | I |
+| Initiate CAPA record | I | A | R | — | R |
+| Assign CAPA Owner | A | R | — | — | I |
+| Approve action plan | A | A | R | C | I |
+| Conduct RCA | I | R | A | R | — |
+| Implement actions | I | C | A | R | I |
+| Verify implementation | I | A | R | C | I |
+| Conduct effectiveness check | A | R | A | C | I |
+| Approve closure (Priority 1) | A | R | C | — | I |
+| Approve closure (Priority 2–3) | I | A | R | — | I |
+| Generate trending report | I | A | — | — | R |
+
+*Key: R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+## 4.0 CAPA INITIATION AND CLASSIFICATION
+
+### 4.1 Sources of CAPA Initiation
+
+A CAPA shall be initiated whenever an investigation of a quality event reveals a root cause that requires systematic corrective or preventive action, or when trend analysis or risk assessment identifies a potential systemic quality risk. CAPA initiation is not automatic upon the occurrence of every deviation; rather, it is triggered by the outcomes of investigation and risk evaluation. The determination of whether a CAPA is warranted shall be documented within the originating record (e.g., deviation report, OOS investigation, audit finding report).
+
+Recognized sources that may give rise to CAPA initiation include: internal deviations and nonconformances per SOP-GMP-003; OOS investigations per SOP-QC-008; OOT investigations per SOP-QC-009; internal audit findings per SOP-QA-014; external and regulatory inspection findings; supplier audit observations; product complaints per SOP-QA-018; field safety corrective actions; equipment qualification failures; process validation failures; data integrity observations; Annual Product Review findings; and Management Review action items.
+
+### 4.2 CAPA Classification and Priority Levels
+
+All CAPAs shall be classified into one of three priority levels at the time of initiation. Priority level assignment drives target timeline requirements and escalation thresholds. The QA Manager shall confirm or adjust priority assignments within two (2) business days of CAPA initiation. The classification criteria and associated timelines are defined in the table below.
+
+**Table 4.1: CAPA Priority Classification Matrix**
+
+| Priority Level | Classification | Criteria | RCA Due (Business Days) | Action Plan Due (Business Days) | Implementation Due (Calendar Days) | Effectiveness Check Due (Calendar Days Post-Implementation) |
+|---|---|---|---|---|---|---|
+| 1 — Critical | Immediate threat to patient safety, product quality, or regulatory compliance | Confirmed or probable impact on released product; potential for serious adverse event; regulatory commitment; consent decree obligation; data integrity critical finding | 10 | 15 | 30 | 90 |
+| 2 — Major | Significant quality system gap; risk of recurrence with moderate patient impact | Repeat deviation within 12 months; OOS involving commercial batch; systemic training failure; major audit observation | 20 | 25 | 60 | 120 |
+| 3 — Minor | Isolated, low-risk nonconformance with limited recurrence potential | Single occurrence, no patient impact; administrative SOP gap; housekeeping observation; minor audit finding | 30 | 35 | 90 | 180 |
+
+### 4.3 CAPA Numbering and Record Creation
+
+Each CAPA shall be assigned a unique identification number using the format **CAPA-YYYY-NNNNN**, where YYYY is the four-digit calendar year of initiation and NNNNN is a sequential five-digit number assigned by the EQMS (e.g., CAPA-2023-00147). The CAPA number shall be cross-referenced in all related quality records, including the originating deviation, OOS, or audit finding record. No two CAPA records shall share the same CAPA number.
+
+The QA Specialist shall create the CAPA record in the EQMS within one (1) business day of receipt of a completed CAPA Initiation Request Form (Form QA-F-015). The record shall capture, at minimum: CAPA number; initiation date; source system and reference number; brief description of the noncon

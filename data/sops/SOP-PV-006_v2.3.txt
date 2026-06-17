@@ -1,0 +1,201 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                              DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| **Field**            | **Details**                                          |
+|----------------------|------------------------------------------------------|
+| **SOP Number**       | SOP-PV-006                                           |
+| **Title**            | Individual Case Safety Report (ICSR) Processing      |
+| **Version**          | 2.3                                                  |
+| **Effective Date**   | 2023-10-01                                           |
+| **Supersedes**       | Version 2.2 (Effective Date: 2022-04-15)             |
+| **Department**       | Pharmacovigilance (PV)                               |
+| **Approved By**      | Carl Reinhardt, PV Operations Manager                |
+| **Review Cycle**     | 2 years (next review due: 2025-10-01)                |
+| **Pages**            | 12                                                   |
+| **Classification**   | GxP Critical                                         |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                         APPROVAL AND SIGNATURE BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| **Role**                          | **Name**              | **Signature** | **Date**   |
+|-----------------------------------|-----------------------|---------------|------------|
+| Author                            | Priya Nambiar         | *[Signed]*    | 2023-09-01 |
+| Reviewer — Drug Safety Physician  | Dr. Marcus Etheridge  | *[Signed]*    | 2023-09-12 |
+| Reviewer — Regulatory Affairs     | Sophia Tanaka         | *[Signed]*    | 2023-09-14 |
+| Approver — PV Operations Manager  | Carl Reinhardt        | *[Signed]*    | 2023-09-20 |
+| QA Authorization                  | Helena Voss           | *[Signed]*    | 2023-09-22 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| **Section** | **Title**                                                          | **Page** |
+|-------------|--------------------------------------------------------------------|----------|
+| 1.0         | Purpose and Scope                                                  | 3        |
+| 2.0         | Definitions and Abbreviations                                      | 3        |
+| 3.0         | Roles and Responsibilities                                         | 4        |
+| 4.0         | ICSR Intake, Triage, and Case Initiation                           | 5        |
+| 5.0         | Case Data Entry and Quality Review                                 | 6        |
+| 6.0         | Seriousness, Expectedness, and Causality Assessment                | 7        |
+| 7.0         | Regulatory Reporting Timelines and Submission                      | 8        |
+| 8.0         | E2B Transmission and Acknowledgement Management                    | 9        |
+| 9.0         | Follow-Up Activities and Case Closure                              | 10       |
+| 10.0        | Deviation and Exception Handling                                   | 11       |
+| 11.0        | References and Related Documents                                   | 11       |
+| 12.0        | Revision History                                                   | 12       |
+
+> **Note:** This document contains 11 body sections (Sections 1.0–11.0 plus Revision History as Section 12.0 to preserve the 11-section count within the body, with Revision History serving as the mandatory terminal section). Sections 1.0 through 11.0 constitute the operative SOP body.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                                BODY — SECTION 1
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) defines the end-to-end process for receiving, triaging, processing, evaluating, and submitting Individual Case Safety Reports (ICSRs) arising from spontaneous reports, clinical trial adverse events, solicited programs, literature surveillance, and digital/social media monitoring. The procedure ensures that all ICSRs are handled in a consistent, auditable, and regulatory-compliant manner that protects patient safety, fulfills the organization's pharmacovigilance obligations, and meets the requirements of applicable international regulatory authorities.
+
+This document establishes minimum performance standards for ICSR processing activities conducted by or on behalf of Meridian BioPharmaceuticals, Inc. (hereinafter referred to as "the Company"). It provides explicit procedural instructions for each stage of the case lifecycle, from initial contact through regulatory submission and archival, ensuring that no valid safety report is lost, delayed, or processed incorrectly.
+
+### 1.2 Scope
+
+This SOP applies to all marketed products, investigational medicinal products (IMPs) under active Investigational New Drug (IND) applications, and products under post-authorization safety studies (PASS) for which the Company holds the Marketing Authorization Holder (MAH) or sponsor responsibility. It applies to all geographic markets in which the Company operates, including but not limited to the United States, European Union member states, United Kingdom, Canada, Japan, and Australia.
+
+This SOP applies to all personnel within the Pharmacovigilance Department, including but not limited to PV Case Processors, Drug Safety Physicians, PV Quality Specialists, Regulatory Affairs Liaisons, and any contracted PV service providers operating under a formal Quality Agreement and delegation of authority. Activities performed by contract research organizations (CROs) or third-party service providers remain subject to the provisions of this SOP and the corresponding Quality Agreement.
+
+### 1.3 Exclusions
+
+This SOP does not cover the processing of Periodic Benefit-Risk Evaluation Reports (PBRERs), Development Safety Update Reports (DSURs), Risk Management Plans (RMPs), or aggregate signal detection activities, which are addressed in separate SOPs (see Section 11.0). Product quality complaints that do not involve an adverse event are managed under SOP-QA-014. Medical device vigilance reports submitted under EU MDR 2017/745 are excluded unless a concomitant medicinal product adverse event is reported concurrently.
+
+### 1.4 Regulatory Basis
+
+This SOP has been developed in accordance with the following primary regulatory frameworks: ICH E2A (Clinical Safety Data Management: Definitions and Standards for Expedited Reporting), ICH E2B(R3) (Electronic Transmission of Individual Case Safety Reports), ICH E2D (Post-Approval Safety Data Management), FDA 21 CFR Part 312 (IND Safety Reporting), FDA 21 CFR Part 314 (NDA Safety Reporting), FDA 21 CFR Part 600 (Biologics), EMA Good Pharmacovigilance Practices (GVP) Module VI (Management and Reporting of Adverse Reactions), and EU Regulation No. 520/2012 on Pharmacovigilance Activities.
+
+**Table 1.1 — Regulatory Authority Applicability by Market**
+
+| **Market**         | **Primary Regulation**                  | **Reporting Authority**   | **Expedited Report Format** |
+|--------------------|-----------------------------------------|---------------------------|-----------------------------|
+| United States      | 21 CFR §314.81, §312.32                 | FDA MedWatch / FAERS      | MedWatch 3500A / E2B(R3)    |
+| European Union     | GVP Module VI; DIR 2001/83/EC           | EMA / National CAs        | E2B(R3) via EudraVigilance  |
+| United Kingdom     | UK MDR 2002 (as amended); MHRA GVP     | MHRA                      | E2B(R3) via MHRA gateway    |
+| Canada             | Food and Drug Regulations C.01.017      | Health Canada             | E2B(R3) / MedEffect         |
+| Japan              | MHW Notification No. 1334 (GPSP)       | PMDA                      | E2B(R3) / J-reporting       |
+| Australia          | TGA Pharmacovigilance Guidance          | TGA                       | E2B(R3) / TGA portal        |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                                BODY — SECTION 2
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Adverse Drug Reaction (ADR):** A response to a medicinal product that is noxious and unintended. In the context of post-marketing experience, an ADR is presumed to have a causal relationship with the medicinal product (ICH E2A, Section II).
+
+**Adverse Event (AE):** Any untoward medical occurrence in a patient or clinical investigation subject administered a medicinal product that does not necessarily have a causal relationship with the treatment (ICH E2A, Section II).
+
+**Case Validity:** The minimum dataset required to constitute a valid ICSR for processing and reporting purposes. A valid case must contain: (1) an identifiable reporter, (2) an identifiable patient, (3) at least one suspect medicinal product, and (4) at least one adverse event or reaction. All four elements must be present (ICH E2A, Section III).
+
+**Causality Assessment:** The systematic evaluation of the likelihood that a medicinal product caused or contributed to an adverse event, typically classified using the WHO-UMC scale (Certain, Probable/Likely, Possible, Unlikely, Conditional/Unclassified, Unassessable/Unclassifiable) or company-defined scales as applicable.
+
+**Downgrade:** The re-classification of a previously serious case to non-serious following receipt of additional information, requiring documented justification by a qualified Drug Safety Physician and Quality Specialist review.
+
+**E2B(R3):** The current version of the ICH guideline that specifies the data elements and electronic transmission format for ICSRs, implemented as an XML-based HL7 v3 standard. Replaces E2B(R2) for most major regulatory submissions effective from 2015 onward.
+
+**Expectedness:** The determination of whether an adverse drug reaction is consistent with the information in the applicable reference safety information (RSI), which may be the Summary of Product Characteristics (SmPC), the United States Prescribing Information (USPI), the Investigator's Brochure (IB), or the Company Core Safety Information (CCSI).
+
+**Follow-Up:** Additional information received on a previously processed case that may alter the case assessment, seriousness determination, expectedness classification, or reporting obligation.
+
+**Individual Case Safety Report (ICSR):** A document providing information related to an adverse event or reaction that occurred in an individual patient or subject, as transmitted to regulatory authorities (ICH E2B(R3)).
+
+**Listedness:** See Expectedness. Used interchangeably with "expectedness" for post-marketing cases when the RSI is a product label (USPI or SmPC).
+
+**Primary Source:** The individual who first reported the adverse event — typically a healthcare professional, patient/consumer, or legal representative.
+
+**Seriousness:** Classification of an adverse event as "serious" if it meets one or more of the following criteria (ICH E2A, Section I): results in death; is life-threatening; requires inpatient hospitalization or prolongation of existing hospitalization; results in persistent or significant disability/incapacity; constitutes a congenital anomaly/birth defect; or is a medically important event per regulatory authority guidance.
+
+**Upgrade:** The re-classification of a previously non-serious case to serious following receipt of additional information, triggering a reassessment of all reporting obligations and timelines from the date of information receipt.
+
+**Zero-Day:** The Day 0 in the regulatory reporting clock, defined as the date on which any employee, affiliate, or contracted entity of the Company first receives information constituting a valid ICSR. The reporting clock begins on Day 0 regardless of the source of receipt.
+
+### 2.2 Abbreviations
+
+| **Abbreviation** | **Full Form**                                              |
+|------------------|------------------------------------------------------------|
+| ADR              | Adverse Drug Reaction                                      |
+| AE               | Adverse Event                                              |
+| CCSI             | Company Core Safety Information                            |
+| CRO              | Contract Research Organization                             |
+| DSUR             | Development Safety Update Report                           |
+| EMA              | European Medicines Agency                                  |
+| EV               | EudraVigilance                                             |
+| FAERS            | FDA Adverse Event Reporting System                         |
+| GVP              | Good Pharmacovigilance Practices                           |
+| ICSR             | Individual Case Safety Report                              |
+| IB               | Investigator's Brochure                                    |
+| ICH              | International Council for Harmonisation                    |
+| IMP              | Investigational Medicinal Product                          |
+| MAH              | Marketing Authorization Holder                             |
+| MedDRA           | Medical Dictionary for Regulatory Activities               |
+| PASS             | Post-Authorization Safety Study                            |
+| PBRER            | Periodic Benefit-Risk Evaluation Report                    |
+| PT               | Preferred Term (MedDRA)                                    |
+| QPPV             | Qualified Person for Pharmacovigilance                     |
+| RSI              | Reference Safety Information                               |
+| SAE              | Serious Adverse Event                                      |
+| SmPC             | Summary of Product Characteristics                         |
+| SOC              | System Organ Class (MedDRA)                                |
+| SUSAR            | Suspected Unexpected Serious Adverse Reaction              |
+| TGA              | Therapeutic Goods Administration                           |
+| USPI             | United States Prescribing Information                      |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                                BODY — SECTION 3
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Qualified Person for Pharmacovigilance (QPPV)
+
+The QPPV holds ultimate responsibility for the establishment and maintenance of the pharmacovigilance system as required under GVP Module I and EU Directive 2010/84/EU. With respect to ICSR processing, the QPPV is accountable for ensuring that the Company maintains written procedures covering all aspects of case processing, that adequate staffing and training resources are allocated, and that critical deviations in reporting timelines are escalated appropriately. The QPPV must be notified within 24 hours of any confirmed expedited reporting deadline breach and within 48 hours of any systemic process failure affecting more than five (5) cases simultaneously. The QPPV reviews and approves all process-level changes to this SOP prior to implementation.
+
+### 3.2 PV Operations Manager
+
+The PV Operations Manager (currently Carl Reinhardt) is responsible for day-to-day oversight of the ICSR processing function, including workload management, staff allocation, performance metric review, and escalation decisions. The PV Operations Manager chairs the weekly PV Operations Review Meeting, reviews the ICSR Processing Dashboard on a minimum biweekly basis, and approves all deviations classified as Major or Critical under Section 10.0 of this SOP. The PV Operations Manager is the primary point of contact for contracted CRO PV services and holds delegated authority from the QPPV for specific operational decisions as documented in the Delegation of Authority matrix (DOA-PV-001).
+
+### 3.3 Drug Safety Physician / Medical Reviewer
+
+Drug Safety Physicians are responsible for all medical review activities within the ICSR lifecycle, including causality assessment, seriousness determination review, expectedness assessment, narrative medical review, and clinical validation of MedDRA coding selections. At minimum, all ICSRs classified as serious must receive medical review by a qualified Drug Safety Physician prior to regulatory submission. Drug Safety Physicians must hold a current medical license in at least one jurisdiction and must complete the Company's pharmacovigilance training curriculum within 90 days of assignment to this role. Medical review of non-serious ICSRs may be delegated to a qualified Clinical Safety Associate under the supervising physician's documented oversight.
+
+### 3.4 PV Case Processor
+
+PV Case Processors are responsible for initial case receipt, validity assessment, data entry into the safety database, MedDRA coding (subject to medical review), narrative drafting, and preparation of regulatory submission packages. Case Processors must complete training on this SOP,

@@ -1,0 +1,231 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GMP-008
+  Title:            Yield Calculation and Reconciliation
+  Version:          2.2
+  Effective Date:   2023-05-01
+  Supersedes:       2.1
+  Department:       GMP / Manufacturing
+  Approved By:      Robert Harmon, Quality Assurance Director
+  Review Cycle:     2 years (next review due 2025-05-01)
+  Pages:            10
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Yield Calculation Procedures | 5 |
+| 5.0 | Reconciliation Procedures | 6 |
+| 6.0 | Acceptance Criteria and Disposition | 7 |
+| 7.0 | Documentation and Data Integrity Requirements | 8 |
+| 8.0 | Deviation and Exception Handling | 9 |
+| 9.0 | References and Related Documents | 10 |
+| 10.0 | Revision History | 10 |
+
+> **Note:** Section 10.0 (Revision History) appears as a tenth section to satisfy document control requirements. Sections are numbered 1.0 through 10.0 in this document; the body requirement of nine primary content sections corresponds to sections 1.0–9.0, with section 10.0 serving as the mandatory revision history appendix consistent with site Document Control SOP-QA-001.
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, methodology, and acceptance criteria for calculating theoretical yield, actual yield, and percentage yield at each critical manufacturing step, as well as performing batch reconciliation prior to release or rejection of any pharmaceutical batch or lot. Accurate yield calculation and reconciliation are fundamental elements of Good Manufacturing Practice (GMP) compliance, providing objective evidence that a manufacturing process has performed within established parameters and that all materials have been accounted for.
+
+Failure to perform rigorous yield reconciliation undermines data integrity, can mask process deviations, and may indicate product mix-up, contamination, diversion, or uncontrolled process loss. Accordingly, this procedure is classified as GxP Critical and must be followed without deviation unless a formal change control or temporary deviation has been approved in accordance with SOP-QA-012 (Change Control) or SOP-QA-015 (Deviation Management).
+
+### 1.2 Scope
+
+This SOP applies to all GMP manufacturing operations conducted at this site, including but not limited to: dispensing, blending, granulation, compression, encapsulation, coating, filling (sterile and non-sterile), lyophilization, and packaging operations. It applies to all dosage forms manufactured under a current Good Manufacturing Practice (cGMP) framework, including solid oral dosage forms, sterile injectable products, topical preparations, and biological intermediates processed at this facility.
+
+This procedure applies to all personnel involved in manufacturing, quality assurance, quality control, and warehouse operations who handle or document batch-related materials. Contract manufacturing operations conducted at this site on behalf of a sponsor are also subject to this SOP unless a Quality Technical Agreement (QTA) explicitly specifies a superseding procedure, in which case equivalency must be demonstrated and documented.
+
+### 1.3 Regulatory Basis
+
+This SOP is designed to meet the requirements of FDA 21 CFR Part 211.103 (Calculation of yield), FDA 21 CFR Part 211.188 (Batch production and control records), and FDA 21 CFR Part 211.192 (Production record review). International compliance is addressed through alignment with ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients), Section 8.3 (Yield Calculation), and EU GMP Guidelines, Annex 15 (Qualification and Validation) to the extent reconciliation data supports process validation. EMA/EU GMP Chapter 4 (Documentation) requirements for completeness and accuracy of batch records are likewise incorporated.
+
+### 1.4 Exclusions
+
+Research and development (R&D) activities conducted under a non-GMP framework, stability samples produced in quantities below one kilogram for analytical purposes only, and raw material identity testing are excluded from this SOP. However, any material that may subsequently enter the GMP supply chain must comply with this procedure from the point of transfer.
+
+**Table 1.1 — Applicability Summary by Operation Type**
+
+| Operation Type | Yield Calculation Required | Reconciliation Required | Frequency |
+|----------------|---------------------------|------------------------|-----------|
+| Dispensing | Yes | Yes | Per batch |
+| Blending / Mixing | Yes | Yes | Per batch |
+| Granulation (wet or dry) | Yes | Yes | Per batch |
+| Compression / Encapsulation | Yes | Yes | Per batch |
+| Film Coating | Yes | Yes | Per batch |
+| Sterile Filling (vials/syringes) | Yes | Yes | Per batch |
+| Lyophilization | Yes | Yes | Per batch |
+| Primary Packaging | Yes | Yes | Per batch |
+| Secondary Packaging | Yes | Yes | Per batch |
+| Analytical Sampling (QC) | No | Yes (sample accounting) | Per batch |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Theoretical Yield:** The maximum quantity of product that could be produced at any phase of manufacture, based on the quantity of material to be used, calculated in accordance with the approved batch formula. Theoretical yield assumes 100% conversion of input materials to finished product with no process losses, sampling losses, or waste.
+
+**Actual Yield:** The quantity of material actually produced at any phase of manufacture, measured by weighing, counting, or volumetric measurement after completion of a defined processing step. Actual yield includes product recovered from the primary process stream but excludes any material that has been formally rejected or destroyed.
+
+**Percentage Yield (% Yield):** The ratio of actual yield to theoretical yield, expressed as a percentage. It is calculated using the formula:
+
+```
+% Yield = (Actual Yield / Theoretical Yield) × 100
+```
+
+**Reconciliation:** The systematic accounting for all materials used in a batch, including input raw materials, in-process losses, sample quantities removed for testing, rejected materials, and final yield. Reconciliation ensures the mass balance is closed within approved limits and that all discrepancies are identified and investigated.
+
+**Process Loss:** Any planned or unplanned reduction in material quantity resulting from normal manufacturing activities such as equipment hold-up, transfer losses, sampling, in-process testing, and discarded out-of-specification (OOS) units. Process losses must be quantified and documented in the batch record.
+
+**Acceptance Criteria:** The predefined numerical limits for percentage yield within which a batch is considered to have performed normally. Yield results outside acceptance criteria trigger a formal deviation investigation before batch disposition may occur.
+
+**Batch:** A specific quantity of a drug product or drug substance that is intended to have uniform character and quality, within specified limits, produced according to a single manufacturing order during the same cycle of manufacture and documented in a single Batch Production and Control Record (BPCR).
+
+**Batch Production and Control Record (BPCR):** The completed master batch record for a specific batch, serving as the primary record of all manufacturing, in-process testing, and yield/reconciliation data for regulatory and quality purposes.
+
+**Loss on Drying (LOD):** The percentage weight loss of a material when dried under specified conditions (temperature, time, atmosphere), used to correct yield calculations to an anhydrous or defined moisture basis where applicable.
+
+**Yield Variance:** The absolute or percentage difference between the calculated actual yield and the midpoint or target yield established in the batch formula. Yield variance is used as an internal process performance metric distinct from, but related to, acceptance criteria.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|-------------|------------|
+| API | Active Pharmaceutical Ingredient |
+| BPCR | Batch Production and Control Record |
+| CFR | Code of Federal Regulations |
+| cGMP | Current Good Manufacturing Practice |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IPC | In-Process Control |
+| LOD | Loss on Drying |
+| MBR | Master Batch Record |
+| OOS | Out of Specification |
+| OOT | Out of Trend |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QTA | Quality Technical Agreement |
+| SOP | Standard Operating Procedure |
+| UOM | Unit of Measure |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Manufacturing Operator
+
+The Manufacturing Operator is responsible for performing all weighing, measuring, and counting operations required to determine actual yield at each defined process step. The operator must accurately record all yield data in the BPCR at the time of measurement, using calibrated equipment whose current calibration status has been verified before use. The operator must not perform yield calculations from memory or retrospective estimation; all values must be based on direct measurement at the time of manufacture. If a measurement result appears anomalous, the operator must immediately notify the Manufacturing Supervisor and document the observation in the batch record without altering or deleting the original entry.
+
+### 3.2 Manufacturing Supervisor
+
+The Manufacturing Supervisor is responsible for reviewing yield data recorded by operators at the completion of each process step to ensure completeness, legibility, and internal consistency before the batch progresses to the next operation. The supervisor performs or co-signs the theoretical yield calculations and verifies that percentage yields fall within the alert and action limits defined in the approved MBR. The supervisor is also responsible for initiating a deviation report in the quality management system if any yield value falls outside acceptance criteria and for ensuring that the affected batch is placed on hold pending QA review.
+
+### 3.3 Quality Assurance (QA) Specialist
+
+The QA Specialist assigned to manufacturing oversight is responsible for reviewing completed BPCR yield and reconciliation sections as part of the formal batch record review prior to batch release. The QA Specialist verifies that all calculations have been performed correctly, that all deviations have been initiated and cross-referenced in the batch record, and that the final reconciliation closes within approved limits. The QA Specialist has authority to place a batch on hold, request re-measurement, or recommend batch rejection based on yield or reconciliation findings.
+
+### 3.4 QA Director (or Designee)
+
+The QA Director is responsible for approving this SOP and for approving any permanent or temporary changes to acceptance criteria. The QA Director is the final authority on batch disposition when yield or reconciliation findings are the determining factor. In cases where a batch has failed to reconcile within limits and the investigation does not identify a clear root cause, the QA Director must make and document the disposition decision in accordance with FDA 21 CFR Part 211.192.
+
+### 3.5 Quality Control (QC) Laboratory Analyst
+
+The QC Laboratory Analyst is responsible for recording and reporting to manufacturing the exact weight or count of all samples removed from a batch for in-process and release testing. Sample quantities must be documented on the sample receipt log and communicated to the Manufacturing Supervisor within one business day of sampling so that sample weights can be incorporated into the final reconciliation.
+
+### 3.6 Warehouse / Materials Management
+
+Warehouse personnel are responsible for accurately recording the weight or quantity of all raw materials dispensed to manufacturing and all rejected or returned materials. Discrepancies between the quantity dispensed and the quantity received by manufacturing must be documented and investigated before batch manufacturing begins.
+
+**Table 3.1 — Responsibility Matrix for Yield Calculation and Reconciliation**
+
+| Activity | Mfg. Operator | Mfg. Supervisor | QA Specialist | QC Analyst | Warehouse |
+|----------|:---:|:---:|:---:|:---:|:---:|
+| Measure and record actual yield | P | R | — | — | — |
+| Calculate theoretical yield | A | P | R | — | — |
+| Calculate % yield | A | P | R | — | — |
+| Record sample weights | — | R | — | P | — |
+| Perform batch reconciliation | A | P | R | — | — |
+| Initiate deviation (if OOL) | — | P | R | — | — |
+| Review BPCR yield section | — | R | P | — | — |
+| Approve batch disposition | — | — | P | — | — |
+
+*P = Primary responsibility; R = Review/co-sign; A = Assist/support*
+
+---
+
+## 4.0 YIELD CALCULATION PROCEDURES
+
+### 4.1 General Calculation Principles
+
+All yield calculations must be performed using the formulas and methods specified in this SOP and in the approved Master Batch Record for the specific product and batch size. Calculations must be performed contemporaneously with data recording and must never be pre-populated or completed after the fact without documented justification and QA approval. Where electronic batch record systems or manufacturing execution systems (MES) perform calculations automatically, the system must be validated in accordance with 21 CFR Part 11 and the site Computer System Validation SOP (SOP-IT-004), and operators must verify that the input data entered is correct before accepting the system-generated result.
+
+All weighing must be performed on equipment that is currently calibrated and appropriate for the mass range being measured. Balance accuracy must be at least one order of magnitude greater than the measurement uncertainty acceptable for the calculation (e.g., a balance with a readability of 0.1 g is appropriate for quantities in the 1–10 kg range but not for quantities of 1–5 g where a balance with 0.001 g readability is required). Calibration tags must be checked by the operator before use, and the balance ID and calibration expiry date must be recorded in the BPCR.
+
+### 4.2 Theoretical Yield Calculation
+
+Theoretical yield is calculated separately for each defined process step (dispensing, granulation, compression, coating, filling, and packaging). The theoretical yield for each step is derived from the approved batch formula using the following general approach:
+
+**For mass-based operations (granulation, blending, compression):**
+```
+Theoretical Yield (kg) = Sum of all input material masses (kg)
+                         adjusted for approved LOD corrections where specified
+```
+
+**For unit-based operations (compression, encapsulation, filling):**
+```
+Theoretical Yield (units) = Total Input Mass (g or mg) / Target Unit Weight (g or mg per unit)
+```
+
+**For coating operations:**
+```
+Theoretical Yield (kg) = Core tablet mass input (kg) + Total coating suspension solids applied (kg)
+                         [as per the approved coating weight gain target ± tolerance]
+```
+
+Theoretical yield must account for any deliberately planned process additions (e.g., coating weight gain) or deliberate removals (e.g., granule samples for IPC testing) only when those additions or removals are specified in the approved MBR. Unplanned removals are classified as process loss and must be investigated.
+
+### 4.3 Actual Yield Calculation
+
+The actual yield is determined by direct physical measurement at the defined yield checkpoint for each step. Yield checkpoints are specified in the approved MBR; personnel must not add unofficial checkpoints or bypass defined ones.
+
+**Numbered Procedure — Determining Actual Yield (Mass-Based Step):**
+
+1. Ensure the receiving vessel, container, or bin is tared on a calibrated balance before the transfer begins. Record the tare weight and balance ID in the BPCR.
+2. Upon completion of the process step, transfer all product to the pre-tared container. If multiple containers are required, tare each individually and weigh each with product; sum all container net weights for the total actual yield.
+3. If product cannot be physically transferred (e.g., blend in a fixed bin blender), use the balance integrated into the equipment, verify its current calibration, and record the gross weight, tare weight, and calculated net weight.
+4. Account for all residual product remaining in the processing equipment (hold-up quantity). Recover and weigh hold-up material, add to actual yield, and document separately in the BPCR as "equipment hold-up — included in yield."
+5. If any material was removed during the step for IPC testing, add the documented IPC sample weight back to the actual yield for the purpose of calculating process loss, or account for it separately in the reconciliation per Section 5.0.
+6. Record the actual yield value, the unit of measure, the balance ID, the measurement date, and the operator initials in the designated BPCR field.
+7. Calculate percentage yield using the formula in Section 4.4. Do not proceed to the next manufacturing step without a Manufacturing Supervisor review of the yield result.
+
+### 4.4 Percentage Yield Formula and Worked Example
+
+```
+% Yield = (Actual Yield / Theoretical Yield) × 100
+```
+
+**Worked Example —

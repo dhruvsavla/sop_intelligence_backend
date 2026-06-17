@@ -1,0 +1,197 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                          DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GCP-005
+  Title:            Source Data Verification and Quality Review
+  Version:          2.1
+  Effective Date:   2023-04-01
+  Supersedes:       2.0
+  Department:       GCP (Good Clinical Practice)
+  Approved By:      Dr. Linda Okonkwo, Head of Clinical Operations
+  Review Cycle:     2 years
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                           TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════
+
+  Section                                                           Page
+  ─────────────────────────────────────────────────────────────────────
+  1.0   Purpose and Scope                                             2
+  2.0   Definitions and Abbreviations                                 2
+  3.0   Roles and Responsibilities                                    3
+  4.0   Source Data Verification Procedures                           4
+  5.0   Risk-Based Monitoring and SDV Coverage                        5
+  6.0   Case Report Form Review and Transcription Accuracy            6
+  7.0   Query Management and Resolution                               7
+  8.0   Electronic Source Data and Remote SDV                         8
+  9.0   Deviation and Exception Handling                              9
+  10.0  References and Related Documents                             10
+        Revision History                                             11
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, processes, and responsibilities governing Source Data Verification (SDV) and quality review activities for clinical trials conducted under Good Clinical Practice (GCP) standards. The purpose of this document is to ensure that data recorded in Case Report Forms (CRFs), electronic data capture (EDC) systems, and related trial databases accurately reflect the original source documents and source data generated during the conduct of a clinical investigation. Consistent application of this SOP supports the integrity, completeness, accuracy, and traceability of clinical trial data required for regulatory submission and evaluation.
+
+### 1.2 Scope
+
+This SOP applies to all clinical monitoring activities — both on-site and remote — conducted by Clinical Research Associates (CRAs), Clinical Trial Managers (CTMs), and contracted Clinical Research Organizations (CROs) performing work on behalf of the Sponsor. It encompasses all interventional clinical trials regulated under ICH E6(R2), FDA 21 CFR Parts 11, 50, 54, 56, and 312, and EMA Guideline on GCP (CPMP/ICH/135/95) in which the organization acts as Sponsor or Sponsor-Investigator. It applies regardless of phase (Phase I through Phase IV) and covers paper-based CRFs, electronic CRFs (eCRFs), and hybrid data collection systems.
+
+### 1.3 Objectives
+
+The specific objectives of this SOP are: (a) to define minimum standards for SDV coverage based on risk-stratified monitoring plans; (b) to prescribe step-by-step procedures for conducting SDV at investigative sites; (c) to establish criteria for identifying, raising, and resolving data discrepancies through the query management process; and (d) to ensure that source data in electronic systems comply with 21 CFR Part 11 and applicable electronic records guidance.
+
+### 1.4 Exclusions
+
+This SOP does not govern observational, non-interventional, or registry studies, which are subject to separate organizational procedures (see SOP-GCP-012, Non-Interventional Study Oversight). It does not replace the study-specific Monitoring Plan (MP) but provides the procedural framework within which each MP must operate.
+
+| Applicability Matrix | Interventional Trials | Observational Studies | Compassionate Use |
+|---|---|---|---|
+| This SOP applies | Yes — all phases | No | Limited (see Sect. 1.4) |
+| Study-Specific MP required | Yes | N/A | Yes |
+| Risk-Based SDV required | Yes | N/A | Sponsor discretion |
+| Query Management applies | Yes | N/A | Yes |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Source Data:** All information in original records and certified copies of original records of clinical findings, observations, or other activities in a clinical trial necessary for the reconstruction and evaluation of the trial. Source data are contained in source documents. Per ICH E6(R2) Glossary Section 1.51, source data includes, but is not limited to, hospital records, clinical and office charts, laboratory notes, memoranda, pharmacy dispensing records, and instrument printouts.
+
+**Source Document:** Original documents, data, and records, including hospital records, clinical and office charts, laboratory notes, memoranda, subjects' diaries or evaluation checklists, pharmacy dispensing records, recorded data from automated instruments, copies or transcriptions certified after verification as being accurate copies, microfiches, photographic negatives, microfilm or magnetic media, x-rays, subject files, and records kept at the pharmacy, at the laboratories, and at medico-technical departments involved in the clinical trial (ICH E6(R2), Section 1.52).
+
+**Source Data Verification (SDV):** The process by which a Clinical Research Associate or authorized monitor compares data recorded in the CRF or EDC system against the original source document to confirm accuracy, completeness, and consistency. SDV confirms that transcription errors have not occurred and that the data in the CRF faithfully represent the original record.
+
+**Case Report Form (CRF):** A printed, optical, or electronic document designed to record all of the protocol-required information to be reported to the Sponsor on each trial subject. For the purposes of this SOP, "CRF" encompasses both paper CRFs and eCRFs unless otherwise specified.
+
+**Original Record:** The first capture of data, whether recorded on paper (e.g., a physician's handwritten note) or electronically (e.g., a direct entry into an EDC system by an authorized site staff member). In the case of direct data entry into an EDC with appropriate audit trail protections, the EDC record itself may constitute source data.
+
+**Transcription:** The act of transferring data from a source document to a CRF or EDC system. Transcription introduces the potential for error, which SDV is designed to detect and correct.
+
+**Query:** A formal written request, generated by the monitor, data manager, or sponsor, directed to the investigator or site staff seeking clarification, correction, or confirmation of data recorded in the CRF or EDC system. Queries do not replace or alter the source document.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| CRA | Clinical Research Associate |
+| CRF | Case Report Form |
+| CRO | Clinical Research Organization |
+| CTM | Clinical Trial Manager |
+| DM | Data Management |
+| eCRF | Electronic Case Report Form |
+| EDC | Electronic Data Capture |
+| GCP | Good Clinical Practice |
+| ICH | International Council for Harmonisation |
+| MP | Monitoring Plan |
+| PI | Principal Investigator |
+| QA | Quality Assurance |
+| RBM | Risk-Based Monitoring |
+| SAE | Serious Adverse Event |
+| SDV | Source Data Verification |
+| SOP | Standard Operating Procedure |
+| TMF | Trial Master File |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Clinical Operations
+
+The Head of Clinical Operations (or designee) holds ultimate accountability for ensuring that all clinical monitoring activities comply with this SOP, applicable regulations, and the study-specific Monitoring Plan. Responsibilities include: approving study-specific Monitoring Plans and risk-based SDV strategies; ensuring adequate CRA resourcing; reviewing escalated protocol deviations related to data integrity; and authorizing any temporary deviations from standard SDV coverage thresholds as described in Section 9.0.
+
+### 3.2 Clinical Trial Manager (CTM)
+
+The CTM is responsible for the operational oversight of all monitoring activities across assigned studies. The CTM: develops and maintains the study-specific Monitoring Plan in accordance with this SOP; reviews all monitoring visit reports and SDV summary metrics within five (5) business days of receipt; escalates critical data discrepancies or systematic site deficiencies to Clinical Quality Assurance (CQA) and the Head of Clinical Operations; and coordinates with Data Management to ensure query resolution timelines are met.
+
+### 3.3 Clinical Research Associate (CRA)
+
+The CRA is the primary executor of SDV activities and bears direct responsibility for the accuracy and completeness of monitoring visit reports. CRA responsibilities include: conducting on-site and remote SDV per this SOP and the study Monitoring Plan; raising and tracking queries in the EDC or paper query log within two (2) business days of visit completion; completing and submitting the Monitoring Visit Report (MVR) within ten (10) calendar days of each visit; and maintaining the Investigator Site File (ISF) and confirming its alignment with the TMF.
+
+### 3.4 Clinical Quality Assurance (CQA) Specialist
+
+The CQA Specialist provides independent quality oversight of SDV activities. Responsibilities include: conducting periodic audits of monitoring visit reports and SDV documentation (minimum one audit per site per study year for high-risk sites); reviewing SDV discrepancy trends and providing written feedback to CTMs; reviewing and approving proposed deviations from minimum SDV coverage thresholds; and ensuring this SOP is reviewed and updated per the two-year review cycle.
+
+### 3.5 Principal Investigator (PI) and Site Staff
+
+The PI retains regulatory responsibility for the accuracy and completeness of all data recorded at the site. Site responsibilities include: ensuring source documents are readily accessible during monitoring visits; designating trained staff to respond to CRF/EDC queries within the timelines specified in Section 7.3; correcting source document errors per GCP-compliant methods (single-line strikethrough, initials, date, and reason); and maintaining confidentiality of subject-identifying information when sharing documents for remote SDV.
+
+### 3.6 Responsibility Summary Matrix
+
+| Activity | Head of Clinical Ops | CTM | CRA | CQA Specialist | PI/Site |
+|---|---|---|---|---|---|
+| Approve Monitoring Plan | A | R | C | C | I |
+| Conduct SDV | I | S | R | — | C |
+| Raise EDC Queries | I | S | R | — | A |
+| Resolve EDC Queries | I | I | S | — | R |
+| Review MVR | A | R | — | C | — |
+| Audit SDV Documentation | I | C | I | R | — |
+| Escalate Data Integrity Issues | A | R | I | R | I |
+
+*R=Responsible, A=Accountable, C=Consulted, I=Informed, S=Supports*
+
+---
+
+## 4.0 SOURCE DATA VERIFICATION PROCEDURES
+
+### 4.1 Pre-Visit Preparation
+
+Effective SDV begins before the CRA arrives at the investigative site. The CRA must complete a structured pre-visit preparation process to maximize the efficiency and productivity of on-site time. Not less than five (5) business days before a scheduled monitoring visit, the CRA shall: review the previous Monitoring Visit Report and confirm that all outstanding action items and open queries from prior visits have been addressed or are scheduled for follow-up; obtain an updated subject enrollment log from the site to identify new subjects enrolled since the last visit; confirm site staff availability, particularly the PI or sub-investigator and the Clinical Research Coordinator (CRC) responsible for source documentation; and prepare a visit agenda and SDV subject prioritization list based on the risk-based sampling strategy defined in the Monitoring Plan (see Section 5.0).
+
+The CRA shall confirm which data points require 100% SDV per the Monitoring Plan and which are subject to risk-based sampling. Regulatory requirements mandate that all SAE data, primary efficacy endpoints, and informed consent documentation receive 100% SDV regardless of the risk tier assigned to the site.
+
+### 4.2 On-Site SDV Execution
+
+Upon arrival at the site, the CRA shall sign the site visitor log, present appropriate identification and GCP training certificates if requested, and conduct a brief opening meeting with the PI or CRC to review the visit agenda and confirm the availability of source documents. The CRA shall conduct SDV in a designated, private area that protects subject confidentiality in accordance with applicable data privacy regulations (e.g., HIPAA, EU GDPR, 21 CFR Part 11).
+
+**Procedure — On-Site SDV Execution Steps:**
+
+1. Obtain the subject binder/source document folder for each subject on the prioritized SDV list, confirming that documents are organized and accessible.
+2. Locate the signed and dated Informed Consent Form (ICF) and verify that: (a) the correct version of the ICF was signed; (b) the ICF was signed prior to any study-related procedure; (c) the subject's signature date precedes or matches the date of the first protocol-required procedure; and (d) the PI or authorized delegate countersignature is present and dated.
+3. For each data field designated for SDV, locate the corresponding source document entry and compare it against the CRF or eCRF field. Confirm that the data recorded in the CRF: (a) matches the source document exactly in value, units, and timeframe; (b) is recorded within the protocol-specified time window; and (c) is supported by a legible, dated, and initialed source entry.
+4. For laboratory data, confirm that laboratory reports originate from a certified laboratory (CAP, CLIA, or ISO 15189 accredited), that reference ranges are provided, and that any out-of-range values have been reviewed and signed by the investigator.
+5. For vital signs data, confirm that the recording device (e.g., sphygmomanometer, thermometer, ECG machine) has a current calibration certificate on file and that recorded values are within the protocol-permissible range or have documented investigator assessment if outside the normal range.
+6. For adverse event (AE) data, verify that: (a) the AE term in the eCRF matches the verbatim description in the source; (b) start and stop dates are consistent with the source; (c) severity grading (e.g., NCI CTCAE v5.0 grade or protocol-defined scale) is consistent with the clinical description; and (d) causality assessment by the PI is documented in the source record.
+7. For any data field where a discrepancy is identified between the source document and the CRF/eCRF, the CRA shall NOT alter the source document. The discrepancy shall be documented contemporaneously in the SDV tracking log and a query shall be raised per Section 7.0.
+8. Complete the SDV tracking log (paper or electronic), recording for each subject: subject number, visit, data point reviewed, outcome (verified/query raised), and date of verification.
+9. At the conclusion of the SDV review, return all source documents to the site staff and confirm that no documents have been removed from the site.
+10. Conduct a closing meeting with the PI or CRC to verbally summarize findings, highlight any critical discrepancies, and confirm timelines for query resolution.
+
+### 4.3 SDV Documentation Standards
+
+All SDV activities must be contemporaneously documented. The Monitoring Visit Report shall be completed using the organization's approved MVR template (Form CL-F-003) and submitted to the CTM within ten (10) calendar days of visit completion. The MVR shall include, at minimum: visit date and duration; subjects reviewed and data points verified; summary of SDV findings by data category; list of all queries raised; status of queries from prior visits; protocol deviations identified; action items with responsible party and target resolution date; and the CRA's signature and date.
+
+| SDV Documentation Requirement | Minimum Standard | Regulatory Basis |
+|---|---|---|
+| MVR submission timeline | ≤10 calendar days post-visit | ICH E6(R2) Section 5.18.6 |
+| SDV tracking log retention | Duration of trial + 15 years (post-MA) | 21 CFR 312.62 |
+| Query raised post-visit | ≤2 business days post-visit | Sponsor SOP standard |
+| ICF SDV coverage | 100% of enrolled subjects | ICH E6(R2) Section 4.8 |
+| SAE SDV coverage | 100% of reported SAEs | ICH E6(R2) Section 5.18.4(c) |
+| Primary endpoint SDV | 100% | Study-specific MP |
+
+### 4.4 Source Document Identification and Acceptability Criteria
+
+Not all documents qualify as source documents for SDV purposes. The CRA must apply the following acceptability criteria: the document must be the first recording of the data (original record or certified copy); it must be attributable to the person who created it (

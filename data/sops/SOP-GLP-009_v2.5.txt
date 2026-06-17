@@ -1,0 +1,202 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-009
+  Title:            Out-of-Specification (OOS) Investigation
+  Version:          2.5
+  Effective Date:   2024-02-01
+  Supersedes:       2.4
+  Department:       GLP (Good Laboratory Practice)
+  Approved By:      Dr. Patricia Yuen, Laboratory Director
+  Review Cycle:     2 years
+  Pages:            14
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+> **DOCUMENT CONTROL NOTICE**
+> This document is controlled. Printed copies are considered uncontrolled.
+> Verify the current version in the Document Management System (DMS) before use.
+> Unauthorized reproduction or modification of this document is prohibited.
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | OOS Investigation — Phase I: Laboratory Investigation | 5 |
+| 5.0 | OOS Investigation — Phase II: Full-Scale Investigation | 7 |
+| 6.0 | Retesting and Resampling Procedures | 8 |
+| 7.0 | Assignable Cause Determination and Documentation | 9 |
+| 8.0 | Out-of-Trend (OOT) Monitoring and Escalation | 10 |
+| 9.0 | OOS Disposition and Batch Release Decisions | 11 |
+| 10.0 | Deviation and Exception Handling | 12 |
+| 11.0 | References and Related Documents | 13 |
+| 12.0 | Revision History | 14 |
+
+---
+
+---
+
+# BODY — 12 SECTIONS
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the systematic requirements, procedural framework, and regulatory expectations for the identification, investigation, documentation, and resolution of Out-of-Specification (OOS) analytical results generated within the GLP laboratory environment. The procedure is designed to ensure that all OOS events are investigated thoroughly, objectively, and in a manner consistent with current regulatory requirements, including those set forth by the U.S. Food and Drug Administration (FDA), the International Council for Harmonisation (ICH), and the European Medicines Agency (EMA). The fundamental objective of this SOP is to protect patient safety and data integrity by ensuring that no batch of product, reference standard, or test material is released, continued in testing, or dispositioned without a complete and scientifically defensible OOS investigation.
+
+The framework described herein follows the two-phase investigative model mandated by FDA guidance on OOS results (FDA OOS Guidance, 2006), which divides the investigation into a Phase I Laboratory Investigation and a Phase II Full-Scale Investigation. This structured approach ensures that laboratory error is distinguished from genuine product nonconformance, that retesting is scientifically justified and not used to selectively obtain passing results, and that all findings are documented with sufficient detail to support regulatory inspection and audit.
+
+### 1.2 Scope
+
+This SOP applies to all analytical testing conducted within the GLP laboratory facilities of the organization, including but not limited to: raw material testing, in-process testing, finished product release testing, stability testing, environmental monitoring, method validation studies, and reference standard qualification. It applies to all matrices tested under GLP conditions, including pharmaceutical drug substances, drug products, biological matrices, excipients, packaging materials, and cleaning verification samples where quantitative acceptance criteria exist.
+
+This SOP applies to all personnel who generate, review, approve, or act upon analytical results within the GLP environment, including Laboratory Analysts, Senior Analysts, Laboratory Supervisors, Quality Assurance (QA) Specialists, the Laboratory Director, and any contract laboratory personnel operating under an approved Quality Agreement. Testing conducted under non-GLP research conditions or exploratory screening where no predefined acceptance criteria exist is outside the scope of this SOP.
+
+### 1.3 Regulatory Framework
+
+This SOP is written in compliance with, and with direct reference to, the following primary regulatory authorities: FDA 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals), specifically §211.192 (Production Record Review) and §211.194 (Laboratory Records); FDA Guidance for Industry: Investigating Out-of-Specification (OOS) Test Results for Pharmaceutical Production (October 2006); ICH Q2(R1) — Validation of Analytical Procedures; ICH Q10 — Pharmaceutical Quality System; EMA/CHMP Guideline on Investigations of Bioavailability and Bioequivalence (as applicable); and Organisation for Economic Co-operation and Development (OECD) Principles of Good Laboratory Practice, ENV/MC/CHEM(98)17.
+
+| Regulatory Document | Applicability | Key Section |
+|--------------------|---------------|-------------|
+| FDA 21 CFR §211.192 | Finished pharmaceuticals, OOS investigation mandate | Production Record Review |
+| FDA 21 CFR §211.194 | Laboratory records retention and completeness | Laboratory Records |
+| FDA OOS Guidance (2006) | Two-phase investigation model | Sections III–V |
+| ICH Q10 | Pharmaceutical Quality System framework | Section 3.2 |
+| OECD GLP Principles (1998) | GLP study conduct and data integrity | Principle 8 |
+| EMA/INS/GMP/594085/2011 | GMP inspections: OOS expectations | Section 6 |
+
+### 1.4 Limitations
+
+This SOP does not replace method-specific protocols, product-specific testing specifications, or approved stability protocols. Where conflicts exist between this SOP and a product-specific specification or regulatory filing commitment, the more stringent requirement shall apply, and the conflict shall be escalated to QA for resolution before proceeding.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Out-of-Specification (OOS) Result:** Any analytical result that falls outside the established acceptance criteria defined in an approved specification, regulatory filing, compendial monograph, or protocol. An OOS result is declared at the point of raw data generation, before any investigation, and must be reported immediately upon recognition by the analyst.
+
+**Out-of-Trend (OOT) Result:** An analytical result that, while within established specification limits, demonstrates a statistically anomalous trend relative to historical data or expected behavior. OOT results do not constitute OOS findings but require monitoring and may require investigation under Section 8.0.
+
+**Phase I Investigation (Laboratory Investigation):** The initial, immediate assessment conducted exclusively within the laboratory environment to determine whether the OOS result was caused by a documented laboratory error (e.g., instrument malfunction, transcription error, sample preparation error, reagent failure). Phase I does not involve retesting of the original sample.
+
+**Phase II Investigation (Full-Scale Investigation):** An expanded investigation initiated when Phase I fails to identify an assignable laboratory cause. Phase II involves additional laboratory testing (retesting and/or resampling), manufacturing process review, raw material review, and a comprehensive assessment of all potential root causes.
+
+**Assignable Cause:** A specific, documented, scientifically defensible explanation for an OOS result that can be directly linked to an identifiable error or failure event (e.g., instrument out-of-calibration, incorrect standard preparation, transcription error). The assignable cause must be supported by objective evidence; speculation is not acceptable.
+
+**Retesting:** The act of re-analyzing the original sample retained from the same sample preparation to confirm or investigate an OOS result. Retesting is performed only as part of a formally initiated OOS investigation.
+
+**Resampling:** The collection of a new, independent sample from the same lot or batch to obtain additional analytical data. Resampling is justified only under specific, documented circumstances and requires QA approval.
+
+**Laboratory Error:** A mistake made during sample handling, preparation, analysis, calculation, or data transfer that can be identified, confirmed with objective evidence, and attributed to a specific failure in the analytical process.
+
+**Invalidation:** The formal process by which an OOS result is declared invalid based on a documented, confirmed assignable laboratory cause. Invalidation requires QA approval and must not be used to discard valid analytical data.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|-------------|-----------|
+| OOS | Out-of-Specification |
+| OOT | Out-of-Trend |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| CAPA | Corrective and Preventive Action |
+| DMS | Document Management System |
+| ELN | Electronic Laboratory Notebook |
+| SOP | Standard Operating Procedure |
+| LOQ | Limit of Quantitation |
+| RSD | Relative Standard Deviation |
+| API | Active Pharmaceutical Ingredient |
+| USP | United States Pharmacopeia |
+| ICH | International Council for Harmonisation |
+| FDA | Food and Drug Administration |
+| EMA | European Medicines Agency |
+| OECD | Organisation for Economic Co-operation and Development |
+| CFR | Code of Federal Regulations |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| NLT | Not Less Than |
+| NMT | Not More Than |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Laboratory Analyst
+
+The Laboratory Analyst bears the primary responsibility for the immediate recognition and reporting of OOS results. Upon generation of an analytical result that falls outside the defined acceptance criteria, the Analyst must stop further testing of the affected sequence, secure all raw data and sample materials, and notify the Laboratory Supervisor within 30 minutes of recognition. The Analyst must document all steps taken during the original analysis in real time in the Electronic Laboratory Notebook (ELN) or paper laboratory notebook, with sufficient detail to enable independent reconstruction of the analysis. The Analyst must not attempt to repeat the analysis, re-inject samples, or recalculate results without documented authorization from the Laboratory Supervisor or QA.
+
+### 3.2 Laboratory Supervisor
+
+The Laboratory Supervisor is responsible for initiating the OOS investigation process within 2 working hours of being notified by the Analyst. This includes completing or delegating completion of the Phase I Checklist (Attachment A), reviewing all raw data, chromatograms, instrument logs, and calculations associated with the OOS event, and making the initial determination as to whether a confirmed laboratory error has been identified. The Laboratory Supervisor is responsible for assigning investigation tasks, maintaining the investigation timeline, and communicating status updates to QA and the Laboratory Director. The Laboratory Supervisor must not directly perform Phase I retesting if they were involved in the original analysis.
+
+### 3.3 Quality Assurance (QA) Specialist
+
+The QA Specialist serves as the independent oversight authority for all OOS investigations. The QA Specialist must be notified of every OOS event within 4 working hours of initial recognition. QA responsibilities include: reviewing and approving the Phase I assessment; approving all retesting and resampling plans before execution; reviewing Phase II investigation reports for scientific adequacy and regulatory compliance; approving result invalidation; and ensuring that CAPA is initiated for systemic issues. The QA Specialist maintains the OOS investigation log and tracks open investigations to ensure closure within the defined timelines.
+
+### 3.4 Laboratory Director
+
+The Laboratory Director (Dr. Patricia Yuen) serves as the final scientific authority for OOS investigations. The Laboratory Director is responsible for approving Phase II investigation plans when Phase I fails to identify an assignable cause, approving the final OOS investigation report, and making the scientific determination regarding product disposition. The Laboratory Director must be notified of any OOS result involving a marketed product, a stability failure, or a result with potential patient safety implications within 4 working hours. The Laboratory Director has the authority to convene a cross-functional investigation team for complex OOS events.
+
+### 3.5 Roles and Responsibilities Summary Table
+
+| Role | Notification Timeframe | Phase I Authority | Phase II Authority | Report Approval |
+|------|----------------------|-------------------|-------------------|-----------------|
+| Laboratory Analyst | Initiate notification within 30 min | Executes Phase I Checklist | Executes retesting per approved plan | N/A |
+| Laboratory Supervisor | Notified within 30 min; initiates within 2 hrs | Reviews and certifies Phase I | Oversees Phase II execution | Co-signs report |
+| QA Specialist | Notified within 4 hrs | Approves Phase I assessment | Approves retest/resample plan | Reviews and approves |
+| Laboratory Director | Notified within 4 hrs (critical events) | Final authority on invalidation | Approves Phase II plan | Final signatory |
+| Manufacturing / Production | Notified if Phase II requires process review | N/A | Provides batch records | N/A |
+
+---
+
+## 4.0 OOS INVESTIGATION — PHASE I: LABORATORY INVESTIGATION
+
+### 4.1 Initiation and Triggering Criteria
+
+Phase I of the OOS investigation must be initiated immediately upon confirmation that an analytical result falls outside the established acceptance criteria. An OOS result is confirmed when the analyst has completed the initial calculation and the final reported value does not meet the predefined specification. The OOS event must be documented using the OOS Investigation Form (Form QA-022, Revision 4) within 2 working hours of discovery. The form must include: the OOS result value, the acceptance criterion, the analytical method reference, the sample identification, the instrument ID, the analyst name, the date and time of analysis, and a brief narrative of the circumstances under which the result was generated.
+
+Triggering criteria for OOS declaration are strictly quantitative. Any result that numerically exceeds or falls below a defined specification limit, compendial limit, or protocol acceptance criterion constitutes an OOS finding regardless of the analyst's professional judgment about the likely cause. Analyst judgment is not a permissible basis for withholding OOS declaration. The following table provides representative triggering examples for common assay types:
+
+| Test Type | Specification Limit | Example OOS Result | Trigger Threshold |
+|-----------|--------------------|--------------------|-------------------|
+| Assay (HPLC) | 98.0%–102.0% LC | 96.8% LC | < 98.0% |
+| Related Substances (single impurity) | NMT 0.10% | 0.14% | > 0.10% |
+| Dissolution (Q value) | NLT Q = 80% at 45 min | 74.3% | < 80.0% |
+| Water Content (KF) | NMT 0.5% w/w | 0.67% w/w | > 0.5% |
+| Microbial Limits (TAMC) | NMT 100 CFU/g | 185 CFU/g | > 100 CFU/g |
+| pH | 6.0–7.5 | 5.7 | < 6.0 |
+
+### 4.2 Phase I Checklist Execution
+
+The Phase I investigation is a structured review of all laboratory elements associated with the OOS analysis. It is conducted exclusively within the laboratory and must be completed within 5 working days of OOS declaration. The Phase I Checklist (Form QA-022, Attachment A) must be completed by the Laboratory Supervisor with input from the Analyst who performed the original analysis. A second analyst who was not involved in the original analysis must independently verify all calculations and data reviewed during Phase I.
+
+The following Phase I review elements must be addressed sequentially and documented with objective evidence:
+
+**Phase I Investigation Procedure:**
+
+1. **Verify instrument qualification status:** Confirm that all instruments used in the analysis (HPLC system, balance, pH meter, dissolution apparatus, spectrophotometer, etc.) were within their calibration and qualification validity periods at the time of analysis. Review instrument logbooks and calibration certificates. Any instrument found to be out-of-calibration at the time of analysis constitutes a confirmed laboratory error and must be documented on the Phase I form with the calibration certificate reference number and the expiry date.
+
+2. **Review system suitability data:** Examine all system suitability results generated during the analytical run. Verify that system suitability criteria (e.g., theoretical plates NLT 2000, tailing factor NMT 2.0, %RSD of replicate injections NMT 2.0% for HPLC; or method-specific criteria as defined in the validated method) were met before sample analysis commenced. A failed or borderline system suitability result constitutes evidence of a potential laboratory error; document all values and compare against method acceptance criteria.
+
+3. **Verify standard preparation and calculations:** Independently recalculate the concentration of all reference standards used in the analysis using the raw weighing data recorded in the ELN. Verify the reference standard certificate of analysis for assigned potency, expiry date, and storage conditions. Confirm that the standard was stored appropriately (e.g., reference standard stored at 2–8°C in a desiccator;

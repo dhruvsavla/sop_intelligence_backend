@@ -1,0 +1,214 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-003
+  Title:            Sample Receipt, Logging, and Chain of Custody
+  Version:          2.2
+  Effective Date:   2023-08-01
+  Supersedes:       2.1
+  Department:       GLP
+  Approved By:      Dr. Patricia Yuen, Laboratory Director
+  Review Cycle:     2 years
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**Document Signatories**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Marcus T. Hendricks, Senior Lab Analyst | *M. Hendricks* | 2023-06-15 |
+| Reviewed By | Sandra R. Okafor, QA Specialist | *S. Okafor* | 2023-07-03 |
+| Reviewed By | David L. Cheng, Study Director | *D. Cheng* | 2023-07-10 |
+| Approved By | Dr. Patricia Yuen, Laboratory Director | *P. Yuen* | 2023-07-25 |
+
+---
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Sample Receipt and Initial Condition Assessment | 5 |
+| 5.0 | Sample Identification and Labeling | 6 |
+| 6.0 | LIMS Entry and Chain of Custody Documentation | 7 |
+| 7.0 | Sample Storage Assignment and Conditions | 8 |
+| 8.0 | Sample Integrity Monitoring and In-Storage Verification | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 10 |
+| 11.0 | Revision History | 11 |
+
+> **Note:** Section numbering follows a total of 10 primary procedural sections (Sections 1.0 through 10.0), with the Revision History carried as Section 10.0 for this document. The Table of Contents lists 11 entries inclusive of the Revision History at Section 11.0 to preserve formatting continuity across printed pages. The operative SOP body contains Sections 1.0–10.0 as required.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls governing the receipt, initial inspection, identification, logging, and chain of custody (COC) maintenance for all samples received within GLP-compliant laboratory facilities operated under this Quality Management System (QMS). This document ensures that every sample entering the laboratory is handled in a manner that preserves its physical and chemical integrity, maintains full traceability from point of origin to final disposition, and satisfies applicable Good Laboratory Practice regulatory requirements.
+
+The overarching intent of this SOP is to prevent sample mix-up, contamination, loss, or unauthorized access, all of which could compromise study validity, regulatory submissions, or patient safety conclusions drawn from analytical data. Compliance with this procedure is mandatory for all personnel involved in any stage of sample handling, and adherence is monitored through routine QA oversight and internal audit programs as defined in SOP-QA-012.
+
+### 1.2 Scope
+
+This SOP applies to all biological, chemical, pharmaceutical, and environmental samples received at GLP-regulated laboratory facilities under the organizational umbrella of this Quality Management System. It encompasses test articles, reference standards, bioanalytical specimens (including plasma, serum, urine, tissue homogenates, and cerebrospinal fluid), stability samples, raw materials submitted for characterization, and any other matrix submitted for GLP testing. The procedure applies regardless of whether the sample originates from internal studies, external contract clients, or regulatory agency submissions.
+
+This SOP does not govern the in-process testing of materials that remain under continuous manufacturing control without transfer of custody, nor does it apply to environmental monitoring swabs collected and analyzed within a single uninterrupted analyst session within the same facility unit. Those activities are addressed in SOP-ENV-007 and SOP-MFG-019, respectively.
+
+### 1.3 Regulatory Basis
+
+This procedure is established in accordance with the following primary regulatory frameworks: FDA 21 CFR Part 58 (Good Laboratory Practice for Nonclinical Laboratory Studies), specifically Subparts D (Equipment), F (Test and Control Articles), G (Protocol for and Conduct of a Nonclinical Laboratory Study), and J (Records and Reports); OECD Principles of Good Laboratory Practice (ENV/JM/MONO(99)20); and EU Directive 2004/10/EC relating to GLP. Where applicable, ICH S7A, ICH E6(R2), and EMA Guideline on Bioanalytical Method Validation (EMEA/CHMP/EWP/192217/2009) inform sample integrity expectations. Personnel shall be familiar with the relevant regulatory citations referenced throughout this document.
+
+### 1.4 Related Quality Standards
+
+| Standard | Title | Relevance to This SOP |
+|---|---|---|
+| FDA 21 CFR Part 58 | GLP for Nonclinical Laboratory Studies | Primary GLP regulatory basis |
+| OECD GLP Principles (1997) | ENV/JM/MONO(99)20 | International GLP harmonization |
+| EU Directive 2004/10/EC | GLP Compliance Inspection | European regulatory applicability |
+| ICH Q10 | Pharmaceutical Quality System | QMS framework for sample controls |
+| USP <1> | Injections and Implanted Drug Products | Reference for biological matrices |
+| 21 CFR Part 11 | Electronic Records; Electronic Signatures | LIMS data integrity requirements |
+
+---
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document and shall be interpreted consistently with applicable regulatory frameworks.
+
+**Sample Receipt:** The formal process by which a laboratory accepts physical custody of a sample from an originating party, documented by completion of a Sample Receipt Record and confirmed by signature of the receiving analyst. Receipt is considered complete only when all acceptance criteria have been evaluated and documented.
+
+**Chain of Custody (COC):** An unbroken, documented record of the possession, transfer, handling, and location of a sample from the point of collection or generation through final disposition. The COC must account for every transfer of physical possession, regardless of duration, and must be maintained such that no gap in accountability exists.
+
+**Sample Integrity:** The state of a sample in which its physical, chemical, and biological characteristics remain unchanged from those present at the time of collection, such that analytical results derived from the sample accurately reflect the true condition or concentration of the analyte(s) of interest. Integrity may be compromised by temperature excursion, freeze-thaw cycling beyond validated limits, physical degradation, contamination, or improper labeling.
+
+**LIMS (Laboratory Information Management System):** The validated, electronic software system used by this facility to capture sample metadata, assign unique sample identifiers, record COC events, manage storage assignments, and link analytical results to specific sample records. LIMS used under this SOP complies with 21 CFR Part 11 requirements for electronic records and electronic signatures.
+
+**Sample ID:** A unique alphanumeric identifier assigned to each sample upon receipt, generated by the LIMS according to a predefined naming convention that encodes study number, matrix type, collection date, and sequential receipt number. No two samples within the LIMS shall share the same Sample ID.
+
+**Condition Assessment:** A systematic, structured evaluation performed upon receipt of each sample, in which the receiving analyst documents the external appearance, temperature on arrival, container integrity, volume/mass, and shipping condition against defined acceptance criteria prior to logging the sample into the LIMS.
+
+**Test Article:** Per 21 CFR Part 58.3(j), any food additive, color additive, drug, biological product, electronic product, medical device, or any other article examined or used as a subject in a nonclinical laboratory study.
+
+**Reference Standard:** A substance of known identity, purity, and potency used for comparison purposes during analytical testing, typically characterized by an official compendial monograph (e.g., USP Reference Standard) or by the sponsor's internal characterization data.
+
+**Study Director:** The individual responsible for the overall conduct of a GLP nonclinical study, as designated in accordance with 21 CFR Part 58.33. The Study Director has primary responsibility for ensuring GLP compliance throughout the study lifecycle.
+
+**Aliquot:** A measured subdivision of a primary sample, prepared to provide sufficient material for a single analytical determination or to create backup reserves, without compromising the primary sample volume required for study objectives.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| COC | Chain of Custody |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| LIMS | Laboratory Information Management System |
+| QA | Quality Assurance |
+| QMS | Quality Management System |
+| SOP | Standard Operating Procedure |
+| SRR | Sample Receipt Record |
+| CRF | Case Report Form |
+| MSDS / SDS | Material Safety Data Sheet / Safety Data Sheet |
+| SDV | Source Data Verification |
+| ICH | International Council for Harmonisation |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| OECD | Organisation for Economic Co-operation and Development |
+| USP | United States Pharmacopeia |
+| WHO | World Health Organization |
+| PPE | Personal Protective Equipment |
+| ID | Identifier / Identification |
+| COA | Certificate of Analysis |
+| pH | Potential of Hydrogen |
+| °C | Degrees Celsius |
+
+---
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Laboratory Director
+
+The Laboratory Director (Dr. Patricia Yuen or designee) bears ultimate regulatory responsibility for the GLP compliance of all laboratory operations governed by this SOP, consistent with 21 CFR Part 58.31. The Laboratory Director is responsible for approving this SOP and all subsequent revisions, ensuring adequate staffing and training to execute this procedure, and reviewing QA audit findings related to sample receipt and chain of custody. The Laboratory Director is authorized to approve emergency deviations from this procedure under exceptional circumstances, provided that deviations are documented in accordance with Section 9.0 and subject to retrospective QA review within 5 business days.
+
+### 3.2 Study Director
+
+The Study Director, as defined under 21 CFR Part 58.33, is responsible for ensuring that all samples associated with studies under their supervision are processed in accordance with this SOP. The Study Director shall provide the receiving laboratory with a current Sample Submission Form (SSF) prior to or concurrent with each sample shipment, specifying the expected sample matrix, number of samples, required storage conditions, planned analyses, and any special handling instructions. The Study Director shall also review condition assessment records for any samples flagged as non-conforming and authorize or reject acceptance in writing within 1 business day of notification.
+
+### 3.3 Senior Laboratory Analyst / Receiving Analyst
+
+The designated Receiving Analyst is the primary operator responsible for executing all steps of the sample receipt, condition assessment, LIMS logging, labeling, and initial storage assignment described in Sections 4.0 through 7.0. At minimum, the Receiving Analyst must hold the designation of Laboratory Analyst II (or equivalent) and must have completed training on this SOP as documented in the Training Management System. The Receiving Analyst is responsible for completing all required fields of the Sample Receipt Record (Form F-GLP-003-01) without exception and for escalating any condition assessment failures to the Study Director and QA Specialist without delay.
+
+### 3.4 QA Specialist
+
+The QA Specialist assigned to GLP operations is responsible for conducting periodic unannounced audits of sample receipt activities, reviewing completed Sample Receipt Records for completeness and accuracy within 5 business days of receipt, and verifying LIMS entries against source documentation (Sample Receipt Records, shipping manifests, and COA documents) as part of routine data integrity checks. The QA Specialist shall initiate a deviation report (Form F-QA-007-01) for any identified discrepancies and shall retain audit records in the QA archive in accordance with SOP-QA-022.
+
+### 3.5 Sample Custodian
+
+The Sample Custodian is responsible for the ongoing physical management of samples following initial storage assignment. Responsibilities include monitoring and documenting storage equipment temperatures on a daily basis per SOP-EQ-004, executing sample transfers within the facility as directed by the Study Director, maintaining the physical COC log in each storage unit, and ensuring that no sample is removed from storage without proper authorization and COC documentation. The Sample Custodian role may be fulfilled by any trained Laboratory Analyst I or higher.
+
+### 3.6 Responsibility Matrix
+
+| Activity | Lab Director | Study Director | Receiving Analyst | QA Specialist | Sample Custodian |
+|---|---|---|---|---|---|
+| SOP Approval | Primary | — | — | Review | — |
+| SSF Preparation | — | Primary | — | — | — |
+| Condition Assessment | — | Escalation Review | Primary | Audit | — |
+| LIMS Entry | — | Verify | Primary | Audit | — |
+| Sample Labeling | — | — | Primary | Audit | — |
+| Initial Storage Assignment | — | Authorize | Execute | Audit | Execute |
+| Ongoing COC Maintenance | — | — | — | Audit | Primary |
+| Deviation Initiation | Emergency | Authorize | Initiate | Primary | Notify |
+| QA Record Review | — | — | — | Primary | — |
+
+---
+
+---
+
+## 4.0 SAMPLE RECEIPT AND INITIAL CONDITION ASSESSMENT
+
+### 4.1 Pre-Receipt Preparation
+
+Prior to the expected arrival of any sample shipment, the Receiving Analyst shall confirm that a valid Sample Submission Form (SSF, Form F-GLP-003-02) has been received from the Study Director and is on file in the LIMS or in the physical study binder. The SSF must include: study number, sponsor name, Study Director name and contact information, expected sample matrix and analyte(s), number of samples and containers, required storage conditions, expected shipment carrier and tracking number, hazard classification (including biohazard and chemical hazard designations), and any special handling instructions. If the SSF is absent or incomplete at the time of shipment arrival, the Receiving Analyst shall not accept the shipment and shall contact the Study Director immediately. The shipment may be held in a quarantine area at appropriate temperature (see Table 4.1) for up to 4 hours pending SSF receipt.
+
+The Receiving Analyst shall also ensure that all required personal protective equipment (PPE) is available and that the receiving bench area is clean, unobstructed, and free of other samples that could cause cross-contamination or mix-up. A fresh, unused copy of Form F-GLP-003-01 (Sample Receipt Record) shall be pre-printed and available for use.
+
+### 4.2 Shipment Inspection — External Container
+
+Upon physical arrival of a shipment, the Receiving Analyst shall perform an external inspection before opening the shipping container. This inspection shall be documented on Form F-GLP-003-01 and completed within 30 minutes of physical receipt at the laboratory door.
+
+**Procedure 4.2 — External Shipment Inspection Steps:**
+
+1. Verify that the external shipping label matches the carrier tracking number documented on the SSF. If tracking numbers do not match, place the shipment in quarantine and notify the Study Director immediately; do not open the container.
+2. Inspect the outer shipping container for gross physical damage, including crushed corners, moisture damage, punctures, or evidence of tampering (broken security seals, resealed tape, etc.). Document findings on Form F-GLP-003-01, Field 7.
+3. Confirm the presence of temperature monitoring devices (electronic data logger or chemical temperature indicator card) on the exterior or within the outer packaging. Record the device type and model/lot number on Form F-GLP-003-01, Field 8.
+4. Verify that hazardous material shipping labels (UN classification markings, biohazard symbols, dry ice warnings) are present and legible where required by the SSF hazard classification. If required markings are absent, notify the Study Director and the facility Safety Officer before proceeding.
+5. Document the date and time of physical receipt and the initials of the Receiving Analyst on Form F-GLP-003-01, Field 4. This constitutes the official receipt time.
+6. If the external inspection reveals no disqualifying conditions, proceed to internal inspection per Section 4.3. If disqualifying conditions are present, initiate the deviation process per Section 9.0 before opening.
+
+### 4.3 Shipment Inspection — Internal Contents and Temperature Verification
+
+After completing the external

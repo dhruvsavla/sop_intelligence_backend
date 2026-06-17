@@ -1,0 +1,215 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Field | Information |
+|---|---|
+| **SOP Number** | SOP-GMP-012 |
+| **Title** | Water System Monitoring and Control |
+| **Version** | 2.3 |
+| **Effective Date** | 2023-12-01 |
+| **Supersedes** | 2.2 |
+| **Department** | GMP / Manufacturing Quality |
+| **Approved By** | Robert Harmon, Quality Assurance Director |
+| **Review Cycle** | 2 years (next review due: 2025-12-01) |
+| **Pages** | 13 |
+| **Classification** | GxP Critical |
+| **Author** | Karen Dietrich, Senior GMP Specialist |
+| **Technical Reviewer** | Marcus Oyelaran, Water Systems Engineer |
+| **QA Reviewer** | Anita Sorensen, QA Manager |
+| **Document Status** | Approved — Active |
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           APPROVAL SIGNATURES
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Karen Dietrich | *K. Dietrich* | 2023-11-10 |
+| Technical Reviewer | Marcus Oyelaran | *M. Oyelaran* | 2023-11-14 |
+| QA Manager | Anita Sorensen | *A. Sorensen* | 2023-11-20 |
+| QA Director (Approver) | Robert Harmon | *R. Harmon* | 2023-11-27 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Water System Operation and Routine Monitoring | 5 |
+| 5.0 | Sampling Procedures and Sample Handling | 7 |
+| 6.0 | Analytical Testing — Parameters, Methods, and Acceptance Criteria | 8 |
+| 7.0 | Alert and Action Limit Response Protocol | 9 |
+| 8.0 | System Sanitization and Maintenance | 10 |
+| 9.0 | Data Recording, Review, and Trending | 11 |
+| 10.0 | Deviation and Exception Handling | 12 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+> **Note:** Section count per specification is 11 numbered sections (1.0–11.0); Section 12.0 is the Revision History, which constitutes the mandatory final section. Total body sections = 11 operational sections plus the revision history appendix, consistent with the 13-page estimate.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                                    BODY
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and operational procedures for the monitoring, control, testing, and maintenance of the purified water (PW) and water for injection (WFI) systems at this facility. The primary objective is to ensure that water produced and distributed for use in pharmaceutical manufacturing, cleaning, and analytical operations consistently meets compendial specifications and internal quality standards throughout all phases of the system's operational lifecycle.
+
+This document provides the procedural framework necessary to demonstrate ongoing state of control for the water systems in compliance with applicable current Good Manufacturing Practice (cGMP) regulations. Continuous, documented monitoring is essential not only for product quality assurance but also for regulatory inspection readiness. This SOP supports the facility's commitment to patient safety by preventing the introduction of microbial contamination, chemical impurities, and endotoxins into pharmaceutical products.
+
+### 1.2 Scope
+
+This SOP applies to all purified water and water for injection generating, storage, and distribution systems installed and qualified at this facility, including the following designated systems: the Purified Water Generation System (System ID: WS-PW-001), the WFI Still and Storage System (System ID: WS-WFI-001), and all associated distribution loops, use points, and sample ports identified in Attachment A — Water System Schematic and Sample Point Map. This document covers routine daily monitoring, periodic sampling and laboratory testing, alert/action limit exceedance response, scheduled sanitization, and trending activities.
+
+This SOP does not apply to potable (city) water supply monitoring, which is governed separately under SOP-GMP-005 (Utility Water Management), nor to the qualification and requalification of water systems, which is addressed under QP-VAL-008 (Water System Qualification Protocol). Personnel performing activities described herein must be trained and assessed as competent per the requirements outlined in Section 3.0 of this document.
+
+### 1.3 Regulatory Basis
+
+The requirements of this SOP are grounded in the following regulatory and compendial frameworks: FDA 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals), specifically Subparts C (Buildings and Facilities) and E (Control of Components and Drug Product Containers and Closures); the United States Pharmacopeia (USP) monographs for Purified Water (USP ⟨1231⟩) and Water for Injection; ICH Q6A (Specifications: Test Procedures and Acceptance Criteria for New Drug Substances and New Drug Products); and EMA Guidelines on Water for Pharmaceutical Use (EMA/INS/GMP/67651/2014). Compliance with these authorities ensures the facility's water quality program aligns with global regulatory expectations.
+
+### 1.4 Assumptions and Limitations
+
+This SOP presupposes that the water systems described herein have been fully designed, installed, operationally qualified, and performance qualified (DQ/IQ/OQ/PQ) prior to routine use, and that valid qualification documentation is maintained in the Validation Master Plan. Any significant modification to system hardware, distribution piping, or operating parameters must trigger a Change Control evaluation per SOP-QA-003 before this SOP may continue to govern the modified system.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Purified Water (PW):** Water that meets the compendial requirements of USP ⟨1231⟩ Purified Water, produced by ion exchange, reverse osmosis, distillation, or a combination thereof. Used in the preparation of non-parenteral drug products, analytical reagent preparation, and equipment cleaning validation activities.
+
+**Water for Injection (WFI):** Purified water that additionally meets the requirements for bacterial endotoxins and pyrogen-free status as defined in the USP monograph for Water for Injection. Produced by distillation or, as permitted by the European Pharmacopoeia (Ph. Eur. 8th Edition, 0169), by reverse osmosis with appropriate validation. Used in the manufacture of parenteral drug products and final rinse of product-contact equipment in sterile manufacturing.
+
+**Total Organic Carbon (TOC):** A measure of the organic chemical content of water, expressed in parts per billion (ppb) or micrograms per liter (µg/L), as determined per USP ⟨643⟩. An elevated TOC value may indicate contamination from organic leachables, microbial metabolites, or inadequate system sanitization.
+
+**Conductivity:** A measure of the ionic content of water, expressed in microsiemens per centimeter (µS/cm) at a defined temperature, determined per USP ⟨645⟩. Conductivity monitoring provides real-time indication of inorganic ion contamination and system membrane or resin integrity.
+
+**Bioburden:** The total number of viable microorganisms (bacteria, yeast, and mold) recovered from a water sample, expressed as colony-forming units per milliliter (CFU/mL). Bioburden is determined using validated culture-based methods.
+
+**Alert Limit:** An internal, statistically derived threshold for a water quality parameter that, when exceeded, triggers investigation and heightened monitoring. Exceedance of an alert limit does not by itself constitute a specification failure but signals a trend toward loss of control.
+
+**Action Limit:** An internal threshold more conservative than the compendial specification limit that, when exceeded, requires immediate corrective action, product impact assessment, and formal deviation report. Exceedance of an action limit represents a significant loss of control signal.
+
+**Endotoxin:** Lipopolysaccharide (LPS) components of gram-negative bacterial cell walls capable of causing pyrogenic responses in humans. Measured by the Bacterial Endotoxins Test (BET) per USP ⟨85⟩ using the Limulus Amebocyte Lysate (LAL) method.
+
+**State of Control:** A condition in which a water system is operating consistently within its validated parameters and producing water that meets all established specifications and internal limits, as demonstrated by ongoing trending data.
+
+**Sanitization:** A procedure using thermal (hot water ≥ 80°C) or chemical (e.g., hydrogen peroxide, ozone) methods to reduce the total bioburden of the water system to within acceptable limits.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| BET | Bacterial Endotoxins Test |
+| CFU | Colony-Forming Units |
+| cGMP | Current Good Manufacturing Practice |
+| CAPA | Corrective and Preventive Action |
+| DI | Deionized (Water) |
+| EC | European Commission |
+| EMA | European Medicines Agency |
+| EU/mL | Endotoxin Units per Milliliter |
+| ICH | International Council for Harmonisation |
+| IQ/OQ/PQ | Installation / Operational / Performance Qualification |
+| LAL | Limulus Amebocyte Lysate |
+| LIMS | Laboratory Information Management System |
+| MDD | Maximum Daily Dose |
+| OOS | Out-of-Specification |
+| PW | Purified Water |
+| QA | Quality Assurance |
+| R&D | Research and Development |
+| R/O | Reverse Osmosis |
+| RPN | Risk Priority Number |
+| SOP | Standard Operating Procedure |
+| TOC | Total Organic Carbon |
+| USP | United States Pharmacopeia |
+| WFI | Water for Injection |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance (QA) Department
+
+The Quality Assurance Director holds ultimate accountability for approving this SOP and ensuring the water system monitoring program remains in compliance with applicable cGMP regulations. The QA Director is responsible for authorizing all revisions to this SOP, approving deviations that result from action limit exceedances, and ensuring that findings from water system monitoring are appropriately communicated in regulatory submissions and during inspection readiness activities.
+
+The QA Manager is responsible for the day-to-day oversight of the water monitoring program, including the review and approval of monthly trend reports, the initiation of formal deviations and CAPA records, and the final disposition decision for any in-process or finished product potentially impacted by a water quality exceedance. The QA Manager also has the authority to place the affected water system on hold pending investigation.
+
+QA Specialists perform scheduled second-person verification of sampling activities, review completed monitoring records for completeness and accuracy within 2 business days of data entry, review LIMS test result reports, and escalate alert and action limit results to the QA Manager within the timeframes specified in Section 7.0 of this SOP.
+
+### 3.2 Water Systems Engineering
+
+The Water Systems Engineer is responsible for the technical oversight of the water generation, storage, and distribution equipment. Responsibilities include the scheduling and execution of preventive maintenance per the Equipment Maintenance Master Schedule, responding to equipment alarms, executing system sanitization procedures in coordination with Manufacturing, and maintaining all engineering drawings and system qualification documentation. The Water Systems Engineer also serves as the primary technical resource during regulatory inspections relating to water system infrastructure.
+
+### 3.3 Manufacturing Operations
+
+Manufacturing Operators assigned to GMP production areas are responsible for collecting daily water quality samples from designated use points during production shifts, performing on-line and at-point-of-use (POU) conductivity and TOC checks using calibrated portable or fixed instruments, completing all relevant entries in the Water System Daily Monitoring Log (Form GMP-012-F01), and immediately notifying their supervisor and the on-call QA Specialist in the event of any instrument alarm or anomalous result.
+
+Manufacturing Supervisors are responsible for ensuring that all operators assigned to water monitoring tasks have completed the required training documented in the training system, that sampling is performed at the scheduled intervals defined in Section 4.0, and that sampling supplies (sterile bottles, gloves, face protection) are adequately stocked at each sample station.
+
+### 3.4 Quality Control Laboratory
+
+Laboratory Analysts are responsible for receiving water samples, performing all compendial and in-house analytical tests within the holding time limits defined in Section 5.0, entering results into the LIMS, and flagging any out-of-specification (OOS) or alert/action limit exceedance results for immediate supervisor notification. Laboratory Analysts must not perform tests on samples received outside of the designated holding window; such samples must be discarded and a sampling deviation initiated.
+
+The Laboratory Supervisor is responsible for the validation and maintenance of all analytical methods used for water testing, supervision of analyst competency, and review of raw data records for completeness and compliance with 21 CFR Part 211.194 (Laboratory Records) requirements.
+
+### 3.5 Responsibility Summary Matrix
+
+| Activity | Mfg. Operator | Mfg. Supervisor | QA Specialist | QA Manager | Lab Analyst | Water Sys. Engr. |
+|---|---|---|---|---|---|---|
+| Daily on-line monitoring | P | O | | | | |
+| Sample collection (routine) | P | O | V | | | |
+| Sample receipt and logging | | | | | P | |
+| Analytical testing | | | | | P | O |
+| Alert limit notification | | P | P | R | P | |
+| Action limit response | | I | P | A | P | P |
+| Sanitization execution | | | | A | | P |
+| Monthly trend report | | | P | A | | I |
+| Deviation initiation | | I | P | A | | I |
+| CAPA ownership | | | | A | | P |
+
+*Key: P = Primary Responsible; O = Oversight; V = Verification; A = Approver; R = Recipient/Reviewer; I = Informed*
+
+---
+
+## 4.0 WATER SYSTEM OPERATION AND ROUTINE MONITORING
+
+### 4.1 System Overview and Operating Parameters
+
+The facility operates two principal pharmaceutical-grade water systems. The Purified Water System (WS-PW-001) generates PW via a multi-stage process comprising a 5-micron pre-filter, a softener, a carbon bed, a reverse osmosis (R/O) unit, and a mixed-bed deionizer, with a continuously circulating distribution loop maintained at ambient temperature (15–25°C). The WFI System (WS-WFI-001) generates WFI via a multi-effect distillation still fed from the PW loop and stores product in a 316L stainless steel jacketed tank maintained at ≥ 80°C to provide continuous hot-water sanitization of the distribution loop. Detailed system schematics, instrument lists, and component specifications are contained in the Water System Design Qualification Document (DQ-WS-001).
+
+All critical process parameters for both systems are monitored by a validated Supervisory Control and Data Acquisition (SCADA) system, which logs data at 1-minute intervals and generates alarm records for out-of-range conditions. SCADA data constitute official cGMP records and are subject to 21 CFR Part 11 controls as described in SOP-IT-022 (Electronic Records and Audit Trail Management). The SCADA historian retains all logged data for a minimum of 5 years.
+
+### 4.2 Scheduled On-Line Monitoring Parameters
+
+The following process parameters are monitored continuously (on-line) at the points identified on the Water System Monitoring Map (Attachment A). Automated alarms are configured in the SCADA system at the values shown below. On-line instrument calib

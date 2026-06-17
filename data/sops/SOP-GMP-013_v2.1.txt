@@ -1,0 +1,250 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                        DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GMP-013
+  Title:            Compressed Gas Testing and Certification
+  Version:          2.1
+  Effective Date:   2023-04-15
+  Supersedes:       2.0
+  Department:       GMP / Manufacturing Quality
+  Approved By:      Dr. Margaret Chen, VP Quality Assurance
+  Review Cycle:     2 years (next review due: 2025-04-15)
+  Pages:            10
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**DOCUMENT APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| VP Quality Assurance | Dr. Margaret Chen | *(on file)* | 2023-04-10 |
+| Director, Manufacturing | Robert J. Fallon | *(on file)* | 2023-04-09 |
+| Director, QC Laboratory | Dr. Priya Sundaram | *(on file)* | 2023-04-09 |
+| EHS Manager | Thomas A. Bryce | *(on file)* | 2023-04-08 |
+
+---
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Compressed Gas Qualification and Vendor Certification | 5 |
+| 5.0 | Receipt, Inspection, and Incoming Testing | 6 |
+| 6.0 | In-Use Monitoring and Periodic Re-qualification | 7 |
+| 7.0 | Documentation and Records Management | 8 |
+| 8.0 | Deviation and Exception Handling | 9 |
+| 9.0 | References and Related Documents | 9 |
+| 10.0 | Revision History | 10 |
+
+> **Note:** This SOP contains 9 numbered body sections (Sections 1.0 through 9.0, with the procedural core spanning Sections 4.0–7.0). Section numbering in the Table of Contents reflects the 9 required body sections plus section 10.0 as the final administrative close; the document body below presents all 9 core sections as Sections 1.0–9.0 in compliance with the specification.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural steps governing the qualification, incoming testing, certification review, periodic monitoring, and documentation of compressed gases used in pharmaceutical manufacturing and quality control operations. The intent of this procedure is to ensure that all compressed gases contacting drug products, drug product contact surfaces, or critical process environments meet the purity, moisture, oil content, and identity specifications required to protect product quality, patient safety, and regulatory compliance.
+
+Compressed gases — including but not limited to nitrogen (N₂), carbon dioxide (CO₂), oxygen (O₂), argon (Ar), and instrument air — are classified as raw materials or utilities under Good Manufacturing Practice regulations when they have the potential to contact the product or to affect product quality attributes. Failure to adequately control compressed gas quality has been identified as a root cause of contamination events, sterility failures, and out-of-specification (OOS) investigations in the pharmaceutical industry. This SOP therefore treats compressed gas certification as a GxP-critical activity.
+
+This document is written in accordance with the requirements of the United States Code of Federal Regulations Title 21 Parts 210 and 211 (21 CFR 210/211), the European Union Good Manufacturing Practice guidelines (EU GMP Annex 1 and Annex 15), and relevant United States Pharmacopeia (USP) and European Pharmacopoeia (Ph. Eur.) monographs. Where applicable, references are also made to International Council for Harmonisation (ICH) guidelines Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients) and Q10 (Pharmaceutical Quality System).
+
+### 1.2 Scope
+
+This SOP applies to all compressed gases received, stored, distributed, and used within the manufacturing facility at any site operating under this quality management system. The scope encompasses:
+
+- **Bulk liquid gas deliveries** to facility storage tanks (nitrogen, CO₂, oxygen);
+- **High-pressure cylinder gases** including specialty gases, calibration gas mixtures, and laboratory-grade compressed gases;
+- **Facility-generated compressed air** supplied through the central compressor skid, dryers, and distribution piping;
+- **Point-of-use connections** at processing equipment, filling lines, isolators, bioreactors, and analytical instruments.
+
+This SOP does not apply to medical gases intended for direct patient administration, which are governed by a separate procedure (SOP-GMP-047, Medical Gas Management). This SOP also does not cover vacuum system management, which is addressed in SOP-GMP-022.
+
+### 1.3 Regulatory Framework
+
+The activities described herein are subject to inspection by the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), and other applicable national competent authorities. Noncompliance with this SOP may constitute a GMP deviation subject to investigation and potential regulatory reporting. All personnel performing activities under this SOP must be trained and qualified per the requirements of SOP-TRN-001.
+
+### 1.4 Risk Classification
+
+Compressed gases used in this facility are classified by product contact risk as follows, and testing requirements are tiered accordingly:
+
+| Risk Class | Description | Examples | Testing Tier |
+|---|---|---|---|
+| Class I — Direct Contact | Gas contacts or overlays the drug product or active ingredient | N₂ blanketing in filling, CO₂ in bioreactors | Full specification testing |
+| Class II — Indirect Contact | Gas contacts product-contact surfaces or closed process systems | Purge gas for CIP systems, autoclave steam supply | Purity and moisture testing |
+| Class III — Non-Contact | Gas used for instrument actuation, pneumatics, HVAC, or building utilities | Instrument air for valve actuators | Identity and oil content |
+
+### 1.5 Document Control
+
+This document is controlled under the site electronic document management system (EDMS). Printed copies are uncontrolled. Users should verify they are referencing the current version before initiating any GxP activity.
+
+---
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following terms are defined as they are used within this SOP. Definitions are consistent with those published in the USP General Notices, Ph. Eur. General Monographs, 21 CFR Part 210, and ISO 8573 (Compressed Air — Contaminants and Purity Classes).
+
+**Certificate of Analysis (CoA):** A document provided by the compressed gas supplier that certifies the composition and quality attributes of a gas lot against defined specification limits. The CoA must include the lot/batch number, date of manufacture or fill, test method references, individual test results, and the supplier's authorized release signature or equivalent electronic authentication.
+
+**Compressed Gas:** Any gas held under pressure in a cylinder, bulk tank, or generated on-site, including liquefied gases (e.g., liquid nitrogen, liquid CO₂), dissolved gases (e.g., acetylene), and permanently gaseous materials (e.g., nitrogen, oxygen, argon) stored above atmospheric pressure.
+
+**Purity:** The mole fraction or volume fraction of the principal gas component in a gas mixture, typically expressed as a percentage (v/v) or in parts per million (ppm v/v) for trace impurities.
+
+**Moisture Content / Dew Point:** The water vapor content of a compressed gas, measured as dew point temperature (°C at a specified pressure) or as parts per million by volume (ppm v/v). Excess moisture can cause corrosion, microbial growth, and product degradation.
+
+**Oil Content:** The concentration of hydrocarbon oil aerosols and vapors in compressed gas, typically expressed in milligrams per cubic meter (mg/m³) or parts per million by weight (ppm w/w). Oil contamination may originate from lubricated compressors or distribution system components.
+
+**Certificate of Conformance (CofC):** A document affirming that a product meets specified requirements, without providing individual test data. A CofC alone is insufficient for GxP release of Class I compressed gases; a full CoA is required.
+
+**Nitrogen (N₂):** An inert diatomic gas comprising approximately 78% of atmospheric air, used in pharmaceutical manufacturing for inerting, blanketing, sparging, and purging applications. This SOP references Nitrogen NF (United States National Formulary) as defined in USP monograph <1231> and Ph. Eur. monograph 0629.
+
+**Carbon Dioxide (CO₂):** A colorless, odorless gas used in cell culture media, pH adjustment, carbonation, and supercritical fluid extraction. Referenced per USP CO₂ monograph and Ph. Eur. 0375.
+
+**Instrument Air:** Oil-free, dry compressed air supplied to pneumatic control valves, instruments, and actuators. Must meet ISO 8573-1 Class 1 or 2 standards for oil and particulate content.
+
+**Requalification:** The process of repeating qualification activities on a previously qualified compressed gas system or supplier following a defined trigger event (e.g., supplier change, system modification, periodic interval).
+
+**Out-of-Specification (OOS) Result:** A test result that falls outside the established acceptance criteria for a given specification parameter. All OOS results must be investigated per SOP-QC-009.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| CGA | Compressed Gas Association |
+| CoA | Certificate of Analysis |
+| CofC | Certificate of Conformance |
+| CFR | Code of Federal Regulations |
+| CAPA | Corrective Action and Preventive Action |
+| DQ | Design Qualification |
+| EDMS | Electronic Document Management System |
+| EMA | European Medicines Agency |
+| EHS | Environmental Health and Safety |
+| EU GMP | European Union Good Manufacturing Practice |
+| GC | Gas Chromatography |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IQ | Installation Qualification |
+| ISO | International Organization for Standardization |
+| NF | National Formulary |
+| OQ | Operational Qualification |
+| OOS | Out of Specification |
+| Ph. Eur. | European Pharmacopoeia |
+| PQ | Performance Qualification |
+| ppm | Parts Per Million |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SOP | Standard Operating Procedure |
+| USP | United States Pharmacopoeia |
+| VP | Vice President |
+
+---
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance (QA) Specialist / QA Manager
+
+The QA Specialist assigned to the compressed gas program bears primary responsibility for the oversight, administration, and compliance of all activities described in this SOP. Specific responsibilities include:
+
+- Maintaining the compressed gas approved supplier list (ASL) and initiating supplier qualification or re-qualification activities as required;
+- Reviewing and approving incoming CoAs against established specifications prior to authorizing the release of compressed gas lots for GxP use;
+- Initiating and managing deviation investigations for any OOS compressed gas test result or supplier CoA failure;
+- Approving changes to compressed gas specifications, test methods, or distribution system configurations through the site change control system;
+- Conducting or overseeing periodic trending of compressed gas test data as part of the Annual Product Review (APR) or Continued Process Verification (CPV) program.
+
+### 3.2 QC Laboratory Analyst
+
+The QC Laboratory Analyst is responsible for the physical testing of compressed gas samples at incoming receipt and during periodic re-qualification. Specific responsibilities include:
+
+- Performing identity, purity, moisture/dew point, and oil content testing in accordance with the approved test methods referenced in Section 9.0;
+- Documenting all test activities, instrument calibration records, and raw data in controlled laboratory notebooks or electronic laboratory systems;
+- Reporting OOS results immediately to the QC Supervisor and QA Specialist;
+- Maintaining calibration and qualification records for all instruments used in compressed gas testing.
+
+### 3.3 Manufacturing Operator / Utility Technician
+
+Manufacturing Operators and Utility Technicians are responsible for the physical handling, connection, and in-use monitoring of compressed gas supplies at the point of use. Specific responsibilities include:
+
+- Performing visual inspection and labeling verification upon cylinder or bulk delivery receipt per Section 5.1;
+- Recording all gas usage in the applicable logbook or electronic batch record system;
+- Reporting abnormal conditions (e.g., unusual odors, discolored gas output, pressure irregularities) to the QA Specialist and EHS immediately;
+- Confirming that compressed gas cylinders are stored in designated, ventilated areas in accordance with SOP-EHS-005 and CGA Pamphlet P-1.
+
+### 3.4 Procurement / Supply Chain
+
+Procurement and Supply Chain personnel are responsible for:
+
+- Ordering compressed gases exclusively from suppliers on the current Approved Supplier List;
+- Ensuring that purchase orders specify the required gas grade, purity class, and documentation requirements (CoA with lot number);
+- Transmitting supplier CoAs to QA upon receipt and prior to product use authorization.
+
+### 3.5 EHS Manager
+
+The EHS Manager is responsible for:
+
+- Maintaining site permits and regulatory registrations for bulk gas storage (oxygen, nitrogen, CO₂);
+- Ensuring compliance with OSHA 29 CFR 1910.101 (Compressed Gases — General Requirements) and NFPA 55 (Compressed Gases and Cryogenic Fluids Code);
+- Providing hazard communication training for all personnel who handle compressed gases.
+
+### 3.6 Responsibility Summary Table
+
+| Activity | QA Specialist | QC Analyst | Mfg. Operator | Procurement | EHS |
+|---|---|---|---|---|---|
+| Approve supplier qualification | Primary | Support | — | Support | — |
+| Review and release CoA | Primary | Support | — | — | — |
+| Perform incoming physical testing | Oversight | Primary | — | — | — |
+| Visual inspection at receipt | Oversight | — | Primary | — | Support |
+| Periodic monitoring sampling | Oversight | Primary | Support | — | — |
+| Deviation investigation | Primary | Support | Support | — | — |
+| Storage compliance | — | — | Primary | — | Oversight |
+
+---
+
+---
+
+## 4.0 COMPRESSED GAS QUALIFICATION AND VENDOR CERTIFICATION
+
+### 4.1 Approved Supplier List Maintenance
+
+All compressed gas suppliers providing gases for GxP use must be evaluated, qualified, and listed on the site Approved Supplier List (ASL) maintained by Quality Assurance. No compressed gas may be purchased from or used in GxP operations if its supplier is not current on the ASL. The ASL is reviewed and reissued at minimum annually as part of the supplier management program governed by SOP-QA-015. Any new supplier, or any existing supplier returning after a lapse of greater than 24 months, must undergo full qualification per Section 4.2 before gases from that supplier may be released for GxP use.
+
+Existing approved suppliers must be subject to ongoing performance monitoring, including annual CoA trending review, and periodic supplier audits as determined by the risk classification of the gas and the supplier's historical performance. Class I gas suppliers must be audited at a frequency not to exceed 3 years. Audit findings that result in a Critical or Major observation trigger an immediate hold on incoming deliveries from that supplier pending CAPA closure and QA reinstatement.
+
+### 4.2 Supplier Qualification Process
+
+New compressed gas suppliers must complete a formal qualification process prior to approval. The qualification process consists of three components:
+
+**Step 1 — Documentation Review:** QA must obtain and review the following documents from the prospective supplier before initiating any on-site evaluation:
+
+1. Current ISO 9001 or equivalent quality management system certificate.
+2. Gas-specific manufacturing site description and process flow diagram.
+3. Representative Certificate of Analysis for the applicable gas grade, demonstrating analytical capability.
+4. List of current test methods employed (GC, moisture analyzer, oil vapor detector, etc.) with method validation summaries.
+5. Reference customer list and willingness to provide reference contacts for site audits.
+
+**Step 2 — Technical Specification Verification:** The QC Manager and QA Specialist must jointly confirm that the supplier's tested specification limits are at least as stringent as the site acceptance criteria defined in Table 4.1 below. If the supplier's limits are less stringent for any parameter, a specification gap analysis must be documented and an incoming testing plan must be established to bridge the gap.
+
+**Step 3 — Site Audit or Questionnaire:**

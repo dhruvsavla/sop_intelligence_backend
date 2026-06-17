@@ -1,0 +1,212 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                         DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════
+```
+
+| **Field**            | **Details**                                      |
+|----------------------|--------------------------------------------------|
+| **SOP Number**       | SOP-GMP-004                                      |
+| **Title**            | Deviation Management and Reporting               |
+| **Version**          | 2.4                                              |
+| **Effective Date**   | 2023-09-01                                       |
+| **Supersedes**       | Version 2.3 (Effective 2021-11-15)               |
+| **Department**       | Quality Assurance / GMP Operations               |
+| **Approved By**      | Robert Harmon, Quality Assurance Director        |
+| **Review Cycle**     | 2 years (next review due: 2025-09-01)            |
+| **Pages**            | 13                                               |
+| **Classification**   | GxP Critical                                     |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                       APPROVAL AND SIGNATURE BLOCK
+═══════════════════════════════════════════════════════════════════════════
+```
+
+| **Role**                          | **Name**               | **Signature** | **Date**   |
+|-----------------------------------|------------------------|---------------|------------|
+| Quality Assurance Director        | Robert Harmon          | *R. Harmon*   | 2023-08-18 |
+| Head of Manufacturing Operations  | Sandra Pieterse        | *S. Pieterse* | 2023-08-16 |
+| Regulatory Affairs Manager        | David Chung            | *D. Chung*    | 2023-08-17 |
+| Head of Quality Control           | Maria Delgado          | *M. Delgado*  | 2023-08-16 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                          TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════
+```
+
+| **Section** | **Title**                                              | **Page** |
+|-------------|--------------------------------------------------------|----------|
+| 1.0         | Purpose and Scope                                      | 3        |
+| 2.0         | Definitions and Abbreviations                          | 4        |
+| 3.0         | Roles and Responsibilities                             | 5        |
+| 4.0         | Deviation Identification and Initial Reporting         | 6        |
+| 5.0         | Deviation Classification and Risk Assessment           | 7        |
+| 6.0         | Deviation Investigation and Root Cause Analysis        | 8        |
+| 7.0         | Impact Assessment and Batch Disposition                | 9        |
+| 8.0         | Corrective and Preventive Action (CAPA) Development    | 10       |
+| 9.0         | Deviation Closure and Documentation Requirements       | 11       |
+| 10.0        | Deviation and Exception Handling                       | 12       |
+| 11.0        | References and Related Documents                       | 13       |
+| 12.0        | Revision History                                       | 13       |
+
+> **Note:** Sections 11.0 and 12.0 are counted within the 13-page scope; the SOP contains 11 core procedural sections (1.0–11.0) plus Revision History (12.0) appended as a document control record on the final page.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                              BODY — SECTIONS 1–12
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure establishes the systematic framework for identifying, reporting, classifying, investigating, and closing deviations that occur during Good Manufacturing Practice (GMP) operations at this facility. The procedure ensures that all unplanned departures from approved procedures, specifications, or regulatory requirements are captured in a timely and documented manner, investigated to their root cause, and resolved through appropriate corrective and preventive actions. Compliance with this SOP supports the continuous improvement of manufacturing processes, analytical methods, and quality systems.
+
+The requirement to document and investigate deviations is codified in 21 CFR Part 211.192 (Production Record Review), 21 CFR Part 211.100 (Written Procedures; Deviations), and EU GMP Annex 11 (Computerised Systems) where applicable. This SOP aligns with ICH Q10 (Pharmaceutical Quality System) principles, specifically the concept of a robust quality management system that enables continual improvement through knowledge management and the detection and correction of process failures.
+
+### 1.2 Scope
+
+This SOP applies to all GMP-regulated activities conducted at the primary manufacturing site and any satellite analytical or packaging facilities operating under the same site license. It covers deviations arising in, but not limited to: raw material receipt and testing, manufacturing and compounding operations, in-process testing, final product testing and release, environmental monitoring, equipment qualification, cleaning validation, and computerized system operations. All personnel employed by or contracted to the organization who perform GMP-regulated activities are required to comply with this procedure.
+
+This SOP does not supersede product-specific handling instructions where those instructions impose more stringent deviation reporting timelines. In the event of conflict between this SOP and a product-specific quality agreement with a contract manufacturing or contract testing organization, the quality agreement shall prevail, provided it meets or exceeds the minimum standards described herein.
+
+### 1.3 Regulatory Basis
+
+The regulatory framework underpinning this SOP includes U.S. Food and Drug Administration (FDA) 21 CFR Parts 210 and 211, the European Union GMP Guidelines (EU GMP Volume 4, Parts I and II), ICH Q10 (Pharmaceutical Quality System), ICH Q9 (Quality Risk Management), ICH Q8(R2) (Pharmaceutical Development), and applicable Pharmacopoeial monographs (USP, EP). Regulatory agencies routinely inspect deviation management systems as a leading indicator of the overall health of a pharmaceutical quality system; therefore, this SOP is designated GxP Critical.
+
+### 1.4 Out of Scope
+
+This SOP does not govern: (a) Out-of-Specification (OOS) laboratory investigations, which are addressed under SOP-QC-012; (b) change control activities, governed by SOP-GMP-009; (c) product complaints received from the market, governed by SOP-PV-003; or (d) adverse event reporting obligations under pharmacovigilance regulations. Cross-referencing between these related procedures is described in Section 11.0.
+
+| **Applicable Regulatory Standard** | **Specific Citation**        | **Relevance to This SOP**                              |
+|-------------------------------------|------------------------------|--------------------------------------------------------|
+| U.S. FDA cGMP                       | 21 CFR §211.192              | Production record review and unexplained discrepancies |
+| U.S. FDA cGMP                       | 21 CFR §211.100(b)           | Written procedures; documentation of deviations        |
+| EU GMP Guidelines                   | Volume 4, Chapter 1, §1.8(iv)| Quality system element: investigations and CAPA        |
+| ICH Q10                             | Section 3.2.3                | CAPA system as element of pharmaceutical quality system|
+| ICH Q9                              | Sections 3 and 5             | Risk management methodology in deviation assessment    |
+| WHO GMP                             | TRS 986, Annex 2, §14        | Deviations, complaints, recalls                        |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Deviation:** Any unplanned or unintended departure from an approved procedure, specification, standard, or regulatory requirement during GMP-regulated activities. A deviation may be discovered at the time of occurrence (planned) or retrospectively during record review. Deviations are distinct from planned deviations, which must be pre-approved through the change control process under SOP-GMP-009.
+
+**Incident:** An event with the potential to affect product quality, patient safety, data integrity, or regulatory compliance that may or may not have resulted in a formal deviation. An incident is the initial observation or report; it is evaluated to determine whether it meets the criteria for formal deviation classification.
+
+**Root Cause:** The fundamental reason or set of reasons whose elimination would prevent recurrence of a deviation. Root cause is determined through structured analytical methods (e.g., Fishbone/Ishikawa diagrams, 5-Why analysis, Fault Tree Analysis) and must be distinguished from contributing factors or symptoms.
+
+**Impact Assessment:** A documented evaluation of the actual or potential effect of a deviation on product quality, patient safety, regulatory compliance, and data integrity. Impact assessment determines whether affected material or data may be released, placed on hold, or must be rejected.
+
+**CAPA (Corrective and Preventive Action):** Corrective Action addresses elimination of the root cause of an identified non-conformance to prevent recurrence. Preventive Action addresses the elimination of the cause of a potential non-conformance to prevent its occurrence. Both are documented, assigned, and tracked to completion within the quality management system.
+
+**Closure:** The formal, QA-authorized conclusion of a deviation investigation, confirming that root cause has been determined, impact assessment has been completed, CAPA (where required) has been initiated or completed, and all supporting documentation is complete and accurate.
+
+**Planned Deviation (Concession):** A pre-approved departure from a defined procedure or specification, documented through the change control system prior to execution. Planned deviations are outside the scope of this SOP.
+
+**Out-of-Trend (OOT):** A laboratory result that, while within specification, represents a statistically significant shift from historical data trends. OOT results may trigger a deviation investigation at the discretion of the Quality Control Manager.
+
+### 2.2 Abbreviations
+
+| **Abbreviation** | **Full Term**                              |
+|------------------|--------------------------------------------|
+| CAPA             | Corrective and Preventive Action           |
+| CFR              | Code of Federal Regulations                |
+| DRF              | Deviation Report Form                      |
+| EHS              | Environmental, Health and Safety           |
+| EM               | Environmental Monitoring                   |
+| eQMS             | Electronic Quality Management System      |
+| EU GMP           | European Union Good Manufacturing Practice |
+| GMP              | Good Manufacturing Practice                |
+| GxP              | Good (Manufacturing/Laboratory/Clinical) Practice |
+| ICH              | International Council for Harmonisation    |
+| IPC              | In-Process Control                         |
+| OOS              | Out of Specification                        |
+| OOT              | Out of Trend                               |
+| QA               | Quality Assurance                          |
+| QC               | Quality Control                            |
+| QRM              | Quality Risk Management                    |
+| RCA              | Root Cause Analysis                        |
+| SOP              | Standard Operating Procedure               |
+| SME              | Subject Matter Expert                      |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance Director
+
+The Quality Assurance Director holds ultimate responsibility for the deviation management system at this facility. This includes ensuring the system is effectively implemented, maintained, and continuously improved; approving Critical deviations and all deviation closures; reviewing periodic deviation trend reports; communicating significant deviations to senior management and regulatory bodies where required; and authorizing exceptions to this SOP where justified and documented. The QA Director also serves as the final escalation point for disputes regarding deviation classification, impact assessment outcomes, or CAPA adequacy.
+
+### 3.2 Quality Assurance Specialist / Manager
+
+The QA Specialist or QA Manager (as assigned) serves as the primary case owner for deviation investigations. Responsibilities include: initial review and classification of deviation reports within defined timelines; assignment of investigation tasks to appropriate Subject Matter Experts (SMEs); review and approval of root cause analyses and impact assessments; verification of CAPA adequacy and closure evidence; maintenance of deviation records in the eQMS; generation of deviation trend reports on a monthly and quarterly basis; and ensuring timely communication to affected departments. A minimum of one QA representative must be involved in every formal deviation investigation.
+
+### 3.3 Manufacturing Operator / Production Supervisor
+
+Manufacturing personnel are responsible for the immediate identification and reporting of deviations occurring within their area of operation. Operators must report deviations to their direct supervisor and to QA without delay and in no event later than the end of the working shift in which the deviation occurred. Production Supervisors are responsible for ensuring interim containment actions are taken (e.g., product hold, area quarantine), for participating in deviation investigations as SMEs, and for implementing assigned CAPA actions within their operational areas.
+
+### 3.4 Quality Control Laboratory Analyst / Laboratory Manager
+
+Laboratory personnel are responsible for identifying and reporting analytical deviations, including instrument malfunctions during analysis, sample handling errors, reagent or reference standard failures, and environmental monitoring excursions. The QC Laboratory Manager is responsible for ensuring laboratory deviations are correctly triaged between the OOS investigation process (SOP-QC-012) and the general deviation process governed by this SOP, and for providing technical input to impact assessments involving analytical data.
+
+### 3.5 Engineering and Facilities Manager
+
+Engineering personnel are responsible for reporting and investigating deviations related to equipment, utilities, HVAC, and facility infrastructure. This includes calibration failures, equipment breakdowns during production, utility parameter excursions (e.g., purified water conductivity, compressed air pressure), and facility breaches. Engineering SMEs provide technical input to deviation investigations and take ownership of equipment-related CAPA actions.
+
+### 3.6 Roles Summary Matrix
+
+| **Role**                          | **Report** | **Investigate** | **Approve Classification** | **Approve Closure** | **Implement CAPA** |
+|-----------------------------------|:----------:|:---------------:|:--------------------------:|:-------------------:|:------------------:|
+| QA Director                       |            |                 | ✓ (Critical)               | ✓                   |                    |
+| QA Specialist / Manager           | ✓          | ✓               | ✓ (Major/Minor)            | ✓ (Major/Minor)     |                    |
+| Manufacturing Operator/Supervisor | ✓          | ✓ (SME)         |                            |                     | ✓                  |
+| QC Analyst / Lab Manager          | ✓          | ✓ (SME)         |                            |                     | ✓                  |
+| Engineering / Facilities          | ✓          | ✓ (SME)         |                            |                     | ✓                  |
+| Regulatory Affairs Manager        |            |                 |                            |                     |                    |
+| (notification for Critical)       |            |                 | ✓ (review)                 |                     |                    |
+
+---
+
+## 4.0 DEVIATION IDENTIFICATION AND INITIAL REPORTING
+
+### 4.1 Obligation to Report
+
+All GMP-trained personnel are required to report any observation that constitutes or may constitute a deviation. This obligation applies regardless of the perceived significance of the event and regardless of whether the personnel member was directly involved in causing the deviation. Failure to report a known deviation is a serious breach of GMP compliance and may result in disciplinary action. The reporting obligation extends to deviations discovered during retrospective record review, internal audit, or peer documentation checks.
+
+The principle of "report first, evaluate second" applies throughout this organization. Personnel are not required to determine whether an event is significant or classify it before initiating a report. Initial reports may be submitted verbally to a supervisor or QA representative, provided a written record is created within the same shift. Anonymous reporting mechanisms are available but do not satisfy the formal documentation requirement.
+
+### 4.2 Initial Reporting Timeline
+
+Regulatory guidance and internal quality standards establish the following maximum timeframes for initial deviation reporting, measured from the time the event is first observed or discovered:
+
+| **Deviation Tier (Preliminary)**       | **Verbal Notification to QA** | **Written DRF Submission to eQMS** |
+|----------------------------------------|-------------------------------|-------------------------------------|
+| Potential Critical (any patient safety or sterility concern) | Immediately (within 15 minutes) | Within 2 hours of occurrence        |
+| Potential Major (process or product impact likely) | Within 1 hour                 | Within same business day (4 hours)  |
+| Potential Minor (limited or no product impact) | Within same shift             | Within 24 hours of occurrence       |
+| Retrospectively identified (record review) | Within 24 hours of discovery  | Within 48 hours of discovery        |
+
+Personnel who are uncertain of the appropriate tier must default to the most stringent timeline applicable until QA performs formal classification.
+
+### 4.3 Deviation Report Form (DRF) Completion
+
+The Deviation Report Form (DRF) is initiated in the electronic Quality Management System (eQMS) using the "New Deviation" workflow. In the event of e

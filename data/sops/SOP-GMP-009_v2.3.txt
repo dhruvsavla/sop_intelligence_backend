@@ -1,0 +1,182 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GMP-009
+  Title:            In-Process Sampling and Testing
+  Version:          2.3
+  Effective Date:   2023-08-15
+  Supersedes:       2.2
+  Department:       GMP / Manufacturing Quality
+  Approved By:      Dr. Margaret Chen, VP Quality Assurance
+  Review Cycle:     2 years (next review due: 2025-08-15)
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | In-Process Control Sampling Procedure | 5 |
+| 5.0 | In-Process Testing Methods and Acceptance Criteria | 6 |
+| 6.0 | Sampling Frequency and Statistical Basis | 7 |
+| 7.0 | Equipment Qualification and Instrument Calibration | 8 |
+| 8.0 | Sample Handling, Labeling, and Chain of Custody | 9 |
+| 9.0 | Data Recording, Review, and Trending | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 11 |
+| 12.0 | Revision History | 12 |
+
+> **Note:** Section count per approved SOP template is 11 substantive numbered sections (Sections 1.0 through 11.0), with Revision History appearing as Section 12.0 for document control completeness. This document contains 12 sections total to satisfy both operational and records-management requirements. All regulatory content requirements are fulfilled within Sections 1.0–11.0.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural steps governing in-process control (IPC) sampling and testing activities conducted during the manufacture of pharmaceutical drug products and drug substances at this facility. The document defines the minimum acceptable standards for sample collection, identification, testing, acceptance criteria evaluation, and disposition of in-process results to ensure that manufacturing operations remain in a state of control throughout the production cycle.
+
+The in-process sampling and testing program is a critical quality system element that provides real-time evidence of process performance, supports timely identification of process deviations, and contributes to the overall body of data used to make product release decisions. By establishing clear, documented procedures, this SOP ensures that in-process controls are applied consistently, scientifically, and in full compliance with applicable regulatory requirements.
+
+### 1.2 Scope
+
+This SOP applies to all in-process sampling and testing activities performed during the manufacture of solid oral dosage forms (tablets and capsules), sterile parenteral products (vials and prefilled syringes), and semi-solid topical preparations manufactured at this facility. It applies to all manufacturing suites, auxiliary processing areas, and the Quality Control (QC) laboratory performing IPC analyses. This SOP does not govern finished product release testing (see SOP-GMP-014) or raw material testing (see SOP-GMP-003), although it interfaces with both documents.
+
+This procedure applies to all personnel involved in manufacturing operations, including but not limited to Manufacturing Operators, Manufacturing Supervisors, QC Laboratory Analysts, and QA Specialists performing in-process checks. Contract and temporary personnel performing any activity covered by this SOP must be trained and documented as qualified prior to independent performance of any task described herein.
+
+### 1.3 Regulatory Basis
+
+This SOP is written in compliance with and supports adherence to the following regulatory frameworks: the United States Code of Federal Regulations 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals), specifically 21 CFR §211.110 (Sampling and testing of in-process materials and drug products); the European Union Good Manufacturing Practice guidelines as described in EU GMP Annex 15 (Qualification and Validation) and EU GMP Chapter 4 (Documentation); ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients); ICH Q10 (Pharmaceutical Quality System); and ICH Q11 (Development and Manufacture of Drug Substances). All numerical parameters and acceptance criteria referenced in this SOP are consistent with the relevant product-specific process validation data and the approved regulatory submission for each product family.
+
+### 1.4 Exclusions
+
+This SOP does not apply to environmental monitoring sampling (refer to SOP-EH-002), utility system sampling (refer to SOP-ENG-007), or stability sample collection activities (refer to SOP-QA-021). Investigational medicinal products (IMPs) in Phase I/II clinical development are subject to SOP-GMP-030 (IMP Manufacturing Controls) until such time as a validated commercial process is established.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this SOP. These definitions are consistent with ICH Q7, the FDA Glossary of Computerized System and Software Development Terminology, and the current edition of the USP General Notices.
+
+**In-Process Control (IPC):** Any check performed during manufacturing to monitor and, if necessary, to adjust the process in order to ensure that the product conforms to its specification. The control of the environment or equipment may also be regarded as a part of in-process control. IPC activities are distinguished from finished product testing by their timing (performed during manufacturing) and their primary intent (process monitoring and real-time intervention capability).
+
+**In-Process Specification:** A defined numerical limit or range established for an in-process attribute, derived from process development data, process validation studies, and/or pharmacopeial standards. In-process specifications are typically wider than finished product release specifications but are set to provide meaningful process control signals before out-of-specification (OOS) conditions affect the final product.
+
+**Acceptance Criteria:** The numerical limits, ranges, or other criteria against which in-process test results are compared to determine whether a process or product attribute is acceptable. Failure to meet acceptance criteria triggers defined investigation and disposition activities.
+
+**Sampling Plan:** A documented scheme that defines the number of samples to be collected, the sampling locations, the sampling frequency, the sampling method, and the sample size required to obtain a statistically representative assessment of an in-process attribute.
+
+**Representative Sample:** A sample that accurately reflects the composition and quality attributes of the lot or batch from which it was drawn, collected in a manner designed to minimize bias and ensure that all portions of the batch have an equal probability of being selected.
+
+**Critical Quality Attribute (CQA):** A physical, chemical, biological, or microbiological property or characteristic that should be within an appropriate limit, range, or distribution to ensure the desired product quality. In-process testing priorities are established based on the identified CQAs for each product.
+
+**Out-of-Specification (OOS) Result:** An in-process test result that falls outside the established acceptance criteria defined in the master batch record or the relevant product specification document.
+
+**In-Process Control Point:** A designated stage in the manufacturing process at which in-process sampling and/or testing is mandated by the master batch record, validated process description, or this SOP.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| API | Active Pharmaceutical Ingredient |
+| ATMP | Advanced Therapy Medicinal Product |
+| BPR | Batch Production Record |
+| CFR | Code of Federal Regulations |
+| CoA | Certificate of Analysis |
+| CoC | Chain of Custody |
+| CQA | Critical Quality Attribute |
+| DU | Dosage Unit |
+| EMA | European Medicines Agency |
+| FDA | Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IPC | In-Process Control |
+| LIMS | Laboratory Information Management System |
+| MBR | Master Batch Record |
+| OOS | Out-of-Specification |
+| OOT | Out-of-Trend |
+| PIC/S | Pharmaceutical Inspection Co-operation Scheme |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| RSD | Relative Standard Deviation |
+| SOP | Standard Operating Procedure |
+| USP | United States Pharmacopeia |
+| UV | Ultraviolet |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Manufacturing Operator
+
+The Manufacturing Operator is responsible for performing in-process sampling at designated control points as specified in the applicable master batch record (MBR) and in accordance with the sampling procedures described in Section 4.0 of this SOP. The Operator shall collect samples using the approved tools, containers, and personal protective equipment (PPE) specified for each product and process step. The Operator shall label all samples immediately upon collection, complete all required entries in the batch production record (BPR) at the time of sampling, and transport samples to the QC laboratory or perform at-line testing using qualified instruments within the time limits specified in Section 8.2. Manufacturing Operators performing in-process testing at the line (e.g., tablet hardness, disintegration time) must be formally qualified and documented as trained on the applicable test methods and instruments prior to independent testing.
+
+### 3.2 Manufacturing Supervisor
+
+The Manufacturing Supervisor is responsible for ensuring that all in-process sampling and testing activities are scheduled, resourced, and performed at the correct time points during the manufacturing campaign. The Supervisor shall verify that Manufacturing Operators are trained and that sampling equipment is available and in a qualified state before production begins. The Supervisor shall perform a first-level review of in-process results recorded in the BPR, confirm that results are within acceptance criteria, and take immediate interim action in the event that an in-process result is out of specification, pending formal QA notification. The Supervisor is responsible for notifying QA promptly (within 30 minutes) of any OOS in-process result.
+
+### 3.3 QC Laboratory Analyst
+
+The QC Laboratory Analyst is responsible for receiving in-process samples in accordance with the chain-of-custody requirements in Section 8.0, logging samples into the LIMS system, performing all assigned in-process tests using validated or verified methods, and entering all test results contemporaneously into the LIMS or laboratory notebook as specified by the applicable test method SOP. The Analyst shall evaluate results against the approved acceptance criteria, flag any OOS or out-of-trend (OOT) result immediately, and notify the QC Laboratory Supervisor for second-person review. Analysts must not alter, transcribe, or backdate any data entry.
+
+### 3.4 QC Laboratory Supervisor
+
+The QC Laboratory Supervisor is responsible for scheduling in-process testing workloads to ensure that results are returned to manufacturing within the timeframes specified in Table 5.1 of this SOP. The Supervisor shall perform a documented second-level review of all QC data for in-process tests, approve the release of in-process test results from LIMS to manufacturing, and initiate the OOS investigation process (in coordination with QA) when a result falls outside acceptance criteria. The Supervisor is responsible for the integrity and completeness of all analytical data generated within the QC laboratory for in-process activities.
+
+### 3.5 QA Specialist (In-Process)
+
+The QA Specialist assigned to in-process oversight is responsible for periodic (minimum: twice per shift) surveillance of in-process sampling and testing activities to verify procedural compliance. The QA Specialist shall review and approve the in-process control sections of the BPR prior to batch disposition, confirm that any OOS or OOT results have been handled in accordance with Section 10.0 of this SOP, and provide regulatory interpretation when questions arise regarding acceptance criteria or sampling plans. The QA Specialist has the authority to halt manufacturing operations if in-process results indicate that the process is out of control or if sampling/testing procedures are not being followed in accordance with this SOP.
+
+### 3.6 VP Quality Assurance
+
+The VP Quality Assurance is the document owner of this SOP and holds authority for final approval of all revisions. The VP QA is responsible for ensuring that the in-process control program remains aligned with current regulatory expectations, product knowledge, and evolving industry standards. The VP QA shall be notified within 2 hours of any critical IPC failure that has the potential to affect patient safety, product quality, or regulatory compliance.
+
+---
+
+## 4.0 IN-PROCESS CONTROL SAMPLING PROCEDURE
+
+### 4.1 Pre-Sampling Preparation
+
+Before initiating any in-process sampling activity, the Manufacturing Operator must verify that all preconditions for sampling are met. This preparation phase is critical to ensuring sample representativeness, personnel safety, and data integrity. Preparation activities shall be completed and documented in the BPR before the first sample is collected.
+
+The Operator shall confirm that the batch production record clearly identifies the required IPC points, the number of samples, the sample size, the sampling method, and the applicable acceptance criteria for the current manufacturing step. If any IPC requirement in the BPR is unclear, production must pause and the Manufacturing Supervisor and QA Specialist must be consulted before proceeding. The BPR is the controlling document for all site-specific IPC requirements and takes precedence over generic guidance within this SOP where product-specific requirements are more stringent.
+
+All sampling tools (e.g., sampling thieves, scoops, spatulas, pipettes, forceps) must be verified as clean, dry, and appropriately labeled before use. For sterile product sampling, the Operator must confirm gown qualification and aseptic technique competency in the personnel training record before entering the clean room for sample collection. Sampling containers must be pre-labeled with the batch number, sampling point designation, sample number, and date/time of collection as a minimum before the sample is drawn.
+
+**Procedure 4.1 — Pre-Sampling Checklist (to be completed in BPR):**
+
+1. Confirm that the BPR has been reviewed and the current IPC point, required number of samples, and acceptance criteria are identified and legible.
+2. Verify that sampling equipment is clean (confirm cleaning log entry or use single-use disposable equipment), appropriately sized for the required sample mass or volume, and calibrated where applicable (e.g., calibrated balances for gravimetric sampling).
+3. Don required PPE as specified on the product-specific Safety Data Sheet (SDS) and the area-specific PPE requirement sign: minimum nitrile gloves, safety glasses, and appropriate respirator if handling potent compounds (OEL ≤ 10 µg/m³); full gowning per SOP-EH-005 for classified areas (Grade B, C, D).
+4. Label all sample containers prior to drawing the sample. Minimum label information: Batch Number, Product Name, IPC Point Identifier (e.g., "Blend IPC-3"), Sample Number (e.g., "S-02 of 10"), Date, and Collector's initials.
+5. Confirm the time of sampling against the BPR-specified IPC schedule. If sampling is delayed more than 15 minutes beyond the scheduled time point, document the reason for delay and notify the Manufacturing Supervisor.
+6. For blending or granulation operations, confirm that the equipment has reached the specified operating condition (speed, time point, or endpoint trigger) before sampling, as specified in the MBR.
+7. Record all pre-sampling confirmations in the BPR with a contemporaneous signature and timestamp (date, time, initials).
+
+### 4.2 Sample Collection Techniques by Dosage Form
+
+Sampling techniques are specific to the manufacturing process step and dosage form. The following techniques shall be applied as specified in the applicable product MBR. Alternative techniques require prior QA approval and a documented justification filed as an attachment to the BPR.
+
+**4.2.1 Blend and Granulation Sampling:** Powder blends shall be sampled using a validated sampling thief of the appropriate design (radial or axial) for the blend container geometry. The sampling thief shall be inserted to the predetermined depth(s) as defined in the blend validation report. For a 1,500 kg blending operation, a minimum of 10 sampling locations (as defined in the blend validation protocol) shall be sampled, with each individual sample containing not less than 2× the minimum quantity required for assay. Samples from each location shall be individually labeled and analyzed unless the MBR specifies composite sampling with documented justification.
+
+**4.2.2 Tablet Compression Sampling:** Tablets for IPC testing shall be collected at defined time intervals from the tablet press output (reference: Section 6.0, Table 6.1). Samples shall be collected from the full output stream of each press station (or from a random selection of stations as specified in the validated sampling plan) using clean, dedicated stainless-steel or plastic collection vessels. Tablets shall not be sampled from the reject chute, startup waste, or any other non-representative stream without explicit BPR instruction and QA notation.
+
+**4.2.3 Liquid and Parenteral Sampling:** For bulk parenteral solutions, samples shall be collected from

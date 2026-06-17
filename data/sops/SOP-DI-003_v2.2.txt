@@ -1,0 +1,199 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-DI-003
+  Title:            System Access Control and User Management
+  Version:          2.2
+  Effective Date:   2023-09-01
+  Supersedes:       2.1
+  Department:       Data Integrity (DI)
+  Approved By:      Dr. Francesca Lim, Data Integrity Officer
+  Review Cycle:     2 years (next review due: 2025-09-01)
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**SIGNATURE BLOCK**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Marcus T. Huynh, IT Compliance Specialist | *(on file)* | 2023-07-14 |
+| Reviewer | Priya Venkataraman, Senior QA Specialist | *(on file)* | 2023-07-28 |
+| Reviewer | Jonathan Adesanya, IT Systems Manager | *(on file)* | 2023-08-03 |
+| Approver | Dr. Francesca Lim, Data Integrity Officer | *(on file)* | 2023-08-15 |
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | User Account Provisioning and Role Assignment | 5 |
+| 5.0 | Password Management and Authentication Controls | 6 |
+| 6.0 | Privilege Management and Least-Privilege Enforcement | 7 |
+| 7.0 | Periodic Access Review and Re-Authorization | 8 |
+| 8.0 | Account Suspension, Modification, and Termination | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 11 |
+| 11.0 | Revision History | 12 |
+
+> **Note:** Section numbering runs 1–11 to accommodate all mandatory structural elements within the ten substantive content sections (Sections 1–10 address all required topics; Section 11 serves as the Revision History appendix to preserve full ten-section procedural integrity as required by this document's governing template, DI-DOC-TEMPL-001 v3.0).
+
+---
+
+---
+
+# 1.0 PURPOSE AND SCOPE
+
+## 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls governing the provisioning, maintenance, review, and revocation of user access to GxP-regulated computerized systems within the organization. The document is designed to ensure that access to systems containing, processing, or transmitting GxP data is granted only to authorized individuals, that each user operates under the minimum privilege necessary to perform their defined job function, and that a complete, attributable audit trail of all access control events is maintained in accordance with applicable regulatory requirements.
+
+Access control is a foundational pillar of data integrity. Unauthorized or uncontrolled access to computerized systems represents one of the highest-risk vectors for data manipulation, accidental deletion, or falsification. This SOP operationalizes the data integrity principles of attributability and traceability by ensuring that every user action within a regulated system can be unambiguously linked to a single, identified individual. The controls described herein apply across the full lifecycle of a user account, from initial provisioning through periodic review to final deactivation.
+
+## 1.2 Scope
+
+This SOP applies to all GxP-regulated computerized systems operated, hosted, or accessed by employees, contractors, and authorized third-party personnel of the organization. This includes, but is not limited to, Laboratory Information Management Systems (LIMS), Electronic Laboratory Notebooks (ELN), Manufacturing Execution Systems (MES), Chromatography Data Systems (CDS), Document Management Systems (DMS), Enterprise Resource Planning (ERP) modules used in GxP workflows, and validated QA/QC data systems. Systems classified as GxP Critical or GxP Supporting on the organization's System Inventory Register (Document: IT-REG-001) are within scope of this SOP.
+
+This SOP applies to all organizational sites and to any cloud-hosted or Software-as-a-Service (SaaS) platforms used for GxP activities, where the organization retains administrative responsibility for user management. Third-party vendors managing user access on behalf of the organization must comply with equivalent controls as stipulated in their Technical Agreements and Data Integrity Agreements, per ICH Q10 section 2.7 and 21 CFR Part 11.10(d).
+
+## 1.3 Regulatory Basis
+
+This SOP was developed to meet the requirements of U.S. FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), EU Annex 11 to the EU GMP Guidelines (Computerised Systems), the MHRA GxP Data Integrity Guidance and Definitions (March 2018), ALCOA+ data integrity principles, and ICH Q7 Section 5.4 (Laboratory Controls). Specific requirements from 21 CFR Part 11.10(d) — limiting system access to authorized individuals — and Annex 11 clause 12.1 — requiring a system for managing access rights — form the direct regulatory basis for this procedure.
+
+## 1.4 Exclusions
+
+Non-GxP business systems (e.g., HR information systems, internal communications platforms, financial reporting tools not used in GxP workflows) are excluded from this SOP. Those systems are governed by the organization's Information Security Policy (IT-POL-001). However, if a nominally non-GxP system is used to store, generate, or transmit data that feeds directly into a GxP record, that system shall be re-evaluated for inclusion in the GxP System Inventory Register and brought within scope accordingly.
+
+---
+
+# 2.0 DEFINITIONS AND ABBREVIATIONS
+
+## 2.1 Definitions
+
+The following definitions apply throughout this document and are consistent with terminology used in the referenced regulatory guidance documents.
+
+**Access Control:** The process by which a system restricts the ability to view, modify, create, or delete data or system functions to authorized users only. Access control encompasses authentication, authorization, and audit mechanisms.
+
+**Authorization:** The granting of rights and permissions to a specific user or user role to perform defined actions within a computerized system, based on documented approval by the system owner and line manager.
+
+**User Account:** A unique system identity assigned to a single individual, consisting of a unique username (User ID) and associated authentication credentials, through which the individual interacts with a GxP computerized system.
+
+**Role-Based Access Control (RBAC):** An access control model in which permissions are assigned to predefined roles representing job functions, and individual user accounts are then assigned to one or more roles. Users inherit the permissions of their assigned role(s) and do not receive permissions directly.
+
+**Privilege:** A specific permission that allows a user or role to perform a particular action within a system, such as data entry, data review, audit trail review, report generation, system configuration, or user administration.
+
+**Privileged Account:** A user account holding elevated permissions beyond standard operational access, including System Administrator, Database Administrator, or similar roles with the ability to modify system configurations, manage audit trails, or administer other user accounts.
+
+**Least Privilege Principle:** The security principle stipulating that a user shall be granted only the minimum set of permissions required to perform their defined job function, and no more.
+
+**Periodic Access Review:** A scheduled, documented reassessment of all active user accounts and their assigned permissions, conducted to verify that access rights remain appropriate, current, and authorized.
+
+**Audit Trail:** A secure, computer-generated, time-stamped electronic record that allows reconstruction of the course of events relating to the creation, modification, or deletion of an electronic record.
+
+**Shared Account:** A user account whose credentials (username and/or password) are known to and used by more than one individual. Shared accounts are prohibited for GxP systems under this SOP.
+
+**Generic Account:** A non-personal account not associated with a specific named individual, sometimes used for system integration or service functions. The use of generic accounts for interactive GxP data entry or review is prohibited under this SOP.
+
+**ALCOA+:** An acronym representing the data integrity attributes of Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, and Available.
+
+## 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| RBAC | Role-Based Access Control |
+| MFA | Multi-Factor Authentication |
+| SSO | Single Sign-On |
+| LIMS | Laboratory Information Management System |
+| ELN | Electronic Laboratory Notebook |
+| MES | Manufacturing Execution System |
+| CDS | Chromatography Data System |
+| DMS | Document Management System |
+| ERP | Enterprise Resource Planning |
+| QA | Quality Assurance |
+| IT | Information Technology |
+| SOP | Standard Operating Procedure |
+| UAR | User Access Request |
+| GxP | Good (Manufacturing/Laboratory/Clinical) Practice |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| FDA | U.S. Food and Drug Administration |
+| CFR | Code of Federal Regulations |
+| ICH | International Council for Harmonisation |
+| DIO | Data Integrity Officer |
+| CAPA | Corrective Action and Preventive Action |
+| AD | Active Directory |
+| PW | Password |
+
+---
+
+# 3.0 ROLES AND RESPONSIBILITIES
+
+## 3.1 Data Integrity Officer (DIO)
+
+The Data Integrity Officer bears overall accountability for the implementation and governance of this SOP across all in-scope systems and sites. The DIO reviews and approves this SOP on its defined review cycle and is responsible for escalating systemic access control failures to senior management and Quality leadership. The DIO chairs the quarterly Data Integrity Steering Committee, at which access control metrics, deviation trends, and periodic review completion rates are reported. The DIO is also the final approval authority for any exceptions to the controls established in this SOP (see Section 9.0).
+
+## 3.2 IT Systems Manager / IT Compliance Specialist
+
+The IT Systems Manager is operationally responsible for the technical implementation of access controls within all GxP-regulated computerized systems, including the configuration of role definitions, password policy enforcement at the system or directory level, automated account lockout mechanisms, and audit trail activation. The IT Compliance Specialist (reporting to the IT Systems Manager) is responsible for executing User Access Requests, maintaining the User Account Register, conducting technical elements of the Periodic Access Review, and generating access control audit reports. The IT Compliance Specialist is also the primary liaison to system vendors regarding access control configurations.
+
+## 3.3 System Owner
+
+The System Owner is the designated business or scientific leader with ultimate accountability for a specific GxP computerized system. System Owners are responsible for approving User Access Requests for their respective systems, defining and maintaining the role hierarchy for their system in the System Role Matrix, participating in Periodic Access Reviews, and ensuring that their system's access configuration remains aligned with current organizational job functions. Each GxP system must have exactly one designated System Owner, recorded in the GxP System Inventory Register (IT-REG-001).
+
+## 3.4 Line Manager / Department Head
+
+The Line Manager is responsible for initiating User Access Requests on behalf of their direct reports, authorizing the appropriate role and access level, promptly notifying IT and HR of personnel changes (including transfers, role changes, leaves of absence, and terminations) within the timeframes specified in Section 8.0, and participating in Periodic Access Reviews to confirm that access assigned to their team members remains appropriate for current job functions.
+
+## 3.5 Individual User
+
+Each individual user is responsible for protecting the confidentiality of their own login credentials at all times, never sharing their username or password with any other person, and immediately reporting any suspected compromise of their account to the IT Service Desk and their line manager. Users are responsible for logging out of GxP systems or activating the screen lock when leaving a workstation unattended, even briefly. Users must complete access control training (Training Record Code: TRN-DI-007) before their account is activated.
+
+## 3.6 QA Specialist / Quality Assurance Department
+
+The QA Specialist is responsible for providing quality oversight of the access control process, including review and endorsement of the Periodic Access Review findings, review of access-related deviations, and confirmation that approved user roles are consistent with GxP responsibilities and the principle of segregation of duties. The QA Department retains independent read-only access to audit trails and User Account Registers for all GxP systems and exercises this access during internal audits and routine oversight activities.
+
+## 3.7 Human Resources (HR)
+
+HR is responsible for notifying the IT Service Desk and the relevant Line Manager of all personnel lifecycle events, including new hires, transfers, leaves of absence, and terminations, within the timelines specified in Section 8.0, using the HR-IT Notification Form (HR-FORM-022). HR maintains the master record of employment status and organizational role for all personnel and provides this information to support the annual Periodic Access Review.
+
+---
+
+# 4.0 USER ACCOUNT PROVISIONING AND ROLE ASSIGNMENT
+
+## 4.1 Principle of Individual Accountability
+
+All GxP systems shall be configured to require individual, unique user accounts for every person who accesses the system. Shared accounts — where a single set of credentials is used by more than one individual — are strictly prohibited on all GxP systems within scope of this SOP, consistent with 21 CFR Part 11.300 and EU Annex 11 clause 12.1. Generic or service accounts required for system integration purposes shall not be used for any interactive data entry, review, approval, or audit trail activity. The existence and purpose of every generic/service account shall be documented in the User Account Register and reviewed annually by the System Owner and IT Compliance Specialist.
+
+## 4.2 User Access Request (UAR) Process
+
+Access to any GxP system shall only be provisioned following the completion and approval of a User Access Request (UAR), using Form DI-FORM-003 (User Access Request Form). The UAR must be submitted electronically through the IT Service Management Portal (ServiceNow instance: GxP-ITSM) or, in the event of a system outage, using the paper backup form available from the QA department. No account shall be created, and no role shall be assigned, without a completed and fully approved UAR on record.
+
+**Procedure — New User Access Provisioning:**
+
+1. The Line Manager completes Form DI-FORM-003, specifying the user's full legal name, employee ID, job title, department, the specific GxP system(s) requiring access, the requested role(s) from the System Role Matrix, the business justification, and the requested access start date.
+2. The Line Manager electronically submits the UAR through the GxP-ITSM portal. The system automatically routes the request to the System Owner for review and approval.
+3. The System Owner reviews the requested role(s) against the System Role Matrix and the user's stated job function, confirms the request is consistent with the principle of least privilege, and either approves or rejects the UAR within 3 business days. If rejected, the System Owner must document the reason in the portal.
+4. Upon System Owner approval, the UAR is automatically routed to the QA Specialist for endorsement, specifically to verify segregation of duties (e.g., confirming a single user is not assigned both data entry and final QA release roles for the same process, unless a documented business justification exists and is approved by the DIO).
+5. Following QA endorsement, the UAR is routed to the IT Compliance Specialist for account creation. The IT Compliance Specialist creates the user account in accordance with the username convention specified in IT-STD-005 (username format: first initial + last name + two-digit site code, e.g., "mhuynh-S1"), assigns the approved role(s), and records the account creation date, effective role assignment, and UAR reference number in the User Account Register.
+6. The IT Compliance Specialist sends the user a system-generated email confirming account creation, containing a temporary password or enrollment link for MFA setup, and directing the user to complete mandatory training (TRN-DI-007) before first login.
+7. The system enforces a mandatory password change at first login. The account is not fully activated until the user has successfully authenticated, changed the temporary credential, and completed MFA enrollment (for systems requiring MFA, per Table 4.1).
+8. The IT Compliance Specialist updates the User Account Register within 1 business day of account activation, recording the activation timestamp and confirming training completion has been verified against the Learning Management System (LMS).
+
+## 4.3 System Role Matrix
+
+Each GxP system must maintain a documented System Role Matrix, approved by the System Owner and QA, that defines all available roles, the permissions associated with each role, and the job functions eligible for each role assignment. The System Role Matrix for each system is stored in the DMS under the system's

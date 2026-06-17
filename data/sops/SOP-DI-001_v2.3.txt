@@ -1,0 +1,198 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                                 ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:       SOP-DI-001                                                  ║
+║  Title:            Audit Trail Review and Verification                         ║
+║  Version:          2.3                                                         ║
+║  Effective Date:   2023-08-15                                                  ║
+║  Supersedes:       2.2                                                         ║
+║  Department:       DI (Data Integrity)                                         ║
+║  Approved By:      Dr. Francesca Lim, Data Integrity Officer                  ║
+║  Review Cycle:     2 years                                                     ║
+║  Pages:            12                                                          ║
+║  Classification:   GxP Critical                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+> **DOCUMENT STATUS NOTICE**
+> This document is approved and effective as of 2023-08-15. Printed copies are uncontrolled. The controlled version resides in the Electronic Document Management System (EDMS) under document number SOP-DI-001, Version 2.3. Verify currency before use.
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Audit Trail Review — Core Procedures | 5 |
+| 5.0 | Audit Trail Verification and Integrity Assessment | 7 |
+| 6.0 | Computerized System Audit Trail Configuration and Controls | 8 |
+| 7.0 | Periodic Audit Trail Review Schedule and Documentation | 9 |
+| 8.0 | Audit Trail Review for Laboratory Instruments and LIMS | 10 |
+| 9.0 | Training Requirements | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 11 |
+| 12.0 | Revision History | 12 |
+
+> *Note: Section count is 12 to accommodate the mandatory closing sections (Deviation/Exception Handling, References, and Revision History) while preserving the 11 primary numbered content sections plus the revision history section. Sections 10.0, 11.0, and 12.0 fulfill the N-2, N-1, and N positions respectively.*
+
+---
+
+---
+
+# BODY — PROCEDURAL SECTIONS
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and methodology for conducting systematic audit trail reviews and verifications within GxP-regulated computerized systems at this organization. The audit trail is a fundamental data integrity control mechanism that creates a chronological, contemporaneous, and attributable record of actions taken on electronic data, thereby enabling reconstruction of the complete history of data creation, modification, and deletion. This SOP ensures that audit trail data is routinely reviewed, verified for completeness and accuracy, and that discrepancies or anomalies are escalated through the appropriate quality management processes.
+
+Regulatory agencies including the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), and the Medicines and Healthcare products Regulatory Agency (MHRA) have consistently identified inadequate audit trail review as a critical data integrity deficiency during GMP/GLP inspections. This document translates regulatory expectations from FDA 21 CFR Part 11, FDA 21 CFR Parts 211 and 212, EU GMP Annex 11, and ICH Q7 into operationally actionable procedures that can be executed by trained personnel across all GxP-applicable departments.
+
+### 1.2 Scope
+
+This SOP applies to all computerized systems used in GxP activities within the organization, including but not limited to: Laboratory Information Management Systems (LIMS), Manufacturing Execution Systems (MES), Enterprise Resource Planning (ERP) systems with GxP modules, standalone laboratory instruments with electronic data acquisition capabilities, Electronic Batch Records (EBR), chromatography data systems (CDS), and environmental monitoring systems. The scope encompasses all data that fall within the definition of GxP critical data, as defined in the organization's Data Integrity Policy (POL-DI-001).
+
+This SOP applies to all personnel who generate, review, approve, or oversee GxP electronic records, as well as IT administrators responsible for computerized system configuration and maintenance. Contract laboratories and third-party service providers performing GxP activities on behalf of the organization are subject to equivalent requirements as specified in their quality agreements; applicability shall be confirmed through vendor qualification activities governed by SOP-VQ-003.
+
+### 1.3 Objectives
+
+The specific objectives of this SOP are to: (1) define a consistent, risk-based methodology for reviewing audit trails in GxP computerized systems; (2) establish minimum review frequencies and acceptance criteria for audit trail completeness; (3) provide a framework for identifying, documenting, and investigating audit trail anomalies; (4) ensure compliance with applicable regulatory requirements for electronic records and audit trails; and (5) support inspection readiness by maintaining a demonstrable audit trail review program with contemporaneous documentation.
+
+### 1.4 Regulatory Basis
+
+This SOP has been developed in alignment with the following primary regulatory and guidance documents: FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), FDA 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals), EU GMP Annex 11 (Computerised Systems), ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients), MHRA GxP Data Integrity Guidance and Definitions (2018), and WHO Technical Report Series No. 996, Annex 5 (Guidance on Good Data and Record Management Practices, 2016). Where requirements across these frameworks differ, the most stringent applicable requirement shall govern.
+
+**Table 1.1 — Regulatory Framework Summary**
+
+| Regulation / Guidance | Jurisdiction | Key Audit Trail Requirement | Applicable GxP Phase |
+|---|---|---|---|
+| FDA 21 CFR Part 11.10(e) | USA | Audit trails must capture date/time of operator entries and actions, including modifications to data | GMP, GLP, GCP |
+| EU GMP Annex 11, Clause 9 | EU/EEA | Audit trail must be computer-generated and include data creation, modification, and deletion | GMP |
+| ICH Q7, Section 5.43 | International | Changes to data shall not obscure original entries; record of changes required | API GMP |
+| MHRA GxP DI Guidance, p.14 | UK | Audit trails must be regularly reviewed as part of routine data review | GMP, GLP |
+| WHO TRS 996 Annex 5, §3.2 | International | Audit trail review should be commensurate with risk and completed with batch/sample review | GMP, GLP |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document. Where terms are defined differently in applicable regulations, the regulatory definition takes precedence in matters of compliance determination.
+
+**Audit Trail:** A secure, computer-generated, time-stamped electronic record that allows for reconstruction of the course of events relating to the creation, modification, or deletion of an electronic record. The audit trail must be operator-independent and protected from modification by any user, including system administrators. Per FDA 21 CFR Part 11.10(e), audit trails must capture the date and time of operator entries and actions that create, modify, or delete electronic records.
+
+**Attributable Data:** Data that can be unambiguously linked to the individual who performed the action. In electronic systems, attributability is established through unique user login credentials, electronic signatures, and audit trail entries that capture the user ID associated with each data event. This forms the first element of the ALCOA+ framework (Attributable, Legible, Contemporaneous, Original, Accurate; plus Complete, Consistent, Enduring, Available).
+
+**Data Change (Data Modification):** Any alteration to an existing electronic record, including changes to numerical values, categorical entries, status fields, configuration parameters, or associated metadata. Data changes captured in the audit trail must include the original value, the new value, the date and time of the change, the user ID of the individual making the change, and, where technically feasible, the reason for the change.
+
+**Metadata:** Contextual data that describe the attributes of other data, providing information about the structure, data elements, inter-relationships, and other characteristics of data. In the context of audit trails, metadata includes user ID, timestamp, workstation/terminal identifier, system version, method name, and any change-reason fields. Metadata is itself subject to data integrity requirements and must be retained for the same period as the primary data.
+
+**Computer System:** Any combination of hardware, software, and network components that processes, stores, or transmits GxP data. This includes standalone instruments with onboard data systems, networked analytical instruments, enterprise software applications, and hybrid paper-electronic systems.
+
+**Audit Trail Review:** The systematic examination of audit trail records by a qualified individual to verify that data entries and modifications are legitimate, authorized, and scientifically justified. The review must be contemporaneous with the data review it supports (e.g., completed prior to batch release, report approval, or regulatory submission).
+
+**Anomaly (Audit Trail Anomaly):** Any entry, pattern, or absence within an audit trail record that is unexpected, unexplained, or potentially indicative of data integrity failure. Examples include: unauthorized deletions, repeated failed login attempts, backdated entries, changes without documented justification, and entries made outside normal working hours by accounts not authorized for off-hours access.
+
+**Verified Audit Trail:** An audit trail that has been formally reviewed by a qualified individual, found to be complete and consistent with the associated primary data, and documented as reviewed per the requirements of this SOP.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| ALCOA+ | Attributable, Legible, Contemporaneous, Original, Accurate; Complete, Consistent, Enduring, Available |
+| CDS | Chromatography Data System |
+| CFR | Code of Federal Regulations |
+| DI | Data Integrity |
+| EBR | Electronic Batch Record |
+| EDMS | Electronic Document Management System |
+| EMA | European Medicines Agency |
+| ERP | Enterprise Resource Planning |
+| FDA | Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| GxP | Good (any) Practice (encompassing GMP, GLP, GCP) |
+| ICH | International Council for Harmonisation |
+| IT | Information Technology |
+| LIMS | Laboratory Information Management System |
+| MES | Manufacturing Execution System |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| OOS | Out of Specification |
+| OOT | Out of Trend |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SOP | Standard Operating Procedure |
+| UTC | Coordinated Universal Time |
+| WHO | World Health Organization |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Data Integrity Officer
+
+The Data Integrity Officer (DIO) bears overall accountability for the data integrity program, including the audit trail review program defined herein. The DIO is responsible for: approving this SOP and all related data integrity procedures; ensuring that audit trail review requirements are incorporated into all applicable system-specific SOPs and validation documentation; reviewing escalated audit trail anomalies that cannot be resolved at the department level; liaising with regulatory affairs during inspections regarding audit trail compliance; and conducting or commissioning periodic effectiveness reviews of the audit trail program, at minimum annually. The DIO also maintains the organization's computerized system inventory (Form DI-F-001) and ensures that all in-scope systems are covered by current audit trail review procedures.
+
+### 3.2 Quality Assurance Specialist / QA Reviewer
+
+Quality Assurance (QA) Specialists are responsible for independently verifying audit trail reviews conducted by operational personnel as part of batch record review, analytical report review, or periodic system review activities. Specific QA responsibilities include: reviewing audit trail review records submitted with batch documentation prior to batch release; performing independent audit trail sampling reviews as described in Section 7.0; approving deviation reports generated in response to audit trail anomalies; and maintaining audit trail review records in the quality management system for a minimum retention period as specified in Section 7.4.
+
+### 3.3 Laboratory Analyst / QC Analyst
+
+Laboratory Analysts and QC Analysts are the primary individuals responsible for conducting routine, contemporaneous audit trail reviews in the laboratory setting. Their responsibilities include: reviewing audit trails for all GxP electronic records they generate or review prior to approving analytical results; documenting audit trail reviews on the Audit Trail Review Record (Form DI-F-002); immediately reporting anomalies to their supervisor and the QA department; and maintaining familiarity with the audit trail interfaces of all computerized systems they are qualified to operate. Analysts shall not review audit trail records that they themselves have generated without concurrent independent QA review.
+
+### 3.4 Manufacturing Operator / Production Specialist
+
+Manufacturing Operators are responsible for performing audit trail reviews associated with electronic batch records, MES entries, and process control systems within their operational area. Operators shall review audit trail entries for all critical process parameters recorded electronically during their shift and document the review on the applicable EBR checklist. Any unauthorized or unexplained modifications to process data must be reported to the Manufacturing Supervisor and QA within one (1) hour of discovery.
+
+### 3.5 IT System Administrator
+
+IT System Administrators are responsible for the technical configuration of audit trail functionality within GxP computerized systems. Responsibilities include: ensuring audit trail functionality is enabled and cannot be disabled by non-IT-authorized personnel; performing periodic system checks to verify audit trail integrity at the database level; providing audit trail data exports in readable formats upon request by QA or the DIO; and reporting any technical failures of audit trail functionality within four (4) hours of discovery. IT Administrators shall not have the ability to modify or delete audit trail records; this segregation of duty shall be enforced through system access controls and verified during periodic access reviews.
+
+### 3.6 Department Manager / Supervisor
+
+Department Managers are responsible for ensuring that all personnel within their area are trained on audit trail requirements and this SOP, that adequate time is allocated for contemporaneous audit trail reviews, and that audit trail anomaly reports from their area are reviewed and signed within two (2) business days of issuance.
+
+**Table 3.1 — Responsibility Matrix (RACI)**
+
+| Activity | DIO | QA Specialist | Lab Analyst | Mfg. Operator | IT Admin | Dept. Manager |
+|---|---|---|---|---|---|---|
+| Approve SOP | A | C | I | I | I | I |
+| Maintain system inventory | R/A | C | I | I | C | I |
+| Configure audit trail functionality | I | C | I | I | R/A | I |
+| Conduct routine audit trail review | I | C | R | R | I | I |
+| Independent QA audit trail review | C | R/A | I | I | I | I |
+| Investigate audit trail anomaly | A | R | C | C | C | C |
+| Approve deviation report | A | R | I | I | I | C |
+| Conduct annual effectiveness review | R/A | C | I | I | C | C |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+## 4.0 AUDIT TRAIL REVIEW — CORE PROCEDURES
+
+### 4.1 Overview of the Audit Trail Review Process
+
+The audit trail review is an integral component of the data review process and must be conducted as part of every GxP data review cycle, not as a retrospective or periodic-only activity. The review process is structured around three tiers: (1) contemporaneous operational review conducted by the data originator's designated reviewer at the time of data use (e.g., prior to batch release or result approval); (2) independent QA review conducted as part of the formal quality record review; and (3) periodic system-level review conducted on a scheduled frequency to assess systemic patterns and trends that may not be visible in individual-record reviews. All three tiers are required; no single tier is sufficient as a standalone control.
+
+### 4.2 Pre-Review Preparation
+
+Before initiating an audit trail review, the reviewer must complete the following preparatory steps:
+
+1. Log into the computerized system using their unique, personal user credentials. Shared login accounts shall not be used for audit trail review activities. If a reviewer identifies a shared account has been used within the audit trail being reviewed, this shall be documented as a critical anomaly per Section 10.2.
+2. Navigate to the audit trail module of the applicable system. Refer to the system-specific User Guide (maintained in the EDMS under the applicable system folder) for navigation instructions specific

@@ -1,0 +1,207 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:        SOP-PV-001
+  Title:             Suspected Unexpected Serious Adverse Reaction (SUSAR)
+                     Reporting
+  Version:           2.4
+  Effective Date:    2023-07-01
+  Supersedes:        Version 2.3 (Effective Date: 2021-04-15)
+  Department:        Pharmacovigilance (PV)
+  Approved By:       Dr. Amanda Foster, Head of Pharmacovigilance
+  Review Cycle:      2 years (next scheduled review: 2025-07-01)
+  Pages:             14
+  Classification:    GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Senior PV Specialist | M. Harrington | 2023-05-12 |
+| Reviewer | PV Operations Manager | T. Okafor | 2023-05-30 |
+| Reviewer | Regulatory Affairs Lead | S. Lindqvist | 2023-06-05 |
+| QA Approver | Head of Quality Assurance | R. Castellano | 2023-06-19 |
+| Final Approver | Head of Pharmacovigilance | Dr. A. Foster | 2023-06-22 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                             TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 5 |
+| 4.0 | SUSAR Identification and Initial Assessment | 6 |
+| 5.0 | Expedited Reporting Requirements and Timelines | 7 |
+| 6.0 | Case Processing and Medical Evaluation | 8 |
+| 7.0 | Electronic Submission to Regulatory Authorities | 9 |
+| 8.0 | Investigator and Ethics Committee Notification | 10 |
+| 9.0 | Signal Detection and Aggregate Analysis | 11 |
+| 10.0 | Quality Control and Case Reconciliation | 12 |
+| 11.0 | Deviation and Exception Handling | 13 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            BODY — PROCEDURAL SECTIONS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the mandatory processes, timelines, quality standards, and accountability framework governing the identification, assessment, processing, and regulatory submission of Suspected Unexpected Serious Adverse Reactions (SUSARs) arising from clinical trials sponsored by or conducted on behalf of the organization. The procedure ensures that all SUSAR reporting activities comply with applicable international and regional regulatory requirements, thereby protecting clinical trial participants and maintaining the integrity of the ongoing benefit-risk evaluation of investigational medicinal products (IMPs).
+
+This document operationalizes the requirements of ICH E2A (Clinical Safety Data Management: Definitions and Standards for Expedited Reporting), ICH E6(R2) (Good Clinical Practice), FDA 21 CFR Part 312.32, and European Commission Directive 2001/20/EC as implemented through EMA guidance and the Clinical Trials Regulation (EU) No 536/2014. It further aligns with EMA's guidance on reporting requirements for clinical trials conducted under a Clinical Trial Authorization (CTA) and with applicable national competent authority (NCA) requirements for each country where trials are conducted.
+
+### 1.2 Scope
+
+This SOP applies to all clinical trial programs for which the organization acts as Sponsor or Sponsor-Investigator, including trials conducted under an Investigational New Drug (IND) application, a Clinical Trial Authorization (CTA), or equivalent regulatory authorization in any jurisdiction. It applies to all phases of clinical development (Phase I through Phase IV), including first-in-human studies, dose-escalation studies, and investigator-initiated trials for which the organization holds pharmacovigilance responsibility under a Clinical Trial Agreement.
+
+The scope encompasses individual case reports received from any source, including: investigational sites, contract research organizations (CROs) operating under a pharmacovigilance services agreement, literature sources, post-marketing surveillance databases cross-referenced to active IND/CTA programs, spontaneous reports, regulatory authority queries, and internal medical monitoring activities. This SOP does not govern post-marketing spontaneous adverse event reporting, which is addressed under SOP-PV-003.
+
+### 1.3 Regulatory Basis
+
+The organization's SUSAR reporting program is constructed upon the regulatory framework summarized in Section 12.0. All timelines, data elements, and submission formats described herein reflect current regulatory expectations as of the Effective Date of this version. Where national competent authority requirements impose more stringent timelines or data elements than those specified in this SOP, the more stringent requirement shall prevail. Deviations from this SOP require formal documentation under Section 11.0.
+
+### 1.4 Exclusions
+
+This SOP does not apply to: (a) non-serious adverse events, which are managed under SOP-PV-002; (b) non-clinical safety findings arising from toxicology studies; (c) device-related adverse events unless the trial involves a combination drug-device product; or (d) adverse events occurring in expanded access or compassionate use programs, which are governed under SOP-PV-007.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Adverse Event (AE):** Any untoward medical occurrence in a clinical trial participant administered an investigational medicinal product, which does not necessarily have a causal relationship with the treatment. An AE can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding), symptom, or disease temporally associated with the use of the IMP.
+
+**Adverse Reaction (AR):** An adverse event for which there is at least a reasonable possibility that a causal relationship exists between the IMP and the event. This determination is made by the qualified medical assessor based on the totality of available clinical, pharmacological, and temporal evidence.
+
+**Serious Adverse Event/Reaction (SAE/SAR):** Any untoward medical occurrence that meets one or more of the following criteria: (1) results in death; (2) is life-threatening (i.e., the patient was at immediate risk of death at the time of the event); (3) requires inpatient hospitalization or prolongation of existing hospitalization for ≥24 hours; (4) results in persistent or significant disability or incapacity; (5) constitutes a congenital anomaly or birth defect; or (6) is medically significant based on medical and scientific judgment, even if the outcome does not immediately satisfy the above criteria.
+
+**Unexpected Adverse Reaction:** An adverse reaction whose nature, severity, specificity, or outcome is not consistent with the information in the applicable product reference safety information. For IND-held trials, the reference document is the current Investigator's Brochure (IB). For approved products used as comparators, the reference document is the current Summary of Product Characteristics (SmPC) or United States Prescribing Information (USPI), as applicable.
+
+**Suspected Unexpected Serious Adverse Reaction (SUSAR):** A serious adverse reaction that is both unexpected (as defined above) and for which there is at least a reasonable possibility of a causal relationship with the IMP, based on the reporting investigator's or the sponsor's causality assessment. A SUSAR requires expedited regulatory reporting.
+
+**Day 0:** The date on which the Sponsor first receives notification of a serious adverse event that meets the minimum information criteria for a valid report: (1) an identifiable patient; (2) an identifiable reporter; (3) a suspect IMP; and (4) an adverse event. Time-to-report clocks begin on Day 0.
+
+**Follow-up Report:** A subsequent case report that provides materially new or updated information that changes the initial characterization of the case (e.g., new seriousness criteria, a change in causality, or additional clinical details). Follow-up reports restart the expedited reporting clock only when they introduce new information sufficient to reclassify the case as a SUSAR for the first time.
+
+**CIOMS Form:** A standardized case report form developed by the Council for International Organizations of Medical Sciences, widely used for transmitting individual case safety reports (ICSRs) to regulatory authorities and investigators in paper or equivalent electronic format.
+
+**EudraVigilance:** The European data processing network and management system for reporting and evaluating suspected adverse reactions during the development and following the marketing authorization of medicinal products in the European Economic Area (EEA), maintained by the European Medicines Agency (EMA).
+
+**MedDRA:** Medical Dictionary for Regulatory Activities — a clinically validated international medical terminology used by regulatory authorities and pharmaceutical companies for classification and retrieval of adverse event information.
+
+**IND Safety Report:** A report submitted to the FDA under 21 CFR 312.32 describing a SUSAR or an increased rate of occurrence of expected serious adverse reactions.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| AE | Adverse Event |
+| AR | Adverse Reaction |
+| CRO | Contract Research Organization |
+| CTA | Clinical Trial Authorization |
+| CIOMS | Council for International Organizations of Medical Sciences |
+| DSU | Development Safety Update |
+| DSUR | Development Safety Update Report |
+| EEA | European Economic Area |
+| EMA | European Medicines Agency |
+| EU CT Reg | EU Clinical Trials Regulation No 536/2014 |
+| EudraVigilance | European database of suspected adverse drug reactions |
+| FDA | U.S. Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| ICSR | Individual Case Safety Report |
+| IB | Investigator's Brochure |
+| ICH | International Council for Harmonisation |
+| IMP | Investigational Medicinal Product |
+| IND | Investigational New Drug Application |
+| IRB | Institutional Review Board |
+| MedDRA | Medical Dictionary for Regulatory Activities |
+| NCA | National Competent Authority |
+| PV | Pharmacovigilance |
+| QPPV | Qualified Person for Pharmacovigilance |
+| SAE | Serious Adverse Event |
+| SAR | Serious Adverse Reaction |
+| SmPC | Summary of Product Characteristics |
+| SOC | System Organ Class (MedDRA hierarchy) |
+| SOP | Standard Operating Procedure |
+| SUSAR | Suspected Unexpected Serious Adverse Reaction |
+| USPI | United States Prescribing Information |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Head of Pharmacovigilance (QPPV)
+
+The Head of Pharmacovigilance (also serving as the organization's Qualified Person for Pharmacovigilance) bears overall accountability for the scientific and regulatory integrity of the SUSAR reporting program. Responsibilities include: final authorization of the SUSAR reporting policy; oversight of the case processing timelines and quality metrics; review and approval of expedited submissions for all fatal and life-threatening cases; communication with senior regulatory authority contacts; and authorization of any protocol deviations from this SOP where medical judgment is required. The QPPV must be contactable 24 hours per day, 7 days per week, either directly or via a designated deputy, for consultation on urgent cases.
+
+### 3.2 PV Case Processing Specialist (Senior)
+
+The Senior PV Case Processing Specialist holds primary operational responsibility for the end-to-end management of SUSAR cases. Specific duties include: receiving and triaging incoming SAE reports; performing initial seriousness, causality, and expectedness assessments; entering case data into the validated safety database (Argus Safety, version 8.2.1 or higher); preparing CIOMS I forms and electronic submissions; coordinating medical review with the Medical Monitor; managing correspondence with investigators and regulatory authorities; and maintaining the SUSAR tracking log. A minimum of two qualified Senior PV Case Processing Specialists must be available during business hours; an on-call arrangement must be maintained outside business hours per the On-Call Roster (QD-PV-009).
+
+### 3.3 Medical Monitor / Qualified Physician
+
+The Medical Monitor is a qualified physician (MD or equivalent) responsible for: providing independent medical causality assessment for all cases that the case processing specialist classifies or is uncertain about as potential SUSARs; reviewing clinical narratives for medical accuracy; approving cases prior to regulatory submission; and advising on follow-up queries to investigators. The Medical Monitor must complete their review within the internal timeline limits specified in Section 5.2.
+
+### 3.4 Regulatory Affairs Specialist
+
+The Regulatory Affairs Specialist (PV interface) is responsible for: maintaining current knowledge of country-specific submission requirements and timelines; submitting ICSRs to regulatory authorities via approved electronic gateways (FDA E2B gateway, EudraVigilance); maintaining submission acknowledgment records; managing IND safety report cover letters; and coordinating with local regulatory affairs representatives in each clinical trial country.
+
+### 3.5 Data Management / Safety Database Administrator
+
+The Safety Database Administrator is responsible for: maintaining the validated state of the safety database; performing periodic system checks; extracting aggregate data for DSUR preparation; and ensuring that the MedDRA version used for coding is current (updated at least semi-annually following MedDRA release cycles).
+
+### 3.6 Responsibilities Summary Table
+
+| Role | Initial Assessment | Medical Review | Regulatory Submission | Investigator Notification | QC Review |
+|---|---|---|---|---|---|
+| Senior PV Case Processing Specialist | Primary | Support | Primary (drafting) | Primary | Self-QC |
+| Medical Monitor / Qualified Physician | Advisory | Primary | Final approval | Advisory | Sign-off |
+| QPPV | Oversight | Fatal/Life-threatening cases | Fatal cases | Escalated cases | Final |
+| Regulatory Affairs Specialist | — | — | Gateway submission | — | Country-specific |
+| QA Specialist | — | — | — | — | Periodic audit |
+| CRO PV Contact (if applicable) | Initial receipt | — | — | — | Contractual |
+
+### 3.7 CRO Responsibilities
+
+Where a CRO has been contracted to perform pharmacovigilance services, the CRO's responsibilities and the interface with the Sponsor's PV team must be defined in a written Pharmacovigilance Agreement (PVA). The CRO is responsible for collecting and transmitting SAE reports to the Sponsor within the timelines specified in the PVA, which shall be no longer than: Day 0 + 1 calendar day for fatal or life-threatening events; Day 0 + 3 calendar days for all other serious events. The Sponsor retains ultimate regulatory responsibility for all SUSAR reporting activities regardless of contractual delegation.
+
+---
+
+## 4.0 SUSAR IDENTIFICATION AND INITIAL ASSESSMENT
+
+### 4.1 Receipt and Triage of Incoming Reports
+
+All incoming safety reports, regardless of source (investigator site, CRO, literature, regulatory authority, or internal medical monitoring), must be date- and time-stamped upon first receipt by the Sponsor's PV department. Receipt timestamps are used to establish Day 0 and must be accurate to within 1 business hour. Reports received outside of business hours must be triaged by the on-call PV specialist within 2 hours of receipt for potential fatal or life-threatening events, and by the next business day for all other events.
+
+The initial triage step involves confirming that the report contains the four minimum valid case criteria: an identifiable patient (e.g., subject number, initials, or date of birth); an identifiable reporter (name, institution, or contact information); a suspect IMP (name, dose, or lot number sufficient for identification); and a described adverse event. Reports lacking one or more minimum criteria are classified as incomplete and must be immediately followed up to obtain missing information. The follow-up attempt must be documented in the case file within 24 hours of identifying the incompleteness, using the Investigator Follow-Up Request template (FRM-PV-004).
+
+### 4.2 Seriousness Assessment
+
+Upon receipt of a valid case, the Senior PV Case Processing Specialist performs a seriousness assessment against the criteria defined in Section 2.1. All five recognized seriousness criteria must be explicitly evaluated and documented in the case record. When the reporting investigator has not designated an event as serious, the case processing specialist must apply independent medical and scientific judgment. Cases where seriousness is ambiguous must

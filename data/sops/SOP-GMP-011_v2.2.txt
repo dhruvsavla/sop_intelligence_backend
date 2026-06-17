@@ -1,0 +1,205 @@
+# PHARMACEUTICAL STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Field | Details |
+|---|---|
+| **SOP Number** | SOP-GMP-011 |
+| **Title** | Personnel Gowning Procedure for Cleanroom Entry |
+| **Version** | 2.2 |
+| **Effective Date** | 2023-10-01 |
+| **Supersedes** | Version 2.1 (dated 2022-03-15) |
+| **Department** | GMP / Manufacturing |
+| **Approved By** | Dr. Sarah Nguyen, Quality Systems Manager |
+| **Review Cycle** | 2 years (next review due: 2025-10-01) |
+| **Pages** | 11 |
+| **Classification** | GxP Critical |
+| **Document Owner** | Head of Manufacturing Operations |
+| **Author** | GMP Training & Compliance Group |
+| **Distribution** | Controlled — See Distribution List |
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                        APPROVAL AND SIGNATURE BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Quality Systems Manager | Dr. Sarah Nguyen | *[wet ink / electronic signature on file]* | 2023-09-18 |
+| Head of Manufacturing Operations | Mr. David Okafor | *[wet ink / electronic signature on file]* | 2023-09-19 |
+| GMP Compliance Specialist | Ms. Priya Ramachandran | *[wet ink / electronic signature on file]* | 2023-09-20 |
+
+> **⚠ CONTROLLED DOCUMENT NOTICE:** This document is subject to revision control. Printed copies are considered uncontrolled unless stamped "CONTROLLED COPY" in red ink. Always verify the effective version on the electronic Document Management System (eDMS) prior to use. Unauthorised reproduction or modification of this document is prohibited.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Gowning Donning Procedure for Cleanroom Entry | 5 |
+| 5.0 | Gowning Doffing Procedure for Cleanroom Exit | 7 |
+| 6.0 | Garment Integrity, Inspection, and Qualification | 8 |
+| 7.0 | Gowning Qualification, Monitoring, and Requalification | 9 |
+| 8.0 | Hygiene, Health, and Personnel Prerequisites | 10 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 11 |
+| 11.0 | Revision History | 11 |
+
+> **Note:** This document contains 10 body sections (Sections 1.0 through 10.0) plus the Revision History as Section 11.0, for a total structured presentation across an estimated 11 pages.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          BODY — SECTION 1.0 (Page 2)
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the mandatory requirements and step-by-step instructions for the correct donning (putting on) and doffing (removing) of protective cleanroom garments by all personnel entering or exiting classified cleanroom environments at this facility. The procedure is designed to minimise the risk of microbial and particulate contamination of the manufacturing environment, in-process materials, and finished pharmaceutical products. Compliance with this SOP is essential to maintaining the environmental conditions required for the manufacture of sterile and non-sterile pharmaceutical products and to ensuring that all operations remain in a state of regulatory compliance.
+
+The gowning procedure defined herein represents a critical contamination-control measure consistent with the principles of Good Manufacturing Practice (GMP) as described in applicable regulatory frameworks, including but not limited to the U.S. Food and Drug Administration (FDA) regulations at 21 CFR Part 211 (Current Good Manufacturing Practice for Finished Pharmaceuticals) and 21 CFR Part 211.68, FDA Guidance for Industry: Sterile Drug Products Produced by Aseptic Processing (2004), EU GMP Annex 1 (Manufacture of Sterile Medicinal Products, 2022 revision), and ICH Q10 (Pharmaceutical Quality System). Gowning is recognised as a primary control barrier between the personnel — who are the single largest source of particulate and bioburden contribution in a cleanroom — and the controlled environment.
+
+### 1.2 Scope
+
+This SOP applies to all personnel who require access to classified cleanroom areas at this facility, specifically ISO 5 (Grade A/B), ISO 7 (Grade C), and ISO 8 (Grade D) environments as defined under the ISO 14644-1 standard and EU GMP Annex 1 classification scheme. Personnel categories covered include, but are not limited to: GMP Manufacturing Operators, Quality Assurance (QA) Specialists, Microbiology Analysts, Engineering Technicians performing maintenance activities, Validation personnel, and authorised external visitors or contractors. This SOP applies during all manufacturing campaigns, environmental monitoring activities, equipment qualification runs, and any other activity requiring entry into a classified space.
+
+This SOP does not apply to entry into non-classified support areas (e.g., general warehouse, administrative offices, or external loading docks), nor does it govern the gowning requirements for non-pharmaceutical laboratory spaces governed by separate SOPs. The gowning requirements described herein are tiered by cleanroom classification, and the specific garment ensemble required for each classification grade is defined in Section 4.0 and Section 6.0 of this document.
+
+### 1.3 Regulatory Basis
+
+| Regulation / Guideline | Relevant Requirement | Applicability to This SOP |
+|---|---|---|
+| FDA 21 CFR Part 211.28 | Personnel cleanliness and protective apparel | All classified areas |
+| EU GMP Annex 1 (2022) | Sections 4.1–4.38: Contamination Control Strategy | ISO 5 / Grade A/B aseptic operations |
+| ISO 14644-1:2015 | Airborne particulate classification | Environmental classification basis |
+| ICH Q10 | Pharmaceutical Quality System | Overall quality framework |
+| FDA Aseptic Processing Guidance (2004) | Sections IV.B, IV.C: Personnel gowning and qualification | Sterile manufacturing |
+| USP <797> | Pharmaceutical Compounding — Sterile Preparations | Compounding operations (where applicable) |
+
+### 1.4 Objectives
+
+The objectives of this SOP are to: (a) provide clear, unambiguous, step-by-step gowning instructions that reduce the variability introduced by individual differences in technique; (b) define the qualification requirements that demonstrate each individual's competency in proper gowning technique; (c) establish minimum garment inspection criteria to prevent use of compromised or non-conforming garments; and (d) specify the corrective actions to be taken when deviations from the defined gowning procedure occur. Attainment of these objectives directly supports the site's Contamination Control Strategy (CCS) and overall pharmaceutical quality system.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          BODY — SECTION 2.0 (Page 3)
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document. These definitions are consistent with EU GMP Annex 1 (2022), ISO 14644, and FDA guidance terminology.
+
+**Airlock:** A sealed intermediate chamber, positioned between two environments of differing cleanliness classifications, used to minimise cross-contamination during personnel or material transfer. An airlock uses pressure differentials and sequential interlocking doors to prevent simultaneous opening of both access points.
+
+**Aseptic Processing:** A manufacturing technique used to assemble sterile components into a final sterile product in a manner that prevents microbial contamination. Aseptic processing requires the highest level of environmental control and is conducted in ISO 5 (Grade A) environments.
+
+**Bioburden:** The number and type of viable microorganisms present on or in a surface, material, or environment. Bioburden control is a primary function of the cleanroom gowning procedure.
+
+**Cleanroom:** A room in which the concentration of airborne particles is controlled, and which is constructed and used in a manner to minimise the introduction, generation, and retention of particles inside the room and in which other relevant parameters (temperature, humidity, pressure) are controlled as required. Classification is performed in accordance with ISO 14644-1:2015.
+
+**Contamination Control Strategy (CCS):** A planned set of controls for microorganisms, endotoxin/pyrogens, and particles, derived from current product and process understanding, that assures process performance and product quality. Required under EU GMP Annex 1 (2022) Section 2.
+
+**Doffing:** The act of safely removing and disposing of or placing for laundering cleanroom garments upon exiting a controlled environment. Doffing must be performed in a defined sequence to prevent recontamination of the garments or the wearer.
+
+**Donning:** The act of putting on cleanroom garments in a specified sequence within a gowning room or anteroom, prior to entry into a classified cleanroom area.
+
+**Garment:** Any item of protective clothing used within a cleanroom, including but not limited to: coveralls, hoods, face masks, goggles, boot covers, shoe covers, and sterile gloves. Garments are selected based on the cleanroom classification to be entered.
+
+**Gowning Room / Anteroom:** A controlled-access room, classified at a level appropriate to its function, in which personnel don cleanroom garments before entering higher-classification areas. May also be referred to as a changing room.
+
+**Gowning Qualification:** The process by which an individual demonstrates, through observation and environmental monitoring data (e.g., glove fingertip sampling, gown surface contact plates), that their gowning technique meets the required microbial acceptance criteria.
+
+**ISO 5 (Grade A/B):** The highest level of cleanroom cleanliness classification under ISO 14644-1. Grade A corresponds to the local zone for high-risk operations (ISO 5 at rest and in operation); Grade B is the background environment for Grade A aseptic operations (ISO 5 at rest, ISO 7 in operation).
+
+**ISO 7 (Grade C):** An intermediate cleanroom classification for less critical manufacturing steps, such as the preparation and filling of solutions to be subsequently sterile-filtered.
+
+**ISO 8 (Grade D):** The least stringent classified environment, used for handling closed containers, equipment cleaning, and other lower-risk manufacturing steps.
+
+**Laminair Air Flow (LAF) / RABS / Isolator:** Unidirectional airflow systems providing local ISO 5 protection within a background environment. Relevant to Grade A operations.
+
+**Viable Particle / Biocontaminant:** A particle that is, or contains, a living microorganism capable of reproduction. Distinguished from non-viable particles in environmental monitoring.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Meaning |
+|---|---|
+| CFR | Code of Federal Regulations |
+| CCS | Contamination Control Strategy |
+| cfu | Colony-Forming Unit |
+| DMS / eDMS | (Electronic) Document Management System |
+| EMA | European Medicines Agency |
+| EU GMP | European Union Good Manufacturing Practice |
+| FDA | Food and Drug Administration (U.S.) |
+| GMP | Good Manufacturing Practice |
+| HEPA | High-Efficiency Particulate Air (filter) |
+| ICH | International Council for Harmonisation |
+| ISO | International Organization for Standardization |
+| LAF | Laminar Air Flow |
+| OOS | Out of Specification |
+| PPE | Personal Protective Equipment |
+| QA | Quality Assurance |
+| RABS | Restricted Access Barrier System |
+| SOP | Standard Operating Procedure |
+| USP | United States Pharmacopeia |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          BODY — SECTION 3.0 (Page 4)
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Overview of Responsibility Matrix
+
+Responsibility for the implementation and oversight of this SOP is distributed across several functional roles. Each role's obligations are described in detail in Sections 3.2 through 3.7 below. All personnel with cleanroom access must be familiar with the requirements of this SOP as a condition of their access authorisation. No individual is permitted to enter a classified cleanroom area without having completed documented initial gowning qualification training (see Section 7.0).
+
+### 3.2 GMP Manufacturing Operators
+
+GMP Manufacturing Operators are the primary users of this SOP. Each operator is responsible for performing the donning and doffing sequences exactly as described in Sections 4.0 and 5.0 of this document, in the correct order, using only approved, qualified garments. Operators must perform a self-inspection of garment integrity prior to entry and must report any garment defects, compromised sterility, or perceived deviations from the gowning procedure to their Shift Supervisor immediately. Operators are additionally responsible for completing all applicable gowning logbook entries, including date, time, and garment lot number, prior to entering the classified area.
+
+### 3.3 Shift Supervisors / Line Leaders
+
+Shift Supervisors are accountable for ensuring that all operators under their supervision have current, valid gowning qualifications and that their training records are up to date in the eDMS. Supervisors must periodically observe the gowning technique of operators (at a minimum frequency defined in Section 7.4), document observations on the Gowning Observation Checklist (Form GMP-011-F01), and initiate the requalification process for any individual whose technique does not meet the defined standard. In the event of a gowning deviation, the Shift Supervisor is responsible for initiating and documenting the deviation report per Section 9.0.
+
+### 3.4 Quality Assurance (QA) Specialists
+
+QA Specialists are responsible for the oversight and approval of this SOP and all associated training records and qualification data. QA Specialists review and approve all gowning qualification results and determine the acceptability of any gowning deviations, including the assessment of potential product impact. QA Specialists may conduct unannounced gowning technique audits and are empowered to deny or revoke cleanroom access for any individual who fails to demonstrate compliant gowning technique. QA Specialists are responsible for trending environmental monitoring data attributable to personnel contamination sources.
+
+### 3.5 Microbiology Analysts
+
+Microbiology Analysts are responsible for conducting environmental monitoring activities associated with gowning qualification and routine monitoring programs, including glove fingertip sampling, settle plates, active air sampling, and contact plate sampling of gowned surfaces. They are responsible for incubating, reading, recording, and reporting all monitoring results in accordance with the site Environmental Monitoring SOP (SOP-MIC-003) and for flagging any exceedance of alert or action limits to QA within the timeframes specified in that document.
+
+### 3.6 Engineering and Maintenance Technicians
+
+Engineering and Maintenance Technicians requiring access to classified areas must comply fully with this SOP. Prior to receiving their cleanroom access badge, technicians must complete initial gowning qualification training as described in Section 7.0. Technicians must coordinate with QA and Manufacturing before entering a cleanroom during active production to minimise disruption to environmental conditions and must ensure that all tools and equipment brought into the cleanroom are appropriately qualified or cleaned per the relevant materials transfer SOP (SOP-GMP-015).
+
+### 3.7 Training and Compliance Group
+
+The Training and Compliance Group is responsible for the development, delivery, documentation, and periodic review of the gowning qualification training curriculum. This group maintains the gowning qualification records matrix in the eDMS and generates periodic reports on the qualification status of all cleanroom-authorised personnel. Training records

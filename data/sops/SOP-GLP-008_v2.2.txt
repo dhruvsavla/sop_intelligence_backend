@@ -1,0 +1,207 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GLP-008
+  Title:            Quality Control Sample Management
+  Version:          2.2
+  Effective Date:   2023-07-15
+  Supersedes:       2.1
+  Department:       GLP
+  Approved By:      Kevin Marsh, Quality Control Manager
+  Review Cycle:     2 years
+  Pages:            11
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Quality Control Manager | Kevin Marsh | *K. Marsh* | 2023-07-10 |
+| Quality Assurance Director | Sandra Hollis | *S. Hollis* | 2023-07-11 |
+| Laboratory Supervisor | Dr. Thomas Riel | *T. Riel* | 2023-07-10 |
+| Regulatory Affairs Lead | Christine Park | *C. Park* | 2023-07-12 |
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 2 |
+| 3.0 | Roles and Responsibilities | 3 |
+| 4.0 | QC Sample Preparation and Management | 4 |
+| 5.0 | Acceptance Criteria and Analytical Run Validity | 5 |
+| 6.0 | Control Charting and Westgard Rule Application | 6 |
+| 7.0 | Precision Assessment: Intra-Day and Inter-Day Studies | 7 |
+| 8.0 | QC Sample Storage, Stability, and Inventory Control | 8 |
+| 9.0 | Deviation and Exception Handling | 9 |
+| 10.0 | References, Related Documents, and Revision History | 10 |
+
+---
+
+---
+
+# 1.0 PURPOSE AND SCOPE
+
+## 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, responsibilities, and procedural controls for the preparation, use, monitoring, and disposition of Quality Control (QC) samples within the GLP-compliant analytical laboratory. The procedures herein are designed to ensure that analytical methods yield accurate, precise, and reproducible results across all study types and instrument platforms operated by this laboratory. Compliance with this SOP is mandatory for all personnel performing or supervising analytical testing activities that generate data used to support study conclusions, regulatory submissions, or product release decisions.
+
+The use of well-characterized QC samples is a cornerstone of analytical quality assurance. QC samples serve as independent monitors of instrument performance, reagent integrity, analyst technique, and method suitability over time. By systematically tracking QC sample results against predefined acceptance criteria and statistical control limits, the laboratory can detect systematic and random errors before they compromise study integrity. This SOP provides the framework through which those monitoring activities are conducted in a scientifically rigorous and regulatorily defensible manner.
+
+## 1.2 Scope
+
+This SOP applies to all analytical laboratory personnel — including Laboratory Analysts, Senior Scientists, Laboratory Supervisors, and Quality Assurance Specialists — who prepare, use, or evaluate QC samples as part of routine or non-routine analytical operations. It covers all validated quantitative assay formats performed within the GLP laboratory, including but not limited to: bioanalytical ligand-binding assays, chromatographic methods (HPLC, LC-MS/MS), enzymatic activity assays, and immunoassay platforms (ELISA, electrochemiluminescence).
+
+This document does not govern the preparation of calibration standards used to construct analytical curves, nor does it define the validation parameters for a novel method — those activities are addressed under SOP-GLP-003 (Analytical Method Validation) and SOP-GLP-005 (Calibration Standard Preparation). However, this SOP operates in direct conjunction with those documents, and the acceptance criteria defined herein must be consistent with and traceable to the validated performance characteristics of each method.
+
+## 1.3 Regulatory Context
+
+This SOP has been authored to satisfy the requirements of FDA 21 CFR Part 58 (Good Laboratory Practice for Nonclinical Laboratory Studies), OECD Principles of Good Laboratory Practice (ENV/MC/CHEM(98)17), and ICH M10 (Bioanalytical Method Validation and Study Sample Analysis), where applicable. For bioanalytical studies that support clinical programs, the requirements of FDA Guidance for Industry — Bioanalytical Method Validation (May 2018) and EMA Guideline on Bioanalytical Method Validation (EMEA/CHMP/EWP/192217/2009) are additionally incorporated. All QC sample activities documented under this SOP constitute GxP-critical data and are subject to the data integrity requirements described in FDA's Data Integrity and Compliance with Drug CGMP Guidance (December 2018).
+
+---
+
+---
+
+# 2.0 DEFINITIONS AND ABBREVIATIONS
+
+## 2.1 Definitions
+
+**Quality Control (QC) Sample:** A sample of known analyte concentration, prepared independently from calibration standards, used to assess the performance and reliability of an analytical method during sample analysis. QC samples are not used to construct the calibration curve.
+
+**Control Chart:** A graphical tool used to display QC sample results over time relative to statistical control limits, enabling visual detection of systematic trends, shifts, or random errors. Control charts are the primary tool for ongoing method performance monitoring in this laboratory.
+
+**Westgard Rules:** A set of statistical decision rules, derived from Shewhart control chart theory and published by James O. Westgard, used to evaluate whether an analytical run is in-control or out-of-control. These rules are applied to control chart data and trigger defined laboratory responses when violated.
+
+**Acceptance Criteria:** Pre-defined quantitative limits within which QC sample results must fall for an analytical run to be considered valid and for study results generated within that run to be reportable.
+
+**Precision:** The closeness of agreement between a series of measurements obtained under stipulated conditions. Precision is expressed as coefficient of variation (CV%) or standard deviation (SD).
+
+**Intra-Day Precision (Within-Run Precision):** Precision measured using replicate QC samples analyzed within a single analytical run on a single day by the same analyst on the same instrument, also referred to as repeatability.
+
+**Inter-Day Precision (Between-Run Precision):** Precision measured across multiple analytical runs performed on different days, potentially by different analysts or on different instrument units, also referred to as intermediate precision or reproducibility within the laboratory.
+
+**Accuracy (Bias):** The closeness of agreement between the measured value of a QC sample and its nominal (true) concentration, expressed as percent nominal (%Nominal) or percent bias (%Bias = [(Measured − Nominal)/Nominal] × 100).
+
+**Lot-to-Lot Transfer:** The formal process of characterizing and qualifying a new lot of QC material against the existing in-use lot before the new lot is introduced into routine use.
+
+**Analyte:** The chemical substance, biological molecule, or measurable property that is the target of quantitative determination in the assay system.
+
+## 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| QC | Quality Control |
+| QA | Quality Assurance |
+| SOP | Standard Operating Procedure |
+| CV% | Coefficient of Variation (percent) |
+| SD | Standard Deviation |
+| LLOQ | Lower Limit of Quantification |
+| ULOQ | Upper Limit of Quantification |
+| LQC | Low Quality Control Sample |
+| MQC | Medium (Mid) Quality Control Sample |
+| HQC | High Quality Control Sample |
+| DLQC | Diluted Quality Control Sample |
+| HPLC | High-Performance Liquid Chromatography |
+| LC-MS/MS | Liquid Chromatography–Tandem Mass Spectrometry |
+| ELISA | Enzyme-Linked Immunosorbent Assay |
+| GLP | Good Laboratory Practice |
+| OECD | Organisation for Economic Co-operation and Development |
+| ICH | International Council for Harmonisation |
+| FDA | Food and Drug Administration |
+| EMA | European Medicines Agency |
+| LIMS | Laboratory Information Management System |
+| CRF | Case Report Form |
+| OOC | Out of Control |
+| OOT | Out of Trend |
+| RE | Relative Error |
+| %Nominal | Percent of Nominal Concentration |
+
+---
+
+---
+
+# 3.0 ROLES AND RESPONSIBILITIES
+
+## 3.1 Quality Control Manager
+
+The Quality Control Manager (QCM) holds overall accountability for the implementation and continued compliance of this SOP across the GLP laboratory. The QCM is responsible for reviewing and approving this document at each revision cycle, for authorizing deviations from acceptance criteria when scientifically justified, and for escalating systemic QC failures to the Quality Assurance Director and Study Director as appropriate. The QCM reviews control chart trend data on a monthly basis and signs off on the monthly QC performance summary report. The QCM also approves lot-to-lot transfer protocols and results for all QC materials before a new lot is introduced into routine use.
+
+## 3.2 Laboratory Supervisor
+
+The Laboratory Supervisor is responsible for the day-to-day operational oversight of QC sample management activities within their assigned analytical section. This includes ensuring that QC samples are prepared and stored according to this SOP, that control charts are maintained and reviewed in a timely manner, and that all personnel under their supervision have completed relevant training prior to performing QC-related activities. The Laboratory Supervisor is the first point of escalation when a Westgard rule violation or out-of-control condition is identified, and is responsible for initiating the investigation workflow described in Section 9.0.
+
+## 3.3 Laboratory Analyst
+
+Laboratory Analysts are responsible for the day-to-day preparation, use, and documentation of QC samples in accordance with this SOP. This includes accurately preparing QC samples at the specified concentrations, correctly labeling and storing QC aliquots, analyzing QC samples within each analytical run, entering results into the LIMS control chart, and immediately notifying the Laboratory Supervisor when an OOC condition or acceptance criteria failure is identified. Analysts must not report study sample results from a run in which QC sample acceptance criteria have not been met, unless explicit authorization has been granted through the deviation process described in Section 9.0.
+
+## 3.4 Quality Assurance Specialist
+
+The QA Specialist performs independent periodic audits of QC sample records, control charts, and associated raw data to verify compliance with this SOP and applicable regulatory requirements. The QA Specialist reviews deviation reports related to QC failures and verifies that corrective actions have been implemented and are effective. The QA Specialist does not have routine operational involvement in QC sample preparation or analysis but maintains read access to all QC-related records in the LIMS.
+
+## 3.5 Roles and Responsibilities Summary Table
+
+| Responsibility | QC Manager | Lab Supervisor | Lab Analyst | QA Specialist |
+|---|---|---|---|---|
+| Approve this SOP | Primary | Reviewer | — | Reviewer |
+| Approve lot-to-lot transfers | Primary | Supporting | Executing | Auditing |
+| Prepare QC samples | — | Overseeing | Primary | — |
+| Monitor control charts (daily) | — | Primary | Contributing | — |
+| Review control charts (monthly) | Primary | Contributing | — | Auditing |
+| Authorize deviation reports | Primary | Initiating | Reporting | Reviewing |
+| Conduct QC audits | — | — | — | Primary |
+| Sign monthly QC report | Primary | Contributing | — | Reviewing |
+
+---
+
+---
+
+# 4.0 QC SAMPLE PREPARATION AND MANAGEMENT
+
+## 4.1 General Principles of QC Sample Preparation
+
+QC samples must be prepared independently from calibration standards, using a separate weighing of the reference standard material or a separately sourced stock solution. This independence is critical to ensure that QC samples provide a genuine check on the entire analytical process, including the calibration function. Under no circumstances shall QC samples and calibration standards be prepared from the same primary stock solution, as this would create a common-cause correlation that defeats the purpose of independent quality monitoring.
+
+All reference standard materials used to prepare QC samples must be characterized for identity, purity, and potency prior to use, with a valid Certificate of Analysis (CoA) retained in the study archives. Purity corrections must be applied when calculating the target concentration of QC samples. For example, if the reference standard has a documented purity of 98.5% and is intended to produce a QC concentration of 100 ng/mL, the weighed mass must be adjusted accordingly: mass = (target mass) / (purity fraction). All calculations must be documented in the preparation record and independently verified by a second qualified analyst before the QC material is placed into service.
+
+## 4.2 QC Concentration Levels
+
+Each analytical method must employ a minimum of three QC concentration levels: Low (LQC), Medium (MQC), and High (HQC). These levels must be prepared and positioned within the calibrated range to provide coverage across the dynamic range of the assay. Additional QC levels (e.g., Diluted QC [DLQC], LLOQ QC) may be required by specific method validation protocols or study-specific analysis plans.
+
+**Table 4.2-A: Required QC Concentration Levels and Positioning Rules**
+
+| QC Level | Position within Calibrated Range | Typical % of ULOQ | Minimum Replicates per Run |
+|---|---|---|---|
+| LLOQ QC | Within 3× of the LLOQ | 1–5% | 2 |
+| Low QC (LQC) | Low end of range, above LLOQ | 3× LLOQ to 15% | 2 |
+| Medium QC (MQC) | Mid-range | 30–50% | 2 |
+| High QC (HQC) | Upper end of range | 75–85% | 2 |
+| Diluted QC (DLQC) | Above ULOQ, requires dilution | >100% (pre-dilution) | 2 (when applicable) |
+
+The concentration values for each QC level must be documented in the method-specific Analytical Validation Report and the relevant Study Analytical Plan (SAP). These values are fixed at the time of method validation and may not be changed without a formal method change control review, as described in SOP-GLP-011 (Change Control for Validated Methods).
+
+## 4.3 QC Sample Preparation Procedure
+
+The following procedure must be followed each time a new lot of QC material is prepared. All steps must be recorded contemporaneously in a bound, paginated laboratory notebook or within the designated LIMS preparation module. Electronic records must comply with FDA 21 CFR Part 11 requirements for audit trail, electronic signature, and access control.
+
+1. **Retrieve and document the reference standard.** Record the standard ID, lot number, CoA purity value, expiry date, and storage condition upon retrieval from the controlled storage area. Confirm that the material is within its stated expiry and that storage conditions have been maintained (verify temperature logs if applicable).
+2. **Perform environmental condition check.** Confirm that the balance room and preparation area are within the required temperature and humidity specifications (18–25°C, ≤60% RH). Record the environmental conditions in the preparation log.
+3. **Tare and weigh the reference standard.** Using a calibrated analytical balance (minimum readability 0.01 mg), accurately weigh the required mass of reference standard into a tared vessel. Record the tare weight, gross weight, and net weight. Apply the purity correction using the formula: Adjusted Mass (mg) = Nominal Mass (mg) ÷ Purity Fraction.
+4. **Prepare the primary stock solution.** Dissolve the weighed standard in the appropriate solvent as specified in the validated method. Confirm complete dissolution visually. Record the solvent volume, final stock concentration (mg/mL or µg/mL), preparation date, and preparer ID.
+5. **Perform serial dilutions to prepare intermediate and working stock solutions.** Conduct all dilutions using volumetric glassware (Class A) or calibrated pipettes with valid calibration records. Document each dilution step, including volumes transferred, diluent volumes, and calculated resulting concentrations.
+6. **Prepare individual QC concentration working solutions.** From the working stock, prepare each QC level (LQC, MQC, HQC, etc.) in the appropriate matrix (e.g., human plasma K₂EDTA, phosphate-buffered saline). Matrix must match the study sample matrix unless a surrogate matrix has been qualified under a separate validation.
+7. **Aliquot QC samples.** Dispense QC working solutions into pre-labeled cryovials or storage containers appropriate for the validated storage conditions. Each aliquot must be a single-use volume sufficient for one analytical run (typically 200

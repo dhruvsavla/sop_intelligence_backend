@@ -1,0 +1,205 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════
+```
+
+| Field | Details |
+|---|---|
+| **SOP Number** | SOP-GMP-014 |
+| **Title** | Area Clearance and Line Clearance Verification |
+| **Version** | 2.2 |
+| **Effective Date** | 2023-07-15 |
+| **Supersedes** | Version 2.1 (Effective 2021-03-01) |
+| **Department** | GMP Manufacturing / Quality Operations |
+| **Approved By** | James Whitfield, Director of Quality Operations |
+| **Review Cycle** | 2 years (next review due 2025-07-15) |
+| **Pages** | 11 |
+| **Classification** | GxP Critical |
+
+---
+
+**DOCUMENT APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Director of Quality Operations | James Whitfield | *J. Whitfield* | 2023-07-10 |
+| Senior Director, Manufacturing | Patricia Romero | *P. Romero* | 2023-07-10 |
+| Quality Assurance Manager | Derek Ansah | *D. Ansah* | 2023-07-08 |
+| Regulatory Affairs Specialist | Susan Calloway | *S. Calloway* | 2023-07-07 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                         TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Area Clearance Procedure | 5 |
+| 5.0 | Line Clearance Verification Procedure | 6 |
+| 6.0 | Changeover Requirements and Product Removal | 7 |
+| 7.0 | Documentation and Recordkeeping | 8 |
+| 8.0 | Training Requirements | 9 |
+| 9.0 | Deviation and Exception Handling | 9 |
+| 10.0 | References, Related Documents, and Revision History | 10 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                              BODY — 10 SECTIONS
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, methodology, and verification criteria for performing area clearance and line clearance activities within GMP manufacturing environments. The primary objective is to prevent mix-ups, cross-contamination, and labeling errors that could compromise product identity, safety, or efficacy. These activities form a critical quality safeguard in pharmaceutical manufacturing and are considered a regulatory expectation under multiple international frameworks.
+
+Area clearance and line clearance are distinct but complementary control mechanisms. Area clearance ensures that a manufacturing room or suite is free from all materials, documentation, and equipment associated with a previous production activity before any new campaign begins. Line clearance is a more granular verification that applies specifically to production equipment, filling lines, packaging lines, and associated tooling to confirm that no residual materials from the previous batch or product remain. Together, these procedures protect patients and uphold product integrity across all product types handled at this facility.
+
+This SOP aligns with the expectations of FDA 21 CFR Part 211, specifically §211.68, §211.84, §211.100, and §211.110, which collectively mandate written procedures for preventing contamination and mix-ups during production operations. Additionally, this procedure supports compliance with EU GMP Annex 1 (Manufacture of Sterile Medicinal Products, 2022 revision), ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients), and ICH Q10 (Pharmaceutical Quality System).
+
+### 1.2 Scope
+
+This SOP applies to all manufacturing personnel, quality assurance personnel, and engineering staff involved in the preparation, execution, or verification of production activities at any GMP-classified facility under this organization's quality management system. The procedure is applicable across all manufacturing areas including but not limited to: solid dosage form manufacturing suites, liquid and semi-solid filling areas, primary and secondary packaging lines, granulation and blending suites, and sterile manufacturing areas.
+
+This SOP applies to the following operational transitions: product-to-product changeovers, batch-to-batch changeovers within the same product (where required by risk assessment), and restart activities following unplanned downtime, equipment failures, or environmental excursions. It does not apply to routine in-process equipment checks during a continuous production run, unless a significant interruption of greater than four (4) hours has occurred, in which case a partial line clearance as described in Section 6.3 is required.
+
+### 1.3 Regulatory Basis
+
+The regulatory mandate for line clearance and area clearance is well established across global regulatory frameworks. FDA 21 CFR §211.68 requires that automated equipment used in manufacture be routinely checked and calibrated, while §211.100 requires that written procedures be established and followed for production and process control to prevent contamination, mix-ups, and errors. EU GMP Chapter 5 (Production) explicitly requires that before starting a new production operation, checks must be made to ensure that the equipment, the production area, and the starting materials are correct.
+
+| Regulatory Reference | Requirement Summary | Applicability |
+|---|---|---|
+| FDA 21 CFR §211.100 | Written procedures for production and process controls; prevent contamination and mix-ups | All manufacturing operations |
+| FDA 21 CFR §211.68 | Equipment checks; prevent contamination from previous use | Equipment clearance |
+| EU GMP Chapter 5, Section 5.47 | Checks before starting new operation; correct equipment, area, materials | All product changeovers |
+| EU GMP Annex 1 (2022), Clause 9.30 | Cleaning verification in sterile manufacturing | Sterile product lines |
+| ICH Q7, Section 5.30 | Contamination controls; prevent carryover of previous materials | API manufacturing |
+| ICH Q10 | Pharmaceutical Quality System principles | Facility-wide quality management |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Area Clearance:** The formal process of verifying that a manufacturing room, suite, or production area has been completely cleared of all materials, documentation, labeling, and equipment associated with a previous batch, product, or campaign before the introduction of any new materials or initiation of any new production activity.
+
+**Line Clearance:** The formal, documented verification performed immediately prior to the start of production, packaging, or filling operations to confirm that all equipment, production lines, conveyors, hoppers, and immediately adjacent areas are free from materials, components, labels, batch documentation, and product residues belonging to the preceding batch or product.
+
+**Changeover:** The transition from one product, batch, or manufacturing campaign to another on the same piece of equipment or within the same manufacturing suite, including all cleaning, clearance, and setup activities required before a new run may commence.
+
+**Product Removal:** The physical act of collecting, segregating, and removing all materials — including bulk product, intermediate materials, raw materials, and associated packaging components — from the production area following completion of a batch or at the end of a production campaign.
+
+**Verification:** The act of confirming, through observation, inspection, and/or documentation review, that a specified requirement has been met. In the context of this SOP, verification is performed by a qualified individual separate from the individual who performed the clearance activity.
+
+**Cross-Contamination:** The undesired introduction of one product, material, or organism into another product or material at any stage of manufacture, including inadvertent carry-through from a previous batch, product, or process step.
+
+**Dedicated Equipment:** Equipment assigned exclusively to a single product or product family due to the nature of the material (e.g., highly potent compounds, allergenic substances, or materials that cannot be validated for cleaning to an acceptable residue limit).
+
+**Batch Record (BPR):** The official document, also called a Batch Production Record, used to record all activities performed during the manufacture of a specific batch of product, including area and line clearance activities.
+
+**GMP:** Good Manufacturing Practice — the regulatory standard requiring that products are consistently produced and controlled according to quality standards appropriate to their intended use and as required by marketing authorization.
+
+**OEL:** Occupational Exposure Limit — the maximum concentration of a chemical substance in the workplace air to which a worker may be exposed without adverse health effects.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| BPR | Batch Production Record |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SOP | Standard Operating Procedure |
+| MO | Manufacturing Operator |
+| GMP | Good Manufacturing Practice |
+| OEL | Occupational Exposure Limit |
+| PPE | Personal Protective Equipment |
+| HEPA | High-Efficiency Particulate Air |
+| EHS | Environmental Health and Safety |
+| BMR | Batch Manufacturing Record |
+| SOE | Standard Operating Environment |
+| NRV | No Residue Verified |
+| HPAPI | Highly Potent Active Pharmaceutical Ingredient |
+| EBR | Electronic Batch Record |
+| CAPA | Corrective Action and Preventive Action |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Manufacturing Operator (MO)
+
+The Manufacturing Operator is the primary person responsible for executing the physical clearance activities described in this SOP. Prior to performing any area clearance or line clearance, the MO must have completed training on this SOP (see Section 8.0) and must hold a current training record in the document management system. The MO is responsible for removing all product, materials, batch documents, and labeling from the production area or line, reconciling and returning all components to the appropriate staging area or dispensary, and completing the operator section of the area/line clearance checklist within the Batch Production Record.
+
+The MO must not proceed to the next batch or product without obtaining a verified and countersigned line clearance from a QA Specialist or designee. If the MO identifies any discrepancy during clearance execution — including unaccounted-for materials, components, or previous batch documentation — they must immediately stop all activities and notify the Production Supervisor and the QA Specialist before proceeding.
+
+### 3.2 Production Supervisor
+
+The Production Supervisor is responsible for planning and scheduling all changeover activities to ensure adequate time is allocated for area and line clearance procedures. The Production Supervisor must ensure that only trained and currently qualified personnel are assigned to perform clearance activities and must confirm that all necessary supplies, including clean containers, quarantine labels, and clearance checklists, are available in the manufacturing area prior to the start of changeover. The Production Supervisor provides first-level review of the completed operator checklist before requesting QA verification.
+
+### 3.3 Quality Assurance (QA) Specialist
+
+The QA Specialist performs the independent verification of all area and line clearance activities. This verification is a mandatory two-person check and must be completed by a qualified QA Specialist who did not perform the original clearance. The QA Specialist reviews the completed operator checklist, physically inspects the cleared area or line, confirms documentation accuracy, and signs the clearance record in the BPR to authorize commencement of the next batch. In the event of a failed clearance, the QA Specialist has the authority to reject the clearance, require re-execution, and initiate a deviation as outlined in Section 9.0.
+
+### 3.4 QA Manager
+
+The QA Manager is responsible for overall ownership of this SOP, including periodic review, updates, and approval of any temporary deviations or waivers from the requirements herein. The QA Manager reviews trends in line clearance deviations as part of the site's quality metrics program and ensures that CAPA actions arising from clearance failures are implemented and verified as effective.
+
+### 3.5 Engineering and Facilities
+
+The Engineering team is responsible for ensuring that equipment design facilitates effective cleaning and clearance (e.g., no dead legs, accessible surfaces, and adequate lighting in clearance areas). Engineering must be notified when a clearance failure is associated with an equipment-design issue and must participate in root cause analysis as required under the deviation process. Facilities personnel are responsible for confirming environmental controls (HVAC, differential pressure) are within specification prior to QA sign-off for sterile or controlled manufacturing areas.
+
+### 3.6 Summary of Responsibilities
+
+| Activity | Manufacturing Operator | Production Supervisor | QA Specialist | QA Manager |
+|---|---|---|---|---|
+| Execute physical area/line clearance | Primary | Review/Support | — | — |
+| Complete operator checklist in BPR | Primary | Review | — | — |
+| Independent verification inspection | — | — | Primary | — |
+| Sign clearance in BPR | Operator signature | Supervisor signature | QA signature | — |
+| Initiate deviation for failed clearance | Report | Support | Primary | Approve |
+| Periodic SOP review and update | — | — | Support | Primary |
+| Training compliance verification | — | Primary | Support | — |
+
+---
+
+## 4.0 AREA CLEARANCE PROCEDURE
+
+### 4.1 Pre-Clearance Preparation
+
+Before initiating area clearance, the Manufacturing Operator must obtain the completed Batch Production Record for the previous batch (or confirm that the previous batch record is in QA custody), the area clearance checklist form (Form QA-CL-014A), and any required PPE as specified by the EHS material safety profile for the product that was previously manufactured. The production suite must be in a state where all processing activities have ceased, all mechanical equipment is in a safe-stopped condition, and no personnel other than those conducting the clearance are present in the area.
+
+The MO must also ensure that adequate time is available for the clearance to be completed without interruption. A minimum clearance window of sixty (60) minutes must be scheduled for standard solid dosage form suites. Sterile manufacturing areas and suites handling HPAPIs require a minimum of one hundred twenty (120) minutes. These time estimates are minimums and do not include the time required for formal QA verification.
+
+### 4.2 Physical Area Clearance Steps
+
+The following procedure must be executed in sequential order. Steps must not be skipped or reordered without prior written authorization from the QA Manager.
+
+1. Verify that all bulk product and intermediates from the previous batch have been transferred to the designated holding area and are properly labeled with the batch number, product name, quantity, and status label ("Released," "Quarantine," or "Rejected") as appropriate.
+2. Remove all raw material containers, regardless of whether they are full, partially used, or empty. Return partially used materials to the dispensary with a clearly marked and signed partial-use label showing the remaining quantity and the date. Discard empty containers in accordance with waste disposal procedures (SOP-EHS-007).
+3. Collect all batch documentation, including paper batch records, logbook pages, in-process test results, and any loose notes or printouts. Place all documents in a secure document transfer folder labeled with the batch number and deliver to QA document control or enter into the Electronic Batch Record system as applicable.
+4. Remove and quarantine all printed labels, leaflets, and packaging components bearing the previous product name, batch number, or other batch-specific information. Count remaining labels and reconcile against the issued quantity documented in the BPR. Any label count discrepancy greater than ±1 unit must be immediately reported as a deviation.
+5. Remove all portable equipment, utensils, scoops, and transfer containers that were used in the previous batch. These items must be tagged with a "Requires Cleaning" label and transferred to the Equipment Cleaning Suite in accordance with SOP-GMP-008 (Equipment Cleaning Procedure).
+6. Remove and dispose of all single-use items (gloves, garments, tubing, filters) in designated waste containers. Close and seal waste containers and arrange for removal by EHS-qualified personnel.
+7. Inspect all fixed surfaces — including walls, floors, ceilings, light fixtures, door handles, window sills, air returns, and pass-through hatches — for any visible product residue, dust, or debris. Wipe down all accessible surfaces using a cleaning agent validated for the previous product as specified in the area cleaning procedure (SOP-GMP-009).
+8. Inspect the HVAC return grilles and supply diffusers for visible accumulation of product dust. If accumulation is observed, notify Engineering immediately and do not proceed until Engineering has assessed and remediated.
+9. Complete all operator-responsible fields on Form QA-CL-014A. Sign and date each completed line item. Do not pre-sign any section; each item must be signed only after confirmed completion.
+10. Notify the Production Supervisor that operator area clearance is complete and request QA Specialist verification.
+
+### 4.3 QA Verification of Area Clear

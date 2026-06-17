@@ -1,0 +1,197 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:        SOP-GCP-002
+  Title:             Adverse Event and Serious Adverse Event Reporting
+  Version:           2.4
+  Effective Date:    2023-09-15
+  Supersedes:        2.3
+  Department:        GCP (Good Clinical Practice)
+  Approved By:       Thomas Brecker, Clinical Quality Manager
+  Review Cycle:      2 years
+  Pages:             13
+  Classification:    GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Adverse Event Identification and Documentation | 5 |
+| 5.0 | Serious Adverse Event Reporting Procedures | 6 |
+| 6.0 | Causality Assessment and Expectedness Determination | 7 |
+| 7.0 | Expedited Reporting Requirements and Timelines | 8 |
+| 8.0 | Regulatory Submission and MedWatch Procedures | 9 |
+| 9.0 | Follow-Up and Case Management | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the systematic process for the identification, documentation, assessment, and reporting of Adverse Events (AEs) and Serious Adverse Events (SAEs) occurring in the context of clinical trials conducted or sponsored by the organization. The primary objective is to ensure compliance with applicable regulatory requirements, including but not limited to FDA 21 CFR Part 312.32, ICH E2A, ICH E6(R2), and EMA guidelines on safety reporting, while safeguarding participant welfare and maintaining the scientific integrity of clinical study data. This procedure ensures that all safety signals are captured with appropriate rigor and communicated to relevant stakeholders within mandated timelines.
+
+The timely and accurate reporting of AEs and SAEs is a foundational obligation of the Sponsor, Principal Investigator (PI), and all clinical site personnel involved in the conduct of interventional clinical trials. Failure to report safety events in accordance with regulatory requirements may constitute a serious breach of Good Clinical Practice (GCP) and could result in regulatory action, study suspension, or criminal liability. This SOP operationalizes those obligations in a manner that is consistent, reproducible, and auditable across all study sites and therapeutic areas managed by the organization.
+
+This document is designed as a working reference for trained GCP professionals and should be read in conjunction with the applicable Clinical Study Protocol, the Investigator's Brochure (IB), and the Sponsor's Safety Management Plan (SMP). All personnel involved in the identification, documentation, or reporting of AEs and SAEs are required to complete training on this SOP prior to performing any related activities, as documented in the training management system.
+
+### 1.2 Scope
+
+This SOP applies to all interventional clinical trials sponsored or co-sponsored by the organization, including Phase I through Phase IV studies and investigator-initiated studies for which the organization assumes Sponsor or Sponsor-Investigator responsibilities. The procedure covers the full lifecycle of safety event management, from initial identification at the clinical site through final submission to health authorities. This SOP applies to all employees, contractors, and third-party vendors (including Contract Research Organizations [CROs]) operating under delegation from the Sponsor.
+
+### 1.3 Applicability to CRO-Delegated Studies
+
+Where safety reporting activities are delegated to a CRO under a formal contractual agreement and delegation of authority letter, the CRO's procedures must be reviewed and approved by the organization's Clinical Quality Assurance (CQA) function prior to study initiation. Any delegated activities remain the ultimate responsibility of the Sponsor. CRO compliance with this SOP or an approved equivalent will be verified through routine Quality Management activities, including audit.
+
+### 1.4 Out-of-Scope Activities
+
+This SOP does not cover spontaneous post-marketing adverse event reporting conducted under Pharmacovigilance (PV) systems, which are governed by SOP-PV-001. It also does not apply to non-interventional, observational studies unless the study protocol specifically designates AE reporting obligations. Device-related adverse events in combination product studies are subject to additional requirements under 21 CFR Part 803 and should be managed in accordance with SOP-GCP-015.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+The following definitions are aligned with ICH E2A (Clinical Safety Data Management: Definitions and Standards for Expedited Reporting) and FDA 21 CFR Part 312.32, and shall be applied uniformly across all clinical trials governed by this SOP.
+
+**Adverse Event (AE):** Any untoward medical occurrence in a clinical investigation subject administered a pharmaceutical product, which does not necessarily have a causal relationship with the treatment. An AE can be any unfavorable and unintended sign (including an abnormal laboratory finding), symptom, or disease temporally associated with the use of a medicinal product, whether or not considered related to the product (ICH E2A, Section 1.1).
+
+**Serious Adverse Event (SAE):** Any untoward medical occurrence that at any dose results in death; is life-threatening; requires inpatient hospitalization or prolongation of existing hospitalization; results in persistent or significant disability or incapacity; constitutes a congenital anomaly or birth defect; or is considered a medically important event or reaction (ICH E2A, Section 1.2; 21 CFR 312.32(a)).
+
+**Suspected Unexpected Serious Adverse Reaction (SUSAR):** An SAE that is considered causally related to the investigational medicinal product (IMP) and is not consistent with the information described in the current Investigator's Brochure or product labeling. SUSARs require expedited reporting under ICH E2A and EMA Directive 2001/20/EC.
+
+**Causality Assessment:** The systematic evaluation of the likelihood that a medicinal product caused or contributed to an observed adverse event. Standard descriptors used in this organization are: Not Related, Unlikely Related, Possibly Related, Probably Related, and Definitely Related (aligned with WHO-UMC causality criteria).
+
+**Expectedness:** Determination of whether an adverse reaction is consistent with the information available in the applicable reference safety information document (i.e., IB or current approved labeling).
+
+**Reference Safety Information (RSI):** The document used as the benchmark for assessing expectedness. For IND-stage products, the RSI is the current version of the Investigator's Brochure. For marketed products studied in clinical trials, the RSI is the current approved labeling (package insert/SmPC).
+
+**Reporting Timeline – Expedited:** Fatal or life-threatening SUSARs must be reported within 7 calendar days of initial awareness. All other SUSARs must be reported within 15 calendar days of initial awareness. Follow-up information must be submitted within 8 calendar days for 7-day reports and within 15 calendar days for 15-day reports.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|-------------|------------|
+| AE | Adverse Event |
+| SAE | Serious Adverse Event |
+| SUSAR | Suspected Unexpected Serious Adverse Reaction |
+| IMP | Investigational Medicinal Product |
+| IB | Investigator's Brochure |
+| RSI | Reference Safety Information |
+| CQA | Clinical Quality Assurance |
+| CRF | Case Report Form |
+| EDC | Electronic Data Capture |
+| PI | Principal Investigator |
+| IRB | Institutional Review Board |
+| IEC | Independent Ethics Committee |
+| IND | Investigational New Drug |
+| CTA | Clinical Trial Authorization |
+| MedWatch | FDA's Safety Information and Adverse Event Reporting Program |
+| ICH | International Council for Harmonisation |
+| EMA | European Medicines Agency |
+| CIOMS | Council for International Organizations of Medical Sciences |
+| MedDRA | Medical Dictionary for Regulatory Activities |
+| CRO | Contract Research Organization |
+| SMP | Safety Management Plan |
+| SAF | Safety Assessment Form |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Principal Investigator (PI)
+
+The Principal Investigator bears primary site-level responsibility for the detection, documentation, causality assessment, and timely reporting of all AEs and SAEs occurring at the investigational site. The PI must ensure that all site study staff are appropriately trained in adverse event identification and reporting per GCP requirements. The PI is responsible for signing all SAE forms and for communicating safety information to the IRB/IEC in accordance with local requirements and applicable regulations (21 CFR 312.64). The PI must ensure that the Sponsor is notified of all SAEs within 24 hours of the site becoming aware of the event, using the organization's designated SAE notification form or EDC pathway.
+
+### 3.2 Clinical Research Associate (CRA) / Monitor
+
+The CRA is responsible for verifying at each monitoring visit that all AEs and SAEs have been accurately recorded in the CRF/EDC system, that causality assessments have been completed by the PI, and that SAE reporting timelines have been met. The CRA must cross-reference source documents against EDC entries to confirm data accuracy and completeness. Any identified discrepancies or reporting delays must be documented in the visit report and escalated to the Clinical Study Manager and CQA within 2 business days.
+
+### 3.3 Sponsor Safety Officer / Drug Safety Scientist
+
+The Sponsor's Drug Safety Scientist or designated Safety Officer is responsible for receiving all SAE notifications from sites, performing initial triage and data entry into the safety database, conducting SUSAR determinations in collaboration with the Medical Monitor, and submitting expedited reports to health authorities within required timelines. The Safety Officer maintains the organization's aggregate safety database and ensures that all individual case safety reports (ICSRs) are coded using the current version of MedDRA.
+
+### 3.4 Medical Monitor (Sponsor's Designated Physician)
+
+The Medical Monitor is a licensed physician responsible for providing medical oversight of the clinical safety profile across the study program. The Medical Monitor performs or reviews causality assessments for all SAEs, makes the final determination on SUSAR classification, and provides medical narrative for expedited reports. The Medical Monitor must be available by telephone on a 24-hour, 7-day basis for consultation on medically complex or life-threatening safety events.
+
+### 3.5 Clinical Quality Assurance (CQA) Specialist
+
+The CQA Specialist is responsible for auditing the quality and compliance of AE/SAE reporting activities, including review of reporting timelines, accuracy of MedDRA coding, completeness of documentation, and adherence to this SOP. CQA will conduct targeted AE/SAE audits at a minimum frequency of once per study phase and will issue findings through the organization's CAPA system. CQA also approves any deviations from this SOP pursuant to Section 10.0.
+
+### 3.6 Data Management
+
+The Clinical Data Manager is responsible for implementing validated AE/SAE data collection modules within the EDC system, ensuring that all mandatory fields are configured as required (including seriousness criteria, causality, and action taken with IMP). The Data Manager supports generation of safety listings and data reconciliation between the clinical database and the safety database.
+
+### 3.7 Responsibility Summary Table
+
+| Role | Identify AE | Document in EDC | Causality Assessment | Notify Sponsor (24hr SAE) | Submit to HA | QA Oversight |
+|------|------------|-----------------|---------------------|--------------------------|-------------|-------------|
+| Principal Investigator | Primary | Primary | Primary (site) | Primary | No | No |
+| CRA/Monitor | Support | Verify | Verify | Escalation support | No | No |
+| Drug Safety Scientist | No | Safety DB | Support | Receive | Primary | No |
+| Medical Monitor | No | No | Final (Sponsor) | No | Review/sign | No |
+| CQA Specialist | No | No | No | No | No | Primary |
+| Data Manager | No | Configure/verify | No | No | No | No |
+
+---
+
+## 4.0 ADVERSE EVENT IDENTIFICATION AND DOCUMENTATION
+
+### 4.1 Identification of Adverse Events
+
+Adverse events may be identified through multiple pathways, including but not limited to: subject self-report during scheduled study visits or telephone contacts; physical examination findings; laboratory results, vital sign measurements, or diagnostic imaging results that are clinically significant in the judgment of the PI; and unsolicited reports from subjects between visits. All study site personnel responsible for subject contact must be trained to recognize and report potential AEs. The investigator is responsible for exercising medical judgment regarding the clinical significance of any abnormal finding and for initiating the documentation process accordingly.
+
+Per ICH E6(R2) Section 4.11, the PI must report all AEs to the Sponsor in accordance with the reporting requirements and within the time periods specified in the protocol, institutional review board/independent ethics committee (IRB/IEC) procedures, and applicable regulatory requirements. Laboratory abnormalities that meet regulatory or protocol-specified thresholds for clinical significance must be treated as AEs regardless of whether they are accompanied by clinical symptoms. The organization requires that all Grade ≥ 3 laboratory abnormalities (using NCI CTCAE v5.0 criteria) be documented as AEs in the EDC system unless the protocol specifies otherwise.
+
+Adverse events must be assessed and documented beginning at the time of the subject's first exposure to the IMP and continuing until the end of the protocol-specified safety follow-up period, which is typically 30 days post-last dose for non-oncology studies and 90 days post-last dose for oncology studies, unless the protocol specifies a longer duration. Pre-existing medical conditions present prior to the first dose of IMP should be documented in the medical history, not as AEs, unless they worsen in severity or frequency after study enrollment.
+
+### 4.2 AE Documentation Requirements
+
+All identified AEs must be documented in the subject's source record (e.g., site-maintained medical notes, electronic health record) contemporaneously with identification, and subsequently entered into the EDC system within 24 hours of documentation. The following minimum data elements are required for every AE record:
+
+1. Verbatim description of the event as reported by the subject or observed by site staff
+2. MedDRA Preferred Term (PT) and System Organ Class (SOC) coding (latest MedDRA version in effect per study)
+3. Start date (and time if available); end date or notation of "ongoing"
+4. Severity grade using NCI CTCAE v5.0 (Grade 1–5) or protocol-defined scale
+5. Relationship to IMP (causality assessment)
+6. Seriousness determination (Yes/No) and applicable seriousness criteria if Yes
+7. Action taken with IMP (none, dose reduced, dose interrupted, drug discontinued, not applicable)
+8. Outcome at last follow-up
+9. Concomitant medications or treatments administered for the AE
+
+### 4.3 Severity Grading
+
+The organization uses the NCI Common Terminology Criteria for Adverse Events (CTCAE) version 5.0 as the standard grading scale for AE severity in oncology and immunology studies. For other therapeutic areas where CTCAE is not applicable, a 3-point scale (Mild, Moderate, Severe) may be used as specified by the protocol. The protocol will always take precedence in specifying the applicable severity scale. The following table provides a cross-reference of severity grading conventions:
+
+| CTCAE Grade | Description | General Clinical Descriptor | Typical Action |
+|-------------|------------|----------------------------|---------------|
+| Grade 1 | Mild | Asymptomatic or mild symptoms; clinical or diagnostic observations only | Monitor; no intervention required |
+| Grade 2 | Moderate | Minimal, local, or noninvasive intervention indicated; limiting age-appropriate ADL | Symptomatic treatment; dose modification possible |
+| Grade 3 | Severe | Severe or medically significant; hospitalization or prolongation of hospitalization indicated | Dose interruption/reduction; medical intervention required |
+| Grade 4 | Life-threatening | Life-threatening consequences; urgent intervention indicated | Discontinue IMP; emergency medical intervention |
+| Grade 5 | Death | Death related to AE | Report as SAE with fatal outcome; expedited report required |
+
+### 4.4 MedDRA Coding Procedures
+
+All AEs must be coded using the Medical Dictionary for Regulatory Activities (MedDRA) at the Preferred Term (PT) level. The MedDRA version applied must be the version specified in the study's Data Management Plan (DMP) and

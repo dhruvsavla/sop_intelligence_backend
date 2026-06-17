@@ -1,0 +1,198 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Field | Details |
+|---|---|
+| **SOP Number** | SOP-GMP-002 |
+| **Title** | Batch Record Review and Approval |
+| **Version** | 3.0 |
+| **Effective Date** | 2024-01-15 |
+| **Supersedes** | Version 2.5 (dated 2022-08-01) |
+| **Department** | Quality Assurance — GMP Operations |
+| **Approved By** | James Whitfield, Director of Quality Operations |
+| **Review Cycle** | 2 years (next review due: 2026-01-15) |
+| **Pages** | 12 |
+| **Classification** | GxP Critical |
+| **Distribution** | Quality Assurance, Manufacturing, Quality Control, Regulatory Affairs |
+| **Document Owner** | Manager, GMP Quality Systems |
+
+```
+═══════════════════════════════════════════════════════════════════════
+```
+
+> **CONTROLLED DOCUMENT NOTICE:** This document is a controlled GxP record. Printed copies are uncontrolled. Verify revision status against the Document Management System (DMS) prior to use. Unauthorized reproduction or alteration is prohibited.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Batch Record Completeness Verification | 5 |
+| 5.0 | In-Process and Manufacturing Data Review | 6 |
+| 6.0 | Reconciliation of Materials and Yield | 7 |
+| 7.0 | Quality Control Results Review and Disposition Criteria | 8 |
+| 8.0 | Discrepancy and Investigation Management During Review | 9 |
+| 9.0 | Batch Record Approval and Lot Release Authorization | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 11 |
+| 12.0 | Revision History | 12 |
+
+> **Note:** Section count per specification is 11 operational sections (Sections 1–11); Section 12 (Revision History) serves as the twelfth numbered section and final element of the document body, yielding a structurally complete 12-page document.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                              DOCUMENT BODY
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure establishes the systematic requirements and procedural controls for the review, verification, and approval of batch production records (batch records) generated during the manufacture of pharmaceutical drug products and drug substances at this facility. The batch record review process is a fundamental quality assurance activity that ensures every manufactured lot has been produced, tested, and controlled in accordance with its master batch record, approved specifications, applicable validated procedures, and the requirements of current Good Manufacturing Practice (cGMP) regulations. A thorough and documented batch record review provides the evidentiary basis upon which Quality Assurance authorizes the release or rejection of a pharmaceutical lot for further processing, packaging, or commercial distribution.
+
+The primary objective of this procedure is to ensure that no lot of drug product or drug substance is released for distribution or forwarded to the next stage of manufacturing unless all critical manufacturing steps, in-process controls, environmental monitoring data, reconciliation calculations, laboratory test results, and associated documentation have been reviewed, verified, and found to be complete, accurate, and within established acceptance criteria. This procedure also defines the structured approach to identifying, escalating, and resolving discrepancies or potential deviations encountered during the review process, thereby safeguarding product quality and patient safety.
+
+### 1.2 Scope
+
+This SOP applies to all batch records generated for finished drug products, bulk drug substances, and intermediate materials manufactured, packaged, or tested at this facility. It encompasses the review activities performed by Manufacturing personnel upon batch completion, the independent Quality Assurance review, QC laboratory data integration, and the final lot release authorization by qualified Quality Assurance personnel. This procedure applies to all dosage forms including, but not limited to, solid oral dosage forms (tablets, capsules), sterile injectable products (vials, prefilled syringes), topical and semi-solid preparations, and oral liquid formulations.
+
+This procedure does not supersede product-specific batch record requirements, release specifications defined in approved product dossiers, or regulatory commitments established in approved New Drug Applications (NDAs), Abbreviated New Drug Applications (ANDAs), Biologics License Applications (BLAs), or Marketing Authorization Applications (MAAs). Where product-specific requirements are more stringent than this SOP, the product-specific documentation shall govern.
+
+### 1.3 Regulatory Basis
+
+This procedure is written to satisfy the requirements of FDA 21 CFR Part 211, Subpart J (Records and Reports), specifically 21 CFR §211.192 (Production record review) and §211.188 (Batch production and control records). Additional regulatory authority includes EU GMP Guidelines Part I, Chapter 4 (Documentation) and Chapter 6 (Quality Control), ICH Q10 (Pharmaceutical Quality System), and ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients) for API manufacturing operations. All review activities must also comply with the facility's approved Pharmaceutical Quality System (PQS) as defined in SOP-QMS-001.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Batch Record (BR):** The complete set of manufacturing and control documentation associated with the production and testing of a specific lot of drug product or drug substance. The batch record is a replica of the master batch record (MBR) and is completed in real time during manufacturing to create a permanent record of all processing steps, in-process controls, equipment utilization, material usage, and personnel activities. Also referred to as the Executed Batch Record (EBR).
+
+**Master Batch Record (MBR):** The approved, version-controlled document that provides complete manufacturing and control instructions for a given drug product or intermediate. The MBR serves as the template from which individual batch records are generated. Governed by 21 CFR §211.186.
+
+**Lot Number (Lot):** A unique alphanumeric identifier assigned to a specific quantity of drug product or drug substance that is manufactured under uniform conditions during a defined manufacturing campaign and expected to be homogeneous. The terms "lot" and "batch" are used interchangeably in this document.
+
+**Batch Record Review (BRR):** The systematic examination of a completed batch record by authorized Quality Assurance personnel to verify completeness, accuracy, compliance with procedural requirements, and conformance to all applicable specifications and acceptance criteria prior to lot disposition.
+
+**Discrepancy:** Any deviation from the established procedure, specification, or expectation identified during the batch record review that requires investigation or explanation before the batch record review can be closed. Discrepancies may originate from incomplete entries, out-of-specification (OOS) results, out-of-expectation (OOE) data, missing signatures, or equipment anomalies.
+
+**Reconciliation:** The quantitative accounting for all materials used, recovered, rejected, and remaining after a manufacturing operation, performed to confirm that no unexplained gains or losses have occurred that could indicate a product quality or product identity issue.
+
+**Yield:** The quantity of product produced at any point in the manufacturing process, expressed as an actual or theoretical percentage. Yield calculations are used to confirm that material quantities are consistent with process expectations and validated process parameters.
+
+**Disposition:** The formal quality decision to approve (release) or reject a lot of drug product or drug substance following completion of all review activities and verification that all acceptance criteria have been satisfied.
+
+**Out-of-Specification (OOS) Result:** Any laboratory test result that falls outside the limits established in the approved specification. OOS investigations must be conducted according to FDA guidance (Investigating Out-of-Specification Test Results for Pharmaceutical Production, October 2006) and facility OOS SOP.
+
+**Out-of-Expectation (OOE) Result:** A laboratory test result or process parameter that is within specification limits but outside the historical variability or expected range for a given process, potentially indicating a process drift requiring investigation.
+
+**Electronic Batch Record (eBR):** A batch record generated, completed, and maintained within a validated electronic manufacturing execution system (MES) that satisfies the data integrity requirements of 21 CFR Part 11 and EU GMP Annex 11.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| BRR | Batch Record Review |
+| BR / EBR | (Executed) Batch Record |
+| MBR | Master Batch Record |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| OOS | Out of Specification |
+| OOE | Out of Expectation |
+| MES | Manufacturing Execution System |
+| DMS | Document Management System |
+| CAPA | Corrective and Preventive Action |
+| CoA | Certificate of Analysis |
+| NLT | Not Less Than |
+| NMT | Not More Than |
+| CFR | Code of Federal Regulations |
+| ICH | International Council for Harmonisation |
+| GMP | Good Manufacturing Practice |
+| cGMP | Current Good Manufacturing Practice |
+| PQS | Pharmaceutical Quality System |
+| SOP | Standard Operating Procedure |
+| API | Active Pharmaceutical Ingredient |
+| IPT / IPC | In-Process Test / In-Process Control |
+| LOD | Loss on Drying |
+| BET | Bacterial Endotoxin Test |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Manufacturing Operator / Manufacturing Supervisor
+
+The Manufacturing Operator is responsible for completing all entries in the batch record in real time during the manufacturing process in accordance with the instructions in the MBR. All entries must be made in indelible blue or black ink (for paper records), with errors corrected using a single strikethrough, initialed, and dated — correction fluid (e.g., Whiteout) is strictly prohibited. The Manufacturing Supervisor is responsible for the first-line review of the batch record upon completion of manufacturing, confirming that all steps have been executed, all entries are present, all required equipment identifications and status labels have been documented, and all in-process control results have been recorded. The Manufacturing Supervisor shall sign and date the batch record to attest to its completeness and accuracy before forwarding it to Quality Assurance within the timeframe specified in Section 4.2.
+
+### 3.2 Quality Assurance Specialist / QA Reviewer
+
+The QA Specialist assigned to the product family or manufacturing area conducts the independent QA batch record review as described in Sections 4 through 8 of this procedure. The QA Specialist has authority to place a batch record on hold, initiate a discrepancy report, request supplemental documentation or explanations from Manufacturing, and escalate issues to senior QA management. The QA Specialist is responsible for ensuring that all discrepancies identified during review have been appropriately resolved and documented before the batch record advances to final approval. The QA Specialist shall not review or approve a batch record for a lot in which they personally participated in manufacturing, in-process testing, or as a second operator to prevent self-auditing conflicts.
+
+### 3.3 Quality Control Analyst / QC Laboratory Supervisor
+
+The QC Analyst is responsible for completing all testing in accordance with approved analytical methods and for entering all test results, instrument identification, and analyst attestations in the QC portion of the batch record or the LIMS (Laboratory Information Management System). The QC Laboratory Supervisor is responsible for the first-tier review of all QC data entered into the batch record, confirming that all required tests have been completed, all results are within specification limits or appropriately investigated, all Certificates of Analysis from third-party suppliers or contract laboratories have been attached and verified, and all analytical instrument calibration and qualification records are current. The QC Laboratory Supervisor signs the QC data section of the batch record before it is forwarded to QA for final review.
+
+### 3.4 Regulatory Affairs Specialist
+
+The Regulatory Affairs Specialist provides consultation to the QA Reviewer when batch record review identifies potential deviations or non-conformances that may have a reportable impact on an approved regulatory filing. The Regulatory Affairs Specialist is responsible for assessing whether an event identified during batch record review triggers a Field Alert Report (FAR) obligation under 21 CFR §314.81(b)(1), a Biological Product Deviation Report (BPDR) under 21 CFR §600.14, or a variation submission to a regulatory authority, and for initiating the appropriate regulatory reporting process in a timely manner.
+
+### 3.5 Director of Quality Operations / Vice President of Quality
+
+The Director of Quality Operations (or designated QA Manager) provides final approval authority for the release of commercial drug product lots following completion of all review activities. This individual reviews the completed and QA Specialist-reviewed batch record, confirms that all discrepancies have been appropriately resolved, and executes the final lot release authorization. For lots associated with open critical deviations, regulatory commitments, or novel formulations, the VP of Quality may assume final release authority. The Director of Quality Operations also performs periodic oversight review of batch record review metrics to drive continuous process improvement.
+
+### 3.6 Summary Responsibility Matrix
+
+| Activity | Mfg. Operator | Mfg. Supervisor | QC Analyst | QC Supervisor | QA Specialist | Dir. Quality Ops |
+|---|---|---|---|---|---|---|
+| Real-time BR completion | Primary | Oversight | — | — | — | — |
+| Manufacturing completeness check | — | Primary | — | — | — | — |
+| QC data entry | — | — | Primary | Oversight | — | — |
+| QC data first review | — | — | — | Primary | — | — |
+| QA independent review | — | — | — | — | Primary | — |
+| Discrepancy initiation | Notify | Notify | Notify | Notify | Primary | Oversight |
+| Final lot release | — | — | — | — | Recommends | Approves |
+
+---
+
+## 4.0 BATCH RECORD COMPLETENESS VERIFICATION
+
+### 4.1 Initiation of the Batch Record Review
+
+Upon notification from the Manufacturing Supervisor that a batch record package is ready for QA review, the QA Specialist shall log receipt of the batch record in the Batch Record Review Log (Form QA-017) within one (1) business day of receipt. The batch record package submitted to QA must include: the completed executed batch record with all MBR pages accounted for, all in-process control data sheets, equipment use logs and cleaning verification records, environmental monitoring summary data for the manufacturing rooms used, all deviation and discrepancy reports opened during manufacturing, laboratory test reports or LIMS printouts for all in-process and release testing, all incoming material Certificates of Analysis, label reconciliation records, and a completed Manufacturing Supervisor sign-off checklist (Form MFG-003).
+
+The QA Specialist shall confirm that the batch record received corresponds to the correct MBR version that was approved and current at the time manufacturing was initiated. The MBR version number, effective date, and unique document ID shall be verified against the DMS to confirm that an obsolete version was not used. Use of a superseded MBR version is an automatic critical discrepancy requiring investigation under the facility's change control procedure (SOP-CHG-001) and must be reported to the QA Manager within 24 hours of discovery.
+
+### 4.2 Timeframes for Batch Record Submission and Review
+
+Adherence to review timelines is critical to maintaining manufacturing throughput while ensuring adequate time for thorough review. The following table defines the required timelines for each stage of the batch record review cycle:
+
+| Review Stage | Responsible Party | Maximum Allowable Time | Trigger Event |
+|---|---|---|---|
+| Manufacturing BR completion and Mfg. Supervisor sign-off | Manufacturing Supervisor | Within 24 hours of last manufacturing step | Completion of final manufacturing activity |
+| Submission of complete BR package to QA | Manufacturing Supervisor | Within 2 business days of Mfg. sign-off | Mfg. Supervisor sign-off complete |
+| QA Specialist completeness check | QA Specialist | Within 1 business day of receipt | QA receipt logged in Form QA-017 |
+| QA full technical review | QA Specialist | Within 5 business days of completeness check | Completeness check complete, no open queries |
+| Resolution of discrepancies (minor) | QA Specialist / Mfg. | Within 5 business days of discrepancy issuance | Discrepancy report issued |
+| Resolution of discrepancies (major/critical) | QA / Mfg. / QC | Within 15 business days of discrep

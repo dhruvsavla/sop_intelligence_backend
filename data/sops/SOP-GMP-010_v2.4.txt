@@ -1,0 +1,214 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:       SOP-GMP-010                                                  ║
+║  Title:            Contamination Prevention and Control                          ║
+║  Version:          2.4                                                           ║
+║  Effective Date:   2024-02-01                                                    ║
+║  Supersedes:       2.3                                                           ║
+║  Department:       GMP                                                           ║
+║  Approved By:      James Whitfield, Director of Quality Operations               ║
+║  Review Cycle:     2 years                                                       ║
+║  Pages:            14                                                            ║
+║  Classification:   GxP Critical                                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+> **DOCUMENT APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Director of Quality Operations | James Whitfield | *J. Whitfield* | 2024-01-18 |
+| Vice President of Manufacturing | Sandra Okoye | *S. Okoye* | 2024-01-19 |
+| Head of Regulatory Affairs | Dr. Marcus Delacroix | *M. Delacroix* | 2024-01-22 |
+| Site Microbiologist | Dr. Priya Nandakumar | *P. Nandakumar* | 2024-01-22 |
+| Environmental Health & Safety Manager | Thomas Braun | *T. Braun* | 2024-01-23 |
+
+---
+
+> **DOCUMENT CONTROL NOTICE**
+>
+> This document is controlled. The current approved version is maintained in the electronic document management system (EDMS). Printed copies are uncontrolled unless stamped "CONTROLLED COPY" in red ink. Users are responsible for verifying they are referencing the current version prior to use. Unauthorized reproduction, modification, or distribution of this document is prohibited.
+
+---
+
+---
+
+# TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Contamination Risk Assessment and Classification | 5 |
+| 5.0 | Facility Design, Zoning, and Segregation Controls | 6 |
+| 6.0 | Personnel Hygiene, Gowning, and Behavior Controls | 7 |
+| 7.0 | Environmental Monitoring Program | 8 |
+| 8.0 | Equipment Cleaning, Sanitization, and Contamination Prevention | 9 |
+| 9.0 | Raw Material and Component Contamination Controls | 10 |
+| 10.0 | Microbiological Contamination Prevention | 11 |
+| 11.0 | Deviation and Exception Handling | 12 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+---
+
+# BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure establishes the systematic requirements, procedural controls, and responsibilities necessary to prevent, detect, and control contamination in pharmaceutical manufacturing operations conducted at this facility. Contamination of medicinal products represents one of the most consequential risks in pharmaceutical manufacturing, with direct implications for patient safety, product efficacy, and regulatory compliance. This document provides a comprehensive, science-based framework that aligns with current Good Manufacturing Practice (cGMP) expectations as codified under 21 CFR Parts 210 and 211, EU GMP Guidelines (EudraLex Volume 4), and ICH Q9 Quality Risk Management principles.
+
+The prevention of contamination encompasses multiple interdependent control dimensions: microbiological contamination arising from bacteria, fungi, endotoxins, and viruses; chemical contamination resulting from residues of cleaning agents, raw material impurities, or cross-contamination between product campaigns; and particulate contamination including viable and non-viable particles that may compromise sterile or non-sterile dosage forms. This SOP addresses all three contamination vectors with equal rigor, recognizing that failure to control any single vector may render a product unsafe or unsuitable for patient use.
+
+### 1.2 Scope
+
+This procedure applies to all personnel working within GMP-classified manufacturing zones, including but not limited to: active pharmaceutical ingredient (API) synthesis areas, oral solid dosage (OSD) manufacturing suites, sterile fill-finish operations, packaging lines, in-process control (IPC) laboratories, and material staging areas. It applies to permanent employees, contractors, temporary staff, and visitors who access classified manufacturing zones. All product contact activities, equipment preparation activities, environmental monitoring activities, and material handling activities within GMP areas are subject to the requirements of this SOP.
+
+This SOP does not supersede specific product-level contamination controls documented in validated cleaning procedures, batch manufacturing records (BMRs), or product-specific risk assessments. In cases of conflict between this SOP and a validated, product-specific procedure, the more stringent requirement shall apply. The Quality Assurance (QA) department shall adjudicate any such conflicts in writing.
+
+### 1.3 Regulatory Basis
+
+The requirements in this SOP are grounded in the following regulatory framework:
+
+- **21 CFR Part 211.42** – Design and construction features for prevention of contamination
+- **21 CFR Part 211.67** – Equipment cleaning and maintenance
+- **21 CFR Part 211.84** – Testing and approval or rejection of components, drug product containers, and closures
+- **EU GMP Part I, Chapter 3** – Premises and Equipment
+- **EU GMP Part I, Chapter 5** – Production (contamination and cross-contamination prevention)
+- **ICH Q9(R1)** – Quality Risk Management
+- **ICH Q10** – Pharmaceutical Quality System
+- **EMA Guideline on setting health-based exposure limits (HBEL)** – EMA/CHMP/CVMP/SWP/169430/2012
+
+### 1.4 Objectives
+
+The specific objectives of this SOP are to: (1) define contamination risk categories applicable to site operations and establish commensurate control strategies; (2) specify personnel, facility, equipment, and process controls required at each contamination risk level; (3) establish environmental monitoring requirements with defined action and alert limits; (4) describe the response procedures to be initiated when contamination is detected or suspected; and (5) ensure that all contamination control activities are documented in a manner that supports both batch disposition decisions and regulatory inspection readiness.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Contamination:** The undesired introduction of impurities of a chemical, microbiological, or physical nature into or onto a starting material, intermediate, or finished product during production, sampling, packaging, repackaging, storage, or transport. (Source: EU GMP Annex 11 / ICH Q7)
+
+**Cross-Contamination:** The unintended contamination of a starting material, intermediate, or finished product with another starting material, intermediate, or product during production. Cross-contamination is of particular concern in multi-product facilities and can arise from personnel movement, shared equipment, HVAC systems, or dust and aerosol migration.
+
+**Microbiological Contamination:** The unintended introduction of viable microorganisms (bacteria, fungi, yeasts, mycoplasma, viruses) or microbial by-products (e.g., endotoxins, mycotoxins) into a product, material, or environment. For sterile products, any detectable bioburden in the finished product constitutes a critical contamination event.
+
+**Particulate Contamination:** The unintended introduction of non-product, non-viable particles into a material, intermediate, or finished product. Includes glass particles, metal fragments, fibers, and environmental particles. Limits are defined per USP <788> and ISO 14644-1 for clean room environments.
+
+**Alert Limit:** A defined level of microbiological or particulate contamination established from historical baseline data, the exceedance of which signals a potential loss of control and triggers investigative action. Alert limits do not automatically lead to product rejection but require documented investigation.
+
+**Action Limit:** A more stringent level of contamination, the exceedance of which indicates probable process failure and triggers mandatory corrective action, potential batch hold or rejection review, and formal deviation initiation. Action limits are set at or below regulatory limits.
+
+**Bioburden:** The population of viable microorganisms present on or in a raw material, component, in-process material, or environmental sample, measured prior to sterilization or during processing.
+
+**Dedicated Equipment:** Equipment assigned exclusively to a single product or product family and physically segregated or labeled to prevent use with other products. Required for products with high sensitization potential, narrow therapeutic windows, or where cleaning validation cannot demonstrate adequate carryover removal.
+
+**Health-Based Exposure Limit (HBEL):** A daily exposure level for a pharmaceutical ingredient that is considered safe for all individuals based on available toxicological data, as defined in the EMA Guideline EMA/CHMP/CVMP/SWP/169430/2012. Used as a basis for establishing carryover limits in cleaning validation.
+
+**Permitted Daily Exposure (PDE):** A substance-specific dose that is unlikely to cause an adverse effect when an individual is exposed at or below this dose every day for a lifetime. Used synonymously with HBEL in the context of cleaning limit calculations.
+
+**HEPA Filter:** High Efficiency Particulate Air filter, rated to capture ≥99.97% of airborne particles ≥0.3 µm in diameter. Required in ISO Class 5 (Grade A) and ISO Class 7 (Grade B/C) environments.
+
+**Viable Particle:** An airborne particle that contains living microorganisms capable of growth under defined culture conditions. Measured by settle plates, active air sampling, and surface contact methods.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| API | Active Pharmaceutical Ingredient |
+| BMR | Batch Manufacturing Record |
+| CFU | Colony-Forming Unit |
+| cGMP | Current Good Manufacturing Practice |
+| EDMS | Electronic Document Management System |
+| EMA | European Medicines Agency |
+| EM | Environmental Monitoring |
+| FDA | Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| HBEL | Health-Based Exposure Limit |
+| HEPA | High Efficiency Particulate Air |
+| HVAC | Heating, Ventilation, and Air Conditioning |
+| IPC | In-Process Control |
+| ISO | International Organization for Standardization |
+| OSD | Oral Solid Dosage |
+| PDE | Permitted Daily Exposure |
+| PPE | Personal Protective Equipment |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| SOP | Standard Operating Procedure |
+| TSB | Tryptic Soy Broth |
+| TSA | Tryptic Soy Agar |
+| WFI | Water for Injection |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Director of Quality Operations
+
+The Director of Quality Operations holds ultimate accountability for the contamination prevention program at the site level. This individual is responsible for approving this SOP and all associated contamination control documentation, ensuring adequate resources (personnel, equipment, budgetary) are allocated to sustain the program, and for reviewing annual trend reports on contamination events and environmental monitoring data. The Director of Quality Operations has the authority to mandate facility shutdowns, product holds, or enhanced remediation activities when contamination risk is determined to be unacceptable. This role also serves as the primary point of contact for regulatory agency communication regarding contamination-related matters.
+
+### 3.2 Quality Assurance Specialist / Quality Assurance Manager
+
+QA Specialists and QA Managers are responsible for day-to-day implementation and oversight of contamination control requirements. Specific responsibilities include: reviewing and approving deviations related to contamination events; conducting or overseeing contamination risk assessments for new products, processes, or facility changes; reviewing environmental monitoring data and determining the adequacy of trending; approving campaign sequencing and changeover procedures in multi-product facilities; conducting unannounced GMP inspections of manufacturing areas to verify adherence to contamination controls; and participating in root cause investigations for all OOS (out-of-specification) environmental monitoring results or contamination-related product failures.
+
+### 3.3 Manufacturing Supervisor
+
+Manufacturing Supervisors are accountable for ensuring that all personnel under their supervision understand and consistently adhere to the contamination prevention requirements defined in this SOP. They are responsible for: verifying gowning compliance at area entry; confirming that cleaning and sanitization activities are completed and documented prior to manufacturing start; reviewing IPC results for signs of contamination and escalating anomalies to QA; ensuring segregation of materials, intermediates, and products within their area; and participating in contamination investigation activities as requested by QA.
+
+### 3.4 Manufacturing Operator
+
+Manufacturing Operators are the primary executors of contamination prevention activities at the process level. Their responsibilities include: performing all personal hygiene and gowning procedures in accordance with Section 6.0 of this SOP; maintaining the cleanliness of their work areas throughout each shift; correctly labeling and segregating materials and in-process intermediates; reporting any suspected contamination events immediately to their supervisor and QA; following equipment cleaning and sanitization procedures as specified; and completing all required contamination-related documentation accurately and contemporaneously in the BMR.
+
+### 3.5 Site Microbiologist / Microbiology Laboratory Analyst
+
+The Site Microbiologist provides scientific expertise and technical leadership for the microbiological contamination prevention program. Responsibilities include: designing, validating, and maintaining the environmental monitoring program; performing or supervising all microbiological testing of environmental samples, in-process materials, and finished products; interpreting environmental monitoring data and generating trend reports; maintaining microbial reference cultures and ensuring analyst competency; and advising manufacturing and QA on remediation strategies for microbiological contamination events. The Microbiology Laboratory Analyst executes sampling, testing, and reporting activities as directed by the Site Microbiologist.
+
+### 3.6 Facilities and Engineering
+
+The Facilities and Engineering team is responsible for the design, installation, qualification, and maintenance of the physical infrastructure that supports contamination prevention, including: HVAC systems and HEPA filtration; pressure differential management between clean room zones; clean room surface finishes and drainage systems; equipment installation in a manner that facilitates cleaning and prevents contamination; and the execution of planned preventive maintenance on all contamination-critical utilities. Facilities personnel must notify QA prior to undertaking any work within GMP-classified areas.
+
+### 3.7 Responsibility Summary Table
+
+| Responsibility | QA Specialist | Manufacturing Supervisor | Manufacturing Operator | Site Microbiologist | Facilities |
+|---|---|---|---|---|---|
+| Approve contamination risk assessments | P | C | — | C | C |
+| Conduct EM sampling | C | C | A | P | — |
+| Review EM trending data | P | C | — | P | — |
+| Approve cleaning procedures | P | C | — | C | — |
+| Gowning compliance verification | C | P | A | — | — |
+| Deviation initiation | P | C | A | C | C |
+| HVAC maintenance | C | — | — | — | P |
+| Train personnel on this SOP | P | C | A | C | — |
+
+*P = Primary Responsibility; C = Contributing/Supporting Role; A = Accountable for Personal Compliance*
+
+---
+
+## 4.0 CONTAMINATION RISK ASSESSMENT AND CLASSIFICATION
+
+### 4.1 Overview of Risk-Based Approach
+
+This facility employs a risk-based approach to contamination prevention consistent with the principles of ICH Q9(R1). Risk assessment is the foundation upon which all contamination control strategies are built, ensuring that the intensity of controls is proportional to the actual risk posed to product quality and patient safety. A formal written Contamination Risk Assessment (CRA) must be completed for: new products being introduced to the manufacturing site; new manufacturing processes or technologies; significant changes to existing processes, equipment, or facilities; new raw material suppliers; and in response to any recurring or critical contamination event.
+
+Risk assessments shall be performed by a cross-functional team including representatives from QA, Manufacturing, Microbiology, and Regulatory Affairs. The risk assessment shall use a documented methodology (e.g., FMEA, risk ranking and filtering) and shall evaluate the probability of contamination, the severity of consequences, and the detectability of contamination. Risk assessments shall be reviewed by the QA Manager and approved by the Director of Quality Operations prior to implementation.
+
+### 4.2 Contamination Risk Categories
+
+This facility classifies contamination risk into four categories based on the assessed risk score and the nature of the contamination hazard. The classification drives the selection and intensity

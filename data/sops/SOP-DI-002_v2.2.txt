@@ -1,0 +1,215 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT IDENTIFICATION
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-DI-002
+  Title:            Electronic Records Management and Control
+  Version:          2.2
+  Effective Date:   2023-06-01
+  Supersedes:       2.1
+  Department:       DI (Data Integrity)
+  Approved By:      Steven Park, IT Compliance Manager
+  Review Cycle:     2 years (next review due: 2025-06-01)
+  Pages:            13
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## APPROVAL AND SIGNATURE BLOCK
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Maria Chen, Senior QA Specialist | *M. Chen* | 2023-05-01 |
+| Reviewer | James Thornton, IT Systems Architect | *J. Thornton* | 2023-05-10 |
+| Reviewer | Dr. Angela Reyes, Regulatory Affairs Lead | *A. Reyes* | 2023-05-15 |
+| Approver | Steven Park, IT Compliance Manager | *S. Park* | 2023-05-22 |
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Electronic Record Creation and Capture | 5 |
+| 5.0 | Electronic Signature Requirements and Controls | 6 |
+| 6.0 | Access Control and Authentication | 7 |
+| 7.0 | Record Storage, Retention, and Archival | 8 |
+| 8.0 | Record Migration and System Change Management | 9 |
+| 9.0 | Audit Trail Review and Verification | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+> **Note:** This document contains 12 numbered sections. Sections 1–9 constitute the core procedural body; Section 10 addresses deviation handling; Sections 11–12 address references and revision history, consistent with the 11-section procedural framework plus the mandatory closing sections.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, controls, and responsibilities for the creation, review, approval, storage, retrieval, migration, and disposal of electronic records within GxP-regulated activities at this organization. The procedure ensures that all electronic records maintain the attributes of being Attributable, Legible, Contemporaneous, Original, and Accurate (ALCOA+), and that electronic signatures applied to such records carry legal equivalence to handwritten signatures as required by applicable regulations.
+
+This SOP operationalizes the organization's commitment to data integrity by defining minimum technical and procedural controls that prevent unauthorized alteration, deletion, or falsification of GxP-critical electronic records. It supplements the organization's overarching Data Integrity Policy (POL-DI-001) and provides granular procedural guidance for personnel who create, manage, or review electronic records on a day-to-day basis.
+
+### 1.2 Scope
+
+This SOP applies to all electronic records generated, received, maintained, or transmitted under GxP conditions, including but not limited to: Good Manufacturing Practice (GMP) batch records, Good Laboratory Practice (GLP) study records, Good Clinical Practice (GCP) trial data, pharmacovigilance records, and regulatory submission data packages. It covers all computerized systems used to create or manage such records, including Laboratory Information Management Systems (LIMS), Electronic Batch Record (EBR) systems, Chromatography Data Systems (CDS), Manufacturing Execution Systems (MES), Document Management Systems (DMS), and enterprise resource planning (ERP) modules with GxP functionality.
+
+This SOP applies to all employees, contractors, consultants, and temporary staff who interact with GxP electronic records at any of the organization's regulated sites. It does not apply to paper-based records management, which is governed by SOP-DI-001, nor to IT infrastructure security controls, which are governed by IT-SEC-005. Where hybrid (paper/electronic) systems exist, both SOPs apply concurrently.
+
+### 1.3 Regulatory Basis
+
+This procedure has been developed to meet the requirements of FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), EU GMP Annex 11 (Computerised Systems), EMA Reflection Paper on Expectations for Electronic Source Data and Data Transcription (2010), MHRA GxP Data Integrity Guidance and Definitions (2018), WHO Technical Report Series No. 996 Annex 5 (2016), and ICH Q7 (Good Manufacturing Practice Guide for Active Pharmaceutical Ingredients). Where regional requirements differ, the more stringent requirement shall prevail.
+
+| Regulatory Framework | Jurisdiction | Key Requirement Area |
+|---|---|---|
+| 21 CFR Part 11 | USA (FDA) | e-records, e-signatures, audit trails |
+| EU GMP Annex 11 | European Union (EMA) | computerised systems, data governance |
+| MHRA GxP DI Guidance | United Kingdom | ALCOA+, record controls |
+| WHO TRS 996 Annex 5 | International | data integrity across product lifecycle |
+| ICH Q7 Section 6 | International (ICH) | documentation practices, GMP records |
+| 21 CFR Part 212 | USA (FDA) | positional records for OTC drug products |
+
+### 1.4 Out-of-Scope Items
+
+Non-GxP administrative records (e.g., general HR records, financial accounts payable records) are excluded from this SOP. Records created and maintained exclusively within validated systems operating in closed environments without electronic signature functionality are subject to reduced controls as defined in Section 6.4 of this document. Cloud-hosted systems with third-party data stewardship are subject to additional vendor qualification requirements specified in SOP-IT-009.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Audit Trail:** A secure, computer-generated, time-stamped electronic record that allows reconstruction of the course of events relating to the creation, modification, or deletion of an electronic record. An audit trail must capture the original value, the new value, the date and time of the change, and the identity of the operator making the change, in accordance with 21 CFR Part 11.10(e).
+
+**Closed System:** An environment in which system access is controlled by persons who are responsible for the content of electronic records on that system (21 CFR Part 11.3(b)(4)).
+
+**Electronic Record:** Any combination of text, graphics, data, audio, pictorial, or other information representation in digital form that is created, modified, maintained, archived, retrieved, or distributed by a computer system (21 CFR Part 11.3(b)(6)).
+
+**Electronic Signature (e-signature):** A computer data compilation of any symbol or series of symbols executed, adopted, or authorized by an individual to be the legally binding equivalent of the individual's handwritten signature (21 CFR Part 11.3(b)(7)).
+
+**Metadata:** Data that describe the attributes of other data and provide context and meaning. For electronic records, metadata includes the date and time of record creation, the identity of the originating system, the user who created or modified the record, and any units or reference ranges associated with numerical data.
+
+**Open System:** An environment in which system access is not controlled by persons responsible for the content of electronic records on that system (21 CFR Part 11.3(b)(9)).
+
+**Record Lifecycle:** The entirety of a record's existence, from initial creation or capture through active use, long-term archival, and final authorized disposition.
+
+**Record Migration:** The process of transferring electronic records from one system, format, or storage medium to another while preserving the content, context, and structure of the records.
+
+**System Owner:** The individual with primary operational and compliance accountability for a specific computerized system, typically a department head or functional manager.
+
+**Validation:** The documented process of establishing that a computerized system consistently produces results that meet predetermined specifications and quality attributes, as required by 21 CFR Part 11.10(a) and EU GMP Annex 11 clause 4.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| ALCOA+ | Attributable, Legible, Contemporaneous, Original, Accurate (plus Complete, Consistent, Enduring, Available) |
+| CDS | Chromatography Data System |
+| CFR | Code of Federal Regulations |
+| DMS | Document Management System |
+| EBR | Electronic Batch Record |
+| EMA | European Medicines Agency |
+| ERP | Enterprise Resource Planning |
+| GCP | Good Clinical Practice |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| GxP | Good [any] Practice (collective term) |
+| ICH | International Council for Harmonisation |
+| IT | Information Technology |
+| LIMS | Laboratory Information Management System |
+| MES | Manufacturing Execution System |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| MKT | Mean Kinetic Temperature |
+| OOS | Out-of-Specification |
+| QA | Quality Assurance |
+| SOP | Standard Operating Procedure |
+| UTC | Coordinated Universal Time |
+| WHO | World Health Organization |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 IT Compliance Manager
+
+The IT Compliance Manager holds overall accountability for the electronic records management program and serves as the primary point of contact for regulatory agency inquiries regarding electronic records and signatures. Specific responsibilities include: approving this SOP and all associated procedures; chairing the annual electronic records governance review; authorizing system retirement and record migration plans; reviewing and approving exceptions to this procedure; and maintaining awareness of evolving regulatory guidance on electronic data. The IT Compliance Manager shall complete a minimum of 16 hours of continuing education in data integrity and electronic records regulations per calendar year, with completion documented in the training management system.
+
+### 3.2 Quality Assurance Specialists
+
+QA Specialists are responsible for day-to-day oversight of electronic records compliance across GxP functions. Their duties include: conducting periodic audit trail reviews per Section 9 of this SOP; reviewing and approving electronic records deviations; verifying that new computerized systems have completed validation prior to GxP use; participating in vendor audits for systems that host organizational electronic records; and providing training on this SOP to operational personnel. QA Specialists have read-only access to all GxP system audit trails and shall not be granted data-entry roles that could create conflicts of interest.
+
+### 3.3 System Owners
+
+Each GxP computerized system shall have a designated System Owner who is accountable for ensuring that the system is maintained in a validated state, that user access rights are appropriate and reviewed quarterly, and that system-generated electronic records are protected from unauthorized modification. System Owners shall coordinate with the IT department for system patches and upgrades, complete a documented impact assessment prior to any system change, and notify QA in writing at least 15 business days before planned system downtime that could affect record accessibility.
+
+### 3.4 Laboratory Analysts and Manufacturing Operators
+
+Laboratory Analysts and Manufacturing Operators are the primary generators of GxP electronic records. They are responsible for entering data contemporaneously at the time of observation or activity, applying electronic signatures only to records they personally created or reviewed, never sharing login credentials with colleagues, and reporting any suspected record anomalies or system errors to their direct supervisor and QA within 24 hours of discovery. These personnel shall complete initial training on this SOP prior to generating any GxP electronic records, with refresher training required every 24 months.
+
+### 3.5 IT Systems Administrator
+
+IT Systems Administrators are responsible for the technical implementation of controls required by this SOP, including: configuring audit trail settings in all GxP systems; enforcing password complexity and session timeout policies; performing and verifying system backups; managing user account provisioning and de-provisioning workflows; and maintaining synchronized time servers used by GxP systems. IT Systems Administrators shall not have the ability to modify GxP records in production environments; write access by IT personnel shall be restricted to validated test environments only.
+
+### 3.6 Responsibility Summary Matrix
+
+| Activity | IT Compliance Mgr | QA Specialist | System Owner | Analyst/Operator | IT Admin |
+|---|---|---|---|---|---|
+| SOP Approval | A | R | C | I | I |
+| User Access Review | I | R | A | I | R |
+| Audit Trail Review | I | A/R | C | I | I |
+| Record Migration Approval | A | R | R | I | C |
+| Deviation Escalation | A | R | C | R | I |
+| System Backup Verification | I | C | R | I | A/R |
+| Training Delivery | I | A/R | C | R | I |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+## 4.0 ELECTRONIC RECORD CREATION AND CAPTURE
+
+### 4.1 General Principles for Record Creation
+
+All GxP electronic records shall be created contemporaneously with the activity or observation they document. "Contemporaneous" is defined, for the purposes of this SOP, as within the same work shift and no later than four (4) hours after the activity or observation unless a documented system outage prevents timely entry. Any entry made more than four hours after the activity shall be flagged as a late entry with the actual time of observation recorded separately from the system timestamp, along with a reason for the delay. Late entries exceeding 24 hours require QA notification and a documented justification.
+
+Data shall never be pre-entered before an activity is performed. Systems shall be configured, where technically feasible, to prevent back-dating of entries. For systems that allow manual date/time entry (e.g., certain legacy LIMS configurations), a procedural control requiring supervisor co-signature on all manual time entries shall be implemented as a compensating measure, pending system upgrade to prevent the capability entirely.
+
+### 4.2 Required Metadata Elements
+
+Every electronic record created under this SOP shall capture and permanently associate the following minimum metadata at the time of creation:
+
+| Metadata Element | Description | Mandatory? | Format |
+|---|---|---|---|
+| Record Unique Identifier | System-generated alphanumeric ID | Yes | e.g., REC-2023-0045821 |
+| Date and Time of Creation | Synchronized UTC timestamp | Yes | ISO 8601: YYYY-MM-DDThh:mm:ssZ |
+| User Identity | Unique username of originating user | Yes | Domain\Username |
+| System Identity | Name and version of originating system | Yes | e.g., LIMS v4.2.1 |
+| Data Context | Batch number, study number, or protocol ID | Yes | Per system configuration |
+| Unit of Measure | Units for all numerical values | Yes | SI or defined system units |
+| Original Value | First-entered value prior to any modification | Yes | Audit trail retained |
+| Modification Reason | Plain-language justification for any edit | Yes (if modified) | Free-text, max 500 characters |
+
+### 4.3 Data Entry Procedure
+
+All GxP data entry into electronic systems shall follow the steps below. These steps apply to Laboratory Analysts, Manufacturing Operators, and any other personnel with data-entry roles.
+
+1. Log in to the applicable GxP system using your personal, unique username and password. Confirm the system clock displays the correct date and time before beginning data entry; if the displayed time deviates by more than ±2 minutes from the site master clock (visible at the laboratory entrance or on the intranet time display), do not proceed and notify the IT Help Desk immediately via ticket.
+2. Navigate to the appropriate record template or form for the activity being documented. Verify that the correct batch number, sample ID, protocol number, or equivalent identifier is pre-populated or correctly entered before recording any result.
+3. Enter all required data fields completely. Do not leave mandatory fields blank; if a measurement was not performed or a value is not applicable, enter the reason code from the approved list (e.g., "N/A – test not performed per protocol deviation number DEV-2023-0112") rather than leaving the field empty.
+4. For numerical results, enter the value to the precision specified in the applicable method or batch record (e.g., four decimal places for HPLC purity results; two decimal places for pH measurements). Do not round values before entry; allow the system to apply any programmed rounding for display purposes while retaining the full-precision raw value in the database.
+5. Review all entered data fields for accuracy before signing. Cross-reference source data (e.g., instrument printout, balance printout, or primary notebook) against the electronic record to confirm transcription accuracy.

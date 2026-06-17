@@ -1,0 +1,220 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                        DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GMP-007
+  Title:            Label Reconciliation and Issuance
+  Version:          2.1
+  Effective Date:   2023-03-01
+  Supersedes:       2.0
+  Department:       GMP / Manufacturing Operations
+  Approved By:      Dr. Sarah Nguyen, Quality Systems Manager
+  Review Cycle:     2 years (next review due: 2025-03-01)
+  Pages:            10
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Quality Systems Manager | Dr. Sarah Nguyen | *S. Nguyen* | 2023-02-15 |
+| Manufacturing Director | Mr. David Okafor | *D. Okafor* | 2023-02-15 |
+| Regulatory Affairs Lead | Ms. Patricia Lim | *P. Lim* | 2023-02-16 |
+| Document Control Owner | Mr. James Hartley | *J. Hartley* | 2023-02-17 |
+
+---
+
+> **⚠ GxP NOTICE:** This document is a controlled GxP-critical Standard Operating Procedure. Printed copies are considered uncontrolled unless stamped "CONTROLLED COPY" with a valid Document Control stamp and date. The current version is always maintained in the electronic Quality Management System (eQMS). Any deviation from this procedure must be documented in accordance with SOP-GMP-021 (Deviation Management and CAPA).
+
+---
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Label Issuance and Control | 5 |
+| 5.0 | Label Reconciliation Procedure | 6 |
+| 6.0 | Label Destruction and Disposal | 7 |
+| 7.0 | Label Storage and Security Requirements | 8 |
+| 8.0 | Deviation and Exception Handling | 9 |
+| 9.0 | References and Related Documents | 9 |
+| 10.0 | Revision History | 10 |
+
+> **Note:** Section count as specified is 9 primary operational sections (Sections 1.0 through 9.0). Section 10.0 (Revision History) constitutes the mandatory document closure section.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, controls, and step-by-step instructions governing the issuance, use, reconciliation, and destruction of product labels in all Good Manufacturing Practice (GMP) manufacturing and packaging operations at this facility. Label control is a foundational element of pharmaceutical product integrity and patient safety. Errors in labeling—including issuance of incorrect label quantities, failure to account for all labels issued, or the presence of unreconciled labels in a production environment—represent one of the most significant and consistently cited categories of regulatory non-compliance in the pharmaceutical industry.
+
+The requirements set forth in this procedure are designed to ensure that every label issued for a manufacturing or packaging batch can be fully accounted for at the conclusion of that activity. Full accountability means that the sum of labels used on finished product units, labels destroyed as waste or due to damage, and labels returned unused must equal the total number of labels issued. This reconciliation provides a critical control against mislabeling, label mix-ups, and the inadvertent introduction of incorrect labeling into a product batch, all of which could result in serious harm to patients or regulatory action against the facility.
+
+### 1.2 Scope
+
+This procedure applies to all printed labels used in the manufacture and packaging of pharmaceutical drug products (finished dosage forms), active pharmaceutical ingredient (API) intermediates, and investigational medicinal products (IMPs) manufactured or packaged at this facility. This includes, but is not limited to, primary container labels, secondary carton labels, lot number and expiration date labels applied by coding equipment, ancillary labels (e.g., "Refrigerate," "Shake Well Before Use"), and overprint labels used during clinical trial labeling operations.
+
+This SOP applies to all personnel involved in any phase of the labeling operation, including but not limited to Packaging Operators, Line Leaders, Manufacturing Operators, Quality Assurance (QA) Specialists, Label Control Coordinators, and Warehouse personnel responsible for label storage. This procedure also applies to contract manufacturing and packaging operations conducted at this facility on behalf of external sponsors, subject to any additional requirements specified in the relevant Quality Agreement.
+
+### 1.3 Regulatory Basis
+
+This procedure has been developed to comply with the requirements of the United States Code of Federal Regulations (CFR) Title 21, Part 211, Subpart G — Packaging and Labeling Controls, specifically 21 CFR 211.122 (Materials examination and usage criteria), 21 CFR 211.125 (Labeling issuance), and 21 CFR 211.130 (Packaging and labeling operations). Additionally, this procedure addresses the requirements of the European Union Good Manufacturing Practice guidelines as described in EU GMP Guide Annex 9 (Manufacture of Liquids, Creams, and Ointments) and the general requirements of EU GMP Guide Part I, Chapter 5 (Production) and Chapter 9 (Complaints, Quality Defects, and Product Recalls).
+
+### 1.4 Out of Scope
+
+This procedure does not apply to in-process control (IPC) status labels, equipment cleaning status labels, quarantine tags, or analytical laboratory sample labels, which are governed by their respective SOPs. The design, artwork approval, and electronic master record management of label artwork are governed by SOP-GMP-006 (Label Artwork Control and Approval) and are outside the scope of this document.
+
+| Applicability Summary | In Scope | Out of Scope |
+|---|---|---|
+| Finished product primary labels | ✓ | |
+| Secondary carton / shipper labels | ✓ | |
+| IMP clinical trial labels | ✓ | |
+| API intermediate labels | ✓ | |
+| Equipment status labels | | ✓ |
+| Analytical sample labels | | ✓ |
+| Label artwork design and approval | | ✓ |
+| Electronic serialization data management | | ✓ (see SOP-GMP-019) |
+
+---
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document and are consistent with definitions established in 21 CFR Part 201, the EU GMP Guide Glossary, and the facility's Master Glossary (Document QMS-GLO-001).
+
+**Label:** Any written, printed, or graphic matter affixed to, or appearing upon, the immediate container of any article, including any outer container or wrapper of the retail package of such article. For the purposes of this SOP, the term "label" refers specifically to physical, pre-printed or print-on-demand labels issued for use in manufacturing or packaging operations.
+
+**Label Reconciliation:** The formal process of accounting for all labels issued to a packaging or manufacturing batch by comparing the total quantity issued against the sum of the quantities used, damaged, destroyed, and returned. A successful reconciliation demonstrates 100% accountability for all labels issued within the approved tolerance limit.
+
+**Label Issuance:** The controlled release of a specific quantity of approved labels from the Label Control Room to the manufacturing or packaging area for use in a specific batch operation. Issuance is authorized only by QA upon review of the batch record and is documented on the Label Issuance Record (Form QA-F-041).
+
+**Label Count:** A physical enumeration of labels performed at defined stages of a labeling operation, including at the time of issuance, at the conclusion of the operation (used + damaged + returned), and as part of the final reconciliation calculation.
+
+**Label Destruction:** The irreversible rendering unusable of labels that are damaged, excess, or otherwise unsuitable for use, conducted in a controlled and documented manner to prevent unauthorized use.
+
+**Label Control:** The systematic set of procedures, physical controls, and documentation requirements designed to prevent labeling errors, including the issuance of the wrong label, incorrect quantities, or unauthorized label variants.
+
+**Discrepancy:** Any difference between the total number of labels issued and the total number of labels accounted for (used + destroyed + returned) that exceeds the approved reconciliation tolerance. A discrepancy requires formal investigation and deviation documentation.
+
+**Positive Label Count (PLC):** A manual count of labels performed independently by two personnel, without reference to the initial count, to confirm the quantity of labels at any controlled stage. Results from both counts must agree within ±0 labels for PLC completion.
+
+**Master Label Record (MLR):** The approved, archived document containing the approved label text, artwork, dimensions, substrate specifications, and version control information for each label at the facility.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Term |
+|---|---|
+| API | Active Pharmaceutical Ingredient |
+| BPR | Batch Packaging Record |
+| CFR | Code of Federal Regulations |
+| CAPA | Corrective Action and Preventive Action |
+| eQMS | Electronic Quality Management System |
+| EU GMP | European Union Good Manufacturing Practice |
+| FDA | United States Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IMP | Investigational Medicinal Product |
+| IPC | In-Process Control |
+| LCR | Label Control Room |
+| LIR | Label Issuance Record |
+| MLR | Master Label Record |
+| PLC | Positive Label Count |
+| QA | Quality Assurance |
+| QMS | Quality Management System |
+| SOP | Standard Operating Procedure |
+| WMS | Warehouse Management System |
+
+---
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Quality Assurance Specialist (Label Control)
+
+The QA Specialist assigned to Label Control functions as the primary custodian of the Label Control Room and bears overall responsibility for the correct implementation of this procedure. This individual is responsible for authorizing all label issuances by reviewing the Batch Packaging Record (BPR) against the approved Master Label Record, verifying that the label version requested corresponds to the currently approved version in the MLR, and confirming that the requested label quantity is appropriate for the batch size and an approved overage. The QA Specialist performs or directly witnesses the Positive Label Count at the time of issuance and at the final reconciliation, signs the Label Issuance Record (Form QA-F-041), and determines whether a completed reconciliation is acceptable or requires deviation initiation. No label issuance may proceed without QA authorization.
+
+### 3.2 Label Control Coordinator
+
+The Label Control Coordinator is a QA-affiliated role responsible for the day-to-day management of label inventory within the Label Control Room. Responsibilities include maintaining the label inventory log in the eQMS or designated warehouse management system, coordinating the receipt and quarantine of newly printed label stock, ensuring that labels are stored under correct conditions and segregated by product, version, and lot, managing label expiry (where applicable), and coordinating the physical destruction of excess or obsolete labels in accordance with Section 6.0 of this procedure. The Label Control Coordinator reports to the QA Specialist and does not have independent authority to authorize label issuances.
+
+### 3.3 Packaging Operator / Line Leader
+
+The Packaging Operator and Line Leader are responsible for the physical receipt of issued labels at the packaging line, performing the initial label count upon receipt (in conjunction with the QA Specialist), correctly applying labels to product in accordance with the BPR, segregating and counting damaged or unused labels throughout the operation, and returning all unused and damaged labels to the Label Control Room or QA Representative at the conclusion of the operation. The Line Leader is additionally responsible for completing the operator sections of the Label Issuance Record, including the count of used, damaged, and returned labels, and for notifying QA immediately if a discrepancy is suspected at any point during the operation.
+
+### 3.4 Manufacturing Director / Packaging Supervisor
+
+The Manufacturing Director or designee (Packaging Supervisor) is responsible for ensuring that all personnel under their supervision have received training on this SOP (documented in the Learning Management System), that the packaging line is properly cleared and released by QA prior to the commencement of any labeling operation, and that personnel follow the label issuance and reconciliation procedures without deviation. The Packaging Supervisor also participates in the initial review of any label reconciliation discrepancy investigation and is a required signer on any associated deviation report.
+
+### 3.5 Quality Systems Manager
+
+The Quality Systems Manager is responsible for the periodic review and approval of this SOP, for approving any temporary deviation from this procedure, and for reviewing trends in label reconciliation discrepancies during the Annual Product Review. The Quality Systems Manager has final authority over the disposition of any batch for which a label reconciliation discrepancy investigation has been initiated.
+
+### 3.6 Summary of Responsibilities Matrix
+
+| Activity | QA Specialist | Label Control Coordinator | Packaging Operator / Line Leader | Packaging Supervisor | QA Manager |
+|---|---|---|---|---|---|
+| Authorize label issuance | **A/R** | I | I | I | A |
+| Perform Positive Label Count (issuance) | **R** | S | S | — | — |
+| Maintain label inventory log | I | **R** | — | — | A |
+| Receive labels at packaging line | S | — | **R** | I | — |
+| Complete Label Issuance Record | **R** | — | **R** | I | A |
+| Perform final reconciliation count | **R** | S | **R** | I | — |
+| Approve reconciliation result | **R** | — | — | I | A |
+| Initiate deviation (discrepancy) | **R** | — | I | **R** | A |
+| Label destruction | S | **R** | — | I | A |
+
+*Key: R = Responsible; A = Accountable; S = Supporting; I = Informed*
+
+---
+
+---
+
+## 4.0 LABEL ISSUANCE AND CONTROL
+
+### 4.1 Pre-Issuance Authorization
+
+No labels shall be issued for use in any manufacturing or packaging operation without prior written authorization from a QA Specialist. This requirement is non-negotiable and applies equally to commercial batches, validation batches, engineering runs, and clinical IMP batches. Prior to initiating label issuance, the QA Specialist shall retrieve the approved Batch Packaging Record for the batch in question and perform a label identity verification check against the Master Label Record. The label version number, product name, strength (where applicable), NDC number (for US commercial products), label dimensions, and substrate (e.g., white paper, clear film, foil) shall be confirmed to match the currently approved MLR entry. Any discrepancy between the BPR requirement and the MLR shall result in a hold on label issuance pending resolution.
+
+The QA Specialist shall calculate the maximum authorized label quantity using the formula defined in Section 4.2 and document the authorized quantity on the Label Issuance Record (Form QA-F-041) before labels are retrieved from storage. Labels shall not be removed from the Label Control Room storage area prior to completion of this documentation step.
+
+### 4.2 Label Quantity Calculation and Approved Overage
+
+The quantity of labels issued shall not exceed the batch size plus an approved overage allowance. The approved overage is intended to account for normal machine setup waste, label application defects identified during in-process inspection, and minor damage during handling. The approved overage percentage varies by label type and application method as specified in Table 4.2-1. Issuance of labels in excess of the maximum authorized quantity requires documented QA approval and justification on the Label Issuance Record.
+
+**Formula:**
+> Maximum Authorized Issuance = (Batch Size in Units) × (1 + Approved Overage%)
+
+**Example:** For a batch of 10,000 units with a label type of die-cut machine-applied primary label (4% overage): Maximum Authorized Issuance = 10,000 × 1.04 = 10,400 labels.
+
+**Table 4.2-1: Approved Label Overage Percentages by Label Type and Application Method**
+
+| Label Type | Application Method | Approved Overage (%) | Maximum Absolute Overage |
+|---|---|---|---|
+| Primary container — die-cut | Automated (high-speed rotary) | 4.0% | 500 labels |
+| Primary container — continuous roll | Automated (linear applicator) | 3.0% | 350 labels |
+| Secondary carton label | Semi-automated or manual | 2.0% | 200 labels |
+| Overprint / variable data label | Thermal transfer printer | 5.0% | 600 labels |
+| IMP clinical trial label

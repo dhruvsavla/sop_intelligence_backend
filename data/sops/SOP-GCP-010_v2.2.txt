@@ -1,0 +1,232 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-GCP-010
+  Title:            Clinical Site Monitoring and Close-Out
+  Version:          2.2
+  Effective Date:   2024-01-01
+  Supersedes:       2.1
+  Department:       GCP / Clinical Operations
+  Approved By:      Thomas Brecker, Clinical Quality Manager
+  Review Cycle:     2 years
+  Pages:            12
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                          TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+  Section    Title                                                     Page
+  ─────────────────────────────────────────────────────────────────────────
+  1.0        Purpose and Scope                                           2
+  2.0        Definitions and Abbreviations                               2
+  3.0        Roles and Responsibilities                                  3
+  4.0        Monitoring Visit Planning and Preparation                   4
+  5.0        Conduct of Monitoring Visits                                5
+  6.0        Source Data Verification and Review                         6
+  7.0        Investigational Product Accountability and Reconciliation   7
+  8.0        Site Close-Out Visit (COV) Procedures                       8
+  9.0        Monitoring Report Completion and Management                 9
+  10.0       Deviation and Exception Handling                           10
+  11.0       References and Related Documents                           11
+  12.0       Revision History                                           12
+
+  NOTE: Section 12.0 (Revision History) functions as the final section
+  in this 11-content-section document per internal numbering convention;
+  the TOC lists 12 entries inclusive of the revision history.
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) defines the requirements, responsibilities, and step-by-step procedures for planning, conducting, documenting, and following up on clinical site monitoring activities, including routine monitoring visits, for-cause visits, and site close-out visits (COVs) conducted in support of clinical trials sponsored or co-sponsored by the organization. The purpose of this document is to ensure that monitoring activities are performed in a consistent, compliant, and thorough manner that protects the rights, safety, and welfare of trial participants; verifies the integrity of trial data; and confirms that the trial is conducted in accordance with the approved protocol, Good Clinical Practice (GCP) principles, and applicable regulatory requirements.
+
+### 1.2 Regulatory Basis
+
+This SOP has been developed in accordance with ICH E6(R2) Good Clinical Practice (Step 4, November 2016), FDA 21 CFR Part 312 (Investigational New Drug Applications), FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), FDA Guidance for Industry: Oversight of Clinical Investigations — A Risk-Based Approach to Monitoring (August 2013), and EMA Guideline on Good Clinical Practice (CPMP/ICH/135/95). These regulations collectively require sponsors to appoint qualified monitors, define monitoring procedures, and maintain audit trails of all oversight activities.
+
+### 1.3 Scope
+
+This SOP applies to all Clinical Research Associates (CRAs), Senior CRAs, Clinical Trial Managers (CTMs), and Clinical Quality Assurance (CQA) personnel involved in oversight of investigational sites under studies sponsored or managed by the organization. It covers all therapeutic areas and all phases of clinical investigation (Phase I–IV). Contract Research Organizations (CROs) operating under delegation from the sponsor are also subject to this SOP unless a superseding contractual quality agreement specifies otherwise, in which case equivalency of procedures must be documented and approved by the Clinical Quality Manager.
+
+### 1.4 Exclusions
+
+This SOP does not apply to non-interventional observational studies classified as post-authorization safety studies (PASS) under EMA Post-Authorization Activities guidelines, unless those studies include an interventional comparator arm. Monitoring of central laboratory activities, imaging vendors, or electronic data capture (EDC) system vendors is addressed in SOP-GCP-018 (Vendor Qualification and Oversight).
+
+| Applicability Summary          | Covered by SOP-GCP-010 | Covered Elsewhere              |
+|-------------------------------|------------------------|-------------------------------|
+| Phase I–IV Interventional      | Yes                    | —                             |
+| Phase II/III Pivotal Studies   | Yes                    | —                             |
+| Non-Interventional PASS        | No                     | SOP-GCP-022                   |
+| Central Laboratory Vendors     | No                     | SOP-GCP-018                   |
+| CRO-Delegated Monitoring       | Yes (with QA agreement)| Contractual QA Agreement       |
+| Compassionate Use Programs     | Case-by-case           | Clinical Quality Manager review|
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+**Close-Out Visit (COV):** A final monitoring visit conducted at an investigational site upon completion or early termination of a clinical trial, intended to confirm the return or destruction of all investigational product, collection of outstanding data, archival of essential documents, and compliance with all regulatory obligations.
+
+**Corrective and Preventive Action (CAPA):** A documented response to an identified finding, deviation, or non-conformance that describes the root cause analysis, corrective steps taken to address the immediate issue, and preventive measures implemented to prevent recurrence.
+
+**Finding:** Any observation made during a monitoring visit that represents a deviation from the protocol, GCP standards, applicable regulations, or sponsor requirements. Findings are categorized as Critical, Major, or Minor (see Section 10.0).
+
+**Monitoring Report:** A formal written record, prepared by the CRA after each monitoring visit, that documents all activities conducted, observations made, actions taken, outstanding issues, and follow-up items.
+
+**Reconciliation (Investigational Product):** The process of accounting for all units of investigational product (IP) dispensed to, used by, returned by, or destroyed at an investigational site to confirm that IP accountability is complete and accurate.
+
+**Site Monitoring:** The act of overseeing and verifying the progress of a clinical trial at an investigational site, as performed by or on behalf of the sponsor, in accordance with ICH E6(R2) Section 5.18.
+
+**Source Data Verification (SDV):** The process of comparing data entered into the Case Report Form (CRF) or electronic data capture (EDC) system against original source documents to confirm accuracy, completeness, and legibility.
+
+**Source Documents:** Original records, certified copies of original records, and any other records that allow reconstruction of the course of events and original observations, including but not limited to hospital records, clinical and office charts, laboratory notes, memoranda, pharmacy records, and radiological recordings.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition                                      |
+|--------------|-------------------------------------------------|
+| CAPA         | Corrective and Preventive Action                |
+| CFR          | Code of Federal Regulations                     |
+| CRA          | Clinical Research Associate                     |
+| CRF          | Case Report Form                                |
+| CRO          | Contract Research Organization                  |
+| CTM          | Clinical Trial Manager                          |
+| COV          | Close-Out Visit                                 |
+| DMF          | Drug Master File                                |
+| EDC          | Electronic Data Capture                         |
+| eTMF         | Electronic Trial Master File                    |
+| GCP          | Good Clinical Practice                          |
+| ICH          | International Council for Harmonisation         |
+| IMV          | Interim Monitoring Visit                        |
+| IP           | Investigational Product                         |
+| IRB/IEC      | Institutional Review Board / Independent Ethics Committee |
+| MV           | Monitoring Visit                                |
+| PI           | Principal Investigator                          |
+| QA           | Quality Assurance                               |
+| SAE          | Serious Adverse Event                           |
+| SDV          | Source Data Verification                        |
+| SIV          | Site Initiation Visit                           |
+| SOV          | Site Observation Visit (for-cause)              |
+| TMF          | Trial Master File                               |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Clinical Research Associate (CRA) / Monitor
+
+The CRA is the primary individual responsible for conducting site monitoring activities in accordance with this SOP. The CRA shall prepare all monitoring visit materials in advance, conduct the visit according to the monitoring plan, document all findings accurately and without bias in the monitoring report, and issue follow-up correspondence to the site within established timeframes. The CRA must hold a bachelor's degree or higher in a life sciences field, have completed GCP training within the preceding 2 years (with documented certification), and be familiar with the protocol and all applicable regulatory requirements prior to conducting any monitoring visit. CRAs report to the Clinical Trial Manager for day-to-day operational direction.
+
+### 3.2 Senior Clinical Research Associate (Sr. CRA)
+
+The Sr. CRA provides technical oversight and quality review of monitoring visit reports prepared by CRAs assigned to their studies. The Sr. CRA co-monitors sites, as specified in the monitoring plan, at a minimum frequency of once per study phase or upon identification of recurrent findings at a site. The Sr. CRA is responsible for escalating persistent site non-compliance to the CTM and for ensuring CAPA effectiveness is evaluated within 60 days of CAPA initiation.
+
+### 3.3 Clinical Trial Manager (CTM)
+
+The CTM holds overall operational responsibility for the monitoring program for assigned studies. The CTM reviews and approves the Risk-Based Monitoring Plan, reviews monitoring visit reports for completeness, approves escalations of critical findings, communicates site performance metrics to the sponsor's internal teams, and makes final decisions on site suspension or termination with input from the Clinical Quality Manager.
+
+### 3.4 Clinical Quality Assurance (CQA) Specialist
+
+The CQA Specialist independently audits monitoring activities for compliance with this SOP, ICH E6(R2), and applicable regulations. The CQA Specialist is responsible for reviewing CAPA adequacy, conducting triggered audits at sites with critical findings, and reporting audit outcomes to the Clinical Quality Manager and senior management. CQA participation in routine monitoring visits is limited to co-monitoring for training or quality assessment purposes and shall not interfere with the CRA's independent judgment.
+
+### 3.5 Principal Investigator (PI)
+
+Although not an employee of the sponsor, the PI is responsible for ensuring that monitoring activities can be conducted at the site without obstruction, that all site staff are available to interact with the CRA as reasonably required, and that source documents and regulatory files are accessible in accordance with the signed Clinical Trial Agreement and ICH E6(R2) Section 4.1.3.
+
+### 3.6 Clinical Quality Manager
+
+The Clinical Quality Manager (Thomas Brecker) is the document owner and approving authority for this SOP. The Clinical Quality Manager reviews and approves all escalated critical findings, authorizes site suspension or termination, and ensures that the monitoring program remains compliant with evolving regulatory guidance.
+
+| Role                        | Monitoring Report Review | CAPA Approval | COV Authorization | SOP Ownership |
+|-----------------------------|:------------------------:|:-------------:|:-----------------:|:-------------:|
+| CRA                         | Prepares                 | Proposes      | Conducts          | No            |
+| Sr. CRA                     | Reviews (QC)             | Reviews       | Co-conducts       | No            |
+| Clinical Trial Manager      | Approves                 | Approves      | Authorizes        | No            |
+| CQA Specialist              | Audits                   | Audits        | Observes          | No            |
+| Clinical Quality Manager    | Escalation review        | Critical only | Final approval    | Yes           |
+
+---
+
+## 4.0 MONITORING VISIT PLANNING AND PREPARATION
+
+### 4.1 Risk-Based Monitoring Plan
+
+All monitoring activities conducted under this SOP shall be governed by a study-specific Risk-Based Monitoring Plan (RBMP), developed by the CTM in consultation with the CRA team and CQA Specialist prior to site initiation. The RBMP shall define monitoring visit frequency, the proportion of source data requiring 100% SDV versus targeted SDV, key risk indicators (KRIs), and trigger thresholds for on-site visit escalation. The RBMP shall be reviewed and updated at minimum every 6 months during the conduct phase of the trial and must be maintained in the eTMF. This approach aligns with FDA's 2013 guidance on risk-based monitoring and ICH E6(R2) Section 5.18.3.
+
+### 4.2 Monitoring Visit Frequency
+
+Minimum monitoring visit frequency is determined by site risk tier, as defined in the RBMP. Risk tier assignment is based on site experience (number of prior sponsored studies conducted), subject enrollment volume, complexity of assessments, and prior finding history. Default visit frequencies are:
+
+| Site Risk Tier | Criteria                                             | Minimum Visit Frequency      |
+|---------------|------------------------------------------------------|------------------------------|
+| Tier 1 (High)  | New site; ≥10 subjects enrolled; prior critical findings | Every 4–6 weeks              |
+| Tier 2 (Medium)| Experienced site; 5–9 subjects; minor findings only  | Every 6–8 weeks              |
+| Tier 3 (Low)   | Experienced site; <5 subjects; no prior findings     | Every 10–12 weeks            |
+| Remote-Only    | Site request + CTM approval; low-risk data only      | Monthly remote review        |
+
+Visit frequency may be increased at any time based on KRI triggers or a critical finding, without requiring RBMP amendment, provided the CTM documents the rationale in the eTMF within 5 business days.
+
+### 4.3 Pre-Visit Preparation Activities
+
+No later than 10 business days before a scheduled monitoring visit, the CRA shall complete the following preparatory activities:
+
+1. Confirm the visit date and agenda with the site coordinator and PI in writing (email acceptable as confirmation document).
+2. Review the previous monitoring visit report and all outstanding action items to confirm which items remain open.
+3. Review EDC query listings and identify any unresolved data queries outstanding for more than 14 calendar days.
+4. Review SAE reports submitted since the last visit to confirm sponsor receipt and timely reporting in accordance with 21 CFR 312.32.
+5. Review the IP accountability log obtained from the last visit or the most recent remote data transfer for any discrepancies.
+6. Print or electronically access the subject visit schedule to confirm which subjects are currently active and which assessments are due.
+7. Prepare the monitoring visit agenda and share with the site at least 5 business days before the visit.
+8. Confirm all required monitoring tools and templates are current (CRA Monitoring Checklist, SDV worksheet, IP Accountability Log Form GCP-F-010-03).
+9. Document pre-visit preparation activities in the monitoring visit report, Section 2 (Preparation Summary).
+
+### 4.4 Logistics and Access Requirements
+
+The CRA is responsible for confirming site access arrangements, including secure storage access for source documents, access to the pharmacy or IP storage area, and availability of a private workspace for document review. Where site access policies require advance security clearance or visitor registration, the CRA must comply with these requirements. Failure to gain access to required areas or records shall be documented in the monitoring report as a site-related constraint and escalated to the CTM if the constraint persists across two consecutive visits.
+
+### 4.5 Monitoring Visit Materials
+
+The following materials must be brought to or electronically accessible during every on-site monitoring visit:
+
+- Current approved protocol and all amendments
+- Current Investigator's Brochure (IB) or USPI/SmPC as applicable
+- IRB/IEC approval letters for the current protocol version
+- Informed consent form (ICF) versions currently in use at the site
+- CRA Monitoring Checklist (Form GCP-F-010-01)
+- SDV Worksheet (Form GCP-F-010-02)
+- IP Accountability Log (Form GCP-F-010-03)
+- Reference Safety Information comparison grid (for SAE causality review)
+- Laptop with VPN access to EDC system and eTMF
+
+---
+
+## 5.0 CONDUCT OF MONITORING VISITS
+
+### 5.1 Types of Monitoring Visits
+
+This SOP governs four distinct categories of monitoring visit, each with specific objectives and procedural requirements:
+
+| Visit Type                  | Trigger                            | Duration (typical) | Lead Responsibility |
+|----------------------------|------------------------------------|--------------------|---------------------|
+| Site Initiation Visit (SIV) | Pre-enrollment; all sites          | 1 full day         | CTM + Sr. CRA       |
+| Interim Monitoring Visit (IMV) | Per RBMP schedule              | 

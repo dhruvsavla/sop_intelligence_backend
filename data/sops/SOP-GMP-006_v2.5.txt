@@ -1,0 +1,188 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        DOCUMENT CONTROL HEADER                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  SOP Number:       SOP-GMP-006                                              ║
+║  Title:            Change Control Management                                ║
+║  Version:          2.5                                                      ║
+║  Effective Date:   2023-11-01                                               ║
+║  Supersedes:       2.4                                                      ║
+║  Department:       GMP                                                      ║
+║  Approved By:      James Whitfield, Director of Quality Operations          ║
+║  Review Cycle:     2 years (next review due: 2025-11-01)                   ║
+║  Pages:            12                                                       ║
+║  Classification:   GxP Critical                                             ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+> **CONTROLLED DOCUMENT NOTICE:** This document is a controlled record within the Quality Management System (QMS). Printed copies are considered uncontrolled unless stamped "CONTROLLED COPY" in red ink with a valid authorization signature. Users are responsible for verifying they are working from the current approved version via the electronic Document Management System (eDMS) prior to use. Unauthorized reproduction or modification of this document is strictly prohibited.
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Change Control Initiation and Classification | 5 |
+| 5.0 | Impact Assessment and Risk Evaluation | 6 |
+| 6.0 | Review, Approval, and Authorization Workflow | 7 |
+| 7.0 | Implementation and Verification | 8 |
+| 8.0 | Validation and Regulatory Notification Requirements | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 11 |
+| 11.0 | Revision History | 12 |
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+The purpose of this Standard Operating Procedure (SOP) is to establish a systematic, documented, and compliant process for the identification, evaluation, approval, implementation, and closure of changes affecting GMP-regulated processes, equipment, facilities, utilities, materials, software systems, analytical methods, and product-related documentation. This procedure ensures that all changes are assessed for potential impact on product quality, patient safety, regulatory compliance, and validated system status prior to implementation. The change control system described herein forms a critical pillar of the site's Quality Management System (QMS) and supports the principles of pharmaceutical quality systems as defined under ICH Q10.
+
+The overarching objective of change control is to prevent uncontrolled modifications that could adversely affect product quality, process consistency, or compliance with applicable regulatory requirements. By maintaining a rigorous evaluation and approval cycle, this procedure ensures that only changes that have been adequately assessed, approved by appropriate personnel, and, where required, supported by validation data and regulatory submissions, are authorized for implementation in the GMP environment.
+
+### 1.2 Scope
+
+This SOP applies to all personnel employed by, contracted by, or operating within the GMP-controlled areas and systems of the facility, including but not limited to Manufacturing, Quality Assurance (QA), Quality Control (QC), Engineering, Regulatory Affairs, Supply Chain, and Information Technology departments. The procedure governs changes to any element that may directly or indirectly affect the quality, safety, identity, strength, purity, or potency (QSISPP) of drug products or drug substances manufactured, tested, stored, or released at this site.
+
+This SOP covers the full lifecycle of a change control record, from initial identification and submission of a Change Request (CR) through final closure and archiving of the completed Change Control Record (CCR). It encompasses planned changes (prospective changes arising from continuous improvement initiatives, equipment upgrades, supplier modifications, etc.) as well as emergency changes necessitated by urgent operational or safety circumstances. Post-implementation review and effectiveness checks are also governed by this procedure.
+
+### 1.3 Applicability to Regulatory Framework
+
+This procedure has been developed to satisfy the requirements of multiple applicable regulatory frameworks, including the United States Code of Federal Regulations (21 CFR Parts 211, 212, and 820), the European Union Good Manufacturing Practice guidelines (EU GMP Annex 11, EudraLex Volume 4), International Council for Harmonisation (ICH) guidelines Q8(R2), Q9, Q10, and Q12, and the Pharmaceutical Inspection Co-operation Scheme (PIC/S) Guide to GMP. Where requirements differ across jurisdictions, this procedure applies the most stringent applicable standard.
+
+### 1.4 Exclusions
+
+This SOP does not govern the following activities, which are managed under separate documented procedures: emergency maintenance work orders that do not alter the qualified or validated state of equipment (see SOP-ENG-014), like-for-like spare parts replacements pre-approved under the Approved Spare Parts Register (ASPR), cosmetic changes to facilities that have no engineering impact (e.g., repainting non-process-contact surfaces with identical coatings), and changes to non-GxP administrative documents (e.g., internal HR policies). When uncertainty exists regarding whether an activity falls within or outside the scope of this SOP, the QA department shall make the final determination.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+| Term | Definition |
+|------|------------|
+| **Change Control** | A formal system by which qualified representatives of appropriate disciplines review proposed or actual changes that might affect the validated and/or GMP-compliant status of facilities, systems, equipment, or processes. The review is intended to determine the need for action to ensure and document that the system is maintained in a validated state. |
+| **Change Request (CR)** | The initiating document submitted by any site personnel to formally propose a change within the GMP environment. The CR captures the description of the proposed change, rationale, scope, and preliminary risk assessment. |
+| **Change Control Record (CCR)** | The master record that consolidates the Change Request, impact assessment, risk evaluation, approval chain documentation, implementation plan, verification records, and closure sign-off for a single change event. |
+| **Change Category** | A classification assigned to each change (Minor, Major, or Critical) based on its assessed potential to impact product quality, validated status, or regulatory filing commitments. |
+| **Impact Assessment** | A structured evaluation performed by subject matter experts (SMEs) to determine which systems, processes, documents, validations, and regulatory submissions are affected by the proposed change. |
+| **Validation** | The documented program that provides a high degree of assurance that a specific process, method, or system will consistently produce a result meeting its predetermined specifications and quality attributes (21 CFR § 211.68, ICH Q8(R2)). |
+| **Regulatory Filing** | Any submission to a regulatory authority, including but not limited to New Drug Applications (NDAs), Abbreviated New Drug Applications (ANDAs), Marketing Authorization Applications (MAAs), Drug Master Files (DMFs), or their supplements and variations, that describes product attributes, manufacturing processes, or specifications. |
+| **CAPA** | Corrective and Preventive Action. A systematic approach to the investigation and resolution of product or process problems, including the prevention of recurrence. CAPAs may initiate or result from change control activities. |
+| **Effectiveness Check** | A post-implementation review conducted within a defined period after change implementation to verify that the change has achieved its intended outcome without introducing unintended consequences. |
+| **Emergency Change** | A change implemented immediately or with abbreviated review timelines due to an urgent patient safety concern, critical equipment failure, or regulatory mandate, subject to retrospective full QA review within 5 business days. |
+| **Product Quality Review (PQR)** | Annual review of all licensed products manufactured at the site, referencing completed change control records to demonstrate control and consistency over the review period (21 CFR § 211.180(e)). |
+| **SME** | Subject Matter Expert. An individual with specialized knowledge designated to evaluate the impact of a proposed change within their area of expertise. |
+
+### 2.2 Abbreviations
+
+| Abbreviation | Meaning |
+|---|---|
+| CCR | Change Control Record |
+| CR | Change Request |
+| CFR | Code of Federal Regulations |
+| CAPA | Corrective and Preventive Action |
+| DQ | Design Qualification |
+| eDMS | Electronic Document Management System |
+| EMA | European Medicines Agency |
+| EU GMP | European Union Good Manufacturing Practice |
+| FDA | U.S. Food and Drug Administration |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IQ | Installation Qualification |
+| OQ | Operational Qualification |
+| PQ | Performance Qualification |
+| PQR | Product Quality Review |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QMS | Quality Management System |
+| RA | Regulatory Affairs |
+| SME | Subject Matter Expert |
+| SOP | Standard Operating Procedure |
+| URS | User Requirements Specification |
+| VCRM | Validation Change Risk Matrix |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Change Initiator
+
+Any GMP site employee, contractor, or consultant may serve as a Change Initiator upon identifying a need for modification to a GMP-controlled element. The Change Initiator is responsible for completing the Change Request (CR) form in the eDMS with sufficient detail to allow for a meaningful impact assessment. Responsibilities include: providing a clear, technically accurate description of the proposed change; documenting the rationale and business/scientific justification; identifying the affected systems, equipment, documents, or materials; and assigning a preliminary risk level based on initial self-assessment. The Change Initiator does not have authority to approve or implement a change independently.
+
+### 3.2 QA Specialist / Change Control Coordinator
+
+The QA Specialist assigned as Change Control Coordinator serves as the administrative steward of the CCR throughout its lifecycle. This role is responsible for assigning the CCR a unique tracking number upon receipt of the CR, verifying completeness of the submitted information before routing for impact assessment, coordinating the review timeline and ensuring deadlines are met, maintaining the change control log, escalating overdue records to QA management, and archiving closed CCRs in accordance with data retention requirements (minimum 3 years post-product discontinuation, or as required by applicable regulations per 21 CFR § 211.68 and § 211.180).
+
+### 3.3 Department SMEs
+
+Department Subject Matter Experts are designated personnel in Manufacturing, Engineering, QC, Regulatory Affairs, Supply Chain, Validation, and IT who are responsible for completing the technical impact assessment for changes within their domain. SMEs must evaluate the change against their area-specific criteria, document their assessment findings in the CCR, indicate required actions (e.g., protocol updates, revalidation, document revisions), and provide an estimated timeline for completing assigned actions. SMEs must complete their impact assessment within 5 business days of receiving the CCR unless otherwise granted an extension by QA management.
+
+### 3.4 QA Manager
+
+The QA Manager reviews the compiled impact assessments from all SMEs, assigns the final change category (Minor, Major, or Critical), reviews and approves the risk evaluation and implementation plan, and serves as the primary approver for Minor changes. The QA Manager also ensures that appropriate CAPA records are linked to the CCR where applicable and is responsible for initiating regulatory assessment in partnership with Regulatory Affairs for Major and Critical changes. The QA Manager escalates Critical changes to the Director of Quality Operations for final approval.
+
+### 3.5 Director of Quality Operations
+
+The Director of Quality Operations provides final site-level approval authority for all Critical changes and serves as the executive sponsor for the site's change control program. This role is responsible for ensuring adequate resources are allocated to support change implementation and validation activities, approving site change control policy, and reviewing change control metrics as part of quarterly QMS Management Review. The Director is the signatory of record for changes requiring executive sign-off prior to regulatory submission.
+
+### 3.6 Regulatory Affairs Manager
+
+The Regulatory Affairs Manager evaluates all Major and Critical change control records to determine whether changes require prior approval, changes being effected (CBE), or annual reportable notification to regulatory authorities. This role is responsible for preparing and submitting regulatory notifications or supplements as required, tracking submission and approval status, communicating any regulatory authority responses to QA and the change control record, and advising on jurisdiction-specific requirements for multinational products.
+
+### 3.7 Responsibility Matrix (RACI)
+
+| Activity | Change Initiator | QA Specialist | SMEs | QA Manager | Director of QO | RA Manager |
+|---|---|---|---|---|---|---|
+| Submit Change Request | R/A | I | — | — | — | — |
+| Assign CCR Number | I | R/A | — | — | — | — |
+| Complete Impact Assessment | C | C | R/A | I | — | — |
+| Assign Change Category | — | C | C | R/A | I | — |
+| Approve Minor Change | I | C | C | R/A | — | — |
+| Approve Major/Critical Change | I | C | C | C | R/A | C |
+| Regulatory Assessment | I | I | C | C | I | R/A |
+| Implementation Oversight | C | C | R | — | — | — |
+| Effectiveness Check | C | R/A | C | A | — | — |
+| CCR Closure | — | R/A | C | A | — | — |
+
+*R = Responsible, A = Accountable, C = Consulted, I = Informed*
+
+---
+
+## 4.0 CHANGE CONTROL INITIATION AND CLASSIFICATION
+
+### 4.1 Change Request Submission
+
+All proposed changes within the scope of this SOP must be initiated through the electronic Document Management System (eDMS) using the approved Change Request (CR) form (Form QA-F-006-01). No GMP change may be implemented without a fully approved CCR, except under the Emergency Change provisions defined in Section 9.0. The Change Initiator must complete all mandatory fields in the CR form. Incomplete submissions will be returned to the initiator by the QA Change Control Coordinator within 2 business days, with a written explanation of deficiencies. The target timeline for initial administrative review of a submitted CR is 2 business days from the date of submission.
+
+The CR form must capture the following minimum information: a clear and unambiguous description of the current (as-is) state and the proposed (to-be) state; the scientific, operational, safety, or regulatory justification for the change; the specific GMP system, process, equipment, document, material, or software being changed, identified by system/document number where applicable; a preliminary list of potentially affected products, processes, and documents; a proposed target implementation date; and the submitter's self-assessed preliminary risk level. Supporting documentation (e.g., supplier notifications, engineering drawings, test data) should be attached to the CR at the time of submission where available.
+
+### 4.2 Change Category Classification
+
+Upon receipt of a completed CR and completion of the SME impact assessments, the QA Manager assigns a final change category. The classification is based on the potential risk to product quality, patient safety, validated system status, and regulatory filing commitments. The three-tier classification system is defined in the table below.
+
+**Table 4.2-A: Change Category Definitions and Criteria**
+
+| Category | Risk Level | Description | Examples | Approval Authority | Target Review Time |
+|---|---|---|---|---|---|
+| **Minor** | Low | Changes with negligible potential to impact product quality, patient safety, or validated/regulatory status. No revalidation required. No regulatory notification required. | Revision of internal SOPs with no process impact; replacement of a component with a pre-qualified identical part; administrative document updates; relocation of equipment within the same classified area with no utility modifications | QA Manager | 10 business days |
+| **Major** | Medium | Changes with moderate potential to impact product quality, process performance, or validated system status. Revalidation may be required. Regulatory notification may be required (prior approval or annual report). | Equipment replacement with an equivalent but different model; changes to analytical test methods; raw material supplier changes; changes to in-process control limits; facility modifications affecting HVAC classification | Director of Quality Operations + RA Manager | 20 business days |
+| **Critical** | High | Changes with significant potential to impact product quality, patient safety, regulatory commitments, or that require prior regulatory approval before implementation. Full revalidation typically required. | Changes to manufacturing process parameters outside validated ranges; formulation changes; changes to primary packaging; introduction of new manufacturing equipment class; changes to master batch record specifications; site transfer of manufacturing operations | Director of Quality Operations + RA Manager + (where applicable) Regulatory Authority Prior Approval | 30 business days |
+
+### 4.3 Change Control Log
+
+The QA Change Control Coordinator maintains a site-wide Change Control Log in the eDMS. The log is updated in real time as CCR

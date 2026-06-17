@@ -1,0 +1,203 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER BLOCK
+═══════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-DI-006
+  Title:            ALCOA+ Data Integrity Compliance Framework
+  Version:          2.4
+  Effective Date:   2024-01-01
+  Supersedes:       2.3
+  Department:       DI (Data Integrity)
+  Approved By:      Steven Park, IT Compliance Manager
+  Review Cycle:     2 years
+  Pages:            14
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## APPROVAL AND AUTHORIZATION
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Rachel Nguyen, Data Integrity Specialist | *Signed* | 2023-11-15 |
+| Reviewer | Dr. Amanda Torres, QA Manager | *Signed* | 2023-12-01 |
+| Reviewer | James Caldwell, IT Infrastructure Lead | *Signed* | 2023-12-05 |
+| Approver | Steven Park, IT Compliance Manager | *Signed* | 2023-12-18 |
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | ALCOA+ Principles — Core Compliance Framework | 5 |
+| 5.0 | Data Lifecycle Management | 6 |
+| 6.0 | Electronic Records and Electronic Signatures | 7 |
+| 7.0 | Audit Trail Review and Verification | 8 |
+| 8.0 | Data Backup, Archival, and Retrieval | 9 |
+| 9.0 | Raw Data Controls and Documentation Standards | 10 |
+| 10.0 | Training and Competency Requirements | 11 |
+| 11.0 | Deviation and Exception Handling | 12 |
+| 12.0 | References and Related Documents | 13 |
+| 13.0 | Revision History | 14 |
+
+---
+
+## BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes a comprehensive, enforceable framework for ensuring data integrity (DI) compliance in all GxP-regulated activities conducted at this organization. The document defines the operational requirements, responsibilities, and governance mechanisms required to implement the ALCOA+ principles — Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, and Available — across all data-generating and data-managing functions. This SOP is developed in alignment with FDA 21 CFR Parts 11, 211, and 820; EMA Reflection Paper on Expectations for Electronic Data and Computerised Systems (2023); and MHRA GXP Data Integrity Guidance and Definitions (2018). Adherence to this SOP is mandatory for all personnel who generate, review, approve, transmit, or retain GxP data.
+
+### 1.2 Scope of Application
+
+This SOP applies to all GxP-regulated data generated, processed, transmitted, stored, retrieved, and disposed of within the organization. This includes, but is not limited to: laboratory analytical data (chromatographic systems, spectroscopic instruments, balance outputs), manufacturing batch records (paper-based and electronic), environmental monitoring records, validation documentation, clinical data, stability study records, and quality management system (QMS) records. Both paper-based and electronic data management systems are within scope. All sites, departments, and third-party contract organizations operating under this organization's quality management umbrella are subject to the requirements herein.
+
+### 1.3 Objectives
+
+The primary objectives of this SOP are: (1) to ensure that all GxP data is generated, recorded, and maintained in a manner that is fully compliant with ALCOA+ principles; (2) to establish clear accountability for data integrity across all organizational levels; (3) to provide procedural controls that prevent, detect, and remediate data integrity failures; and (4) to sustain readiness for regulatory inspection by the FDA, EMA, MHRA, and other global health authorities. Achievement of these objectives is measured through periodic self-inspections, audit trail reviews, and data integrity Key Performance Indicators (KPIs) defined in Section 4.5.
+
+### 1.4 Exclusions
+
+This SOP does not govern non-GxP administrative data (e.g., HR records, financial accounting data) unless such data intersects directly with a GxP process. Detailed system-specific validation requirements are addressed in the associated Computer System Validation (CSV) SOPs (SOP-CSV-001 through SOP-CSV-009). Raw material specifications and test method validation protocols are governed by their respective departmental SOPs but must comply with the data recording standards defined herein.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+The following definitions shall apply throughout this document and all documents that reference SOP-DI-006:
+
+| Term | Definition |
+|---|---|
+| ALCOA+ | Acronym for Attributable, Legible, Contemporaneous, Original, Accurate, plus Complete, Consistent, Enduring, and Available. The foundational framework for GxP data integrity compliance. |
+| Attributable | Data must be traceable to the individual or system that generated it, with a timestamp. It must be possible to identify who performed an action, when, and on which system or record. |
+| Legible | Data must be readable, intelligible, and permanent throughout its required retention period. All entries must be made in a durable medium and remain interpretable without specialized tools beyond those normally used to access the record. |
+| Contemporaneous | Data must be recorded at the time of the activity or observation. Records backdated or recorded after an event has concluded without documented justification constitute a data integrity failure. |
+| Original | Data must be the first recording of information, whether on paper (primary document) or in an electronic system (raw data file). Transcriptions must be traceable to the original source. |
+| Accurate | Data must be correct, truthful, and free from errors, alterations, or omissions. Corrections must be made in accordance with established procedures, preserving the original entry. |
+| Complete | All data generated during a study or process, including repeat measurements, invalidated results, and anomalous observations, must be retained in its entirety. Selective retention of favorable data is prohibited. |
+| Consistent | Data must be internally consistent, applying standardized date/time formats, units of measure, and recording conventions across all records. |
+| Enduring | Data must be stored in a format and medium that ensures it remains readable and retrievable for the entirety of its required retention period (minimum 15 years for drug product records, or 2 years beyond product expiry, whichever is longer). |
+| Available | Data must be readily retrievable for review, audit, and inspection within a timeframe not to exceed 24 hours for active records and 72 hours for archived records. |
+| Audit Trail | A secure, computer-generated, time-stamped electronic record that allows reconstruction of the course of events relating to the creation, modification, or deletion of an electronic record. |
+| GxP | Good Practice guidelines, encompassing GMP, GLP, GCP, and GDP as applicable to the regulated activity. |
+| Metadata | Contextual data that describes the attributes of a primary data record, including timestamps, user identifiers, instrument parameters, and version information. Metadata is itself subject to ALCOA+ requirements. |
+| Raw Data | The original record(s) from which all subsequent processing and reporting is derived; may be paper or electronic. In computerized systems, raw data is typically the native file format output by the instrument or application. |
+| Data Governance | The organizational framework, policies, and accountabilities that ensure GxP data is managed throughout its lifecycle in compliance with applicable regulations and this SOP. |
+
+### 2.2 Abbreviations
+
+| Abbreviation | Full Form |
+|---|---|
+| ALCOA+ | Attributable, Legible, Contemporaneous, Original, Accurate + (Complete, Consistent, Enduring, Available) |
+| CFR | Code of Federal Regulations |
+| CSV | Computer System Validation |
+| DI | Data Integrity |
+| EMA | European Medicines Agency |
+| ER/ES | Electronic Records / Electronic Signatures |
+| FDA | U.S. Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GDP | Good Distribution Practice |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| ICH | International Council for Harmonisation |
+| IT | Information Technology |
+| LIMS | Laboratory Information Management System |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| MBR | Master Batch Record |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| QMS | Quality Management System |
+| SOP | Standard Operating Procedure |
+| URS | User Requirements Specification |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Executive Responsibility
+
+The Head of Quality Assurance holds ultimate accountability for the organization's data integrity program. This individual is responsible for ensuring that adequate resources (personnel, technology, and budget) are allocated to sustain DI compliance; that the data integrity policy is reviewed and updated at a minimum every two years; and that significant DI deviations are escalated to Senior Management and, where required by regulation, to the relevant regulatory authority. The Head of QA shall review the Data Integrity Program performance report quarterly, and shall formally sign the annual DI program review.
+
+### 3.2 Data Integrity Specialist / DI Coordinator
+
+The Data Integrity Specialist serves as the operational owner of this SOP and is responsible for its maintenance, training coordination, and monitoring. Specific responsibilities include: conducting periodic DI self-inspections at a frequency of not less than once per calendar quarter; reviewing audit trail summaries from all validated computerized systems on a monthly basis; maintaining the DI Deviation Log; coordinating root cause analyses for DI-related deviations; and preparing the annual DI Program Report for QA management review. The DI Coordinator is also the primary point of contact for regulatory inspectors regarding data integrity matters.
+
+### 3.3 Role-Specific Responsibilities
+
+The following table summarizes role-specific data integrity responsibilities across the organization:
+
+| Role | Primary DI Responsibility | Frequency | Escalation Path |
+|---|---|---|---|
+| Head of Quality Assurance | Program accountability, regulatory reporting | Quarterly review | Board/Senior Management |
+| Data Integrity Specialist | SOP maintenance, audit trail review, DI inspections | Monthly / Quarterly | Head of QA |
+| QA Specialist | Batch record review, DI deviation handling, training | Per batch / Per event | DI Specialist |
+| Laboratory Analyst | Contemporaneous data recording, instrument log completion, raw data retention | Per analysis | QC Supervisor |
+| QC Supervisor | Audit trail review for lab systems, analyst training oversight | Weekly | QA Specialist |
+| Manufacturing Operator | Batch record entries, corrective entry documentation | Per batch operation | Manufacturing Supervisor |
+| Manufacturing Supervisor | Batch record verification, DI compliance monitoring | Per batch | QA Specialist |
+| IT Infrastructure Lead | System access controls, backup monitoring, audit trail configuration | Per change / Monthly | DI Specialist |
+| System Administrator | User account management, privilege assignment, system logs | Per request / Weekly | IT Infrastructure Lead |
+| Validation Engineer | CSV execution, audit trail verification during validation | Per project | DI Specialist |
+
+### 3.4 Third-Party and Contract Organization Responsibilities
+
+Contract laboratories, contract manufacturers, and other third-party organizations performing GxP activities on behalf of this organization are required to comply with the ALCOA+ principles as defined in this SOP. Third-party compliance shall be confirmed via quality agreement (referencing this SOP by number and version), and verified through periodic audits conducted at a frequency commensurate with the risk classification of the activity. Audit findings related to DI at third-party sites must be documented and tracked to closure in the organization's CAPA system.
+
+### 3.5 Data Governance Committee
+
+A cross-functional Data Governance Committee, comprising representation from QA, IT, Operations, Laboratory, and Regulatory Affairs, shall convene at minimum on a quarterly basis. The Committee is responsible for reviewing DI KPI dashboards, prioritizing remediation of systemic DI risks, approving changes to data management systems with DI impact, and endorsing the annual DI program review. Meeting minutes shall be archived in the QMS and retained for the life of the program plus 10 years.
+
+---
+
+## 4.0 ALCOA+ PRINCIPLES — CORE COMPLIANCE FRAMEWORK
+
+### 4.1 Overview and Regulatory Basis
+
+The ALCOA+ framework constitutes the foundation of GxP data integrity compliance as required by FDA 21 CFR Parts 211.68, 212.110, and 820.70(i); the EMA Reflection Paper on GMP Chapter 4 and Annex 11; and ICH Q10 Pharmaceutical Quality System. Each of the nine ALCOA+ attributes must be demonstrably fulfilled for every GxP record throughout its entire lifecycle. The absence of any one attribute constitutes a data integrity deficiency that may result in product quality risk, regulatory action, or patient harm. All personnel generating or managing GxP data must be trained to understand and apply each ALCOA+ attribute in their specific work context (see Section 10.0 for training requirements).
+
+### 4.2 Attributable — Requirements and Controls
+
+Every GxP record must be traceable to the individual or automated system that created, modified, or reviewed it. For paper records, this requires a legible, handwritten signature or initials together with the date of entry in the format DD-MMM-YYYY. The use of rubber stamps, pre-signed labels, or entries made by one person on behalf of another without documented authorization is strictly prohibited. For electronic records, attributability is achieved through unique, individual login credentials — shared accounts are prohibited under all circumstances. System-generated user ID and timestamp metadata are the primary attributability controls in electronic systems and must not be editable by users or system administrators without a full audit trail.
+
+The following controls ensure attributability is maintained:
+
+1. Assign each system user a unique username that cannot be shared, transferred, or used concurrently from multiple sessions.
+2. Require that all electronic records capture the user ID, action performed, and UTC-synchronized timestamp at the time of each system interaction.
+3. Configure all GxP computerized systems to lock accounts automatically after 3 consecutive failed login attempts; account reinstatement requires IT and QA authorization.
+4. For paper-based records, verify during batch record review that every entry bears the initials or signature of the originating person alongside the date of entry.
+5. Maintain a current User Role Matrix for each computerized system, reviewed and certified by the System Owner at minimum annually and following any organizational change.
+6. Audit trail entries that show access by generic or shared accounts must be treated as critical DI deviations and investigated per Section 11.0.
+
+### 4.3 Legible and Contemporaneous — Requirements and Controls
+
+Legibility requires that all data entries are made in a permanent medium that remains readable throughout the defined retention period without degradation. For paper records, entries must be made in ballpoint pen with black or blue indelible ink; pencil entries are prohibited in GxP records. Font size for pre-printed forms must be no smaller than 10-point. Electronic records must be stored in validated, non-proprietary formats (e.g., PDF/A for archival, with original native instrument files retained) to ensure long-term readability independent of the originating software version.
+
+Contemporaneous recording requires that data is entered at the moment the activity occurs, not reconstructed from memory or rough notes. The maximum acceptable elapsed time between completion of an activity and the recording of the result in the official GxP record is **15 minutes** for routine analytical activities. Any entry made more than 15 minutes after the activity must include a documented explanation in the record. The following controls enforce contemporaneous recording:
+
+1. Issue official GxP worksheets or electronic data capture forms prior to the commencement of any GxP activity; blank-then-complete recording workflows are mandatory.
+2. Do not permit personnel to carry loose worksheets or unofficial notebooks as substitutes for controlled GxP records.
+3. Configure electronic systems with automatic, NTP-synchronized server timestamps that cannot be adjusted by any user. Verify time synchronization accuracy monthly (acceptable tolerance: ±60 seconds versus UTC reference).
+4. During batch record or laboratory worksheet review, verify that recorded timestamps are logically consistent with the sequence of operations described in the procedure.
+5. Flag any electronic record timestamp that precedes the sample preparation start time, instrument calibration completion time, or login time of the recording analyst as a potential contemporaneous recording violation requiring investigation.
+
+### 4.4 Original, Accurate, and Complete — Requirements and Controls
+
+Original data is the first capture of information — the raw instrument output, the direct observation recorded in the primary record, or the first paper entry. Organizations are required under FDA 21 CFR 211.180(e) to retain original records. Where

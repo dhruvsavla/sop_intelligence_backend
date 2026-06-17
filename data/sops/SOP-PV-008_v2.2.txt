@@ -1,0 +1,198 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                           DOCUMENT CONTROL HEADER
+═══════════════════════════════════════════════════════════════════════════════
+
+  SOP Number:       SOP-PV-008
+  Title:            Risk Management Plan (RMP) Development and Maintenance
+  Version:          2.2
+  Effective Date:   2023-12-01
+  Supersedes:       2.1
+  Department:       Pharmacovigilance (PV)
+  Approved By:      Carl Reinhardt, PV Operations Manager
+  Review Cycle:     2 years (next review due: 2025-12-01)
+  Pages:            13
+  Classification:   GxP Critical
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---------|-------|------|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | RMP Development and Initial Submission | 5 |
+| 5.0 | Safety Specification and Risk Categorization | 6 |
+| 6.0 | Pharmacovigilance Plan and Additional Activities | 7 |
+| 7.0 | Risk Minimization Measures | 8 |
+| 8.0 | RMP Review, Update, and Maintenance | 9 |
+| 9.0 | Regulatory Submission and Agency Interaction | 10 |
+| 10.0 | Deviation and Exception Handling | 11 |
+| 11.0 | References and Related Documents | 12 |
+| 12.0 | Revision History | 13 |
+
+---
+
+## BODY
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes a structured, compliant framework for the development, maintenance, and submission of Risk Management Plans (RMPs) for medicinal products requiring post-authorization pharmacovigilance oversight. The RMP is a cornerstone regulatory document that characterizes the safety profile of a medicinal product, defines strategies to identify and characterize risks, and establishes proportionate measures to minimize those risks in the authorized population. This procedure ensures that all RMP activities performed by or on behalf of the organization are conducted in accordance with applicable Good Pharmacovigilance Practice (GVP) requirements and international regulatory standards.
+
+### 1.2 Scope
+
+This SOP applies to all medicinal products for which the organization holds Marketing Authorization (MA), is seeking marketing authorization, or is conducting clinical development activities in jurisdictions that mandate RMP submission. This includes but is not limited to products authorized through the European Medicines Agency (EMA) centralized procedure, national competent authority (NCA) procedures within the European Economic Area (EEA), and jurisdictions with equivalent requirements. The scope encompasses new active substances, generic medicines requiring an RMP, fixed-dose combinations, new routes of administration, and biosimilar products. It applies to all personnel within the Pharmacovigilance department, Regulatory Affairs, Medical Affairs, and contracted third-party service providers operating under a valid Quality Agreement with the organization.
+
+### 1.3 Regulatory Basis
+
+All RMP activities governed by this SOP shall comply with the EU Good Pharmacovigilance Practices (GVP) Module V – Risk Management Systems (Rev 2), GVP Module XVI – Risk Minimisation Measures, Regulation (EC) No 726/2004, Directive 2001/83/EC as amended, and ICH E2E Pharmacovigilance Planning guideline. For products with US IND/NDA/BLA requirements, FDA 21 CFR Part 312 (IND), 21 CFR Part 314 (NDAs), and the FDA guidance on Risk Evaluation and Mitigation Strategies (REMS) shall also apply where relevant, although this SOP principally governs EU RMP obligations.
+
+### 1.4 Exclusions
+
+This SOP does not govern the preparation of Periodic Safety Update Reports (PSURs/PBRERs), which are addressed under SOP-PV-003; Individual Case Safety Report (ICSR) management, addressed under SOP-PV-001; or REMS development specific to the US market, addressed under SOP-PV-011. Signal detection activities that feed into RMP updates are covered in SOP-PV-005.
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Key Definitions
+
+**Risk Management Plan (RMP):** A detailed description of the risk management system for a medicinal product, as required by Article 8(3)(ia) of Directive 2001/83/EC and Annex I to Regulation (EC) No 726/2004. The EU RMP is structured according to GVP Module V and comprises three principal parts: Safety Specification, Pharmacovigilance Plan, and Risk Minimization Plan.
+
+**Important Identified Risk:** An undesirable clinical outcome for which there is adequate evidence of a causal association with the medicinal product, and which is considered important because it impacts the benefit-risk balance of the product or has public health implications. Examples include hepatotoxicity of known etiology, teratogenicity, or cardiac arrhythmias with established mechanistic plausibility.
+
+**Important Potential Risk:** An undesirable clinical outcome for which there are grounds to suspect an association with the medicinal product, but this association has not been confirmed and requires further characterization. The basis may include preclinical findings, mechanism of action, or class effects.
+
+**Missing Information:** Gaps in the safety knowledge of a medicinal product that are of relevance to clinical practice, including use in populations not studied in pre-authorization clinical trials (e.g., pediatric patients, pregnant women, patients with renal impairment).
+
+**Additional Pharmacovigilance Activities:** Activities beyond routine pharmacovigilance (spontaneous reporting, signal detection, PSUR preparation) that are specifically designed to investigate identified or potential risks. These include post-authorization safety studies (PASS), drug utilization studies (DUS), registries, and targeted follow-up questionnaires.
+
+**Routine Pharmacovigilance:** The minimum set of pharmacovigilance activities required for all medicinal products, including monitoring of spontaneous adverse drug reaction reports, PSUR/PBRER submission, and signal detection in accordance with GVP Module IX.
+
+**Risk Minimization Measures:** Interventions intended to prevent or reduce the probability of occurrence of an adverse reaction associated with a medicinal product, or to reduce its severity or impact if it does occur. These are subdivided into routine measures (SmPC/PIL language, pack size restrictions, prescription-only status) and additional measures (educational materials, controlled distribution systems, pregnancy prevention programs).
+
+**EU RMP:** The Risk Management Plan submitted to and assessed by the EMA or NCAs within the EU/EEA framework, structured per GVP Module V template.
+
+**GVP:** Good Pharmacovigilance Practices, the guidelines issued by EMA governing pharmacovigilance activities in the EU, implementing Directive 2010/84/EU and Regulation (EU) No 1235/2010.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| ADR | Adverse Drug Reaction |
+| CHMP | Committee for Medicinal Products for Human Use |
+| EMA | European Medicines Agency |
+| GVP | Good Pharmacovigilance Practices |
+| ICSR | Individual Case Safety Report |
+| MA | Marketing Authorization |
+| MAH | Marketing Authorization Holder |
+| NCA | National Competent Authority |
+| PASS | Post-Authorization Safety Study |
+| PBRER | Periodic Benefit-Risk Evaluation Report |
+| PIL | Package Insert Leaflet |
+| PRAC | Pharmacovigilance Risk Assessment Committee |
+| PSUR | Periodic Safety Update Report |
+| QPPV | Qualified Person Responsible for Pharmacovigilance |
+| REMS | Risk Evaluation and Mitigation Strategy |
+| RMP | Risk Management Plan |
+| SmPC | Summary of Product Characteristics |
+| SOC | System Organ Class |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Qualified Person Responsible for Pharmacovigilance (QPPV)
+
+The QPPV holds overall accountability for the organization's pharmacovigilance system, including the integrity and accuracy of all RMPs submitted to competent authorities. The QPPV reviews and provides final approval for all new RMPs and significant RMP updates prior to submission. The QPPV ensures that the RMP system is integrated with the organization's Pharmacovigilance System Master File (PSMF) and that adequate resources are allocated to support RMP maintenance activities. In the event of a regulatory request for urgent RMP revision, the QPPV is the primary point of contact with the regulatory authority and coordinates the organizational response.
+
+### 3.2 PV Operations Manager
+
+The PV Operations Manager (currently Carl Reinhardt) is responsible for the day-to-day management of RMP development and maintenance activities, including oversight of RMP project timelines, resource allocation, and cross-functional coordination. The PV Operations Manager approves this SOP and is accountable for ensuring all personnel involved in RMP activities have completed applicable training. The PV Operations Manager reviews RMP content at the section level prior to QPPV review and serves as the primary liaison with Regulatory Affairs and Medical Affairs during RMP development cycles.
+
+### 3.3 PV Scientist / RMP Author
+
+The PV Scientist designated as RMP Author is responsible for the primary drafting, updating, and quality review of RMP content in accordance with this SOP. Responsibilities include conducting literature reviews to support safety specification content, coordinating with signal detection teams to incorporate newly validated signals, maintaining the RMP version log, and preparing accompanying cover letters and response documents for regulatory queries. The RMP Author must have demonstrated training in GVP Module V and ICH E2E, documented in the training system.
+
+### 3.4 Regulatory Affairs Lead
+
+The Regulatory Affairs Lead is responsible for ensuring that RMP submissions are appropriately integrated with the overall regulatory submission package (e.g., MAA dossier, variation applications, periodic reports), coordinating submission timelines with competent authorities, and tracking regulatory commitments arising from RMP assessments. Regulatory Affairs is also responsible for notifying the PV department of any regulatory agency feedback, questions, or requests for RMP revision within one business day of receipt.
+
+### 3.5 Medical Affairs / Clinical Safety Physician
+
+The Clinical Safety Physician provides medical input into the characterization of identified and potential risks, reviews benefit-risk considerations within the RMP, and approves the clinical accuracy of the safety specification. The Clinical Safety Physician collaborates with the RMP Author during risk categorization workshops and participates in the cross-functional RMP review meeting convened prior to submission.
+
+### 3.6 Quality Assurance (QA) Specialist
+
+The QA Specialist is responsible for reviewing RMP documents for compliance with this SOP, applicable GVP requirements, and organizational quality standards. QA review does not replace QPPV approval but is conducted as an independent compliance check prior to final approval. The QA Specialist maintains the master document control record for all approved RMPs and associated versions.
+
+### 3.7 Summary of Responsibilities Matrix
+
+| Activity | RMP Author | PV Ops Manager | QPPV | Reg Affairs | Medical Affairs | QA |
+|---|---|---|---|---|---|---|
+| Draft RMP content | Primary | Review | Final Approval | Consult | Consult | Review |
+| Risk categorization | Lead | Review | Approve | Inform | Co-lead | — |
+| Regulatory submission | Support | Coordinate | Approve | Primary | — | Verify |
+| PASS protocol review | Support | Review | Approve | Inform | Co-review | Review |
+| RMP update initiation | Primary | Approve trigger | Inform | Notify | Inform | — |
+| Deviation management | Primary | Approve | Inform | — | — | Lead |
+
+---
+
+## 4.0 RMP DEVELOPMENT AND INITIAL SUBMISSION
+
+### 4.1 Initiation of RMP Development
+
+RMP development shall be initiated no later than 24 months prior to anticipated Marketing Authorization Application (MAA) submission for new active substances, or as early as Phase II clinical development where significant safety findings emerge. For products requiring an RMP upon MA submission, the development timeline shall be formalized in the Product Safety Development Plan maintained by the PV Scientist. Upon initiation, the PV Operations Manager shall open a project file in the document management system (DMS) under the product code, assign the RMP Author, and convene a kick-off meeting with all stakeholders identified in Section 3.0 within 10 business days of project initiation.
+
+### 4.2 Data Assembly and Source Documentation
+
+The RMP Author shall compile all safety-relevant source data prior to drafting. Source documents include: all clinical study reports (CSRs) from Phase I–III trials, the investigator brochure (IB), nonclinical toxicology package, epidemiological data on background incidence rates for relevant conditions, published literature identified via systematic database searches (MEDLINE, Embase, WHO Global ICSR Database), and any available spontaneous reporting data from named-patient or compassionate use programs. All source documents shall be logged in the RMP Source Document Register (Form PV-008-F01), which must be maintained as part of the product's pharmacovigilance file. Database search strategies shall be documented and reproducible.
+
+### 4.3 Structural Requirements of the EU RMP
+
+The EU RMP shall be structured in accordance with the GVP Module V template and shall include, at minimum, the following parts:
+
+1. **Part I:** Product Overview — including indication(s), pharmaceutical form, route of administration, approved dose range, and authorized populations.
+2. **Part II:** Safety Specification — comprising seven modules (SVIII: Non-clinical/clinical part, SII: Epidemiology, SIII: Non-clinical part, SIV: Clinical trial exposure, SV: Post-authorization experience, SVI: Risk management plan measures, SVII: Identified and potential risks summary).
+3. **Part III:** Pharmacovigilance Plan — comprising routine and additional pharmacovigilance activities.
+4. **Part IV:** Plans for Post-authorization Efficacy Studies (if applicable under Article 10a or conditional approval).
+5. **Part V:** Risk Minimization Measures — comprising routine and additional measures.
+6. **Part VI:** Summary of the Risk Management Plan.
+7. **Part VII:** Annexes — including study protocols, educational materials, controlled access program documentation.
+
+### 4.4 Initial Submission Procedure
+
+The following procedure shall be followed for preparation and submission of a new RMP:
+
+1. Confirm the applicable regulatory pathway (centralized, decentralized, mutual recognition, or national) and identify the reference member state and concerned member states, if applicable.
+2. Retrieve the current GVP Module V template from the EMA website and confirm the version is the most current iteration; document the template version used in the RMP header.
+3. Complete Parts I and II of the RMP using assembled source documentation; ensure all clinical trial population exposure data are expressed in patient-years where total exposure exceeds 1,000 subjects.
+4. Convene a Risk Categorization Workshop with the Clinical Safety Physician, RMP Author, and PV Operations Manager; use the Risk Categorization Worksheet (Form PV-008-F02) to formally document the rationale for classification of each safety concern as Important Identified Risk, Important Potential Risk, or Missing Information.
+5. Draft Parts III through VI based on the agreed safety concerns and risk categorization outputs; ensure proposed additional pharmacovigilance activities are proportionate to the level and nature of each identified risk.
+6. Circulate the draft RMP to all stakeholders identified in Section 3.0 for concurrent review; a minimum review period of 10 business days shall be allowed for internal reviewers.
+7. Consolidate review comments using the Comment Resolution Log (Form PV-008-F03); adjudicate all major comments in a reconciliation meeting attended by the RMP Author and PV Operations Manager.
+8. Submit the resolved draft to QA for compliance review; QA shall complete review within 5 business days and document findings in Form PV-008-F04.
+9. Submit the QA-reviewed RMP to the QPPV for final review and approval; QPPV approval shall be documented via electronic signature in the DMS.
+10. Transfer the approved RMP to Regulatory Affairs for inclusion in the submission package; confirm receipt in writing.
+11. Retain a certified copy of the submitted RMP version in the pharmacovigilance file with submission date, dossier number, and submission reference documented.
+
+### 4.5 Submission Timeline Standards
+
+| Product/Submission Type | RMP Development Initiation | Internal Draft Complete | QPPV Approval | Submission to RA |
+|---|---|---|---|---|
+| New Active Substance (MAA) | ≥24 months pre-MAA | ≥6 months pre-MAA | ≥3 months pre-MAA | Per MAA dossier lock |
+| Biosimilar product | ≥18 months pre-MAA |

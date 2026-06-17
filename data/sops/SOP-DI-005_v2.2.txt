@@ -1,0 +1,206 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                            DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Field | Details |
+|---|---|
+| **SOP Number** | SOP-DI-005 |
+| **Title** | Metadata Management and Integrity |
+| **Version** | 2.2 |
+| **Effective Date** | 2023-11-01 |
+| **Supersedes** | SOP-DI-005, Version 2.1 (Effective: 2022-04-15) |
+| **Department** | Data Integrity (DI) |
+| **Approved By** | Dr. Francesca Lim, Data Integrity Officer |
+| **Review Cycle** | 2 years (next review due: 2025-11-01) |
+| **Pages** | 12 |
+| **Classification** | GxP Critical |
+| **Author** | Quality Assurance Systems Group |
+| **Document Owner** | Data Integrity Officer |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                   APPROVAL AND SIGNATURE BLOCK
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Data Integrity Officer | Dr. Francesca Lim | *(on file in QMS)* | 2023-10-25 |
+| Head of Quality Assurance | Mr. Daniel Reyes | *(on file in QMS)* | 2023-10-26 |
+| IT/Systems Validation Manager | Ms. Priya Nambiar | *(on file in QMS)* | 2023-10-24 |
+| Regulatory Affairs Director | Dr. Kofi Asante | *(on file in QMS)* | 2023-10-27 |
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                         TABLE OF CONTENTS
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 2 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Metadata Capture, Classification, and Documentation Requirements | 5 |
+| 5.0 | System Configuration and Technical Controls for Metadata Integrity | 6 |
+| 6.0 | Timestamp Management and Audit Trail Requirements | 7 |
+| 7.0 | User Identification, Access Control, and Accountability | 8 |
+| 8.0 | Metadata Review, Verification, and Periodic Audit | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 11 |
+| 11.0 | Revision History | 12 |
+
+> **Note:** This document contains 11 numbered sections. Section 11.0 (Revision History) serves as the formal closing administrative section, consistent with the organization's SOP numbering convention. Sections 9.0–11.0 fulfill the mandatory closing structure requirements.
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════════════
+                              DOCUMENT BODY
+═══════════════════════════════════════════════════════════════════════════════
+```
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, controls, and procedural steps necessary to ensure the complete, accurate, consistent, enduring, and attributable management of metadata associated with GxP records across all computerized systems and manual processes within the organization. Metadata constitutes the contextual information that describes, explains, locates, and enables the use, management, and retrieval of primary data. Without complete and reliable metadata, primary data loses its evidential value and cannot be considered trustworthy for regulatory, quality, or scientific decision-making purposes.
+
+The integrity of metadata is inseparable from the integrity of the primary data it describes. Regulatory frameworks including FDA 21 CFR Part 11, ICH Q10, ICH E6(R2), and EMA's Annex 11 (EudraLex Volume 4) collectively mandate that organizations establish, maintain, and verify metadata controls as a fundamental component of a compliant data integrity governance program. This SOP operationalizes those requirements into actionable, role-specific responsibilities and verifiable procedural controls.
+
+This document is intended to be used in conjunction with SOP-DI-001 (Data Integrity Policy Framework) and SOP-DI-003 (Audit Trail Review and Management). Together, these documents form the core procedural backbone of the organization's data integrity program as it relates to electronic records, hybrid systems, and manual recording practices.
+
+### 1.2 Scope
+
+This SOP applies to all personnel who generate, access, modify, review, approve, or archive GxP records, including but not limited to laboratory analysts, manufacturing operators, quality assurance specialists, information technology staff, validation engineers, and regulatory affairs personnel. It applies to all GxP-regulated activities conducted at or on behalf of the organization, whether performed at the organization's physical sites or via cloud-hosted or externally managed systems.
+
+The scope of this SOP encompasses all computerized systems that generate, transmit, store, or process GxP data, including Laboratory Information Management Systems (LIMS), Electronic Laboratory Notebooks (ELN), Enterprise Resource Planning (ERP) modules, Distributed Control Systems (DCS), Manufacturing Execution Systems (MES), Chromatography Data Systems (CDS), and Quality Management Systems (QMS). Paper-based hybrid workflows that interface with electronic systems are also within scope, particularly with respect to transcription controls and the metadata generated at the point of data entry.
+
+This SOP does not apply to non-GxP administrative records, financial records not linked to product release decisions, or human resources documentation, unless such records are cross-referenced within a GxP-regulated workflow.
+
+### 1.3 Regulatory Basis
+
+The requirements in this SOP are derived from and consistent with the following regulatory and guidance frameworks: FDA 21 CFR Part 11 (Electronic Records; Electronic Signatures), FDA 21 CFR Parts 211 and 212 (Current Good Manufacturing Practice), FDA Guidance for Industry on Data Integrity and Compliance with Drug CGMP (2018), EMA Annex 11 to EudraLex Volume 4, MHRA GXP Data Integrity Definitions and Guidance for Industry (2018), ICH Q10 (Pharmaceutical Quality System), and ALCOA+ principles as defined by the WHO Technical Report Series No. 996 (Annex 5, 2016).
+
+### 1.4 ALCOA+ Alignment
+
+Metadata management under this SOP is governed by the ALCOA+ framework. All metadata must be **A**ttributable (linked to the individual or system that generated it), **L**egible (readable and understandable throughout its retention period), **C**ontemporaneous (captured at the time of the activity), **O**riginal (the first recorded value or certified true copy), and **A**ccurate (correct and truthful). The "+" elements require that metadata also be **C**omplete, **C**onsistent, **E**nduring, and **A**vailable when needed.
+
+**Table 1.1 — ALCOA+ Metadata Compliance Requirements Summary**
+
+| ALCOA+ Attribute | Metadata Application | Verification Method | Minimum Frequency |
+|---|---|---|---|
+| Attributable | User ID linked to every record creation or modification event | Audit trail review | Per data entry event |
+| Legible | Metadata readable in both current and archived format | Periodic migration testing | Annually |
+| Contemporaneous | Timestamp ≤ 5 minutes of actual activity (system-generated) | Timestamp audit vs. batch record | Per batch review |
+| Original | Raw data files preserved; no overwriting without versioning | System configuration audit | Per validation cycle |
+| Accurate | Metadata values validated against calibrated source systems | Cross-system reconciliation | Quarterly |
+| Complete | All mandatory metadata fields populated; no null critical fields | Completeness report from QMS | Monthly |
+| Consistent | System clock synchronized to UTC via NTP; no time gaps | NTP server audit log | Weekly automated |
+| Enduring | Metadata format readable for full retention period (minimum 15 years for clinical data) | Format obsolescence review | Every 3 years |
+| Available | Metadata retrievable within 24 hours upon regulatory request | Retrieval drill | Annually |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this SOP and are consistent with the terminology established in the organization's Master Glossary (DOC-QA-GLO-001, Version 3.0) and applicable regulatory guidance.
+
+**Metadata** — Contextual information that describes the attributes of primary data, enabling its interpretation, traceability, and verification. Metadata includes, but is not limited to: timestamps, user identifications, system names, instrument identifiers, software version numbers, method parameters, calculation formulas, calibration status indicators, original values prior to correction, reason-for-change records, and data review status flags. Metadata is itself GxP data and is subject to the same data integrity controls as primary data.
+
+**Timestamp** — A system-generated or manually recorded notation of the date and time at which a specific data event occurred. For the purposes of this SOP, a compliant timestamp must include: year (4-digit), month (2-digit), day (2-digit), hours (24-hour format), minutes, and seconds (HH:MM:SS), and must be traceable to a calibrated time source. Manual timestamps that lack seconds resolution are acceptable only for paper records where the system cannot generate an automated timestamp, subject to the provisions of Section 6.4.
+
+**User ID** — A unique, non-shared alphanumeric identifier assigned to an individual by the IT department that unambiguously attributes all system interactions, data entries, approvals, and modifications to a specific named individual. Shared user IDs, group logins, and generic administrator accounts used for routine GxP activities are prohibited under this SOP.
+
+**Original Value** — The first recorded measurement, calculation result, or observation associated with a given GxP activity, regardless of whether that value was subsequently found to be in error and corrected. Original values must be preserved and remain accessible at all times. For electronic systems, original values are retained in the audit trail; for paper records, original values must remain legible beneath any correction (i.e., single-line strikethrough, not obscured by correction fluid or overlaid tape).
+
+**Data Context** — The totality of information necessary to interpret primary data in its operational setting, including the protocol or procedure under which the data was generated, the equipment and materials used, the environmental conditions at the time of measurement, and the identity of the individual performing the activity.
+
+**System-Generated Metadata** — Metadata created automatically by a validated computerized system without direct operator input, including system timestamps, process parameter logs, instrument status flags, and automated calculation records. System-generated metadata is considered more reliable than manually entered metadata and is preferred wherever technically feasible.
+
+**Traceability** — The ability to reconstruct the complete history of a data record, from initial generation through all modifications, reviews, approvals, and final disposition, using an unbroken chain of documented evidence including metadata.
+
+**Audit Trail** — A secure, computer-generated, time-stamped electronic record that allows reconstruction of the course of events relating to the creation, modification, deletion, or printing of electronic records. As defined in 21 CFR Part 11.10(e), audit trails must be computer-generated and must not be disabled, bypassed, or circumvented.
+
+**Static Record** — A data record in a fixed format that cannot be readily manipulated; examples include paper printouts and PDF documents. Static records must be accompanied by complete metadata to enable full reconstruction of data context.
+
+**Dynamic Record** — A data record stored in an electronic format that preserves the ability to interact with, trend, reprocess, or manipulate the underlying data, such as a CDS chromatogram raw data file. Dynamic records are preferred for GxP data where technically feasible.
+
+### 2.2 Abbreviations
+
+**Table 2.1 — Abbreviations and Acronyms**
+
+| Abbreviation | Full Term |
+|---|---|
+| ALCOA+ | Attributable, Legible, Contemporaneous, Original, Accurate (+ Complete, Consistent, Enduring, Available) |
+| CDS | Chromatography Data System |
+| CAPA | Corrective Action and Preventive Action |
+| CFR | Code of Federal Regulations |
+| DCS | Distributed Control System |
+| ELN | Electronic Laboratory Notebook |
+| EMA | European Medicines Agency |
+| ERP | Enterprise Resource Planning |
+| FDA | U.S. Food and Drug Administration |
+| GCP | Good Clinical Practice |
+| GLP | Good Laboratory Practice |
+| GMP | Good Manufacturing Practice |
+| GxP | Good (any) Practice (collective term for GMP, GLP, GCP) |
+| ICH | International Council for Harmonisation |
+| IT | Information Technology |
+| LIMS | Laboratory Information Management System |
+| MES | Manufacturing Execution System |
+| MHRA | Medicines and Healthcare products Regulatory Agency |
+| NTP | Network Time Protocol |
+| QA | Quality Assurance |
+| QMS | Quality Management System |
+| SOP | Standard Operating Procedure |
+| UTC | Coordinated Universal Time |
+| UUID | Universally Unique Identifier |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 Data Integrity Officer
+
+The Data Integrity Officer (DIO) bears overall accountability for the design, implementation, maintenance, and effectiveness of the metadata management program described in this SOP. The DIO is responsible for approving this SOP and all revisions thereto, for reviewing the results of periodic metadata audits conducted under Section 8.0, for escalating systemic metadata integrity failures to executive management, and for serving as the primary organizational contact for regulatory agencies regarding data integrity matters. The DIO shall maintain current knowledge of evolving regulatory expectations regarding metadata through participation in industry conferences, review of agency guidance documents, and engagement with professional organizations.
+
+The DIO is also responsible for ensuring that the metadata management program is appropriately resourced, including the allocation of IT infrastructure, validation support, and QA oversight capacity. Where resource constraints threaten the effectiveness of metadata controls, the DIO shall document the risk and present a formal resource request to site management within 10 business days of identifying the constraint.
+
+### 3.2 Quality Assurance Specialist
+
+Quality Assurance (QA) Specialists are responsible for the day-to-day implementation and monitoring of metadata integrity controls within their assigned functional areas. Specific responsibilities include: performing audit trail reviews per SOP-DI-003, reviewing metadata completeness as part of batch record review, investigating metadata-related deviations, providing training to operational personnel on metadata requirements, and participating in periodic metadata audits. QA Specialists are empowered to place a hold on batch release or data approval processes where metadata integrity cannot be confirmed pending investigation.
+
+### 3.3 Laboratory Analyst
+
+Laboratory Analysts are responsible for ensuring that all GxP data generated during laboratory activities is accompanied by complete and accurate metadata. This includes: logging into validated systems using their individual User ID before initiating any analytical activity, verifying that the system clock displays the correct date and time prior to data acquisition, entering all required contextual information (sample ID, method version, instrument ID, analyst ID, analyst signature) contemporaneously with data generation, and reporting any observed metadata anomalies to their immediate supervisor and QA immediately upon detection.
+
+Laboratory Analysts may not share login credentials, use another analyst's session to enter data, back-date entries, or modify metadata without generating a documented, reason-for-change record as specified in Section 6.3.
+
+### 3.4 Manufacturing Operator
+
+Manufacturing Operators are responsible for ensuring that metadata associated with process data is complete, accurate, and contemporaneous. In automated systems (DCS, MES), this includes verifying that the system is correctly configured to capture all required process parameters before initiating a manufacturing step. In manual or hybrid recording environments, operators must ensure that all paper batch record entries are made in indelible ink, are individually signed with name and User ID reference, and are dated and timed at the moment of recording.
+
+### 3.5 IT/Systems Validation Manager
+
+The IT/Systems Validation Manager is responsible for the technical configuration, validation, and ongoing maintenance of all computerized systems that generate or manage GxP metadata. Key responsibilities include: ensuring NTP synchronization is active and audited, configuring systems to enforce unique User ID authentication, ensuring audit trail functionality cannot be disabled by end users, maintaining system validation status per SOP-CS-002 (Computer System Validation), and responding to metadata-related IT incidents within 4 hours of notification during business hours and within 8 hours during non-business hours.
+
+### 3.6 Responsibilities Summary Table
+
+**Table 3.1 — Metadata Management Responsibilities Matrix (RACI)**
+
+| Activity | DIO |

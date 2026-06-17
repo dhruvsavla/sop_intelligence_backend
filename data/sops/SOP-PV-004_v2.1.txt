@@ -1,0 +1,199 @@
+# STANDARD OPERATING PROCEDURE
+
+---
+
+```
+═══════════════════════════════════════════════════════════════════════
+                         DOCUMENT HEADER
+═══════════════════════════════════════════════════════════════════════
+SOP Number:       SOP-PV-004
+Title:            Literature Monitoring and Screening
+Version:          2.1
+Effective Date:   2023-04-01
+Supersedes:       2.0
+Department:       Pharmacovigilance (PV)
+Approved By:      Carl Reinhardt, PV Operations Manager
+Review Cycle:     2 years
+Pages:            11
+Classification:   GxP Critical
+═══════════════════════════════════════════════════════════════════════
+```
+
+---
+
+**DOCUMENT APPROVAL SIGNATURES**
+
+| Role | Name | Signature | Date |
+|---|---|---|---|
+| Author | Maria Sokolova, PV Specialist II | *M. Sokolova* | 2023-03-10 |
+| Reviewer | James Okafor, Senior PV Scientist | *J. Okafor* | 2023-03-17 |
+| Reviewer | Linda Cheng, QA Specialist | *L. Cheng* | 2023-03-22 |
+| Approver | Carl Reinhardt, PV Operations Manager | *C. Reinhardt* | 2023-03-28 |
+
+---
+
+---
+
+## TABLE OF CONTENTS
+
+| Section | Title | Page |
+|---|---|---|
+| 1.0 | Purpose and Scope | 3 |
+| 2.0 | Definitions and Abbreviations | 3 |
+| 3.0 | Roles and Responsibilities | 4 |
+| 4.0 | Literature Search Strategy and Database Configuration | 5 |
+| 5.0 | Systematic Screening and Triage Procedure | 6 |
+| 6.0 | Individual Case Safety Report (ICSR) Identification and Processing | 7 |
+| 7.0 | Signal Detection from Literature Sources | 8 |
+| 8.0 | Documentation, Record Retention, and Quality Control | 9 |
+| 9.0 | Deviation and Exception Handling | 10 |
+| 10.0 | References and Related Documents | 10 |
+| 11.0 | Revision History | 11 |
+
+> **Note:** This document contains 10 procedural sections numbered 1.0 through 10.0, with Revision History appearing as Section 11.0 to preserve section numbering integrity per document control requirements.
+
+---
+
+---
+
+## 1.0 PURPOSE AND SCOPE
+
+### 1.1 Purpose
+
+This Standard Operating Procedure (SOP) establishes the requirements, methods, and responsibilities for the systematic monitoring and screening of scientific and medical literature for pharmacovigilance (PV) purposes. The primary objective of literature monitoring is to identify published case reports, case series, observational studies, clinical trials, and any other scientific publications that may contain information relevant to the safety profile of the company's marketed and investigational medicinal products. This SOP ensures that the literature monitoring program is conducted in a prospective, systematic, and reproducible manner consistent with current regulatory expectations and international best practices.
+
+The literature monitoring program described herein fulfills the regulatory obligation to maintain awareness of the worldwide scientific literature as a source of spontaneous adverse event reports and as a mechanism for detecting emerging safety signals. Compliance with this procedure supports the company's pharmacovigilance system and its commitment to protecting patient safety through continuous benefit-risk evaluation of its product portfolio.
+
+### 1.2 Scope
+
+This SOP applies to all medicinal products for which the company holds Marketing Authorization (MA) or is the Sponsor of an ongoing clinical investigation, including both small-molecule pharmaceuticals and biological/biosimilar products. The procedure applies to all personnel within the Pharmacovigilance Department who are involved in literature searching, screening, triage, or escalation activities, as well as to third-party contract research organizations (CROs) or literature service vendors operating under a Quality Agreement with the company.
+
+This SOP does not govern the processing and submission of ICSRs once confirmed from literature (that activity is covered by SOP-PV-002, Individual Case Safety Report Processing), nor does it govern the conduct of formal aggregate safety reviews or Periodic Safety Update Reports (PSURs), which are addressed in SOP-PV-008. This document supersedes SOP-PV-004 Version 2.0 effective 2023-04-01.
+
+### 1.3 Regulatory Basis
+
+This procedure is implemented in compliance with ICH E2D (Post-Approval Safety Data Management), ICH E2F (Development Safety Update Report), European Medicines Agency (EMA) Good Pharmacovigilance Practices (GVP) Module VI (Management and Reporting of Adverse Reactions to Medicinal Products), and U.S. FDA 21 CFR Part 314.81(b)(2)(ii) and 21 CFR Part 312.32, which collectively establish the obligation to monitor the worldwide medical literature for adverse drug reactions. Additional guidance is derived from the EMA GVP Module VII (Periodic Safety Update Report) and FDA Guidance for Industry: Safety Reporting Requirements for INDs and BA/BE Studies (2012).
+
+| Regulatory Reference | Relevant Requirement | Applicability |
+|---|---|---|
+| ICH E2D, Section 3.1 | Marketing authorization holders must monitor scientific literature for ICSRs; PubMed must be searched at minimum | Global marketed products |
+| EMA GVP Module VI.B.6.2 | Literature searches must be conducted at least weekly; ICSRs from literature must be reported within applicable clock-start timelines | EU-authorized products |
+| FDA 21 CFR 314.81(b)(2)(ii) | Systematic review of published literature for serious, unexpected ADRs required as part of post-marketing surveillance | FDA-approved NDA/ANDA products |
+| ICH E2F, Section 3.3 | Literature monitoring must cover relevant published case reports during the development period | Investigational products under IND |
+| EMA GVP Module IX | Literature sources are valid inputs for signal detection activities | All products |
+
+---
+
+## 2.0 DEFINITIONS AND ABBREVIATIONS
+
+### 2.1 Definitions
+
+The following definitions apply throughout this document and are consistent with ICH E2D and EMA GVP Module VI terminology.
+
+**Adverse Drug Reaction (ADR):** In the post-marketing setting, an adverse drug reaction refers to a response to a medicinal product that is noxious and unintended. Unlike adverse events reported in clinical trials, causality between the medicinal product and the adverse event is at minimum a reasonable possibility. This definition encompasses both serious and non-serious ADRs.
+
+**Individual Case Safety Report (ICSR):** A report concerning a single patient who experienced one or more adverse events following exposure to one or more medicinal products. An ICSR identified from a published literature source must contain at minimum four qualifying elements: (1) an identifiable patient, (2) an identifiable reporter (e.g., the publication author), (3) a suspect medicinal product, and (4) at least one adverse event or clinical outcome.
+
+**Literature Monitoring:** The systematic, prospective, and periodic searching of bibliographic databases and other scientific literature sources to identify published information relevant to the safety profile of a specific medicinal product.
+
+**Systematic Search:** A structured, reproducible literature search employing pre-defined search terms (MeSH terms, free-text keywords, Boolean operators), conducted across designated databases according to a documented search strategy and performed at defined intervals.
+
+**Screening:** The process of reviewing literature search results (titles, abstracts, and when necessary full-text articles) against pre-defined inclusion and exclusion criteria to determine whether a retrieved publication contains information relevant to pharmacovigilance obligations.
+
+**Triage:** The classification of screened literature publications into categories that determine subsequent handling: ICSR-qualifying reports requiring case processing, aggregate safety information, signal-relevant information only, or non-relevant publications.
+
+**Clock-Start Date:** For an ICSR identified from a published literature source, the clock-start date is defined as the date on which the company (or its authorized representative) first becomes aware of the publication containing the case report information, which is the date of database retrieval or alert notification.
+
+**EMBASE:** A biomedical and pharmacological database produced by Elsevier, containing over 34 million records from more than 7,600 journals. Required by EMA for EU pharmacovigilance literature monitoring.
+
+**PubMed/MEDLINE:** A freely accessible bibliographic database of biomedical and life sciences literature maintained by the U.S. National Library of Medicine (NLM), containing over 35 million citations.
+
+### 2.2 Abbreviations
+
+| Abbreviation | Definition |
+|---|---|
+| ADR | Adverse Drug Reaction |
+| AE | Adverse Event |
+| CIOMS | Council for International Organizations of Medical Sciences |
+| CRO | Contract Research Organization |
+| DILI | Drug-Induced Liver Injury |
+| EMA | European Medicines Agency |
+| EVDAS | EudraVigilance Data Analysis System |
+| GVP | Good Pharmacovigilance Practices |
+| ICH | International Council for Harmonisation |
+| ICSR | Individual Case Safety Report |
+| IND | Investigational New Drug Application |
+| MA | Marketing Authorization |
+| MAH | Marketing Authorization Holder |
+| MedDRA | Medical Dictionary for Regulatory Activities |
+| MeSH | Medical Subject Headings |
+| NDA | New Drug Application |
+| PV | Pharmacovigilance |
+| PSUR | Periodic Safety Update Report |
+| QA | Quality Assurance |
+| SAE | Serious Adverse Event |
+| SOP | Standard Operating Procedure |
+| SUSAR | Suspected Unexpected Serious Adverse Reaction |
+
+---
+
+## 3.0 ROLES AND RESPONSIBILITIES
+
+### 3.1 PV Specialist I / PV Analyst (Literature Monitor)
+
+The PV Specialist I or PV Analyst assigned to literature monitoring is responsible for executing the weekly literature searches according to the validated search strategies documented in each product's Literature Monitoring Search Plan (LMSP). This individual conducts the first-level screening of all retrieved citations against documented inclusion/exclusion criteria, classifies each retrieved record in the literature tracking system, and flags publications that may contain ICSR-qualifying information for escalation to the Senior PV Scientist. The PV Analyst is also responsible for ensuring that all search records, including search dates, number of records retrieved, and screening decisions, are documented contemporaneously within 24 hours of search execution.
+
+### 3.2 Senior PV Scientist / PV Specialist II
+
+The Senior PV Scientist is responsible for performing second-level review (triage confirmation) of all records flagged by the PV Analyst as potentially relevant. This individual makes the definitive triage determination, confirming whether a publication meets ICSR-qualifying criteria or is to be retained as aggregate safety information or signal intelligence. The Senior PV Scientist is responsible for completing triage review within 3 business days of receiving the flagged record. For publications containing potential SUSARs or clinically significant new safety findings, the Senior PV Scientist escalates immediately (within 24 hours) to the PV Operations Manager and initiates the expedited reporting pathway per SOP-PV-002.
+
+### 3.3 PV Operations Manager
+
+The PV Operations Manager holds overall accountability for the literature monitoring program, including approval of all LMSPs and any changes to search strategies, review of monthly KPI reports, oversight of vendor performance if literature monitoring is partially outsourced, and escalation decisions involving regulatory reporting obligations. The PV Operations Manager reviews and approves the quarterly Literature Monitoring Quality Report and is the designated signatory for this SOP.
+
+### 3.4 Quality Assurance (QA) Specialist
+
+The QA Specialist assigned to Pharmacovigilance is responsible for conducting periodic audits of the literature monitoring process (minimum frequency: annually), reviewing documentation for compliance with this SOP, reviewing deviations and CAPAs generated from the literature monitoring program, and approving changes to this SOP and related controlled documents. The QA Specialist does not have decision-making authority over individual triage classifications but may place a literature record under QA hold pending clarification.
+
+### 3.5 Responsibility Matrix (RACI)
+
+| Activity | PV Analyst | Senior PV Scientist | PV Ops Manager | QA Specialist |
+|---|---|---|---|---|
+| Execute weekly literature searches | R | C | I | — |
+| First-level screening and classification | R | C | I | — |
+| Second-level triage confirmation | C | R | I | — |
+| ICSR qualification determination | C | R | A | I |
+| Escalation of serious/unexpected findings | I | R | A | I |
+| Maintain LMSP for each product | C | R | A | I |
+| QC review of search documentation | I | C | I | R |
+| SOP periodic review | C | C | R | A |
+| Deviation and CAPA management | C | C | R | A |
+
+*R = Responsible; A = Accountable; C = Consulted; I = Informed*
+
+---
+
+## 4.0 LITERATURE SEARCH STRATEGY AND DATABASE CONFIGURATION
+
+### 4.1 Database Selection Requirements
+
+The minimum required databases for literature monitoring under this SOP are PubMed/MEDLINE and EMBASE. PubMed is mandated by ICH E2D as the minimum standard for global pharmacovigilance literature monitoring, and EMBASE is additionally required by EMA GVP Module VI for products authorized in the European Union. Because these two databases have partial but incomplete overlap (estimated at 34–50% depending on the subject area), both must be searched independently to avoid citation gaps. For biological and biosimilar products, the Cochrane Library (specifically the Cochrane Central Register of Controlled Trials, CENTRAL) must also be included in the search scope. For products with a significant body of literature published in non-English languages or in regions underrepresented in MEDLINE and EMBASE, additional regional databases (e.g., LILACS for Latin America, CNKI for China) shall be incorporated into the LMSP with PV Operations Manager approval.
+
+### 4.2 Search Term Construction and Validation
+
+Each product-specific Literature Monitoring Search Plan (LMSP) must document the complete search strategy, including all search terms, Boolean operators, database-specific syntax, and filters applied. Search strategies must be constructed using a combination of controlled vocabulary (MeSH terms for PubMed; EMTREE terms for EMBASE) and free-text terms (including International Nonproprietary Name [INN], brand name(s), developmental code names, and common synonyms). The initial LMSP must be validated by running a retrospective calibration search against a minimum 12-month historical period and verifying that known published case reports for that product are captured by the strategy. Validation documentation must be retained in the product's PV Master File.
+
+Search strategies shall not be altered without a documented change control record approved by the PV Operations Manager. Minor modifications (e.g., addition of a new synonym or trade name following a new market authorization) may be implemented within 5 business days of the triggering event; major modifications (e.g., addition of a new database or fundamental change to the Boolean structure) require a full LMSP re-validation prior to implementation.
+
+### 4.3 Search Frequency and Scheduling
+
+Per EMA GVP Module VI.B.6.2, literature searches must be performed at least weekly for all marketed products. The company standard is to perform searches every 7 calendar days (±1 day). Searches must be scheduled such that no period exceeds 8 consecutive calendar days between searches. For investigational products under active IND with ongoing clinical trials, searches shall also be conducted weekly during the clinical development period, consistent with ICH E2F requirements for DSURs.
+
+The PV Analyst executing each search must document the exact date and time of search execution, the date range of the search query applied (ensuring continuous coverage with no gaps from the prior search end date), the number of records retrieved per database, and the total post-deduplication record count. A missed or delayed search (search window exceeding 8 calendar days) must be reported as a deviation per Section 9.0 of this SOP.
+
+| Product / INN | Required Databases | Search Frequency | LMSP Reference | Responsible Analyst |
+|---|---|---|---|---|
+| Compound A (INN: arotinolol) | PubMed, EMBASE, Cochrane | Weekly (every 7 days ±1) | LMSP-001-v3.0 | PV Analyst – J. Torres |
+| Compound B (INN: vesnarinone) | PubMed, EMBASE | Weekly (every 7 days ±1) | LMSP-002-v2.1 | PV Analyst – R. Mehta |
+| Compound C (INN: riluzole biosimilar) | PubMed, EMBASE, Cochrane, CNKI | Weekly (every 7 days ±1) | LMSP-003-v1.2 | PV Analyst – S. Park |
+| Compound D (INN: fomepizole) – IND only | PubMed, EMBASE | Weekly
