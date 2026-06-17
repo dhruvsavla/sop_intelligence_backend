@@ -270,9 +270,8 @@ def _show_report(report: dict) -> None:
         # Filter controls
         fcol1, fcol2 = st.columns([1, 3])
         with fcol1:
-            filter_domain = st.selectbox(
-                "Filter by domain", ["All"] + sorted(df["Domain"].unique().tolist())
-            )
+            domains = sorted(d for d in df["Domain"].unique().tolist() if d and str(d) != "nan")
+            filter_domain = st.selectbox("Filter by domain", ["All"] + domains)
         with fcol2:
             filter_result = st.radio(
                 "Show", ["All", "Citation failures", "Escalated"], horizontal=True
