@@ -46,7 +46,7 @@ class SOPQAAgent:
         self.client = anthropic_client
         self.model = model
 
-    async def answer(self, query: str, domain_filter: Optional[str] = None) -> QAResponse:
+    def answer(self, query: str, domain_filter: Optional[str] = None) -> QAResponse:
         start = time.perf_counter()
 
         # 1. Retrieve relevant chunks
@@ -95,6 +95,10 @@ class SOPQAAgent:
             model_used=self.model,
             processing_time_ms=elapsed_ms,
         )
+
+    async def answer_async(self, query: str, domain_filter: Optional[str] = None) -> QAResponse:
+        """Async shim for evaluator.py which drives an asyncio event loop."""
+        return self.answer(query, domain_filter)
 
     def _build_context(self, results: list[RetrievalResult]) -> str:
         blocks = []

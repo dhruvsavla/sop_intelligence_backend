@@ -89,7 +89,7 @@ class SOPEvaluator:
             print(f"[{i}/{total}] {q_id}: {q_text[:70]}...")
 
             try:
-                response = await self.agent.answer(q_text, domain_filter=domain)
+                response = await self.agent.answer_async(q_text, domain_filter=domain)
             except Exception as exc:
                 print(f"  ✗ Error: {exc}")
                 per_question_results.append({

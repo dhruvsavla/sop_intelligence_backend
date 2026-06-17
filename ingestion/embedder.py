@@ -1,11 +1,16 @@
 """
-Embedding layer with automatic fallback:
-  - Primary: fastembed (onnxruntime-based, requires Python <=3.13)
-  - Fallback: BM25PassthroughEmbedder (pure Python, works on Python 3.14)
+Embedding layer with priority fallback chain:
+  1. fastembed   — ONNX-based, no torch, works on Python 3.13 (preferred)
+  2. sentence-transformers — torch-based, works on Python 3.12 with torch wheels
+  3. BM25PassthroughEmbedder — pure Python, zero-dependency last resort
 
-The BM25 fallback stores the raw query string in the returned object so
-BM25SOPStore can tokenize it directly during retrieval.
+Context-injection (fastembed + sentence-transformers): chunk texts are prefixed
+with SOP title and section title before embedding, matching the asymmetric
+retrieval pattern expected by the cosine-space ChromaDB collection.
+Query embeddings are always plain text (no prefix) — intentional.
 """
+
+_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 class BM25PassthroughEmbedder:
@@ -15,11 +20,10 @@ class BM25PassthroughEmbedder:
     """
 
     def __init__(self, model_name: str = "bm25"):
-        print("onnxruntime/fastembed unavailable — using BM25 retrieval (pure Python)")
+        print("No neural embedding available — using BM25 retrieval (pure Python)")
         print("✅ BM25 embedder ready (no ML model needed)")
 
     def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
-        # BM25Store ignores embeddings during ingest; return dummies
         return [[0.0] * 384 for _ in chunks]
 
     def embed_query(self, query: str) -> "BM25QueryVector":
@@ -36,20 +40,20 @@ class BM25QueryVector:
         return self  # BM25Store checks for _raw_query attr, not a list
 
 
-FASTEMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-
-
 def _load_fastembed_embedder(model_name: str):
     from fastembed import TextEmbedding
 
     class FastEmbedEmbedder:
         def __init__(self):
-            print(f"Loading embedding model via fastembed: {FASTEMBED_MODEL}...")
-            self.model = TextEmbedding(FASTEMBED_MODEL)
+            print(f"Loading embedding model via fastembed: {_EMBED_MODEL}...")
+            self.model = TextEmbedding(_EMBED_MODEL)
             print("✅ Embedding model loaded (dim=384)")
 
         def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
-            texts = [c["text"] for c in chunks]
+            texts = [
+                f"Document: {c.get('sop_title', '')} | Section: {c.get('section_title', '')}\n{c['text']}"
+                for c in chunks
+            ]
             return [e.tolist() for e in self.model.embed(texts)]
 
         def embed_query(self, query: str) -> list[float]:
@@ -58,19 +62,47 @@ def _load_fastembed_embedder(model_name: str):
     return FastEmbedEmbedder()
 
 
+def _load_sentence_transformer_embedder(model_name: str):
+    from sentence_transformers import SentenceTransformer
+
+    class SentenceTransformerEmbedder:
+        def __init__(self):
+            print(f"Loading embedding model via sentence-transformers: {_EMBED_MODEL}...")
+            self.model = SentenceTransformer(_EMBED_MODEL)
+            print("✅ Embedding model loaded (dim=384)")
+
+        def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
+            texts = [
+                f"Document: {c.get('sop_title', '')} | Section: {c.get('section_title', '')}\n{c['text']}"
+                for c in chunks
+            ]
+            return self.model.encode(texts, show_progress_bar=True).tolist()
+
+        def embed_query(self, query: str) -> list[float]:
+            return self.model.encode([query])[0].tolist()
+
+    return SentenceTransformerEmbedder()
+
+
 class SOPEmbedder:
     """
-    Auto-detecting embedder: tries fastembed first, falls back to BM25.
-    The interface is identical either way.
+    Auto-detecting embedder — tries fastembed, then sentence-transformers, then BM25.
+    The public interface (embed_chunks / embed_query) is identical in every mode.
     """
 
     def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
-        try:
-            self._impl = _load_fastembed_embedder(model_name)
-            self.mode = "fastembed"
-        except (ImportError, Exception):
-            self._impl = BM25PassthroughEmbedder(model_name)
-            self.mode = "bm25"
+        for loader, label in [
+            (_load_fastembed_embedder, "fastembed"),
+            (_load_sentence_transformer_embedder, "sentence_transformers"),
+        ]:
+            try:
+                self._impl = loader(model_name)
+                self.mode = label
+                return
+            except (ImportError, Exception):
+                pass
+        self._impl = BM25PassthroughEmbedder(model_name)
+        self.mode = "bm25"
 
     def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
         return self._impl.embed_chunks(chunks)

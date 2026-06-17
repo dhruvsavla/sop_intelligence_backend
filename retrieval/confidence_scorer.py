@@ -37,6 +37,10 @@ class ConfidenceScorer:
         top_similarity = max(r.similarity_score for r in results)
         base_score = top_similarity
 
+        # Add a penalty if the top match is very weak (typical of out-of-scope queries)
+        if top_similarity < 0.65:
+            base_score -= 0.10  # Force it down into the LOW tier
+
         # Penalty: too few results signals poor coverage
         if result_count < 2:
             base_score -= 0.05
@@ -59,7 +63,8 @@ class ConfidenceScorer:
 
         escalation_reason: Optional[str] = None
         if should_escalate:
-            if top_similarity < 0.45:
+            # INCREASED THRESHOLD: 0.65 is a better cutoff for "out-of-scope" with MiniLM
+            if top_similarity < 0.65: 
                 escalation_reason = "Query may reference a topic not covered in the current SOP library"
             elif result_count < 2:
                 escalation_reason = "Insufficient matching SOP sections found; Quality review recommended"

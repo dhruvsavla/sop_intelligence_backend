@@ -13,7 +13,7 @@ OVERLAP_SIZE = 100
 # Only match lines that START with one or more # marks followed by a section number.
 # This avoids false matches inside tables, plain paragraphs, etc.
 # Matches: "## 4.0 EQUIPMENT CLEANING" or "### 4.3 Gross Cleaning"
-MARKDOWN_SECTION = re.compile(r"^(#{1,4})\s+(\d+\.\d*)\s+(.+)$")
+MARKDOWN_SECTION = re.compile(r"^(#{1,4})\s+(?:(\d+\.\d*)\s+)?(.+)$")
 
 
 def _parse_header(line: str) -> Optional[tuple[str, str]]:
@@ -21,7 +21,7 @@ def _parse_header(line: str) -> Optional[tuple[str, str]]:
     m = MARKDOWN_SECTION.match(line.strip())
     if not m:
         return None
-    num = m.group(2).rstrip(".")   # "4.0" stays "4.0"; "4." → "4"
+    num = m.group(2).rstrip(".") if m.group(2) else "0"  # "4.0" stays "4.0"; unnumbered → "0"
     title = m.group(3).strip()
     return num, title
 
