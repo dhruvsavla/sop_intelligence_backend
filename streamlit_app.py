@@ -213,17 +213,6 @@ html, body, [class*="css"] {
     letter-spacing: 0.08em; margin-bottom: 8px; }
 .ex-text { color: #334155; font-size: 0.85rem; line-height: 1.4; font-weight: 500; }
 
-/* ── Sidebar toggle arrow — make it visible without touching position ─────── */
-[data-testid="collapsedControl"] button {
-    background: #1d4ed8 !important;
-    border-radius: 0 6px 6px 0 !important;
-    color: white !important;
-    opacity: 1 !important;
-}
-[data-testid="collapsedControl"] button svg {
-    fill: white !important;
-}
-
 /* ── Expander ────────────────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
     background: transparent !important;
@@ -569,6 +558,27 @@ with st.sidebar:
     )
 
 # ── Main chat area ────────────────────────────────────────────────────────────
+
+# Floating sidebar toggle — visible whenever sidebar is collapsed
+st.markdown("""
+<div id="sidebar-toggle-btn"
+     onclick="
+       var btn = window.parent.document.querySelector('[data-testid=collapsedControl] button')
+                 || window.parent.document.querySelector('[data-testid=collapsedControl]');
+       if (btn) btn.click();
+       document.getElementById('sidebar-toggle-btn').style.display='none';
+     "
+     title="Open sidebar"
+     style="
+       position:fixed;top:14px;left:14px;z-index:99999;
+       width:36px;height:36px;border-radius:8px;
+       background:#1d4ed8;color:white;
+       display:flex;align-items:center;justify-content:center;
+       font-size:1.1rem;cursor:pointer;
+       box-shadow:0 2px 8px rgba(0,0,0,0.25);
+       user-select:none;
+     ">☰</div>
+""", unsafe_allow_html=True)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
