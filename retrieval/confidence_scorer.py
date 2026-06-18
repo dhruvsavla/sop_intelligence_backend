@@ -37,21 +37,22 @@ class ConfidenceScorer:
         top_similarity = max(r.similarity_score for r in results)
         base_score = top_similarity
 
-        # Add a penalty if the top match is very weak (typical of out-of-scope queries)
-        if top_similarity < 0.65:
-            base_score -= 0.10  # Force it down into the LOW tier
+        # 1. BGE-Small Calibration: Anything under 0.78 is likely out of scope
+        if top_similarity < 0.78:
+            base_score -= 0.20  # Heavy penalty to force it below 0.60 (LOW)
 
-        # Penalty: too few results signals poor coverage
+        # 2. Penalty: too few results signals poor coverage
         if result_count < 2:
             base_score -= 0.05
 
-        # Penalty: all results from same SOP section (low coverage diversity)
+        # 3. Penalty: all results from same SOP section (low coverage diversity)
         unique_sections = {f"{r.sop_number}_{r.section_number}" for r in results}
         if len(unique_sections) == 1:
             base_score -= 0.03
 
         score = round(max(0.0, min(1.0, base_score)), 4)
 
+        # Define strict tiers
         if score >= 0.75:
             level = "HIGH"
         elif score >= 0.60:
@@ -61,10 +62,10 @@ class ConfidenceScorer:
 
         should_escalate = score < self.threshold
 
+        # Define specific escalation reasons based on BGE metrics
         escalation_reason: Optional[str] = None
         if should_escalate:
-            # INCREASED THRESHOLD: 0.65 is a better cutoff for "out-of-scope" with MiniLM
-            if top_similarity < 0.65: 
+            if top_similarity < 0.78: 
                 escalation_reason = "Query may reference a topic not covered in the current SOP library"
             elif result_count < 2:
                 escalation_reason = "Insufficient matching SOP sections found; Quality review recommended"
