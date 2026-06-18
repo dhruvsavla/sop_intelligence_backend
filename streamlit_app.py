@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -561,6 +562,22 @@ with st.sidebar:
     )
 
 # ── Main chat area ────────────────────────────────────────────────────────────
+
+# Auto-expand sidebar if browser has it stored as collapsed
+components.html("""
+<script>
+  setTimeout(function() {
+    try {
+      var parent = window.parent.document;
+      var sidebar = parent.querySelector('[data-testid="stSidebar"]');
+      if (sidebar && sidebar.getBoundingClientRect().width < 50) {
+        var btn = parent.querySelector('[data-testid="collapsedControl"]');
+        if (btn) btn.click();
+      }
+    } catch(e) {}
+  }, 400);
+</script>
+""", height=0, scrolling=False)
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
