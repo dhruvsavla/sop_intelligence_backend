@@ -366,31 +366,89 @@ def _welcome_screen() -> str | None:
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
+@st.cache_data(show_spinner=False)
+def _collection_stats() -> dict:
+    try:
+        store = ChromaSOPStore(
+            persist_directory=settings.CHROMA_DB_PATH,
+            collection_name=settings.CHROMA_COLLECTION_NAME,
+        )
+        return store.get_collection_stats()
+    except Exception:
+        return {"count": 0, "domains": [], "sop_numbers": []}
+
+
 with st.sidebar:
+
+    # ── Brand ──────────────────────────────────────────────────────────────
     st.markdown(
-        "<div style='padding:0.5rem 0 0.5rem'>"
-        "<span style='font-size:1.4rem;font-weight:700;color:#f8fafc;letter-spacing:-0.02em'>"
-        "⚕️ SOPAssist</span><br>"
-        "<span style='font-size:0.7rem;color:#94a3b8;letter-spacing:0.05em;text-transform:uppercase'>"
-        "GxP Intelligence Platform</span>"
+        "<div style='padding:1.2rem 0 0.8rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:1rem'>"
+
+        # Icon + name row
+        "<div style='display:flex;align-items:center;gap:10px;margin-bottom:6px'>"
+        "<div style='width:36px;height:36px;border-radius:8px;"
+        "background:linear-gradient(135deg,#2563eb,#1d4ed8);"
+        "display:flex;align-items:center;justify-content:center;"
+        "font-size:1.1rem;box-shadow:0 2px 8px rgba(37,99,235,0.4)'>⚕</div>"
+        "<div>"
+        "<div style='font-size:1.15rem;font-weight:800;color:#f8fafc;letter-spacing:-0.02em;line-height:1.1'>SOPAssist</div>"
+        "<div style='font-size:0.62rem;color:#64748b;text-transform:uppercase;letter-spacing:0.1em;font-weight:600'>GxP Intelligence</div>"
+        "</div>"
+        "</div>"
+
+        # Status pill
+        "<div style='display:inline-flex;align-items:center;gap:5px;"
+        "background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25);"
+        "border-radius:20px;padding:3px 10px'>"
+        "<span style='width:5px;height:5px;border-radius:50%;background:#10b981;"
+        "display:inline-block;box-shadow:0 0 6px rgba(16,185,129,0.8)'></span>"
+        "<span style='font-size:0.65rem;color:#34d399;font-weight:600;letter-spacing:0.04em'>SYSTEM ONLINE</span>"
+        "</div>"
         "</div>",
         unsafe_allow_html=True,
     )
 
+    # ── Collection stats ───────────────────────────────────────────────────
+    stats = _collection_stats()
+    n_sops = len(stats.get("sop_numbers", []))
+    n_chunks = stats.get("count", 0)
+    n_domains = len(stats.get("domains", []))
+
     st.markdown(
-        "<div style='display:flex;align-items:center;gap:6px;margin:0.2rem 0 1rem'>"
-        "<span style='width:6px;height:6px;border-radius:50%;background:#10b981;"
-        "display:inline-block;box-shadow:0 0 8px rgba(16,185,129,0.6)'></span>"
-        "<span style='font-size:0.75rem;color:#94a3b8; font-weight:500'>System Online</span>"
-        "</div>",
+        "<div style='margin-bottom:1.2rem'>"
+        "<div style='font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;"
+        "color:#475569;font-weight:700;margin-bottom:8px'>Knowledge Base</div>"
+        "<div style='display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px'>"
+
+        f"<div style='background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);"
+        f"border-radius:8px;padding:8px 6px;text-align:center'>"
+        f"<div style='font-size:1.1rem;font-weight:800;color:#f1f5f9;line-height:1'>{n_sops}</div>"
+        f"<div style='font-size:0.6rem;color:#64748b;margin-top:2px;font-weight:500'>SOPs</div>"
+        f"</div>"
+
+        f"<div style='background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);"
+        f"border-radius:8px;padding:8px 6px;text-align:center'>"
+        f"<div style='font-size:1.1rem;font-weight:800;color:#f1f5f9;line-height:1'>{n_chunks:,}</div>"
+        f"<div style='font-size:0.6rem;color:#64748b;margin-top:2px;font-weight:500'>Chunks</div>"
+        f"</div>"
+
+        f"<div style='background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);"
+        f"border-radius:8px;padding:8px 6px;text-align:center'>"
+        f"<div style='font-size:1.1rem;font-weight:800;color:#f1f5f9;line-height:1'>{n_domains}</div>"
+        f"<div style='font-size:0.6rem;color:#64748b;margin-top:2px;font-weight:500'>Domains</div>"
+        f"</div>"
+
+        "</div></div>",
         unsafe_allow_html=True,
     )
 
-    st.divider()
+    st.markdown("<div style='height:1px;background:rgba(255,255,255,0.07);margin-bottom:1.2rem'></div>",
+                unsafe_allow_html=True)
 
+    # ── Domain filter ──────────────────────────────────────────────────────
     st.markdown(
-        "<span style='font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;"
-        "color:#94a3b8;font-weight:600'>Scope Filter</span>",
+        "<div style='font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;"
+        "color:#475569;font-weight:700;margin-bottom:8px'>Domain Scope</div>",
         unsafe_allow_html=True,
     )
     selected_label = st.selectbox(
@@ -400,62 +458,102 @@ with st.sidebar:
     )
     domain_filter = DOMAIN_OPTIONS[selected_label]
 
-    domain_desc = {
-        None:  "Querying across all active SOPs",
-        "GMP": "Good Manufacturing Practice",
-        "GCP": "Good Clinical Practice",
-        "GLP": "Good Laboratory Practice",
-        "PV":  "Pharmacovigilance",
-        "DI":  "Data Integrity",
+    # Domain colour pills grid
+    pill_style = {
+        "GMP": ("rgba(16,185,129,0.15)", "#34d399", "rgba(16,185,129,0.3)"),
+        "GCP": ("rgba(59,130,246,0.15)", "#60a5fa", "rgba(59,130,246,0.3)"),
+        "GLP": ("rgba(251,191,36,0.15)",  "#fbbf24", "rgba(251,191,36,0.3)"),
+        "PV":  ("rgba(244,114,182,0.15)", "#f472b6", "rgba(244,114,182,0.3)"),
+        "DI":  ("rgba(167,139,250,0.15)", "#a78bfa", "rgba(167,139,250,0.3)"),
     }
+    pill_html = "<div style='display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;margin-bottom:1.2rem'>"
+    for code, (bg, fg, border) in pill_style.items():
+        active = domain_filter == code
+        if active:
+            pill_html += (
+                f"<span style='background:{bg};color:{fg};border:1px solid {border};"
+                f"border-radius:4px;padding:3px 9px;font-size:0.65rem;font-weight:700;"
+                f"text-transform:uppercase;letter-spacing:0.05em'>{code}</span>"
+            )
+        else:
+            pill_html += (
+                f"<span style='background:rgba(255,255,255,0.03);color:#475569;"
+                f"border:1px solid rgba(255,255,255,0.07);"
+                f"border-radius:4px;padding:3px 9px;font-size:0.65rem;font-weight:600;"
+                f"text-transform:uppercase;letter-spacing:0.05em'>{code}</span>"
+            )
+    pill_html += "</div>"
+    st.markdown(pill_html, unsafe_allow_html=True)
+
+    st.markdown("<div style='height:1px;background:rgba(255,255,255,0.07);margin-bottom:1.2rem'></div>",
+                unsafe_allow_html=True)
+
+    # ── Confidence card ────────────────────────────────────────────────────
     st.markdown(
-        f"<span style='font-size:0.75rem;color:#64748b'>{domain_desc[domain_filter]}</span>",
+        "<div style='font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;"
+        "color:#475569;font-weight:700;margin-bottom:8px'>Last Response</div>",
         unsafe_allow_html=True,
     )
 
-    st.divider()
-
-    # Confidence meter
     if "last_conf" in st.session_state:
         conf = st.session_state.last_conf
         pct = int(conf["score"] * 100)
         level = conf["level"]
         bar_color = {"HIGH": "#10b981", "MEDIUM": "#fbbf24", "LOW": "#ef4444"}.get(level, "#94a3b8")
-        bg_color  = {"HIGH": "#064e3b", "MEDIUM": "#78350f", "LOW": "#7f1d1d"}.get(level, "#1e293b")
+        bg_color  = {"HIGH": "rgba(16,185,129,0.12)", "MEDIUM": "rgba(251,191,36,0.12)", "LOW": "rgba(239,68,68,0.12)"}.get(level, "rgba(255,255,255,0.04)")
         txt_color = {"HIGH": "#34d399", "MEDIUM": "#fbbf24", "LOW": "#f87171"}.get(level, "#cbd5e1")
+        border_color = {"HIGH": "rgba(16,185,129,0.3)", "MEDIUM": "rgba(251,191,36,0.3)", "LOW": "rgba(239,68,68,0.3)"}.get(level, "rgba(255,255,255,0.07)")
 
         st.markdown(
-            "<span style='font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;"
-            "color:#94a3b8;font-weight:600'>Last Retrieval Confidence</span>",
-            unsafe_allow_html=True,
-        )
-        st.markdown(
-            f"<div style='margin:12px 0 6px;display:flex;align-items:baseline;gap:8px'>"
-            f"  <span style='font-size:2rem;font-weight:700;color:#f8fafc;line-height:1'>{pct}%</span>"
-            f"  <span style='background:{bg_color};color:{txt_color};border-radius:4px;"
-            f"    padding:2px 8px;font-size:0.65rem;font-weight:700; border: 1px solid {bar_color}40'>{level}</span>"
+            f"<div style='background:{bg_color};border:1px solid {border_color};"
+            f"border-radius:10px;padding:14px 16px;margin-bottom:10px'>"
+
+            f"<div style='display:flex;align-items:center;justify-content:space-between;margin-bottom:10px'>"
+            f"  <span style='font-size:2.2rem;font-weight:900;color:#f8fafc;line-height:1;letter-spacing:-0.02em'>{pct}%</span>"
+            f"  <span style='background:{bar_color}25;color:{txt_color};"
+            f"    border:1px solid {bar_color}60;border-radius:4px;"
+            f"    padding:4px 10px;font-size:0.7rem;font-weight:800;letter-spacing:0.05em'>{level}</span>"
             f"</div>"
-            f"<div style='background:rgba(0,0,0,0.3);border-radius:4px;height:4px;overflow:hidden;margin-bottom:8px;"
-            f"box-shadow: inset 0 1px 2px rgba(0,0,0,0.2)'>"
-            f"  <div style='background:{bar_color};width:{pct}%;height:100%;border-radius:4px;"
-            f"    transition:width 0.5s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 0 8px {bar_color}80'></div>"
+
+            f"<div style='background:rgba(0,0,0,0.25);border-radius:3px;height:5px;overflow:hidden'>"
+            f"  <div style='background:{bar_color};width:{pct}%;height:100%;border-radius:3px;"
+            f"    box-shadow:0 0 8px {bar_color}60'></div>"
+            f"</div>"
+            f"<div style='font-size:0.63rem;color:#64748b;margin-top:6px'>Confidence score</div>"
             f"</div>",
             unsafe_allow_html=True,
         )
         if conf.get("escalated"):
-            st.warning(f"⚠️ Quality Review Flag\n\n{conf.get('reason', '')}")
+            st.warning(f"⚠️ Quality Review Required\n\n{conf.get('reason', '')}")
+    else:
+        st.markdown(
+            "<div style='background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);"
+            "border-radius:10px;padding:14px 16px;text-align:center'>"
+            "<div style='font-size:0.75rem;color:#334155;font-weight:500'>—</div>"
+            "<div style='font-size:0.62rem;color:#334155;margin-top:2px'>Ask a question to see score</div>"
+            "</div>",
+            unsafe_allow_html=True,
+        )
 
-    st.divider()
+    st.markdown("<div style='height:1px;background:rgba(255,255,255,0.07);margin:1.2rem 0'></div>",
+                unsafe_allow_html=True)
 
-    if st.button("🗑️ Reset Session", use_container_width=True):
+    # ── Actions ────────────────────────────────────────────────────────────
+    if st.button("🗑  Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.session_state.pop("last_conf", None)
         st.rerun()
 
+    # ── Footer ─────────────────────────────────────────────────────────────
     st.markdown(
-        "<p style='font-size:0.7rem;color:#475569;line-height:1.5;margin-top:2rem'>"
-        "SOPAssist enforces ALCOA+ data integrity standards. All outputs must be verified against primary records before GxP execution."
-        "</p>",
+        "<div style='margin-top:1.5rem;padding:10px 12px;"
+        "background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);"
+        "border-radius:8px'>"
+        "<div style='font-size:0.62rem;color:#334155;line-height:1.6'>"
+        "Outputs grounded in retrieved SOP text only. "
+        "Always verify against the current approved document before GxP execution."
+        "</div>"
+        "</div>",
         unsafe_allow_html=True,
     )
 
