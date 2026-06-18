@@ -213,6 +213,17 @@ html, body, [class*="css"] {
     letter-spacing: 0.08em; margin-bottom: 8px; }
 .ex-text { color: #334155; font-size: 0.85rem; line-height: 1.4; font-weight: 500; }
 
+/* ── Sidebar toggle arrow — make it visible without touching position ─────── */
+[data-testid="collapsedControl"] button {
+    background: #1d4ed8 !important;
+    border-radius: 0 6px 6px 0 !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+[data-testid="collapsedControl"] button svg {
+    fill: white !important;
+}
+
 /* ── Expander ────────────────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
     background: transparent !important;
