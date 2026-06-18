@@ -213,20 +213,6 @@ html, body, [class*="css"] {
     letter-spacing: 0.08em; margin-bottom: 8px; }
 .ex-text { color: #334155; font-size: 0.85rem; line-height: 1.4; font-weight: 500; }
 
-/* ── Sidebar toggle (re-open button when sidebar is collapsed) ───────────── */
-[data-testid="collapsedControl"] {
-    background: #1d4ed8 !important;
-    border-radius: 0 8px 8px 0 !important;
-    width: 24px !important;
-    top: 50% !important;
-    color: white !important;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.2) !important;
-}
-[data-testid="collapsedControl"] svg {
-    fill: white !important;
-    color: white !important;
-}
-
 /* ── Expander ────────────────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
     background: transparent !important;
