@@ -10,9 +10,6 @@ retrieval pattern expected by the cosine-space ChromaDB collection.
 Query embeddings are always plain text (no prefix) — intentional.
 """
 
-_EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-
-
 class BM25PassthroughEmbedder:
     """
     Zero-dependency embedder for environments without onnxruntime/torch.
@@ -44,9 +41,9 @@ def _load_fastembed_embedder(model_name: str):
     from fastembed import TextEmbedding
 
     class FastEmbedEmbedder:
-        def __init__(self):
-            print(f"Loading embedding model via fastembed: {_EMBED_MODEL}...")
-            self.model = TextEmbedding(_EMBED_MODEL)
+        def __init__(self, name: str):
+            print(f"Loading embedding model via fastembed: {name}...")
+            self.model = TextEmbedding(name)
             print("✅ Embedding model loaded (dim=384)")
 
         def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
@@ -59,16 +56,16 @@ def _load_fastembed_embedder(model_name: str):
         def embed_query(self, query: str) -> list[float]:
             return list(self.model.embed([query]))[0].tolist()
 
-    return FastEmbedEmbedder()
+    return FastEmbedEmbedder(model_name)
 
 
 def _load_sentence_transformer_embedder(model_name: str):
     from sentence_transformers import SentenceTransformer
 
     class SentenceTransformerEmbedder:
-        def __init__(self):
-            print(f"Loading embedding model via sentence-transformers: {_EMBED_MODEL}...")
-            self.model = SentenceTransformer(_EMBED_MODEL)
+        def __init__(self, name: str):
+            print(f"Loading embedding model via sentence-transformers: {name}...")
+            self.model = SentenceTransformer(name)
             print("✅ Embedding model loaded (dim=384)")
 
         def embed_chunks(self, chunks: list[dict]) -> list[list[float]]:
@@ -81,7 +78,7 @@ def _load_sentence_transformer_embedder(model_name: str):
         def embed_query(self, query: str) -> list[float]:
             return self.model.encode([query])[0].tolist()
 
-    return SentenceTransformerEmbedder()
+    return SentenceTransformerEmbedder(model_name)
 
 
 class SOPEmbedder:

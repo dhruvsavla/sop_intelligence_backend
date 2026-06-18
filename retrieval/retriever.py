@@ -241,7 +241,7 @@ class VersionAwareRetriever:
         distances = raw.get("distances", [[]])[0]
 
         for chunk_id, text, meta, dist in zip(ids, documents, metadatas, distances):
-            similarity = 1.0 / (1.0 + dist)
+            similarity = max(0.0, 1.0 - dist)
             results.append(RetrievalResult(
                 chunk_id=chunk_id,
                 text=text or "",
