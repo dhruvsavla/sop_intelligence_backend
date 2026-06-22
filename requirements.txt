@@ -29,3 +29,6 @@ llama-index-vector-stores-chroma>=0.1.0
 
 # UI — replaces React + FastAPI; run with: streamlit run streamlit_app.py
 streamlit>=1.35.0
+
+# PDF ingestion
+pdfplumber>=0.10.0

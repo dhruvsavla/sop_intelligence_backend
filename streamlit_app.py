@@ -215,6 +215,23 @@ html, body, [class*="css"] {
     letter-spacing: 0.08em; margin-bottom: 8px; }
 .ex-text { color: #334155; font-size: 0.85rem; line-height: 1.4; font-weight: 500; }
 
+/* ── View SOP button inside source expanders ────────────────────────────── */
+div[data-testid="stExpander"] div[data-testid="stColumn"] button {
+    background: #eff6ff !important;
+    border: 1px solid #bfdbfe !important;
+    color: #2563eb !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    border-radius: 4px !important;
+    padding: 3px 10px !important;
+    line-height: 1.5 !important;
+}
+div[data-testid="stExpander"] div[data-testid="stColumn"] button:hover {
+    background: #dbeafe !important;
+    border-color: #93c5fd !important;
+    color: #1d4ed8 !important;
+}
+
 /* ── Expander ────────────────────────────────────────────────────────────── */
 [data-testid="stExpander"] {
     background: transparent !important;
@@ -293,14 +310,16 @@ def _domain_tag(domain: str) -> str:
     )
 
 
-def _render_sources(sources: list[dict]) -> None:
+def _render_sources(sources: list[dict], msg_idx: int = -1) -> None:
     if not sources:
         return
     with st.expander(f"📄 View {len(sources)} Retrieved Sources", expanded=False):
-        for src in sources:
+        for src_idx, src in enumerate(sources):
             pct = int(src["similarity_score"] * 100)
             preview = src["text"][:320] + ("…" if len(src["text"]) > 320 else "")
             domain = src.get("domain", "")
+            sop_num = src.get("sop_number", "")
+            section_num = src.get("section_number", "")
             st.markdown(
                 f"<div class='src-card'>"
                 f"  <div class='src-meta'>"
@@ -316,6 +335,19 @@ def _render_sources(sources: list[dict]) -> None:
                 f"</div>",
                 unsafe_allow_html=True,
             )
+            if sop_num:
+                _, col_btn = st.columns([7, 2])
+                with col_btn:
+                    if st.button(
+                        "View SOP ↗",
+                        key=f"vsop_{msg_idx}_{src_idx}",
+                        use_container_width=True,
+                    ):
+                        st.session_state.view_sop_request = {
+                            "sop": sop_num,
+                            "section": section_num,
+                        }
+                        st.switch_page("pages/3_View_SOP.py")
 
 
 def _render_conf_line(conf: dict | None, model: str = "") -> None:
@@ -557,11 +589,11 @@ if not st.session_state.messages:
         st.session_state["_pending"] = clicked
         st.rerun()
 
-for msg in st.session_state.messages:
+for msg_idx, msg in enumerate(st.session_state.messages):
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if msg["role"] == "assistant":
-            _render_sources(msg.get("sources", []))
+            _render_sources(msg.get("sources", []), msg_idx)
             _render_conf_line(msg.get("conf"), msg.get("model", ""))
             if msg.get("conf", {}).get("escalated"):
                 st.warning(
@@ -594,10 +626,12 @@ if question:
                 "domain": r.domain,
                 "similarity_score": r.similarity_score,
                 "text": r.text,
+                "sop_number": r.sop_number,
+                "section_number": r.section_number,
             }
             for r in resp.retrieved_chunks
         ]
-        _render_sources(sources)
+        _render_sources(sources, len(st.session_state.messages))
 
         conf_dict = {
             "score": resp.confidence.score,
